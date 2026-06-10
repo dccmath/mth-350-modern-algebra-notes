@@ -143,13 +143,13 @@
     </p>
 </section>
 
-<section>
+<worksheet xml:id="ws-fields-activity">
     <title>Fields</title>
 
+    <introduction>
     <p>
-        A <alert>field</alert> is a set <m>F</m> together with two binary
-        operations, called addition ( <m>+</m> ) and multiplication (
-        <m>\cdot</m> ), denoted as the triple <m>(F, +,\cdot)</m>, such that all
+        A <term>field</term> is a set <m>F</m> together with two binary
+        operations, called addition ( <m>+</m> ) and multiplication (<m>\cdot</m> ), denoted as the triple <m>(F, +,\cdot)</m>, such that all
         of the following axioms hold:
     </p>
 
@@ -222,17 +222,21 @@
             </li>
         </ol>
     </p>
+</introduction>
 
-    <p>
-        <alert>Activity:</alert> For one of the sets on page 1, determine which
+    <exercise workspace="1in">
+        <statement>
+            <p>For one of the sets on page 1, determine which
         of the 8 properties of a field it has and which it doesn't (assume the
         addition and multiplication you've been taught in the past for each
         set).
-        Is the set a field?
-    </p>
+        Is the set a field?</p>
+        </statement>
+      </exercise>
 
-    <p/>
-</section>
+    <p>Here is some stuff after the exercise</p>
+</worksheet>
+
 
 <section>
     <title>Polynomials</title>
