@@ -285,7 +285,7 @@
         (Squares are also considered rectangles.)
     </p>
 
-    <image source="images/Fields-RectangleMath"/>
+    <p><image source="images/Fields-RectangleMath.png" width="30%" /></p>
 
     <p>
         Here, there are six <m>1\times 1</m> rectangles, three <m>1\times 2</m>
@@ -299,7 +299,7 @@
     </p>
 	</introduction>
 	
-    <exercise workspace="4in">
+    <exercise workspace="3in">
     	<statement>
         <p>Your goal is to figure out if the properties of a field hold with this
         new multiplication.
@@ -311,13 +311,19 @@
         pairs of whole numbers!</p>
         </statement>
     </exercise>
+   
+    </worksheet>
 
-    <exercise workspace="4in">
-    	<statement>Summarize: </statement> Fill in the table below to indicate which
+<worksheet xml:id="sec-fields-review">
+    <title>
+        Summary &amp; Review Questions
+    </title>
+    
+    <exercise>
+    	<statement>Summarize: Fill in the table below to indicate which
         properties hold in which number systems.
         You can use Y/N for yes/no or checkmarks and X's, or colors, or whatever
         works best for you.
-    </exercise>
 
   <table>
   <tabular halign="center" top="medium">
@@ -657,60 +663,34 @@
     </row>
   </tabular>
 </table>
-    
-    </worksheet>
 
-<section xml:id="sec-fields-review">
-    <title>
-        Review Questions
-    </title>
-    Make sure you can answer the following questions:
-    <ul>
-        <li>
-            <p>
-                What are the sets
+	</statement>
+ </exercise>
+ 
+<exercise><p>What are the sets
                 <m>\mathbb{N}, \mathbb{W}, \mathbb{Z}, \mathbb{R}, \mathbb{C}, \mathbb{R}\setminus\mathbb{Q},</m>
-                and <m>\mathcal{M}_{2}(\mathbb{R})</m>?
-            </p>
-        </li>
-
-        <li>
-            <p>
-                What is a binary operation?
-                And what does it mean for a binary operation to be closed?
-            </p>
-        </li>
-
-        <li>
-            <p>
-                What are properties of fields?
+                and <m>\mathcal{M}_{2}(\mathbb{R})</m>?</p>
+                </exercise>
+                
+<exercise><p>What is a binary operation?
+                And what does it mean for a binary operation to be closed?</p></exercise>
+                
+<exercise><p>What are properties of fields?
                 Which of
                 <m>\mathbb{N}, \mathbb{W}, \mathbb{Z}, \mathbb{R}, \mathbb{C}, \mathbb{R}\setminus\mathbb{Q},</m>
                 and <m>\mathcal{M}_{2}(\mathbb{R})</m> are fields?
-                If they are not fields, which properties are they missing?
-            </p>
-        </li>
+                If they are not fields, which properties are they missing?</p></exercise>
 
-        <li>
-            <p>
-                Why do you think DocK called fields <q>The Good Place</q>?
-            </p>
-        </li>
-    </ul>
-</section>
+<exercise><p>Why do you think DocK called fields <q>The Good Place</q>?</p></exercise>
 
-<section>
-    <title>A page for you to summarize important ideas from the module</title>
-</section>
+<exercise workspace="5in"><p>A page for you to summarize important ideas from the module.</p></exercise>
 
-<section>
+</worksheet>
+
+<exercises>
     <title>Weekly Practice 1</title>
 
-    <p>
-        <ol>
-            <li>
-                <p>
-                    Consider the set <m>\mathbb{Z}\times \mathbb{Z}</m> (the set
+		<exercise><p>Consider the set <m>\mathbb{Z}\times \mathbb{Z}</m> (the set
                     of all ordered pairs of integers).
                     For <m>(a,b), (c,d)</m>, we define addition as
                     <m>(a,b)+(c,d) = (a+c, b+d)</m> and we define multiplication
@@ -718,85 +698,58 @@
                     Which of the field properties hold for
                     <m>(\mathbb{Z}\times \mathbb{Z}, +, \cdot)</m>?
                     Does your answer change for
-                    <m>\mathbb{R}\times \mathbb{R}</m>?
-                </p>
-            </li>
-
-            <li>
-                <p>
-                    It is one of the axioms of the integers that multiplication
+                    <m>\mathbb{R}\times \mathbb{R}</m>?</p>
+    	</exercise>
+	
+		<exercise>
+		<title>Playing with distribution</title>
+		<introduction><p>It is one of the axioms of the integers that multiplication
                     distributes over addition.
                     That is, for all integers <m>a,b,</m> and <m>c</m>,
-                    <m>a\cdot (b+c) = a\cdot b + a\cdot c</m>.
-                    <ol>
-                        <li>
-                            <p>
-                                What it would mean for addition to distribute
+                    <m>a\cdot (b+c) = a\cdot b + a\cdot c</m>.</p></introduction>
+        	<task><p>What it would mean for addition to distribute
                                 over multiplication in the integers?
                                 Write a precise definition.
                                 (Like what's written at the start of this
-                                question.)
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                In the integers does addition distribute over
+                                question.)</p></task>
+            <task><p>In the integers does addition distribute over
                                 multiplication?
-                                Give a proof or a counterexample.
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                In the integers, does addition distribute over
+                                Give a proof or a counterexample.</p></task>
+            <task><p>In the integers, does addition distribute over
                                 addition?
                                 Write a precise definition, and give a proof or
-                                a counterexample.
-                            </p>
-                        </li>
-                    </ol>
-                </p>
-            </li>
-
-            <li>
-                <p>
-                    You've known for a while that for any integer <m>a</m>,
-                    <m>0\cdot a = 0</m>.
-                    <ol>
-                        <li>
-                            <p>
-                                How would you explain to an elementary schooler
-                                that <m>0\cdot 2 = 0</m>?
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                It turns out to be true in *any* field <m>F</m>
-                                <fn>Actually any ring, but you don't know what that is yet :)</fn>
+                                a counterexample.</p></task>
+		</exercise>
+		
+		<exercise>
+		<title>Messing with zero</title>
+		<introduction><p>You've known for a while that for any integer <m>a</m>,
+                    <m>0\cdot a = 0</m>.<aside><p>Zero is a weird concept. I have an entire book on zero in my office. From the back cover: <q>The Babylonians invented it, the Greeks banned it, the Hindus worshipped it, and the Church used it to fend off heretics.</q> Wow.</p></aside></p>
+        </introduction>
+        	<task>
+				<p>How would you explain to an elementary schooler
+                                that <m>0\cdot 2 = 0</m>?</p>
+			</task>
+			
+			<task>
+				<p>It turns out to be true in <em>any</em> field <m>F</m>
+                                <fn><p>Actually any ring, but you don't know what that is yet :)</p></fn>
                                 that for any <m>a\in F</m>,
                                 <m>0_{F} \cdot a = 0_{F}</m>, where <m>0_{F}</m>
                                 is the additive identity.
-                                <fn>This may at first seem silly (even elementary schoolers sort of know this!), but actually, it's not that obvious. To see why this is not obvious - try thinking a little more abstractly - why should the additive identity of a field, multiplied by anything, give back the additive identity? The additive identity is the thing that when you add it to anything doesn't change it. There's no reason it should have any reasonable interaction with multiplication.</fn>
-                                Prove that for any field <m>F</m> and any
+                                <fn><p>This may at first seem silly (even elementary schoolers sort of know this!), but actually, it's not that obvious. To see why this is not obvious - try thinking a little more abstractly - why should the additive identity of a field, multiplied by anything, give back the additive identity? The <em>only</em> thing that we know about the additive identity is that when you add it to anything doesn't change it. There's no reason it should have any reasonable interaction with multiplication.</p></fn></p>
+                                
+                                <p>Prove that for any field <m>F</m> and any
                                 <m>a\in F</m> that <m>0_{F} \cdot a = 0_{F}</m>
                                 using only the field properties.
-                                <fn>This is part of the motivation for the abstraction to fields. You've interacted with fields (like <m>\mathbb{R}</m>) for a long time. This abstraction allows us to explore the common features at the same time - it is inefficient to prove the same statement about every single field when we can prove it once and for all about fields in general.</fn>
-                            </p>
+                                <fn><p>This is part of the motivation for the abstraction to fields. You've interacted with fields (like <m>\mathbb{R}</m>) for a long time. This abstraction allows us to explore the common features at the same time - it is inefficient to prove the same statement about every single field when we can prove it once and for all about fields in general.</p></fn></p>
 
-                            <p>
-                                <alert>Hint:</alert> consider
-                                <m>(0_{F} + 0_{F}) a</m> in two different ways.
-                                <fn>See me if/when you get stuck!</fn>
-                                <fn>Zero is a weird concept. I have an entire book on zero in my office. From the back cover: ``The Babylonians invented it, the Greeks banned it, the Hindus worshipped it, and the Church used it to fend off heretics.'' Wow.</fn>
-                            </p>
-                        </li>
-                    </ol>
-                </p>
-            </li>
-        </ol>
-    </p>
-</section>
+                            <hint><p>Consider <m>(0_{F} + 0_{F}) a</m> in two different ways. See me if/when you get stuck!</p>
+                            </hint>
+			</task>
+		
+		</exercise>
+	
+ </exercises>
 
 </chapter>
