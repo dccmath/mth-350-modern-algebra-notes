@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="mod-fields" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fields</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+<section>
+    <title>Sets of Numbers (and one set of matrices)</title>
+
+    <p>
+        We'll start with some formalizing of things you have likely seen before:
+        <ol>
+            <li>
+                <p>
+                    The set of <em> <alert>natural numbers</alert> </em> is
+                    <md>
+                        \mathbb{N}= \{1,2,3,\dots\}.
+                    </md>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The set of <alert>whole numbers</alert> is
+                    <md>
+                        \mathbb{W}= \{0,1,2,3,\dots\}.
+                    </md>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The set of <alert>integers</alert> is all positive and
+                    negative natural numbers, as well as 0:
+                    <md>
+                        \mathbb{Z}= \{\dots,-3,-2,-1,0,1,2,3,\dots\}.
+                    </md>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The set of <alert>rational numbers</alert> is
+                    <md>
+                        \mathbb{Q}= \left\{\frac{a}{b}: a,b \in \mathbb{Z}, b\neq 0\right\}.
+                    </md>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The set of <alert>real numbers</alert>, denoted
+                    <m>\mathbb{R}</m> is something you likely have an intuitive
+                    idea about.
+                    Defining <m>\mathbb{R}</m> rigorously is actually quite
+                    difficult, and can occupy a significant amount of time in a
+                    first course in real analysis.
+                    So we'll make use of your intuition in this class.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The set of <alert>irrational numbers</alert> is
+                    <m>\mathbb{R}\setminus \mathbb{Q}</m>.
+                    That is, the set of real numbers that are not rational.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The set of <em> <alert>complex numbers</alert> </em> is
+                    <md>
+                        \mathbb{C}= \{a+bi: a,b\in\mathbb{R}\}.
+                    </md>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The set of
+                    <alert> <m>2\times 2</m> matrices with real entries</alert>
+                    is
+                    <md>
+                        \mathcal{M}_{2}(\mathbb{R}) = \left\{ \begin{bmatrix}a &amp;b \\ c &amp;d\end{bmatrix}: a,b,c,d\in\mathbb{R}\right\}.
+                    </md>
+                </p>
+            </li>
+        </ol>
+    </p>
+
+    <p/>
+</section>
+
+<section>
+    <title>Binary Operations</title>
+
+    <p>
+        Our English word algebra comes from the Arabic word al-jabr, which means
+        <q>the reunion of broken parts</q>.
+        It is not surprising, then, that we will be considering ways of
+        combining two elements of a set into one; to do this, we turn to a
+        particular type of function, known as a binary operation.
+        Let <m>X</m> be a nonempty set.
+        <ul>
+            <li>
+                <p>
+                    A function <m>\star: X\times X \to Y</m> is called a
+                    <alert>binary operation on <m>X</m> </alert>.
+                    That is, the function <m>\star</m> takes two numbers in the
+                    set <m>X</m>, and outputs another number, potentially in a
+                    different set <m>Y</m>.
+                    Given <m>a,b\in X</m>, we usually write <m>a\star b</m> in
+                    place of the typical function notation <m>\star(a,b)</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    If <m>\star</m> is a binary operation on <m>X</m> such that
+                    <m>\star:X\times X \to X</m> we say that <m>X</m> is closed
+                    under the operation <m>\star</m>.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <alert>Example:</alert> Say <m>X = \mathbb{Z}</m>.
+        Let <m>\cdot</m> be the binary operation multiplication.
+        Then, with the function notation, we could write <m>\cdot(2,3) = 6</m>,
+        though we usually write <m>2\cdot 3=6</m>.
+        Since, whenever <m>x,y \in \mathbb{Z}</m> we have
+        <m>x\cdot y \in \mathbb{Z}</m>, we can say
+        <m>\cdot: X\times X \to X</m>.
+        Thus, <m>\mathbb{Z}</m> is closed under the operation <m>\cdot</m>.
+        However, <m>\mathbb{Z}</m> is not closed under the binary operation
+        <m>\div</m> because, for example,
+        <m>\div(2,3)= 2\div 3 = \frac{2}{3}\not\in\mathbb{Z}</m>.
+    </p>
+</section>
+
+<section>
+    <title>Fields</title>
+
+    <p>
+        A <alert>field</alert> is a set <m>F</m> together with two binary
+        operations, called addition ( <m>+</m> ) and multiplication (
+        <m>\cdot</m> ), denoted as the triple <m>(F, +,\cdot)</m>, such that all
+        of the following axioms hold:
+    </p>
+
+    <p>
+        <ol>
+            <li>
+                <p>
+                    The set <m>F</m> is
+                    <alert>closed under addition and multiplication</alert>,
+                    meaning that for all <m>x,y\in F, x+y \in F</m> and
+                    <m>x\cdot y \in F</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <alert>Addition and multiplication are associative</alert>,
+                    meaning that for all <m>x,y,z\in F</m>,
+                    <m>(x+y)+z = x+(y+z)</m>, and
+                    <m>(x\cdot y)\cdot z = x\cdot(y\cdot z)</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <alert>Addition and multiplication are commutative</alert>,
+                    that is, for all <m>x,y\in F</m>, <m>x+y = y+x</m> and
+                    <m>x\cdot y = y\cdot x</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <alert>The set <m>F</m> contains an additive identity</alert>.
+                    That is, there exists an element <m>0_{F} \in F</m> such
+                    that <m>a+0_{F} = a</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <alert>The set <m>F</m> contains a multiplicative identity</alert>.
+                    That is, there exists an element <m>1_{F} \in F</m> such
+                    that for all <m>a\in F</m>, <m>1_{F} \cdot a = a</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <alert>Every element of <m>F</m> has an additive inverse within <m>F</m> </alert>,
+                    meaning that for every <m>x\in F</m>, there exists a
+                    <m>y\in F</m> such that <m>x+y = 0_{F}</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <alert>Every nonzero (i.e., not <m>0_{F}</m>) element of <m>F</m> has a multiplicative inverse within <m>F</m> </alert>,
+                    meaning that for every <m>x\in F</m>, there exists a
+                    <m>y\in F</m> such that <m>x\cdot y =1_{F}</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <alert>Multiplication distributes over addition</alert>,
+                    meaning that, for all <m>x,y,z \in F</m>,
+                    <m>x\cdot(y+z) = x\cdot y + x\cdot z</m>.
+                </p>
+            </li>
+        </ol>
+    </p>
+
+    <p>
+        <alert>Activity:</alert> For one of the sets on page 1, determine which
+        of the 8 properties of a field it has and which it doesn't (assume the
+        addition and multiplication you've been taught in the past for each
+        set).
+        Is the set a field?
+    </p>
+
+    <p/>
+</section>
+
+<section>
+    <title>Polynomials</title>
+
+    <p>
+        A good deal of time is spent studying polynomials in algebra courses
+        that are intended to be a preparation for the study of calculus.
+        A <alert>polynomial in <m>x</m> over <m>\mathbb{R}</m> </alert> is an
+        expression of the form
+        <md>
+            a_{n} x^{n} + a_{n-1}x^{n-1}+\cdots + a_{2}x^{2} + a_{1} x^{1} + a_{0} x^{0}.
+        </md>
+        The set of all polynomials in <m>x</m> over <m>\mathbb{R}</m> is denoted
+        <m>\mathbb{R}[x]</m>.
+        We'll use the addition and multiplication you likely learned in high
+        school (in addition, you ``add like terms'', in multiplication you need
+        to use the distributive property).
+    </p>
+
+    <p>
+        Which of the properties of a field do polynomials have?
+    </p>
+
+    <p/>
+</section>
+
+<section>
+    <title>Other Operations</title>
+
+    <p>
+        Consider <m>(\mathbb{R}, -,\div)</m>.
+        That is, the real numbers, but in the field axioms, replace addition
+        with subtraction, and multiplication with division.
+        Is <m>(\mathbb{R}, -,\div)</m> a field?
+    </p>
+
+    <p/>
+    <p/>
+</section>
+
+<section>
+    <title>Rectangle Math</title>
+
+    <p>
+        This definition of multiplication is taken from James Tanton (who is
+        math YouTube famous).
+    </p>
+
+    <p>
+        Here's how it works: To compute the product of two numbers, say four
+        times three, draw a four-by-three array of dots and count the number of
+        (horizontal/vertical) rectangles one can draw with vertices on the grid.
+        (Squares are also considered rectangles.)
+    </p>
+
+    <blockquote>
+        <image source="Module1RectangleMath"/>
+    </blockquote>
+
+    <p>
+        Here, there are six <m>1\times 1</m> rectangles, three <m>1\times 2</m>
+        s, four <m>2\times 1</m> s, two <m>2\times 2</m> s, two <m>3\times 1</m>
+        s, and one <m>3\times 4</m>, giving a total of eighteen rectangles.
+        So,
+        <md>
+            4\times_{\square} 3 = 18.
+        </md>
+        Here the <m>\times_{\square}</m> is standing for ``rectangle
+        multiplication''.
+    </p>
+
+    <p>
+        Your goal is to figure out if the properties of a field hold with this
+        new multiplication.
+        But wait!
+        You also need a set and an addition.
+        Let's decide our set is the whole numbers, <m>\mathbb{W}</m> and the
+        addition is the standard addition you know and love.
+        I recommend you start by computing rectangle multiplication for a few
+        pairs of whole numbers!
+    </p>
+
+    <p/>
+    <p>
+        <alert>Summarize:</alert> Fill in the table below to indicate which
+        properties hold in which number systems.
+        You can use Y/N for yes/no or checkmarks and X's, or colors, or whatever
+        works best for you.
+    </p>
+
+    <p>
+        90
+        \html-tag:tabular{\html-attr:left{"minor"}\html-tag:col{\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:row{}\html-tag:row{\html-tag:cell{}\html-tag:cell{$\mathbb{N}$}\html-tag:cell{$\mathbb{W}$}\html-tag:cell{$\mathbb{Z}$}\html-tag:cell{$\mathbb{Q}$}\html-tag:cell{$\mathbb{R}$}\html-tag:cell{$\mathbb{R}\setminus
+        \mathbb{Q}$}\html-tag:cell{$\mathbb{C}$}\html-tag:cell{$\mathcal{M}_{2}(\mathbb{R})$}\html-tag:cell{$\mathbb{R}[x]$}\html-tag:cell{$(\mathbb{W},+,\times_{\square})$}\html-tag:cell{$(\mathbb{R},-,\div)$}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Closed
+        under
+        addition}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Closed
+        under
+        multiplication}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Addition
+        associative}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplication
+        associative}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Addition
+        commutative}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplication
+        commutative}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Additive
+        identity}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplicative
+        identity}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Additive
+        inverses}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplicative
+        inverses}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplication
+        distributes over
+        addition}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}}
+    </p>
+    <alert>
+        Review Questions
+    </alert>
+    Make sure you can answer the following questions:
+    <ul>
+        <li>
+            <p>
+                What are the sets
+                <m>\mathbb{N}, \mathbb{W}, \mathbb{Z}, \mathbb{R}, \mathbb{C}, \mathbb{R}\setminus\mathbb{Q},</m>
+                and <m>\mathcal{M}_{2}(\mathbb{R})</m>?
+            </p>
+        </li>
+
+        <li>
+            <p>
+                What is a binary operation?
+                And what does it mean for a binary operation to be closed?
+            </p>
+        </li>
+
+        <li>
+            <p>
+                What are properties of fields?
+                Which of
+                <m>\mathbb{N}, \mathbb{W}, \mathbb{Z}, \mathbb{R}, \mathbb{C}, \mathbb{R}\setminus\mathbb{Q},</m>
+                and <m>\mathcal{M}_{2}(\mathbb{R})</m> are fields?
+                If they are not fields, which properties are they missing?
+            </p>
+        </li>
+
+        <li>
+            <p>
+                Why do you think DocK called fields ``The Good Place''?
+            </p>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <title>A page for you to summarize important ideas from the module</title>
+
+    <p/>
+</section>
+
+<section>
+    <title>Weekly Practice 1</title>
+
+    <p>
+        <ol>
+            <li>
+                <p>
+                    Consider the set <m>\mathbb{Z}\times \mathbb{Z}</m> (the set
+                    of all ordered pairs of integers).
+                    For <m>(a,b), (c,d)</m>, we define addition as
+                    <m>(a,b)+(c,d) = (a+c, b+d)</m> and we define multiplication
+                    as <m>(a,b)\cdot(c,d) = (ac,bd)</m>.
+                    Which of the field properties hold for
+                    <m>(\mathbb{Z}\times \mathbb{Z}, +, \cdot)</m>?
+                    Does your answer change for
+                    <m>\mathbb{R}\times \mathbb{R}</m>?
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    It is one of the axioms of the integers that multiplication
+                    distributes over addition.
+                    That is, for all integers <m>a,b,</m> and <m>c</m>,
+                    <m>a\cdot (b+c) = a\cdot b + a\cdot c</m>.
+                    <ol>
+                        <li>
+                            <p>
+                                What it would mean for addition to distribute
+                                over multiplication in the integers?
+                                Write a precise definition.
+                                (Like what's written at the start of this
+                                question.)
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                In the integers does addition distribute over
+                                multiplication?
+                                Give a proof or a counterexample.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                In the integers, does addition distribute over
+                                addition?
+                                Write a precise definition, and give a proof or
+                                a counterexample.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    You've known for a while that for any integer <m>a</m>,
+                    <m>0\cdot a = 0</m>.
+                    <ol>
+                        <li>
+                            <p>
+                                How would you explain to an elementary schooler
+                                that <m>0\cdot 2 = 0</m>?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                It turns out to be true in *any* field <m>F</m>
+                                <fn>Actually any ring, but you don't know what that is yet :)</fn>
+                                that for any <m>a\in F</m>,
+                                <m>0_{F} \cdot a = 0_{F}</m>, where <m>0_{F}</m>
+                                is the additive identity.
+                                <fn>This may at first seem silly (even elementary schoolers sort of know this!), but actually, it's not that obvious. To see why this is not obvious - try thinking a little more abstractly - why should the additive identity of a field, multiplied by anything, give back the additive identity? The additive identity is the thing that when you add it to anything doesn't change it. There's no reason it should have any reasonable interaction with multiplication.</fn>
+                                Prove that for any field <m>F</m> and any
+                                <m>a\in F</m> that <m>0_{F} \cdot a = 0_{F}</m>
+                                using only the field properties.
+                                <fn>This is part of the motivation for the abstraction to fields. You've interacted with fields (like <m>\mathbb{R}</m>) for a long time. This abstraction allows us to explore the common features at the same time - it is inefficient to prove the same statement about every single field when we can prove it once and for all about fields in general.</fn>
+                            </p>
+
+                            <p>
+                                <alert>Hint:</alert> consider
+                                <m>(0_{F} + 0_{F}) a</m> in two different ways.
+                                <fn>See me if/when you get stuck!</fn>
+                                <fn>Zero is a weird concept. I have an entire book on zero in my office. From the back cover: ``The Babylonians invented it, the Greeks banned it, the Hindus worshipped it, and the Church used it to fend off heretics.'' Wow.</fn>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+        </ol>
+    </p>
+</section>
+
+</chapter>
