@@ -3,10 +3,6 @@
 <chapter xml:id="mod-fields" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Fields</title>
 
-  <introduction>
-    <p> Text before the first section. </p>
-  </introduction>
-
 <section>
     <title>Sets of Numbers (and one set of matrices)</title>
 
@@ -15,7 +11,7 @@
         <ol>
             <li>
                 <p>
-                    The set of <em> <alert>natural numbers</alert> </em> is
+                    The set of <term>natural numbers</term> is
                     <md>
                         \mathbb{N}= \{1,2,3,\dots\}.
                     </md>
@@ -24,7 +20,7 @@
 
             <li>
                 <p>
-                    The set of <alert>whole numbers</alert> is
+                    The set of <term>whole numbers</term> is
                     <md>
                         \mathbb{W}= \{0,1,2,3,\dots\}.
                     </md>
@@ -33,7 +29,7 @@
 
             <li>
                 <p>
-                    The set of <alert>integers</alert> is all positive and
+                    The set of <term>integers</term> is all positive and
                     negative natural numbers, as well as 0:
                     <md>
                         \mathbb{Z}= \{\dots,-3,-2,-1,0,1,2,3,\dots\}.
@@ -43,7 +39,7 @@
 
             <li>
                 <p>
-                    The set of <alert>rational numbers</alert> is
+                    The set of <term>rational numbers</term> is
                     <md>
                         \mathbb{Q}= \left\{\frac{a}{b}: a,b \in \mathbb{Z}, b\neq 0\right\}.
                     </md>
@@ -52,7 +48,7 @@
 
             <li>
                 <p>
-                    The set of <alert>real numbers</alert>, denoted
+                    The set of <term>real numbers</term>, denoted
                     <m>\mathbb{R}</m> is something you likely have an intuitive
                     idea about.
                     Defining <m>\mathbb{R}</m> rigorously is actually quite
@@ -64,7 +60,7 @@
 
             <li>
                 <p>
-                    The set of <alert>irrational numbers</alert> is
+                    The set of <term>irrational numbers</term> is
                     <m>\mathbb{R}\setminus \mathbb{Q}</m>.
                     That is, the set of real numbers that are not rational.
                 </p>
@@ -72,7 +68,7 @@
 
             <li>
                 <p>
-                    The set of <em> <alert>complex numbers</alert> </em> is
+                    The set of <term>complex numbers</term> is
                     <md>
                         \mathbb{C}= \{a+bi: a,b\in\mathbb{R}\}.
                     </md>
@@ -82,7 +78,7 @@
             <li>
                 <p>
                     The set of
-                    <alert> <m>2\times 2</m> matrices with real entries</alert>
+                    <term> <m>2\times 2</m> matrices with real entries</term>
                     is
                     <md>
                         \mathcal{M}_{2}(\mathbb{R}) = \left\{ \begin{bmatrix}a &amp;b \\ c &amp;d\end{bmatrix}: a,b,c,d\in\mathbb{R}\right\}.
@@ -91,8 +87,6 @@
             </li>
         </ol>
     </p>
-
-    <p/>
 </section>
 
 <section>
@@ -128,8 +122,9 @@
         </ul>
     </p>
 
-    <p>
-        <alert>Example:</alert> Say <m>X = \mathbb{Z}</m>.
+    <example>
+        <title>Ordered pairs</title>
+        <p>Say <m>X = \mathbb{Z}</m>.
         Let <m>\cdot</m> be the binary operation multiplication.
         Then, with the function notation, we could write <m>\cdot(2,3) = 6</m>,
         though we usually write <m>2\cdot 3=6</m>.
@@ -139,8 +134,8 @@
         Thus, <m>\mathbb{Z}</m> is closed under the operation <m>\cdot</m>.
         However, <m>\mathbb{Z}</m> is not closed under the binary operation
         <m>\div</m> because, for example,
-        <m>\div(2,3)= 2\div 3 = \frac{2}{3}\not\in\mathbb{Z}</m>.
-    </p>
+        <m>\div(2,3)= 2\div 3 = \frac{2}{3}\not\in\mathbb{Z}</m>.</p>
+    </example>
 </section>
 
 <worksheet xml:id="ws-fields-activity">
@@ -224,7 +219,7 @@
     </p>
 </introduction>
 
-    <exercise workspace="1in">
+    <exercise workspace="4in">
         <statement>
             <p>For one of the sets on page 1, determine which
         of the 8 properties of a field it has and which it doesn't (assume the
@@ -234,32 +229,13 @@
         </statement>
       </exercise>
 
-    <p>Here is some stuff after the exercise, and some more stuff...
-        generally going on for a long time to see if the workspace of 1 inch actually works or not.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste.
-        Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. Copy-paste. </p>
 </worksheet>
 
 
-<section>
+<worksheet xml:id="ws-polynomials-activity">
     <title>Polynomials</title>
 
-    <p>
+    <introduction>
         A good deal of time is spent studying polynomials in algebra courses
         that are intended to be a preparation for the study of calculus.
         A <alert>polynomial in <m>x</m> over <m>\mathbb{R}</m> </alert> is an
@@ -272,32 +248,31 @@
         We'll use the addition and multiplication you likely learned in high
         school (in addition, you ``add like terms'', in multiplication you need
         to use the distributive property).
-    </p>
+    </introduction>
 
-    <p>
-        Which of the properties of a field do polynomials have?
-    </p>
+    <exercise workspace="4in">
+    	<statement>
+        <p>Which of the properties of a field do polynomials have?</p>
+        </statement>
+    </exercise>
+</worksheet>
 
-    <p/>
-</section>
-
-<section>
+<worksheet xml:id="ws-other-operations">
     <title>Other Operations</title>
 
-    <p>
-        Consider <m>(\mathbb{R}, -,\div)</m>.
+    <exercise workspace="4in">
+        <statement>Consider <m>(\mathbb{R}, -,\div)</m>.
         That is, the real numbers, but in the field axioms, replace addition
         with subtraction, and multiplication with division.
-        Is <m>(\mathbb{R}, -,\div)</m> a field?
-    </p>
+        Is <m>(\mathbb{R}, -,\div)</m> a field?</statement>
+    </exercise>
+    
+</worksheet>
 
-    <p/>
-    <p/>
-</section>
-
-<section>
+<worksheet xml:id="ws-rectangle-math">
     <title>Rectangle Math</title>
 
+	<introduction>
     <p>
         This definition of multiplication is taken from James Tanton (who is
         math YouTube famous).
@@ -310,9 +285,7 @@
         (Squares are also considered rectangles.)
     </p>
 
-    <blockquote>
-        <image source="Module1RectangleMath"/>
-    </blockquote>
+    <image source="images/Fields-RectangleMath"/>
 
     <p>
         Here, there are six <m>1\times 1</m> rectangles, three <m>1\times 2</m>
@@ -322,51 +295,375 @@
         <md>
             4\times_{\square} 3 = 18.
         </md>
-        Here the <m>\times_{\square}</m> is standing for ``rectangle
-        multiplication''.
+        Here the <m>\times_{\square}</m> is standing for <q>rectangle multiplication</q>.
     </p>
-
-    <p>
-        Your goal is to figure out if the properties of a field hold with this
+	</introduction>
+	
+    <exercise workspace="4in">
+    	<statement>
+        <p>Your goal is to figure out if the properties of a field hold with this
         new multiplication.
         But wait!
         You also need a set and an addition.
         Let's decide our set is the whole numbers, <m>\mathbb{W}</m> and the
         addition is the standard addition you know and love.
         I recommend you start by computing rectangle multiplication for a few
-        pairs of whole numbers!
-    </p>
+        pairs of whole numbers!</p>
+        </statement>
+    </exercise>
 
-    <p/>
-    <p>
-        <alert>Summarize:</alert> Fill in the table below to indicate which
+    <exercise workspace="4in">
+    	<statement>Summarize: </statement> Fill in the table below to indicate which
         properties hold in which number systems.
         You can use Y/N for yes/no or checkmarks and X's, or colors, or whatever
         works best for you.
-    </p>
+    </exercise>
 
-    <p>
-        90
-        \html-tag:tabular{\html-attr:left{"minor"}\html-tag:col{\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:col{\html-attr:halign{"center"}\html-attr:right{"minor"}}\html-tag:row{}\html-tag:row{\html-tag:cell{}\html-tag:cell{$\mathbb{N}$}\html-tag:cell{$\mathbb{W}$}\html-tag:cell{$\mathbb{Z}$}\html-tag:cell{$\mathbb{Q}$}\html-tag:cell{$\mathbb{R}$}\html-tag:cell{$\mathbb{R}\setminus
-        \mathbb{Q}$}\html-tag:cell{$\mathbb{C}$}\html-tag:cell{$\mathcal{M}_{2}(\mathbb{R})$}\html-tag:cell{$\mathbb{R}[x]$}\html-tag:cell{$(\mathbb{W},+,\times_{\square})$}\html-tag:cell{$(\mathbb{R},-,\div)$}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Closed
-        under
-        addition}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Closed
-        under
-        multiplication}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Addition
-        associative}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplication
-        associative}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Addition
-        commutative}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplication
-        commutative}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Additive
-        identity}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplicative
-        identity}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Additive
-        inverses}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplicative
-        inverses}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}\html-tag:row{\html-tag:cell{Multiplication
-        distributes over
-        addition}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}\html-tag:cell{}}\html-tag:row{\html-tag:cell{}}}
-    </p>
-    <alert>
+  <table>
+  <tabular halign="center" top="medium">
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+      </cell>
+      <cell right="medium">
+        <m>\mathbb{N}</m>
+      </cell>
+      <cell right="medium">
+        <m>\mathbb{W}</m>
+      </cell>
+      <cell right="medium">
+        <m>\mathbb{Z}</m>
+      </cell>
+      <cell right="medium">
+        <m>\mathbb{Q}</m>
+      </cell>
+      <cell right="medium">
+        <m>\mathbb{R}</m>
+      </cell>
+      <cell right="medium">
+        <m>\mathbb{R}\setminus \mathbb{Q}</m>
+      </cell>
+      <cell right="medium">
+        <m>\mathbb{C}</m>
+      </cell>
+      <cell right="medium">
+        <m>\mathcal{M}_2(\mathbb{R})</m>
+      </cell>
+      <cell right="medium">
+        <m>\mathbb{R}[x]</m>
+      </cell>
+      <cell right="medium">
+        <m>(\mathbb{W},+,\times_\square)</m>
+      </cell>
+      <cell right="medium">
+        <m>(\mathbb{R},-,\div)</m>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Closed under addition
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Closed under multiplication
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Addition associative
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Multiplication associative
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Addition commutative
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Multiplication commutative
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Additive identity
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Multiplicative identity
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Additive inverses
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Multiplicative inverses
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell halign="left" left="medium" right="medium">
+        Multiplication distributes over addition
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+    </row>
+  </tabular>
+</table>
+    
+    </worksheet>
+
+<section xml:id="sec-fields-review">
+    <title>
         Review Questions
-    </alert>
+    </title>
     Make sure you can answer the following questions:
     <ul>
         <li>
@@ -396,7 +693,7 @@
 
         <li>
             <p>
-                Why do you think DocK called fields ``The Good Place''?
+                Why do you think DocK called fields <q>The Good Place</q>?
             </p>
         </li>
     </ul>
@@ -404,8 +701,6 @@
 
 <section>
     <title>A page for you to summarize important ideas from the module</title>
-
-    <p/>
 </section>
 
 <section>
