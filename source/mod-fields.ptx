@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="mod-fields" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Fields</title>
+<title>Fields</title>
 
-<section>
-    <title>Sets of Numbers (and one set of matrices)</title>
+<worksheet xml:id="ws-fields-activity">
 
+	<title>Fields</title>
+	
+	<page>
+
+	<paragraphs>
+		<title>Sets of Numbers (and one set of matrices)</title>
+		
     <p>
         We'll start with some formalizing of things you have likely seen before:
         <ol>
@@ -87,11 +93,16 @@
             </li>
         </ol>
     </p>
-</section>
+    </paragraphs>
+    </page>
 
-<section>
-    <title>Binary Operations</title>
+<!-- Division? -->
+<!--    <title>Binary Operations</title> -->
 
+	<page>
+	
+	<paragraphs>
+		<title>Binary Operations</title>
     <p>
         Our English word algebra comes from the Arabic word al-jabr, which means
         <q>the reunion of broken parts</q>.
@@ -136,12 +147,14 @@
         <m>\div</m> because, for example,
         <m>\div(2,3)= 2\div 3 = \frac{2}{3}\not\in\mathbb{Z}</m>.</p>
     </example>
-</section>
+    
+    </paragraphs>
 
-<worksheet xml:id="ws-fields-activity">
+	
+	<paragraphs>
     <title>Fields</title>
 
-    <introduction>
+
     <p>
         A <term>field</term> is a set <m>F</m> together with two binary
         operations, called addition ( <m>+</m> ) and multiplication (<m>\cdot</m> ), denoted as the triple <m>(F, +,\cdot)</m>, such that all
@@ -217,9 +230,11 @@
             </li>
         </ol>
     </p>
-</introduction>
+</paragraphs>
+</page>
 
-    <exercise workspace="4in">
+<page>
+	<exercise workspace="4in">
         <statement>
             <p>For one of the sets on page 1, determine which
         of the 8 properties of a field it has and which it doesn't (assume the
@@ -228,15 +243,14 @@
         Is the set a field?</p>
         </statement>
       </exercise>
+</page>
 
-</worksheet>
 
-
-<worksheet xml:id="ws-polynomials-activity">
+<page>
+	<paragraphs>
     <title>Polynomials</title>
 
-    <introduction>
-        A good deal of time is spent studying polynomials in algebra courses
+        <p>A good deal of time is spent studying polynomials in algebra courses
         that are intended to be a preparation for the study of calculus.
         A <alert>polynomial in <m>x</m> over <m>\mathbb{R}</m> </alert> is an
         expression of the form
@@ -246,18 +260,17 @@
         The set of all polynomials in <m>x</m> over <m>\mathbb{R}</m> is denoted
         <m>\mathbb{R}[x]</m>.
         We'll use the addition and multiplication you likely learned in high
-        school (in addition, you ``add like terms'', in multiplication you need
-        to use the distributive property).
-    </introduction>
+        school (in addition, you <q>add like terms</q>, in multiplication you need
+        to use the distributive property).</p>
 
     <exercise workspace="4in">
     	<statement>
         <p>Which of the properties of a field do polynomials have?</p>
         </statement>
     </exercise>
-</worksheet>
-
-<worksheet xml:id="ws-other-operations">
+	</paragraphs>
+	
+	<paragraphs>
     <title>Other Operations</title>
 
     <exercise workspace="4in">
@@ -267,12 +280,14 @@
         Is <m>(\mathbb{R}, -,\div)</m> a field?</statement>
     </exercise>
     
-</worksheet>
+	</paragraphs>
+	
+</page>
 
-<worksheet xml:id="ws-rectangle-math">
+<page xml:id="ws-rectangle-math">
+	<paragraphs>
     <title>Rectangle Math</title>
 
-	<introduction>
     <p>
         This definition of multiplication is taken from James Tanton (who is
         math YouTube famous).
@@ -285,7 +300,7 @@
         (Squares are also considered rectangles.)
     </p>
 
-    <p><image source="images/Fields-RectangleMath.png" width="30%" /></p>
+    <p><image source="images/Fields-RectangleMath.png" width="25%" /></p>
 
     <p>
         Here, there are six <m>1\times 1</m> rectangles, three <m>1\times 2</m>
@@ -297,11 +312,9 @@
         </md>
         Here the <m>\times_{\square}</m> is standing for <q>rectangle multiplication</q>.
     </p>
-	</introduction>
-	
+        
     <exercise workspace="3in">
-    	<statement>
-        <p>Your goal is to figure out if the properties of a field hold with this
+    <p>Your goal is to figure out if the properties of a field hold with this
         new multiplication.
         But wait!
         You also need a set and an addition.
@@ -309,18 +322,17 @@
         addition is the standard addition you know and love.
         I recommend you start by computing rectangle multiplication for a few
         pairs of whole numbers!</p>
-        </statement>
     </exercise>
-   
-    </worksheet>
+    </paragraphs>
+</page>
 
-<worksheet xml:id="sec-fields-review">
-    <title>
-        Summary &amp; Review Questions
-    </title>
+<page xml:id="sec-fields-review">
+
+<paragraphs>
+	<title>Summarize</title>
     
     <exercise>
-    	<statement>Summarize: Fill in the table below to indicate which
+    	<statement>Fill in the table below to indicate which
         properties hold in which number systems.
         You can use Y/N for yes/no or checkmarks and X's, or colors, or whatever
         works best for you.
@@ -666,7 +678,12 @@
 
 	</statement>
  </exercise>
- 
+ </paragraphs>
+</page>
+
+<page>
+<paragraphs>
+<title>Review questions</title>
 <exercise><p>What are the sets
                 <m>\mathbb{N}, \mathbb{W}, \mathbb{Z}, \mathbb{R}, \mathbb{C}, \mathbb{R}\setminus\mathbb{Q},</m>
                 and <m>\mathcal{M}_{2}(\mathbb{R})</m>?</p>
@@ -683,14 +700,21 @@
 
 <exercise><p>Why do you think DocK called fields <q>The Good Place</q>?</p></exercise>
 
-<exercise workspace="5in"><p>A page for you to summarize important ideas from the module.</p></exercise>
+<p>The rest of this page is for you to summarize important ideas from the module.</p>
 
-</worksheet>
+</paragraphs>
 
-<exercises>
+</page>
+
+
+<page>
+
+<paragraphs>
     <title>Weekly Practice 1</title>
 
-		<exercise><p>Consider the set <m>\mathbb{Z}\times \mathbb{Z}</m> (the set
+		<exercise number="1">
+		<title>A field of ordered pairs?</title>
+		<statement><p>Consider the set <m>\mathbb{Z}\times \mathbb{Z}</m> (the set
                     of all ordered pairs of integers).
                     For <m>(a,b), (c,d)</m>, we define addition as
                     <m>(a,b)+(c,d) = (a+c, b+d)</m> and we define multiplication
@@ -699,9 +723,10 @@
                     <m>(\mathbb{Z}\times \mathbb{Z}, +, \cdot)</m>?
                     Does your answer change for
                     <m>\mathbb{R}\times \mathbb{R}</m>?</p>
+        </statement>
     	</exercise>
 	
-		<exercise>
+		<exercise number="2">
 		<title>Playing with distribution</title>
 		<introduction><p>It is one of the axioms of the integers that multiplication
                     distributes over addition.
@@ -721,10 +746,12 @@
                                 a counterexample.</p></task>
 		</exercise>
 		
-		<exercise>
+		<exercise number="3">
 		<title>Messing with zero</title>
 		<introduction><p>You've known for a while that for any integer <m>a</m>,
-                    <m>0\cdot a = 0</m>.<aside><p>Zero is a weird concept. I have an entire book on zero in my office. From the back cover: <q>The Babylonians invented it, the Greeks banned it, the Hindus worshipped it, and the Church used it to fend off heretics.</q> Wow.</p></aside></p>
+                    <m>0\cdot a = 0</m>.
+                    <!--<fn><p>Zero is a weird concept. I have an entire book on zero in my office. From the back cover: <q>The Babylonians invented it, the Greeks banned it, the Hindus worshipped it, and the Church used it to fend off heretics.</q> Wow.</p></fn>-->
+                    </p>
         </introduction>
         	<task>
 				<p>How would you explain to an elementary schooler
@@ -733,16 +760,18 @@
 			
 			<task>
 				<p>It turns out to be true in <em>any</em> field <m>F</m>
-                                <fn><p>Actually any ring, but you don't know what that is yet :)</p></fn>
+                                <!--<fn><p>Actually any ring, but you don't know what that is yet :)</p></fn>-->
                                 that for any <m>a\in F</m>,
                                 <m>0_{F} \cdot a = 0_{F}</m>, where <m>0_{F}</m>
                                 is the additive identity.
-                                <fn><p>This may at first seem silly (even elementary schoolers sort of know this!), but actually, it's not that obvious. To see why this is not obvious - try thinking a little more abstractly - why should the additive identity of a field, multiplied by anything, give back the additive identity? The <em>only</em> thing that we know about the additive identity is that when you add it to anything doesn't change it. There's no reason it should have any reasonable interaction with multiplication.</p></fn></p>
+                                <!--<fn><p>This may at first seem silly (even elementary schoolers sort of know this!), but actually, it's not that obvious. To see why this is not obvious - try thinking a little more abstractly - why should the additive identity of a field, multiplied by anything, give back the additive identity? The <em>only</em> thing that we know about the additive identity is that when you add it to anything doesn't change it. There's no reason it should have any reasonable interaction with multiplication.</p></fn>-->
+                                </p>
                                 
                                 <p>Prove that for any field <m>F</m> and any
                                 <m>a\in F</m> that <m>0_{F} \cdot a = 0_{F}</m>
                                 using only the field properties.
-                                <fn><p>This is part of the motivation for the abstraction to fields. You've interacted with fields (like <m>\mathbb{R}</m>) for a long time. This abstraction allows us to explore the common features at the same time - it is inefficient to prove the same statement about every single field when we can prove it once and for all about fields in general.</p></fn></p>
+                                <!--<fn><p>This is part of the motivation for the abstraction to fields. You've interacted with fields (like <m>\mathbb{R}</m>) for a long time. This abstraction allows us to explore the common features at the same time - it is inefficient to prove the same statement about every single field when we can prove it once and for all about fields in general.</p></fn>-->
+                                </p>
 
                             <hint><p>Consider <m>(0_{F} + 0_{F}) a</m> in two different ways. See me if/when you get stuck!</p>
                             </hint>
@@ -750,6 +779,10 @@
 		
 		</exercise>
 	
- </exercises>
+	</paragraphs>
+	
+ </page>
+ 
+ </worksheet>
 
 </chapter>
