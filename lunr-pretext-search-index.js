@@ -154,6 +154,96 @@ var ptx_lunr_docs = [
   "body": " Messing with zero  You've known for a while that for any integer , .     How would you explain to an elementary schooler that ?    It turns out to be true in any field  that for any , , where is the additive identity.   Prove that for any field and any that using only the field properties.   Consider in two different ways. See me if\/when you get stuck!    "
 },
 {
+  "id": "sec-portfolio-problems-2",
+  "level": "1",
+  "url": "sec-portfolio-problems-2.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Portfolio Problems 1, 2, and 3",
+  "body": " Portfolio Problems 1, 2, and 3   Read the guidelines on the problem portfolio information and the writing guidelines before starting. The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately.  You can submit 3 drafts per week, so there’s effectively unlimited attempts on any particular problem.  You’ll put all your final drafts of your problems in a portfolio template (select all and copy). You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.    Additive and Multiplicative Cancellation  In this problem you should use only the axioms of fields, and should do so explicitly. E.g., you can’t just switch to without saying commutative property of multiplication!  Prove that in a field, additive cancellation holds. That is, prove that if is a field, , and , then .  Prove that in a field, multiplicative cancellation holds. That is, if is a field, , , and , then .    Are additive identities unique?  One of the field axioms is that a field has an additive identity. That is, there exists an element such that . In math we care about the difference between an and the . If we say there’s an additive identity, then we’re not excluding the possibility of there being more than one. Whereas when we say the , we mean there’s exactly one.  So, can we refer to the additive identity of a field? That is, are additive identities unique? Prove (using definitions and field axioms) or disprove.  Note: If you prove, you should state your result as a theorem. One phrasing of the theorem could be Let be a field and suppose that and are both additive identities for . Then .    Practice with division  Let , , and be integers. What conclusions, if any, can be drawn from the following situations? (You can say no conclusions for one, prove your other two answers.)  and .  and .  and .   "
+},
+{
+  "id": "sec-portfolio-problems-2-3",
+  "level": "2",
+  "url": "sec-portfolio-problems-2.html#sec-portfolio-problems-2-3",
+  "type": "Portfolio Problem",
+  "number": "1",
+  "title": "Additive and Multiplicative Cancellation.",
+  "body": " Additive and Multiplicative Cancellation  In this problem you should use only the axioms of fields, and should do so explicitly. E.g., you can’t just switch to without saying commutative property of multiplication!  Prove that in a field, additive cancellation holds. That is, prove that if is a field, , and , then .  Prove that in a field, multiplicative cancellation holds. That is, if is a field, , , and , then .  "
+},
+{
+  "id": "sec-portfolio-problems-2-4",
+  "level": "2",
+  "url": "sec-portfolio-problems-2.html#sec-portfolio-problems-2-4",
+  "type": "Portfolio Problem",
+  "number": "2",
+  "title": "Are additive identities unique?",
+  "body": " Are additive identities unique?  One of the field axioms is that a field has an additive identity. That is, there exists an element such that . In math we care about the difference between an and the . If we say there’s an additive identity, then we’re not excluding the possibility of there being more than one. Whereas when we say the , we mean there’s exactly one.  So, can we refer to the additive identity of a field? That is, are additive identities unique? Prove (using definitions and field axioms) or disprove.  Note: If you prove, you should state your result as a theorem. One phrasing of the theorem could be Let be a field and suppose that and are both additive identities for . Then .  "
+},
+{
+  "id": "sec-portfolio-problems-2-5",
+  "level": "2",
+  "url": "sec-portfolio-problems-2.html#sec-portfolio-problems-2-5",
+  "type": "Portfolio Problem",
+  "number": "3",
+  "title": "Practice with division.",
+  "body": " Practice with division  Let , , and be integers. What conclusions, if any, can be drawn from the following situations? (You can say no conclusions for one, prove your other two answers.)  and .  and .  and .  "
+},
+{
+  "id": "sec-portfolio-problems-3",
+  "level": "1",
+  "url": "sec-portfolio-problems-3.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Portfolio Problems 4, 5, and 6",
+  "body": " Portfolio Problems 4, 5, and 6   Read the guidelines on the problem portfolio information and the writing guidelines before starting. The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately.  You can submit 3 drafts per week, so there’s effectively unlimited attempts on any particular problem.  You’ll put all your final drafts of your problems in a portfolio template (select all and copy). You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.    Proving the division algorithm  (Related to Module 2) Prove the following: Let and be integers with . Then there exist unique integers and such that:   Note: There's a complete proof of this starting on p. 14 in your textbook. You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of ? in it. Your proof here should expand on every ? , plus anywhere else that you had to stop and think! If you aren't sure why there is a ? , that's an indication that you should think more and\/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.    Well-defined operations   (Related to Module 3) In class we mentioned that adding and multiplying elements of means we are adding\/multiplying infinite sets. This may seem very natural and may not concern you at all, but it will all be total nonsense if addition and multiplication in isn’t well-defined . This problem is to show you what can happen if an operation is not well-defined, and also prove that the addition and multiplication we’ve defined is well-defined.   Let be the operation on defined as Note that parity refers to whether an integer is even or odd. Thus, two integers have the same parity if they are both even or both odd. Likewise they have opposite parity if one is even and one is odd.  Use the above definition to compute , , , and .   What is the relationship between , , and in ? What is the relationship between , , and in ?   Let denote a binary operation on a set . Then is said to be well-defined provided that whenever and in we have . Is well-defined?   Prove addition and multiplication in as defined in class are well-defined. There’s a proof of addition on page 32 of your book, use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!     Greatest common divisors   (Related to Module 4)   Let and be integers, not both 0. Prove that if there exist such that , then .   Prove that for all nonzero integers , , and , if and only if and . (You’ll need to apply Bezout’s identity).    "
+},
+{
+  "id": "sec-portfolio-problems-3-3",
+  "level": "2",
+  "url": "sec-portfolio-problems-3.html#sec-portfolio-problems-3-3",
+  "type": "Portfolio Problem",
+  "number": "4",
+  "title": "Proving the division algorithm.",
+  "body": " Proving the division algorithm  (Related to Module 2) Prove the following: Let and be integers with . Then there exist unique integers and such that:   Note: There's a complete proof of this starting on p. 14 in your textbook. You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of ? in it. Your proof here should expand on every ? , plus anywhere else that you had to stop and think! If you aren't sure why there is a ? , that's an indication that you should think more and\/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.  "
+},
+{
+  "id": "sec-portfolio-problems-3-4",
+  "level": "2",
+  "url": "sec-portfolio-problems-3.html#sec-portfolio-problems-3-4",
+  "type": "Portfolio Problem",
+  "number": "5",
+  "title": "Well-defined operations.",
+  "body": " Well-defined operations   (Related to Module 3) In class we mentioned that adding and multiplying elements of means we are adding\/multiplying infinite sets. This may seem very natural and may not concern you at all, but it will all be total nonsense if addition and multiplication in isn’t well-defined . This problem is to show you what can happen if an operation is not well-defined, and also prove that the addition and multiplication we’ve defined is well-defined.   Let be the operation on defined as Note that parity refers to whether an integer is even or odd. Thus, two integers have the same parity if they are both even or both odd. Likewise they have opposite parity if one is even and one is odd.  Use the above definition to compute , , , and .   What is the relationship between , , and in ? What is the relationship between , , and in ?   Let denote a binary operation on a set . Then is said to be well-defined provided that whenever and in we have . Is well-defined?   Prove addition and multiplication in as defined in class are well-defined. There’s a proof of addition on page 32 of your book, use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!   "
+},
+{
+  "id": "sec-portfolio-problems-3-5",
+  "level": "2",
+  "url": "sec-portfolio-problems-3.html#sec-portfolio-problems-3-5",
+  "type": "Portfolio Problem",
+  "number": "6",
+  "title": "Greatest common divisors.",
+  "body": " Greatest common divisors   (Related to Module 4)   Let and be integers, not both 0. Prove that if there exist such that , then .   Prove that for all nonzero integers , , and , if and only if and . (You’ll need to apply Bezout’s identity).   "
+},
+{
+  "id": "sec-portfolio-problems-4",
+  "level": "1",
+  "url": "sec-portfolio-problems-4.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Portfolio Problems 7, 8, and 9",
+  "body": " Portfolio Problems 7, 8, and 9   Read the guidelines on the problem portfolio information and the writing guidelines before starting. The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately.  You can submit 3 drafts per week, so there’s effectively unlimited attempts on any particular problem.  You’ll put all your final drafts of your problems in a portfolio template (select all and copy). You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.   "
+},
+{
+  "id": "sec-portfolio-problems-5",
+  "level": "1",
+  "url": "sec-portfolio-problems-5.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Portfolio Problems 10, 11, and 12",
+  "body": " Portfolio Problems 10, 11, and 12   Read the guidelines on the problem portfolio information and the writing guidelines before starting. The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately.  You can submit 3 drafts per week, so there’s effectively unlimited attempts on any particular problem.  You’ll put all your final drafts of your problems in a portfolio template (select all and copy). You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.   "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
