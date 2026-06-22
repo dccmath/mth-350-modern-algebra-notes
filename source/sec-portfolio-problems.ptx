@@ -84,7 +84,7 @@ relationship between <m>[3]</m>, <m>[8]</m>, and <m>[13]</m> in <m>\mathbb{Z}_5<
 			</task>
 			
 			<task><p>Let <m>\star</m> denote a binary operation on a set <m>S</m>. Then <m>\star</m> is said to be
-well-defined provided that whenever <m>a = x</m> and <m>b = y</m> in <m>S</m> we have <m>a \star b = x \star y</m>. Is <m>\diamond</m> well-defined?
+well-defined provided that whenever <m>a = x</m> and <m>b = y</m> in <m>S</m> we have <m>a \star b = x \star y</m>. Is <m>\diamond</m> well-defined? Explain very clearly and refer to your work in the previous part.
 				</p>
 			</task>
 			

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
 <chapter xml:id="mod-fields" xmlns:xi="http://www.w3.org/2001/XInclude">
 <title>Fields</title>
+-->
 
 <worksheet xml:id="ws-fields-activity">
 
 	<title>Fields</title>
+	<introduction><p><alert>The Good Place</alert></p></introduction>
 	
 	<page>
 
@@ -785,4 +788,4 @@
  
  </worksheet>
 
-</chapter>
+<!-- </chapter> -->

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<worksheet xml:id="ws-XXX-activity">
+
+	<title>Title</title>
+	<introduction><p><alert>Subtitle</alert></p></introduction>
+	
+	<page>
+
+	<paragraphs>
+		<title>Section title</title>
+		
+    <p>
+       Here's some text
+    </p>
+    </paragraphs>
+    </page>
+
+
+	<page>
+	
+	<paragraphs>
+		<title>Another section</title>
+    <p>
+        More stuff
+    </p>
+    
+    </paragraphs>
+
+	</page>
+
+<page xml:id="sec-XXX-review">
+
+<paragraphs>
+	<title>Summarize</title>
+    
+    <exercise>
+    	<statement>
+			Statement of a summary exercise
+		</statement>
+ </exercise>
+ </paragraphs>
+</page>
+
+<page>
+<paragraphs>
+<title>Review questions</title>
+<exercise><p>A review question
+        </p></exercise>
+                
+<exercise><p>Another review question
+		</p></exercise>
+                
+<p>The rest of this page is for you to summarize important ideas from the module.</p>
+
+</paragraphs>
+
+</page>
+
+
+<page>
+
+<paragraphs>
+    <title>Weekly Practice XXX</title>
+
+		<exercise number="1">
+		<title>Title of the exercise</title>
+		<statement><p>Think about some stuff
+		</p></statement>
+    	</exercise>
+	
+		<exercise number="2">
+		<title>Another exercise title</title>
+		<introduction><p>Introductory explanation.</p></introduction>
+        	<task><p>A task</p></task>
+            <task><p>Another task</p></task>
+		</exercise>
+		
+		<exercise number="3">
+		<title>Yet another title</title>
+		<statement><p>Things to do
+		</p></statement>
+		
+		</exercise>
+	
+	</paragraphs>
+	
+ </page>
+ 
+ </worksheet>
+
+<!-- </chapter> -->

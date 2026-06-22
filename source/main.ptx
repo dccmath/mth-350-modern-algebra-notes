@@ -5,14 +5,15 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>MTH 350 Class Notes</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>MTH 350: Modern Algebra I</title>
+    <subtitle>Class notes, weekly practice, and portfolio problems</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
     <xi:include href="./mod-fields.ptx" />
+    <xi:include href="./mod-divisibility.ptx" />
 
 	<xi:include href="./sec-portfolio-problems.ptx" />
 
