@@ -9,11 +9,36 @@
 	<page>
 
 	<paragraphs>
-		<title>Section title</title>
+		  <title>The Integers</title>
+
+ 	 <p>
+ 	   We'll assume the following about the integers as <em>axioms</em>.
+  	  We don't prove axioms, we use them as building blocks to prove them.
+  	  They give us a floor to stand on.
+  	  Otherwise it's turtles all the way down.
+  	</p>
+
+	<axiom>
+		<title>Axioms of Integer Arithmetic</title>
 		
-    <p>
-       Here's some text
-    </p>
+		<statement>
+		<p>
+		<ul>
+			<li><em>The integers are closed under addition and multiplication</em>, meaning that for all integers <m>a</m> and <m>b</m>, both <m>a+b</m> and <m>ab</m> are also integers.</li>
+			<li><em>Addition and multiplication are commutative</em>, meaning that for all integers <m>a</m> and <m>b</m>, <m>a+b = b+a</m> and <m>ab = ba</m>.</li>
+			<li><em>Addition and multiplication are associative</em>, meaning that for all integers <m>a, b</m> and <m>c</m>, <m>(a+b)+c = a+(b+c)</m> and <m>(ab)c = a(bc).</m></li>
+			<li><em>Multiplication distributes over addition</em>, meaning that <m>a(b+c) = ab+ac</m> for all integers <m>a, b,</m> and <m>c</m>.</li>
+			<li><em>The integer 0 is an additive identity</em>, meaning that <m>a+0 = a</m> for every integer <m>a</m>.</li>
+			<li><em>The integer 1 is a multiplicative identity</em>, meaning that <m>1a = a</m> for every integer <m>a</m>.</li>
+			<li><em>Every integer <m>a</m> has an additive inverse</em>, typically denoted <m>-a</m>; in particular, <m>a + (-a) = 0</m> for every integer <m>a</m>.</li>
+		</ul>
+		</p>
+		</statement>
+	</axiom>
+ 	 <!-- <image source="Module2-IntegerAxioms"/> -->
+ 	 <p>
+   	 	Which axioms of a field are the integers missing?
+  	</p>
     </paragraphs>
     </page>
 
@@ -21,35 +46,366 @@
 	<page>
 	
 	<paragraphs>
-		<title>Another section</title>
+		<title>Divides</title>
+
+  <definition>
+    <statement>
+      <p>
+        An integer <m>a</m> <term>divides</term> an integer <m>b</m>, denoted
+        <m>a\mid b</m>, if there exists an integer <m>q</m> such that
+        <m>b=aq</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    In a popular high school mathematics textbook,
+    students are told that one of the theorems in number theory is the following:
+  </p>
+
+  <theorem xml:id="divides-div-thm">
     <p>
-        More stuff
+      If <m>a,b,</m> and <m>c</m> are integers where <m>a</m> is a factor of
+      <m>b</m> and <m>a</m> is a factor of <m>c</m>, then <m>a</m> is a factor
+      of <m>b+c</m>.
     </p>
+  </theorem>
+
+  <exercise workspace="3in">
+  	<statement>
+        <p>
+          Prove Theorem <xref ref="divides-div-thm" />.
+          It may help to translate this to use the word <q>divides</q>.
+        </p>
+      </statement>
+   </exercise>
+
+   <exercise workspace="3in">
+   	<statement>
+        <p>
+          Students are then asked about generalizing the theorem to:
+          <theorem>
+            <p>
+              If <m>a,b,</m> and <m>c</m> are integers where <m>a</m> is a
+              factor of <m>b</m> and <m>a</m> is a factor of <m>c</m>, then
+              <m>a</m> is a factor of <m>bm+cn</m> for all integers <m>m</m> and
+              <m>n</m>.
+            </p>
+          </theorem>
+          Is this true?
+          Prove or disprove.
+        </p>
+      </statement>
+     </exercise>
     
     </paragraphs>
 
 	</page>
+	
+	
+	
+	
+	<page>
+	
+	<paragraphs>
+		
+		 <title>The Division Algorithm</title>
 
-<page xml:id="sec-XXX-review">
+		<theorem>
+			<title>The Division Algorithm</title>
+			<statement>
+				<p>Let <m>a</m> and <m>b</m> be integers with <m>a&gt;0</m>.
+				Then there exists unique integers <m>q</m> and <m>r</m> such that</p>
+					<md>b = aq + r \text{ and } 0\leq r &lt;a</md>
+ 				<p>
+   					 We call <m>q</m> the <term>quotient</term> and <m>r</m> the <term>remainder</term>.
+  				</p>
+			</statement>
+		</theorem>
 
-<paragraphs>
-	<title>Summarize</title>
-    
-    <exercise>
-    	<statement>
-			Statement of a summary exercise
+		<exercise workspace="1in">
+        <statement>
+        <p>
+          Practice one more time: Come up with two integers <m>a</m> and
+          <m>b</m> that satisfy the <em>hypothesis</em> of the division
+          algorithm.
+          (If you want a challenge, throw in a negative integer.) Trade these
+          numbers with another group member and then apply the division
+          algorithm to the numbers you receive.
+        </p>
 		</statement>
- </exercise>
- </paragraphs>
-</page>
+		</exercise>
+ 		
+		<exercise workspace="1in">
+		<statement>
+        <p>
+          What is different about applying the division algorithm when
+          <m>b&lt;0</m>?
+        </p>
+     	</statement>
+		</exercise>
 
+     	<exercise workspace="1in">
+		<statement>
+        <p>
+          Do you think we should we assume the division algorithm as an axiom or
+          try to prove it?
+        </p>
+     	</statement>
+		</exercise>
+
+		<exercise workspace="2in">
+		<statement>
+		<p>
+          Spoiler alert: We will prove it, since it turns out we can derive it
+          from another, simpler axiom.
+          To start, let's do an example.
+          Let <m>a = 10</m> and <m>b=-58</m>.
+          Consider
+          <md>
+            S = \{ x\in \mathbb{Z}: x\ge 0 \text{ and }x=b-am \text{ for some }m\in\mathbb{Z}\} .
+          </md>
+          Find some elements of <m>S</m> and what appears to be the least
+          element of <m>S</m>?
+        </p>
+		</statement>
+		</exercise>
+    
+    </paragraphs>
+
+	</page>
+	
+	
+	<page>
+	<paragraphs>
+	<title>More Division Algorithm</title>
+	
+	<exercise workspace="1in">
+	<statement>
+        <p>
+          If <m>b\ge 0</m> prove that <m>b\in S</m>.
+          (Use the definition of the set <m>S</m>.) If <m>b&lt;0</m>, is
+          <m>b\in S</m>?
+          <hint><p>If <m>b&lt;0</m> then <m>b\notin S</m>.</p></hint>
+        </p>
+     </statement>
+     </exercise>
+
+     <exercise workspace="1in">
+     <statement>
+        <p>
+          We will take the following as an axiom:
+        </p>
+
+        <axiom>
+        	<title>The Well-Ordering Principle</title>
+			<statement><p>Every nonempty subset of the whole numbers contains a least element.</p></statement>
+		</axiom>
+
+        <p>
+          Do you think <m>S</m> as defined earlier is always a nonempty subset
+          of the whole numbers?
+          What element can you be sure is in <m>S</m> if <m>b&lt;0</m>?
+          <hint><p>Choose <m>m=b</m> and show that <m>x=b-am\ge 0</m> and so <m>x\in S</m>.</p></hint>
+        </p>
+      </statement>
+      </exercise>
+
+      <exercise workspace="1in">
+      <statement>
+        <p>
+          At this point you are hopefully thinking that <m>S</m> is a nonempty
+          subset of the whole numbers.
+          So, we can apply the well-ordering principle and get a least element.
+          We will show the least element is the remainder.
+          So, let <m>r</m> be the least element of <m>S</m>.
+          Since <m>r\in S</m>, we know there is an integer <m>q</m> such that
+          <m>r = b-aq</m>.
+          Thus <m>b = aq + r</m>.
+          That's good news!
+          We also need that <m>0\le r &lt; a</m>.
+          Why do we know <m>0\le r</m>?
+        </p>
+	   </statement>
+	   </exercise>
+	   
+ 		<exercise workspace="1in">
+		<statement>
+        <p>
+          Now let's show <m>r&lt;a</m>.
+          Suppose, for the sake of a contradiction that <m>r\ge a</m>.
+          Show <m>r-a\in S</m>.
+          (Recall <m>r\in S</m> and <m>r=b-aq</m>.)
+        </p>
+      	</statement>
+		</exercise>
+
+      	<exercise>
+          <statement><p>You've reached a contradiction, how?</p></statement>
+        </exercise>
+
+		<exercise>
+		<statement>
+        <p>
+          What remains to be proven to show the division algorithm is that
+          <m>q</m> and <m>r</m> is unique.
+          You can find a partial proof near the end of Investigation 1, which will help you on your first problem set!
+        </p>
+		</statement>
+		</exercise>
+	
+	</paragraphs>
+	</page>
+	
+	
+	<page>
+	<paragraphs>
+		
+		  <title>Congruence</title>
+
+  <definition>
+    <statement>
+      <p>
+        Let <m>n</m> be a natural number, and let <m>a</m> and <m>b</m> be
+        integers.
+        Then <m>a</m> <term>is congruent to <m>b</m> modulo <m>n</m></term>
+        denoted <m>a\equiv b \pmod{n}</m> provided that <m>n</m> divides
+        <m>a-b</m>.
+      </p>
+    </statement>
+  </definition>
+  
+  <p><em>Examples:</em> Here's a chance to remember congruences:</p>
+  <exercise workspace="1in">
+  <statement>
+      <p>
+        Give an example of two integers that are congruent modulo <m>8</m>,
+        where one is positive and one is negative.
+      </p>
+	</statement>
+	</exercise>
+
+   <exercise workspace="1in">
+  <statement>
+      <p>
+        Characterize all the integers <m>m</m> such that
+        <m>m\equiv 1 \pmod{3}</m>.
+        What are all the integers <m>m</m> such that <m>m\equiv 4 \pmod{3}</m>?
+      </p>
+    </statement>
+    </exercise>
+
+   <exercise workspace="2in">
+  <statement>
+      <p>
+        Prove that, for all <m>a,b,c,d\in\mathbb{Z}</m> and
+        <m>n\in \mathbb{N}</m>, if <m>a\equiv b \pmod{n}</m> and
+        <m>c\equiv d \pmod{n}</m> then <m>(a+c) \equiv (b+d) \pmod{n}</m>.
+      </p>
+    </statement>
+    </exercise>
+
+    <exercise workspace="2in">
+  <statement>
+      <p>
+        Prove that for all <m>a,b,c,d\in\mathbb{Z}</m> and
+        <m>n\in\mathbb{N}</m>, if <m>a\equiv b \pmod{n}</m> and
+        <m>c\equiv d \pmod{n}</m> then <m>ac \equiv bd \pmod{n}</m>.
+      </p>
+	</statement>
+	</exercise>
+
+
+    </paragraphs>
+
+	</page>
+	
+	
+	<page>
+	<paragraphs>
+	<title>Fun with Congruence (and a connection to fields)</title>
+
+	<exercise workspace="2in">
+    <statement>
+        <p>
+          Consider the set <m>A = \{0,1,2,3,\dots, 7\}</m> and define addition
+          by <m>x\oplus_{8} y = (x+y) \pmod{8}</m> and multiplication by
+          <m>x\otimes_{8} y = xy \pmod{8}</m>.
+          Find the multiplicative and additive identities of
+          <m>(A, \oplus, \otimes)</m> (if they exist), and find the additive and
+          multiplicative inverses of each element (if they exist).
+          Will this be a field?
+        </p>
+       </statement>
+       </exercise>
+
+	<exercise>
+    <statement>
+        <p>
+          <em>Check digits:</em> A UPC is a Universal Product Code, or the
+          barcode on products.
+          UPCs consist of 12 digits, and the last digit is known as a check
+          digit.
+          A check digit is there for error detection when a code is entered
+          (they do this with your routing numbers for banks too).
+          If the first 11 digits are <m>x_{1}, x_{2},\dots, x_{11})</m>, the
+          check digit will be <m>x_{12}</m>
+          <md>
+            x_{12}\equiv -(x_{1}, x_{2}, \dots, x_{11}) \cdot (3,1,3,1,3,1,3,1,3,1,3) \pmod{10}
+          </md>
+          where <m>\cdot</m> is the dot product, so multiply the entries in the
+          same place, and then add up all the results.
+          Verify that the check digit is correct on the box of Famous Amos
+          cookies.
+          Do the multiplication in your head using modular arithmetic!
+        </p>
+
+        <sidebyside widths="30% 70%"><image source="images/Divides-UPC.png" />
+        
+        <p></p>
+        </sidebyside>
+        
+	</statement>
+	</exercise>
+	
+
+	<exercise workspace="2in">
+    <statement>
+        <p>
+          My birthday was on a Thursday this year.
+          Determine the next time my birthday will be on a Thursday again.
+          (Use modular arithmetic!
+          Also, leap years happen every 4 years, in years congruent to <m>0</m>
+          mod <m>4</m>.) When will my birthday next be on a Sunday?
+        </p>
+	</statement>
+	</exercise>
+	   
+    </paragraphs>
+
+	</page>
+	
 <page>
 <paragraphs>
 <title>Review questions</title>
-<exercise><p>A review question
-        </p></exercise>
+
+  <p>Make sure you can answer the following questions:</p>
+
+<exercise><p>
+        What is the definition of <q><m>a</m> divides <m>b</m></q>?
+        Does <m>0 \mid x</m> where <m>x\in \mathbb{Z}</m>?
+        Does <m>x\mid 0</m> where <m>x\in \mathbb{Z}</m>.
+      </p></exercise>
                 
-<exercise><p>Another review question
+<exercise><p>
+        State the division algorithm and apply to any pair of integers
+        satisfying the hypothesis.
+      </p></exercise>
+      
+<exercise><p>
+		State the definition of <q><m>a\equiv b\pmod{n}</m></q> and be able to
+        determine if any pair of integers <m>a</m> and <m>b</m> are congruent
+        modulo <m>n</m>.
 		</p></exercise>
                 
 <p>The rest of this page is for you to summarize important ideas from the module.</p>
@@ -65,23 +421,62 @@
     <title>Weekly Practice 2</title>
 
 		<exercise number="1">
-		<title>Title of the exercise</title>
-		<statement><p>Think about some stuff
-		</p></statement>
+		<title>Fun (?) with fields (?)</title>
+		<statement><p>
+          Consider the set <m>\{0,1,2,3,4,5,6\}</m> and define addition by
+          <m>x\oplus_{7} y = (x+y) \pmod{7}</m> and multiplication by
+          <m>x\otimes_{7} y = xy \pmod{7}</m>.
+          Find the multiplicative and additive identities of this number system
+          (if they exist), and find the additive and multiplicative inverses of
+          each element (if they exist).
+          Is this set a field?
+        </p></statement>
     	</exercise>
 	
 		<exercise number="2">
-		<title>Another exercise title</title>
-		<introduction><p>Introductory explanation.</p></introduction>
-        	<task><p>A task</p></task>
-            <task><p>Another task</p></task>
+		<title>Another way to talk about congruences</title>
+		<introduction><p>Consider the following theorem:</p>
+		<theorem>
+            <statement>
+              <p>
+                Let <m>n</m> be a natural number, and let <m>a</m> and <m>b</m>
+                be integers.
+                Then <m>a\equiv b \pmod{n}</m> if and only if <m>a</m> and
+                <m>b</m> yield the same remainder when divided by <m>n</m>.
+              </p>
+            </statement>
+          </theorem>
+		</introduction>
+        	<task><p>Do a couple examples of the theorem (in both directions!) below
+                to gain a better understanding of what the theorem says.</p></task>
+            <task><p>Prove (at least) one direction of the theorem.</p></task>
 		</exercise>
 		
+		
 		<exercise number="3">
-		<title>Yet another title</title>
-		<statement><p>Things to do
+		<title>UPCs!</title>
+		<statement><p>Find a product with a UPC and verify the check digit.
 		</p></statement>
 		
+		</exercise>
+		
+		<exercise number="4">
+		<title>Another way congruences are weird</title>
+		<introduction><p>In high school algebra, linear equations, like <m>5x+3 = 7</m> always
+          had one solution.
+          Consider the set <m>A = \{0,1,2,3\}</m> and define addition by
+          <m>x\oplus_{4} y = (x+y) \pmod{4}</m> and multiplication by
+          <m>x\otimes_{4} y = xy \pmod{4}</m>.
+		</p></introduction>
+			<task><p>
+                Show that in <m>(A,\oplus_{4}, \otimes_{4})</m> the equation
+                <m>2\otimes_{4} x \oplus_{4} 1 = 0</m> has no solutions.
+              </p></task>
+			
+			<task><p>
+                Find a linear equation in the number system
+                <m>(A,\oplus_{4}, \otimes_{4})</m> that has 2 solutions.
+              </p></task>
 		</exercise>
 	
 	</paragraphs>
@@ -89,5 +484,3 @@
  </page>
  
  </worksheet>
-
-<!-- </chapter> -->
