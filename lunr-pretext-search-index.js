@@ -160,61 +160,286 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "2",
   "title": "Divisibility of Integers, Division Algorithm, Integer Congruence",
-  "body": " Divisibility of Integers, Division Algorithm, Integer Congruence  The Leftovers    Section title  Here's some text      Another section  More stuff      Summarize   Statement of a summary exercise       Review questions  A review question  Another review question  The rest of this page is for you to summarize important ideas from the module.      Weekly Practice XXX   Title of the exercise  Think about some stuff    Another exercise title  Introductory explanation.  A task  Another task    Yet another title  Things to do     "
+  "body": " Divisibility of Integers, Division Algorithm, Integer Congruence  The Leftovers    The Integers  We'll assume the following about the integers as axioms . We don't prove axioms, we use them as building blocks to prove them. They give us a floor to stand on. Otherwise it's turtles all the way down.   Axioms of Integer Arithmetic     The integers are closed under addition and multiplication , meaning that for all integers and , both and are also integers.  Addition and multiplication are commutative , meaning that for all integers and , and .  Addition and multiplication are associative , meaning that for all integers and , and  Multiplication distributes over addition , meaning that for all integers and .  The integer 0 is an additive identity , meaning that for every integer .  The integer 1 is a multiplicative identity , meaning that for every integer .  Every integer has an additive inverse , typically denoted ; in particular, for every integer .       Which axioms of a field are the integers missing?      Divides    An integer  divides an integer , denoted , if there exists an integer such that .    In a popular high school mathematics textbook, students are told that one of the theorems in number theory is the following:   If and are integers where is a factor of and is a factor of , then is a factor of .     Prove Theorem . It may help to translate this to use the word divides .      Students are then asked about generalizing the theorem to:  If and are integers where is a factor of and is a factor of , then is a factor of for all integers and .  Is this true? Prove or disprove.        The Division Algorithm   The Division Algorithm   Let and be integers with . Then there exists unique integers and such that   We call the quotient and the remainder .      Practice one more time: Come up with two integers and that satisfy the hypothesis of the division algorithm. (If you want a challenge, throw in a negative integer.) Trade these numbers with another group member and then apply the division algorithm to the numbers you receive.      What is different about applying the division algorithm when ?      Do you think we should we assume the division algorithm as an axiom or try to prove it?      Spoiler alert: We will prove it, since it turns out we can derive it from another, simpler axiom. To start, let's do an example. Let and . Consider Find some elements of and what appears to be the least element of ?        More Division Algorithm    If prove that . (Use the definition of the set .) If , is ? If then .       We will take the following as an axiom:   The Well-Ordering Principle  Every nonempty subset of the whole numbers contains a least element.   Do you think as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in if ? Choose and show that and so .       At this point you are hopefully thinking that is a nonempty subset of the whole numbers. So, we can apply the well-ordering principle and get a least element. We will show the least element is the remainder. So, let be the least element of . Since , we know there is an integer such that . Thus . That's good news! We also need that . Why do we know ?      Now let's show . Suppose, for the sake of a contradiction that . Show . (Recall and .)     You've reached a contradiction, how?     What remains to be proven to show the division algorithm is that and is unique. You can find a partial proof near the end of Investigation 1, which will help you on your first problem set!        Congruence    Let be a natural number, and let and be integers. Then  is congruent to modulo denoted provided that divides .    Examples: Here's a chance to remember congruences:    Give an example of two integers that are congruent modulo , where one is positive and one is negative.      Characterize all the integers such that . What are all the integers such that ?      Prove that, for all and , if and then .      Prove that for all and , if and then .        Fun with Congruence (and a connection to fields)    Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Will this be a field?       Check digits: A UPC is a Universal Product Code, or the barcode on products. UPCs consist of 12 digits, and the last digit is known as a check digit. A check digit is there for error detection when a code is entered (they do this with your routing numbers for banks too). If the first 11 digits are , the check digit will be  where is the dot product, so multiply the entries in the same place, and then add up all the results. Verify that the check digit is correct on the box of Famous Amos cookies. Do the multiplication in your head using modular arithmetic!         My birthday was on a Thursday this year. Determine the next time my birthday will be on a Thursday again. (Use modular arithmetic! Also, leap years happen every 4 years, in years congruent to mod .) When will my birthday next be on a Sunday?        Review questions  Make sure you can answer the following questions:  What is the definition of divides ? Does where ? Does where .  State the division algorithm and apply to any pair of integers satisfying the hypothesis.  State the definition of and be able to determine if any pair of integers and are congruent modulo .  The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 2   Fun (?) with fields (?)  Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of this number system (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Is this set a field?    Another way to talk about congruences  Consider the following theorem:    Let be a natural number, and let and be integers. Then if and only if and yield the same remainder when divided by .     Do a couple examples of the theorem (in both directions!) below to gain a better understanding of what the theorem says.  Prove (at least) one direction of the theorem.    UPCs!  Find a product with a UPC and verify the check digit.    Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has 2 solutions.     "
 },
 {
-  "id": "sec-XXX-review-1-2",
+  "id": "ws-divisibility-activity-3-1-3",
   "level": "2",
-  "url": "ws-divisibility-activity.html#sec-XXX-review-1-2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-3-1-3",
+  "type": "Axiom",
+  "number": "2.0.14",
+  "title": "Axioms of Integer Arithmetic.",
+  "body": " Axioms of Integer Arithmetic     The integers are closed under addition and multiplication , meaning that for all integers and , both and are also integers.  Addition and multiplication are commutative , meaning that for all integers and , and .  Addition and multiplication are associative , meaning that for all integers and , and  Multiplication distributes over addition , meaning that for all integers and .  The integer 0 is an additive identity , meaning that for every integer .  The integer 1 is a multiplicative identity , meaning that for every integer .  Every integer has an additive inverse , typically denoted ; in particular, for every integer .     "
+},
+{
+  "id": "ws-divisibility-activity-4-1-2",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-4-1-2",
+  "type": "Definition",
+  "number": "2.0.15",
+  "title": "",
+  "body": "  An integer  divides an integer , denoted , if there exists an integer such that .   "
+},
+{
+  "id": "divides-div-thm",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#divides-div-thm",
+  "type": "Theorem",
+  "number": "2.0.16",
+  "title": "",
+  "body": " If and are integers where is a factor of and is a factor of , then is a factor of .  "
+},
+{
+  "id": "ws-divisibility-activity-4-1-5",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-4-1-5",
   "type": "Worksheet Exercise",
   "number": "2.1",
   "title": "",
-  "body": " Statement of a summary exercise  "
+  "body": "  Prove Theorem . It may help to translate this to use the word divides .   "
+},
+{
+  "id": "ws-divisibility-activity-4-1-6",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-4-1-6",
+  "type": "Worksheet Exercise",
+  "number": "2.2",
+  "title": "",
+  "body": "  Students are then asked about generalizing the theorem to:  If and are integers where is a factor of and is a factor of , then is a factor of for all integers and .  Is this true? Prove or disprove.   "
+},
+{
+  "id": "ws-divisibility-activity-5-1-2",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-2",
+  "type": "Theorem",
+  "number": "2.0.20",
+  "title": "The Division Algorithm.",
+  "body": " The Division Algorithm   Let and be integers with . Then there exists unique integers and such that   We call the quotient and the remainder .   "
+},
+{
+  "id": "ws-divisibility-activity-5-1-3",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-3",
+  "type": "Worksheet Exercise",
+  "number": "2.3",
+  "title": "",
+  "body": "  Practice one more time: Come up with two integers and that satisfy the hypothesis of the division algorithm. (If you want a challenge, throw in a negative integer.) Trade these numbers with another group member and then apply the division algorithm to the numbers you receive.   "
+},
+{
+  "id": "ws-divisibility-activity-5-1-4",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-4",
+  "type": "Worksheet Exercise",
+  "number": "2.4",
+  "title": "",
+  "body": "  What is different about applying the division algorithm when ?   "
+},
+{
+  "id": "ws-divisibility-activity-5-1-5",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-5",
+  "type": "Worksheet Exercise",
+  "number": "2.5",
+  "title": "",
+  "body": "  Do you think we should we assume the division algorithm as an axiom or try to prove it?   "
+},
+{
+  "id": "ws-divisibility-activity-5-1-6",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-6",
+  "type": "Worksheet Exercise",
+  "number": "2.6",
+  "title": "",
+  "body": "  Spoiler alert: We will prove it, since it turns out we can derive it from another, simpler axiom. To start, let's do an example. Let and . Consider Find some elements of and what appears to be the least element of ?   "
 },
 {
   "id": "ws-divisibility-activity-6-1-2",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-2",
   "type": "Worksheet Exercise",
-  "number": "2.2",
+  "number": "2.7",
   "title": "",
-  "body": "A review question "
+  "body": "  If prove that . (Use the definition of the set .) If , is ? If then .    "
 },
 {
   "id": "ws-divisibility-activity-6-1-3",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-3",
   "type": "Worksheet Exercise",
-  "number": "2.3",
+  "number": "2.8",
   "title": "",
-  "body": "Another review question "
+  "body": "  We will take the following as an axiom:   The Well-Ordering Principle  Every nonempty subset of the whole numbers contains a least element.   Do you think as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in if ? Choose and show that and so .    "
+},
+{
+  "id": "ws-divisibility-activity-6-1-4",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-4",
+  "type": "Worksheet Exercise",
+  "number": "2.9",
+  "title": "",
+  "body": "  At this point you are hopefully thinking that is a nonempty subset of the whole numbers. So, we can apply the well-ordering principle and get a least element. We will show the least element is the remainder. So, let be the least element of . Since , we know there is an integer such that . Thus . That's good news! We also need that . Why do we know ?   "
+},
+{
+  "id": "ws-divisibility-activity-6-1-5",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-5",
+  "type": "Worksheet Exercise",
+  "number": "2.10",
+  "title": "",
+  "body": "  Now let's show . Suppose, for the sake of a contradiction that . Show . (Recall and .)   "
+},
+{
+  "id": "ws-divisibility-activity-6-1-6",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-6",
+  "type": "Worksheet Exercise",
+  "number": "2.11",
+  "title": "",
+  "body": " You've reached a contradiction, how?  "
+},
+{
+  "id": "ws-divisibility-activity-6-1-7",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-7",
+  "type": "Worksheet Exercise",
+  "number": "2.12",
+  "title": "",
+  "body": "  What remains to be proven to show the division algorithm is that and is unique. You can find a partial proof near the end of Investigation 1, which will help you on your first problem set!   "
 },
 {
   "id": "ws-divisibility-activity-7-1-2",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-2",
-  "type": "Worksheet Exercise",
-  "number": "2.1",
-  "title": "Title of the exercise.",
-  "body": " Title of the exercise  Think about some stuff  "
-},
-{
-  "id": "ws-divisibility-activity-7-1-3",
-  "level": "2",
-  "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-3",
-  "type": "Worksheet Exercise",
-  "number": "2.2",
-  "title": "Another exercise title.",
-  "body": " Another exercise title  Introductory explanation.  A task  Another task  "
+  "type": "Definition",
+  "number": "2.0.32",
+  "title": "",
+  "body": "  Let be a natural number, and let and be integers. Then  is congruent to modulo denoted provided that divides .   "
 },
 {
   "id": "ws-divisibility-activity-7-1-4",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-4",
   "type": "Worksheet Exercise",
+  "number": "2.13",
+  "title": "",
+  "body": "  Give an example of two integers that are congruent modulo , where one is positive and one is negative.   "
+},
+{
+  "id": "ws-divisibility-activity-7-1-5",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-5",
+  "type": "Worksheet Exercise",
+  "number": "2.14",
+  "title": "",
+  "body": "  Characterize all the integers such that . What are all the integers such that ?   "
+},
+{
+  "id": "ws-divisibility-activity-7-1-6",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-6",
+  "type": "Worksheet Exercise",
+  "number": "2.15",
+  "title": "",
+  "body": "  Prove that, for all and , if and then .   "
+},
+{
+  "id": "ws-divisibility-activity-7-1-7",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-7",
+  "type": "Worksheet Exercise",
+  "number": "2.16",
+  "title": "",
+  "body": "  Prove that for all and , if and then .   "
+},
+{
+  "id": "ws-divisibility-activity-8-1-2",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-8-1-2",
+  "type": "Worksheet Exercise",
+  "number": "2.17",
+  "title": "",
+  "body": "  Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Will this be a field?   "
+},
+{
+  "id": "ws-divisibility-activity-8-1-3",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-8-1-3",
+  "type": "Worksheet Exercise",
+  "number": "2.18",
+  "title": "",
+  "body": "   Check digits: A UPC is a Universal Product Code, or the barcode on products. UPCs consist of 12 digits, and the last digit is known as a check digit. A check digit is there for error detection when a code is entered (they do this with your routing numbers for banks too). If the first 11 digits are , the check digit will be  where is the dot product, so multiply the entries in the same place, and then add up all the results. Verify that the check digit is correct on the box of Famous Amos cookies. Do the multiplication in your head using modular arithmetic!      "
+},
+{
+  "id": "ws-divisibility-activity-8-1-4",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-8-1-4",
+  "type": "Worksheet Exercise",
+  "number": "2.19",
+  "title": "",
+  "body": "  My birthday was on a Thursday this year. Determine the next time my birthday will be on a Thursday again. (Use modular arithmetic! Also, leap years happen every 4 years, in years congruent to mod .) When will my birthday next be on a Sunday?   "
+},
+{
+  "id": "ws-divisibility-activity-9-1-3",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-9-1-3",
+  "type": "Worksheet Exercise",
+  "number": "2.20",
+  "title": "",
+  "body": "What is the definition of divides ? Does where ? Does where . "
+},
+{
+  "id": "ws-divisibility-activity-9-1-4",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-9-1-4",
+  "type": "Worksheet Exercise",
+  "number": "2.21",
+  "title": "",
+  "body": "State the division algorithm and apply to any pair of integers satisfying the hypothesis. "
+},
+{
+  "id": "ws-divisibility-activity-9-1-5",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-9-1-5",
+  "type": "Worksheet Exercise",
+  "number": "2.22",
+  "title": "",
+  "body": "State the definition of and be able to determine if any pair of integers and are congruent modulo . "
+},
+{
+  "id": "ws-divisibility-activity-10-1-2",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-10-1-2",
+  "type": "Worksheet Exercise",
+  "number": "2.1",
+  "title": "Fun (?) with fields (?).",
+  "body": " Fun (?) with fields (?)  Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of this number system (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Is this set a field?  "
+},
+{
+  "id": "ws-divisibility-activity-10-1-3",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-10-1-3",
+  "type": "Worksheet Exercise",
+  "number": "2.2",
+  "title": "Another way to talk about congruences.",
+  "body": " Another way to talk about congruences  Consider the following theorem:    Let be a natural number, and let and be integers. Then if and only if and yield the same remainder when divided by .     Do a couple examples of the theorem (in both directions!) below to gain a better understanding of what the theorem says.  Prove (at least) one direction of the theorem.  "
+},
+{
+  "id": "ws-divisibility-activity-10-1-4",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-10-1-4",
+  "type": "Worksheet Exercise",
   "number": "2.3",
-  "title": "Yet another title.",
-  "body": " Yet another title  Things to do  "
+  "title": "UPCs!",
+  "body": " UPCs!  Find a product with a UPC and verify the check digit.  "
+},
+{
+  "id": "ws-divisibility-activity-10-1-5",
+  "level": "2",
+  "url": "ws-divisibility-activity.html#ws-divisibility-activity-10-1-5",
+  "type": "Worksheet Exercise",
+  "number": "2.4",
+  "title": "Another way congruences are weird.",
+  "body": " Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has 2 solutions.  "
 },
 {
   "id": "sec-portfolio-problems-2",
