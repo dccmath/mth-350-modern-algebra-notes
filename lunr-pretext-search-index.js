@@ -32,7 +32,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-fields-activity.html#ws-fields-activity-4-1-3",
   "type": "Example",
-  "number": "1.0.1",
+  "number": "1.1",
   "title": "Ordered pairs.",
   "body": " Ordered pairs  Say . Let be the binary operation multiplication. Then, with the function notation, we could write , though we usually write . Since, whenever we have , we can say . Thus, is closed under the operation . However, is not closed under the binary operation because, for example, .  "
 },
@@ -160,14 +160,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "2",
   "title": "Divisibility of Integers, Division Algorithm, Integer Congruence",
-  "body": " Divisibility of Integers, Division Algorithm, Integer Congruence  The Leftovers    The Integers  We'll assume the following about the integers as axioms . We don't prove axioms, we use them as building blocks to prove them. They give us a floor to stand on. Otherwise it's turtles all the way down.   Axioms of Integer Arithmetic     The integers are closed under addition and multiplication , meaning that for all integers and , both and are also integers.  Addition and multiplication are commutative , meaning that for all integers and , and .  Addition and multiplication are associative , meaning that for all integers and , and  Multiplication distributes over addition , meaning that for all integers and .  The integer 0 is an additive identity , meaning that for every integer .  The integer 1 is a multiplicative identity , meaning that for every integer .  Every integer has an additive inverse , typically denoted ; in particular, for every integer .       Which axioms of a field are the integers missing?      Divides    An integer  divides an integer , denoted , if there exists an integer such that .    In a popular high school mathematics textbook, students are told that one of the theorems in number theory is the following:   If and are integers where is a factor of and is a factor of , then is a factor of .     Prove Theorem . It may help to translate this to use the word divides .      Students are then asked about generalizing the theorem to:  If and are integers where is a factor of and is a factor of , then is a factor of for all integers and .  Is this true? Prove or disprove.        The Division Algorithm   The Division Algorithm   Let and be integers with . Then there exists unique integers and such that   We call the quotient and the remainder .      Practice one more time: Come up with two integers and that satisfy the hypothesis of the division algorithm. (If you want a challenge, throw in a negative integer.) Trade these numbers with another group member and then apply the division algorithm to the numbers you receive.      What is different about applying the division algorithm when ?      Do you think we should we assume the division algorithm as an axiom or try to prove it?      Spoiler alert: We will prove it, since it turns out we can derive it from another, simpler axiom. To start, let's do an example. Let and . Consider Find some elements of and what appears to be the least element of ?        More Division Algorithm    If prove that . (Use the definition of the set .) If , is ? If then .       We will take the following as an axiom:   The Well-Ordering Principle  Every nonempty subset of the whole numbers contains a least element.   Do you think as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in if ? Choose and show that and so .       At this point you are hopefully thinking that is a nonempty subset of the whole numbers. So, we can apply the well-ordering principle and get a least element. We will show the least element is the remainder. So, let be the least element of . Since , we know there is an integer such that . Thus . That's good news! We also need that . Why do we know ?      Now let's show . Suppose, for the sake of a contradiction that . Show . (Recall and .)     You've reached a contradiction, how?     What remains to be proven to show the division algorithm is that and is unique. You can find a partial proof near the end of Investigation 1, which will help you on your first problem set!        Congruence    Let be a natural number, and let and be integers. Then  is congruent to modulo denoted provided that divides .    Examples: Here's a chance to remember congruences:    Give an example of two integers that are congruent modulo , where one is positive and one is negative.      Characterize all the integers such that . What are all the integers such that ?      Prove that, for all and , if and then .      Prove that for all and , if and then .        Fun with Congruence (and a connection to fields)    Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Will this be a field?       Check digits: A UPC is a Universal Product Code, or the barcode on products. UPCs consist of 12 digits, and the last digit is known as a check digit. A check digit is there for error detection when a code is entered (they do this with your routing numbers for banks too). If the first 11 digits are , the check digit will be  where is the dot product, so multiply the entries in the same place, and then add up all the results. Verify that the check digit is correct on the box of Famous Amos cookies. Do the multiplication in your head using modular arithmetic!         My birthday was on a Thursday this year. Determine the next time my birthday will be on a Thursday again. (Use modular arithmetic! Also, leap years happen every 4 years, in years congruent to mod .) When will my birthday next be on a Sunday?        Review questions  Make sure you can answer the following questions:  What is the definition of divides ? Does where ? Does where .  State the division algorithm and apply to any pair of integers satisfying the hypothesis.  State the definition of and be able to determine if any pair of integers and are congruent modulo .  The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 2   Fun (?) with fields (?)  Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of this number system (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Is this set a field?    Another way to talk about congruences  Consider the following theorem:    Let be a natural number, and let and be integers. Then if and only if and yield the same remainder when divided by .     Do a couple examples of the theorem (in both directions!) below to gain a better understanding of what the theorem says.  Prove (at least) one direction of the theorem.    UPCs!  Find a product with a UPC and verify the check digit.    Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has 2 solutions.     "
+  "body": " Divisibility of Integers, Division Algorithm, Integer Congruence  The Leftovers    The Integers  We'll assume the following about the integers as axioms . We don't prove axioms, we use them as building blocks to prove them. They give us a floor to stand on. Otherwise it's turtles all the way down.   Axioms of Integer Arithmetic     The integers are closed under addition and multiplication , meaning that for all integers and , both and are also integers.  Addition and multiplication are commutative , meaning that for all integers and , and .  Addition and multiplication are associative , meaning that for all integers and , and  Multiplication distributes over addition , meaning that for all integers and .  The integer 0 is an additive identity , meaning that for every integer .  The integer 1 is a multiplicative identity , meaning that for every integer .  Every integer has an additive inverse , typically denoted ; in particular, for every integer .       Which axioms of a field are the integers missing?      Divides    An integer  divides an integer , denoted , if there exists an integer such that .    In a popular high school mathematics textbook, students are told that one of the theorems in number theory is the following:   If and are integers where is a factor of and is a factor of , then is a factor of .     Prove . It may help to translate this to use the word divides .      Students are then asked about generalizing the theorem to:  If and are integers where is a factor of and is a factor of , then is a factor of for all integers and .  Is this true? Prove or disprove.        The Division Algorithm   The Division Algorithm   Let and be integers with . Then there exist unique integers and such that   We call the quotient and the remainder .      Practice one more time: Come up with two integers and that satisfy the hypothesis of the division algorithm. (If you want a challenge, throw in a negative integer.) Trade these numbers with another group member and then apply the division algorithm to the numbers you receive.      What is different about applying the division algorithm when ?      Do you think we should we assume the division algorithm as an axiom or try to prove it?      Spoiler alert: We will prove it, since it turns out we can derive it from another, simpler axiom. To start, let's do an example. Let and . Consider Find some elements of and what appears to be the least element of ?        More Division Algorithm    If prove that . (Use the definition of the set .) If , is ?       We will take the following as an axiom:   The Well-Ordering Principle  Every nonempty subset of the whole numbers contains a least element.   Do you think as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in if ?   Choose and show that and so .     At this point you are hopefully thinking that is a nonempty subset of the whole numbers. So, we can apply the well-ordering principle and get a least element. We will show the least element is the remainder. So, let be the least element of . Since , we know there is an integer such that . Thus . That's good news! We also need that . Why do we know ?      Now let's show . Suppose, for the sake of a contradiction that . Show . (Recall and .)     You've reached a contradiction, how?     What remains to be proven to show the division algorithm is that and is unique. You can find a partial proof near the end of Investigation 1, which will help you on your first problem set!        Congruence    Let be a natural number, and let and be integers. Then  is congruent to modulo denoted provided that divides .    Examples: Here's a chance to remember congruences:    Give an example of two integers that are congruent modulo , where one is positive and one is negative.      Characterize all the integers such that . What are all the integers such that ?      Prove that, for all and , if and then .      Prove that for all and , if and then .        Fun with Congruence (and a connection to fields)    Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Will this be a field?       Check digits: A UPC is a Universal Product Code, or the barcode on products. UPCs consist of 12 digits, and the last digit is known as a check digit. A check digit is there for error detection when a code is entered (they do this with your routing numbers for banks too). If the first 11 digits are , the check digit will be  where is the dot product, so multiply the entries in the same place, and then add up all the results. Verify that the check digit is correct on the box of Famous Amos cookies. Do the multiplication in your head using modular arithmetic!         My birthday was on a Thursday this year. Determine the next time my birthday will be on a Thursday again. (Use modular arithmetic! Also, leap years happen every 4 years, in years congruent to mod .) When will my birthday next be on a Sunday?        Review questions  Make sure you can answer the following questions:  What is the definition of divides ? Does where ? Does where .  State the division algorithm and apply to any pair of integers satisfying the hypothesis.  State the definition of and be able to determine if any pair of integers and are congruent modulo .  The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 2   Fun (?) with fields (?)  Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of this number system (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Is this set a field?    Another way to talk about congruences  Consider the following theorem:    Let be a natural number, and let and be integers. Then if and only if and yield the same remainder when divided by .     Do a couple examples of the theorem (in both directions!) below to gain a better understanding of what the theorem says.  Prove (at least) one direction of the theorem.    UPCs!  Find a product with a UPC and verify the check digit.    Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has 2 solutions.     "
 },
 {
   "id": "ws-divisibility-activity-3-1-3",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-3-1-3",
   "type": "Axiom",
-  "number": "2.0.14",
+  "number": "2.1",
   "title": "Axioms of Integer Arithmetic.",
   "body": " Axioms of Integer Arithmetic     The integers are closed under addition and multiplication , meaning that for all integers and , both and are also integers.  Addition and multiplication are commutative , meaning that for all integers and , and .  Addition and multiplication are associative , meaning that for all integers and , and  Multiplication distributes over addition , meaning that for all integers and .  The integer 0 is an additive identity , meaning that for every integer .  The integer 1 is a multiplicative identity , meaning that for every integer .  Every integer has an additive inverse , typically denoted ; in particular, for every integer .     "
 },
@@ -176,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-4-1-2",
   "type": "Definition",
-  "number": "2.0.15",
+  "number": "2.2",
   "title": "",
   "body": "  An integer  divides an integer , denoted , if there exists an integer such that .   "
 },
@@ -185,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-divisibility-activity.html#divides-div-thm",
   "type": "Theorem",
-  "number": "2.0.16",
+  "number": "2.3",
   "title": "",
   "body": " If and are integers where is a factor of and is a factor of , then is a factor of .  "
 },
@@ -196,7 +196,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2.1",
   "title": "",
-  "body": "  Prove Theorem . It may help to translate this to use the word divides .   "
+  "body": "  Prove . It may help to translate this to use the word divides .   "
 },
 {
   "id": "ws-divisibility-activity-4-1-6",
@@ -212,9 +212,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-2",
   "type": "Theorem",
-  "number": "2.0.20",
+  "number": "2.7",
   "title": "The Division Algorithm.",
-  "body": " The Division Algorithm   Let and be integers with . Then there exists unique integers and such that   We call the quotient and the remainder .   "
+  "body": " The Division Algorithm   Let and be integers with . Then there exist unique integers and such that   We call the quotient and the remainder .   "
 },
 {
   "id": "ws-divisibility-activity-5-1-3",
@@ -259,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2.7",
   "title": "",
-  "body": "  If prove that . (Use the definition of the set .) If , is ? If then .    "
+  "body": "  If prove that . (Use the definition of the set .) If , is ?    "
 },
 {
   "id": "ws-divisibility-activity-6-1-3",
@@ -268,7 +268,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2.8",
   "title": "",
-  "body": "  We will take the following as an axiom:   The Well-Ordering Principle  Every nonempty subset of the whole numbers contains a least element.   Do you think as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in if ? Choose and show that and so .    "
+  "body": "  We will take the following as an axiom:   The Well-Ordering Principle  Every nonempty subset of the whole numbers contains a least element.   Do you think as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in if ?   Choose and show that and so .  "
 },
 {
   "id": "ws-divisibility-activity-6-1-4",
@@ -311,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-2",
   "type": "Definition",
-  "number": "2.0.32",
+  "number": "2.19",
   "title": "",
   "body": "  Let be a natural number, and let and be integers. Then  is congruent to modulo denoted provided that divides .   "
 },
@@ -440,6 +440,177 @@ var ptx_lunr_docs = [
   "number": "2.4",
   "title": "Another way congruences are weird.",
   "body": " Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has 2 solutions.  "
+},
+{
+  "id": "ws-equivalence-zn-activity",
+  "level": "1",
+  "url": "ws-equivalence-zn-activity.html",
+  "type": "Worksheet",
+  "number": "3",
+  "title": "Equivalence Relations, Equivalence Classes, and <span class=\"process-math\">\\(\\mathbb{Z}_n\\)<\/span>",
+  "body": " Equivalence Relations, Equivalence Classes, and  A Strange New World    Equivalence Relations   Let be a set and let be a binary relation on . Then is called an equivalence relation on provided that satisfies all of the following properties:  Reflexive: For all , .  Symmetric: For all , if then .  Transitive: For all , if and then .        Which of the properties of reflexive, symmetric, and transitive are satisfied by each of the following relations on the given set ? Sketch a proof or a counterexample to justify each of your answers.     Number of digits relation: Let and consider the relation defined by if and only if has the same number of digits as .     Divides relation: Let and consider the relation defined by if and only if .     Sum to 10 relation: Let and consider the relation defined by if and only if .     Rhyming relation: Let be the set of all words in the English language and for words and say if and only if rhymes with .     Fraction relation: Let and for define if and only if .          Reflexive  Symmetric  Transitive    1.          2.          3.          4.          5.                Equivalence Classes    Let be an equivalence relation on a nonempty set , and let . The equivalence class of  (with respect to ) denoted is the set of all elements of that are related to by . More precisely,      Let's find some equivalence classes.   Find all distinct equivalence classes for the equivalence relation defined in 1. on the previous page. Note equivalence classes are sets so use set notation!    A student claims is an equivalence class for the equivalence relation given in 5. on the previous page. Are they correct? Can you find (another) equivalence class for that relation?    In the module prep you hopefully convinced yourself the relation on defined by if and only if is an equivalence relation. Find all distinct equivalence classes of . (These are called congruence classes .) How many distinct equivalence classes do you think you will get if you replace with ?    We only define equivalence classes for equivalence relations. This question is to think about why we might do that. What do you get when you find equivalence class for in the relation defined in on the previous page? What about ? How is this different than what happened in previous questions?        Some Properties of Equivalence Classes  The reason we define an equivalence relation to have the properties reflexive, symmetric, and transitive is that it leads to equivalence classes that have some special properties.    We'll start by considering the following lemma.   Let be a nonempty set and let be an equivalence relation on . Then for all , if and only if .       Let's see what this lemma means about congruence classes, that is, equivalence classes under the equivalence relation congruence modulo . Give an example of two elements of , say and for which congruence classes modulo that are equal. Is where is congruence modulo ? Then give an example for which , is ?    This Lemma means for a given equivalence class there are many different ways to write it, we call this picking a representative . Which representatives might make sense to use for the congruence classes modulo ?     Now let's consider the following theorem.   Let be a nonempty set and let be an equivalence relation on . Then can be written as the disjoint union of distinct equivalence classes correspond to . That is,   For all , if then .    For all , .    For all , if for some , then .        Caption this picture. In particular, can you see see parts a,b, and c of the theorem in the picture?          The Number System  For our purposes, the most important equivalence relation will be congruence modulo . This allows us to define the number system using the For every integer , the  integers modulo   denoted , is the set of the distinct congruence classes of modulo , i.e.,   We can make into a number system by defining an addition and multiplication on the set:   Addition:     Multiplication:    This may seem like a silly thing to do, but remember that is actually an infinite set! In fact, the two 's actually, in a sense, have a different meaning. The one on the left is saying add these infinite sets and the one on the right is saying add these two integers .  Let's consider . And let's find . We are really finding: which is kind of a crazy thing to think about. Using the definition of addition above this is But appears to not be in . Is not closed? Turns out no. Recall that . They are the same sets! So we'll say In our addition and multiplication tables, we'll write this reduced answer. That is, if we get a congruence class that appears to not be in the set, we will choose a representative that is between and .    Complete the following addition and multiplication tables for . (We can skip writing the subscripts, as long as you remember it's modulo !)     +                                                              [1]                                                                                    Fill in the addition and multiplication tables on this page and the next.  These tables have all the elements of . The and are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Which is this table for?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a filed do these have?      Review questions  What is an equivalence relation? What does it mean to be reflexive, symmetric, and transitive?  What is an equivalence class? What is a congruence class?  How do we add and multiply congruence classes?  The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 3   Fractions and relations  We can define a relation on such that if and only if .  Give 3 examples of pairs that are related.  Is this an equivalence relation? Prove or disprove for each of reflexive, symmetric, and transitive.  Find .    When is a field?  Based on your work for this module, do you have a conjecture for when is a field? State your conjecture as is a field if and only if ... . Then, build addition and multiplication tables for two more values of to test out your conjecture.    Multiplicative cancellation  One of the things our high school teachers told us about is multiplicative cancellation (although they probably didn't use those words). As an example, if we have we could cancel the 's so that we have . But in high school we were almost always working in . This question asks about multiplicative cancellation work in .  The statement at the start isn't quite precise enough. There's one value for which the multiplicative cancellation doesn't work, can you find it?  Consider . For with , if does ? (Hint: Look at your multiplication table for !)  Consider . For with , if does ?  You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?  What if I told you is a field? What axioms might you use to prove part (c) is true?     "
+},
+{
+  "id": "ws-equivalence-zn-activity-3-1-2",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-3-1-2",
+  "type": "Definition",
+  "number": "3.1",
+  "title": "",
+  "body": " Let be a set and let be a binary relation on . Then is called an equivalence relation on provided that satisfies all of the following properties:  Reflexive: For all , .  Symmetric: For all , if then .  Transitive: For all , if and then .     "
+},
+{
+  "id": "ws-equivalence-zn-activity-3-1-3",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-3-1-3",
+  "type": "Worksheet Exercise",
+  "number": "3.1",
+  "title": "",
+  "body": "  Which of the properties of reflexive, symmetric, and transitive are satisfied by each of the following relations on the given set ? Sketch a proof or a counterexample to justify each of your answers.     Number of digits relation: Let and consider the relation defined by if and only if has the same number of digits as .     Divides relation: Let and consider the relation defined by if and only if .     Sum to 10 relation: Let and consider the relation defined by if and only if .     Rhyming relation: Let be the set of all words in the English language and for words and say if and only if rhymes with .     Fraction relation: Let and for define if and only if .   "
+},
+{
+  "id": "ws-equivalence-zn-activity-3-1-4-1",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-3-1-4-1",
+  "type": "Table",
+  "number": "3.3",
+  "title": "",
+  "body": "     Reflexive  Symmetric  Transitive    1.          2.          3.          4.          5.          "
+},
+{
+  "id": "ws-equivalence-zn-activity-4-1-2",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-4-1-2",
+  "type": "Definition",
+  "number": "3.4",
+  "title": "",
+  "body": "  Let be an equivalence relation on a nonempty set , and let . The equivalence class of  (with respect to ) denoted is the set of all elements of that are related to by . More precisely,    "
+},
+{
+  "id": "ws-equivalence-zn-activity-4-1-3",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-4-1-3",
+  "type": "Worksheet Exercise",
+  "number": "3.2",
+  "title": "",
+  "body": " Let's find some equivalence classes.   Find all distinct equivalence classes for the equivalence relation defined in 1. on the previous page. Note equivalence classes are sets so use set notation!    A student claims is an equivalence class for the equivalence relation given in 5. on the previous page. Are they correct? Can you find (another) equivalence class for that relation?    In the module prep you hopefully convinced yourself the relation on defined by if and only if is an equivalence relation. Find all distinct equivalence classes of . (These are called congruence classes .) How many distinct equivalence classes do you think you will get if you replace with ?    We only define equivalence classes for equivalence relations. This question is to think about why we might do that. What do you get when you find equivalence class for in the relation defined in on the previous page? What about ? How is this different than what happened in previous questions?   "
+},
+{
+  "id": "ws-equivalence-zn-activity-5-1-3",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-5-1-3",
+  "type": "Worksheet Exercise",
+  "number": "3.3",
+  "title": "",
+  "body": "  We'll start by considering the following lemma.   Let be a nonempty set and let be an equivalence relation on . Then for all , if and only if .       Let's see what this lemma means about congruence classes, that is, equivalence classes under the equivalence relation congruence modulo . Give an example of two elements of , say and for which congruence classes modulo that are equal. Is where is congruence modulo ? Then give an example for which , is ?    This Lemma means for a given equivalence class there are many different ways to write it, we call this picking a representative . Which representatives might make sense to use for the congruence classes modulo ?   "
+},
+{
+  "id": "ws-equivalence-zn-activity-5-1-4",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-5-1-4",
+  "type": "Worksheet Exercise",
+  "number": "3.4",
+  "title": "",
+  "body": " Now let's consider the following theorem.   Let be a nonempty set and let be an equivalence relation on . Then can be written as the disjoint union of distinct equivalence classes correspond to . That is,   For all , if then .    For all , .    For all , if for some , then .        Caption this picture. In particular, can you see see parts a,b, and c of the theorem in the picture?     "
+},
+{
+  "id": "ws-equivalence-zn-activity-6-1-4",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-6-1-4",
+  "type": "Example",
+  "number": "3.10",
+  "title": "",
+  "body": "Let's consider . And let's find . We are really finding: which is kind of a crazy thing to think about. Using the definition of addition above this is But appears to not be in . Is not closed? Turns out no. Recall that . They are the same sets! So we'll say In our addition and multiplication tables, we'll write this reduced answer. That is, if we get a congruence class that appears to not be in the set, we will choose a representative that is between and .  "
+},
+{
+  "id": "ws-equivalence-zn-activity-6-1-5",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-6-1-5",
+  "type": "Worksheet Exercise",
+  "number": "3.5",
+  "title": "",
+  "body": " Complete the following addition and multiplication tables for . (We can skip writing the subscripts, as long as you remember it's modulo !)     +                                                              [1]                                                                              "
+},
+{
+  "id": "ws-equivalence-zn-activity-7-1-1",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-7-1-1",
+  "type": "Worksheet Exercise",
+  "number": "3.6",
+  "title": "",
+  "body": " Fill in the addition and multiplication tables on this page and the next.  These tables have all the elements of . The and are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).  "
+},
+{
+  "id": "ws-equivalence-zn-activity-8-1-1",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-8-1-1",
+  "type": "Worksheet Exercise",
+  "number": "3.7",
+  "title": "",
+  "body": "Which is this table for? "
+},
+{
+  "id": "ws-equivalence-zn-activity-8-1-5",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-8-1-5",
+  "type": "Worksheet Exercise",
+  "number": "3.8",
+  "title": "",
+  "body": "Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a filed do these have? "
+},
+{
+  "id": "ws-equivalence-zn-activity-9-1-2",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-9-1-2",
+  "type": "Worksheet Exercise",
+  "number": "3.9",
+  "title": "",
+  "body": "What is an equivalence relation? What does it mean to be reflexive, symmetric, and transitive? "
+},
+{
+  "id": "ws-equivalence-zn-activity-9-1-3",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-9-1-3",
+  "type": "Worksheet Exercise",
+  "number": "3.10",
+  "title": "",
+  "body": "What is an equivalence class? What is a congruence class? "
+},
+{
+  "id": "ws-equivalence-zn-activity-9-1-4",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-9-1-4",
+  "type": "Worksheet Exercise",
+  "number": "3.11",
+  "title": "",
+  "body": "How do we add and multiply congruence classes? "
+},
+{
+  "id": "ws-equivalence-zn-activity-10-1-2",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-10-1-2",
+  "type": "Worksheet Exercise",
+  "number": "3.1",
+  "title": "Fractions and relations.",
+  "body": " Fractions and relations  We can define a relation on such that if and only if .  Give 3 examples of pairs that are related.  Is this an equivalence relation? Prove or disprove for each of reflexive, symmetric, and transitive.  Find .  "
+},
+{
+  "id": "ws-equivalence-zn-activity-10-1-3",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-10-1-3",
+  "type": "Worksheet Exercise",
+  "number": "3.2",
+  "title": "When is <span class=\"process-math\">\\(\\mathbb{Z}_n\\)<\/span> a field?",
+  "body": " When is a field?  Based on your work for this module, do you have a conjecture for when is a field? State your conjecture as is a field if and only if ... . Then, build addition and multiplication tables for two more values of to test out your conjecture.  "
+},
+{
+  "id": "ws-equivalence-zn-activity-10-1-4",
+  "level": "2",
+  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-10-1-4",
+  "type": "Worksheet Exercise",
+  "number": "3.3",
+  "title": "Multiplicative cancellation.",
+  "body": " Multiplicative cancellation  One of the things our high school teachers told us about is multiplicative cancellation (although they probably didn't use those words). As an example, if we have we could cancel the 's so that we have . But in high school we were almost always working in . This question asks about multiplicative cancellation work in .  The statement at the start isn't quite precise enough. There's one value for which the multiplicative cancellation doesn't work, can you find it?  Consider . For with , if does ? (Hint: Look at your multiplication table for !)  Consider . For with , if does ?  You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?  What if I told you is a field? What axioms might you use to prove part (c) is true?  "
 },
 {
   "id": "sec-portfolio-problems-2",
