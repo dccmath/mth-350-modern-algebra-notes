@@ -284,7 +284,7 @@
                 Let <m>S</m> be a nonempty set and let <m>\sim</m> be an
                 equivalence relation on <m>S</m>.
                 Then <m>S</m> can be written as the disjoint union of distinct
-                equivalence classes correspond to <m>\sim</m>.
+                equivalence classes corresponding to <m>\sim</m>.
                 That is,
                 <ol>
                   <li>
@@ -303,7 +303,7 @@
                   <li>
                     <p>
                       For all <m>a\in S</m>, if <m>a\in [b]</m> for some
-                      <m>[b] \in S</m>, then <m>[a] = [b]</m>.
+                      <m>b \in S</m>, then <m>[a] = [b]</m>.
                     </p>
                   </li>
                 </ol>
@@ -318,7 +318,7 @@
           picture?
         </p>
 
-        <sidebyside widths="30% 70%"><image source="images/Equivalence-Z3.png" />
+        <sidebyside widths="40% 60%"><image source="images/Equivalence-Z3.png" />
         <p></p>
         </sidebyside>
         
@@ -336,18 +336,20 @@
   <p>
     For our purposes, the most important equivalence relation will be congruence
     modulo <m>m</m>.
-    This allows us to define the number system <m>\mathbb{Z}_{n}</m> using the
-    For every integer <m>n\ge 2</m>, the
-    <alert> <em>integers modulo <m>n</m> </em> </alert> denoted
+    This allows us to define the number system <m>\mathbb{Z}_{n}</m>:</p>
+    <definition>
+    <statement><p>For every integer <m>n\ge 2</m>, the
+    	<term>integers modulo <m>n</m></term> denoted
     <m>\mathbb{Z}_{n}</m>, is the set of the distinct congruence classes of
     <m>\Z</m> modulo <m>n</m>, i.e.,
     <md>
       \Z_{n} = \{[0]_{n}, [1]_{n}, [2]_{n}, \dots, [n-1]_{n}\}.
     </md>
-  </p>
+    </p></statement>
+    </definition>
 
   <p>
-    We can make <m>\Z_{n}</m> into a number system by defining an addition and
+    We can make <m>\Z_{n}</m> into a number system by defining addition and
     multiplication on the set:
     <ul>
       <li>
