@@ -74,7 +74,7 @@
   <exercise workspace="3in">
   	<statement>
         <p>
-          Prove Theorem <xref ref="divides-div-thm" />.
+          Prove <xref ref="divides-div-thm" />.
           It may help to translate this to use the word <q>divides</q>.
         </p>
       </statement>
@@ -115,7 +115,7 @@
 			<title>The Division Algorithm</title>
 			<statement>
 				<p>Let <m>a</m> and <m>b</m> be integers with <m>a&gt;0</m>.
-				Then there exists unique integers <m>q</m> and <m>r</m> such that</p>
+				Then there exist unique integers <m>q</m> and <m>r</m> such that</p>
 					<md>b = aq + r \text{ and } 0\leq r &lt;a</md>
  				<p>
    					 We call <m>q</m> the <term>quotient</term> and <m>r</m> the <term>remainder</term>.
@@ -186,7 +186,7 @@
           If <m>b\ge 0</m> prove that <m>b\in S</m>.
           (Use the definition of the set <m>S</m>.) If <m>b&lt;0</m>, is
           <m>b\in S</m>?
-          <hint><p>If <m>b&lt;0</m> then <m>b\notin S</m>.</p></hint>
+          <!-- <fn><p>If <m>b&lt;0</m> then <m>b\notin S</m>.</p></fn> -->
         </p>
      </statement>
      </exercise>
@@ -206,9 +206,9 @@
           Do you think <m>S</m> as defined earlier is always a nonempty subset
           of the whole numbers?
           What element can you be sure is in <m>S</m> if <m>b&lt;0</m>?
-          <hint><p>Choose <m>m=b</m> and show that <m>x=b-am\ge 0</m> and so <m>x\in S</m>.</p></hint>
         </p>
       </statement>
+      <hint><p>Choose <m>m=b</m> and show that <m>x=b-am\ge 0</m> and so <m>x\in S</m>.</p></hint>
       </exercise>
 
       <exercise workspace="1in">
