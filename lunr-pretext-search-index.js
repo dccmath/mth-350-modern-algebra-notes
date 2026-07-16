@@ -448,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "3",
   "title": "Equivalence Relations, Equivalence Classes, and <span class=\"process-math\">\\(\\mathbb{Z}_n\\)<\/span>",
-  "body": " Equivalence Relations, Equivalence Classes, and  A Strange New World    Equivalence Relations   Let be a set and let be a binary relation on . Then is called an equivalence relation on provided that satisfies all of the following properties:  Reflexive: For all , .  Symmetric: For all , if then .  Transitive: For all , if and then .        Which of the properties of reflexive, symmetric, and transitive are satisfied by each of the following relations on the given set ? Sketch a proof or a counterexample to justify each of your answers.     Number of digits relation: Let and consider the relation defined by if and only if has the same number of digits as .     Divides relation: Let and consider the relation defined by if and only if .     Sum to 10 relation: Let and consider the relation defined by if and only if .     Rhyming relation: Let be the set of all words in the English language and for words and say if and only if rhymes with .     Fraction relation: Let and for define if and only if .          Reflexive  Symmetric  Transitive    1.          2.          3.          4.          5.                Equivalence Classes    Let be an equivalence relation on a nonempty set , and let . The equivalence class of  (with respect to ) denoted is the set of all elements of that are related to by . More precisely,      Let's find some equivalence classes.   Find all distinct equivalence classes for the equivalence relation defined in 1. on the previous page. Note equivalence classes are sets so use set notation!    A student claims is an equivalence class for the equivalence relation given in 5. on the previous page. Are they correct? Can you find (another) equivalence class for that relation?    In the module prep you hopefully convinced yourself the relation on defined by if and only if is an equivalence relation. Find all distinct equivalence classes of . (These are called congruence classes .) How many distinct equivalence classes do you think you will get if you replace with ?    We only define equivalence classes for equivalence relations. This question is to think about why we might do that. What do you get when you find equivalence class for in the relation defined in on the previous page? What about ? How is this different than what happened in previous questions?        Some Properties of Equivalence Classes  The reason we define an equivalence relation to have the properties reflexive, symmetric, and transitive is that it leads to equivalence classes that have some special properties.    We'll start by considering the following lemma.   Let be a nonempty set and let be an equivalence relation on . Then for all , if and only if .       Let's see what this lemma means about congruence classes, that is, equivalence classes under the equivalence relation congruence modulo . Give an example of two elements of , say and for which congruence classes modulo that are equal. Is where is congruence modulo ? Then give an example for which , is ?    This Lemma means for a given equivalence class there are many different ways to write it, we call this picking a representative . Which representatives might make sense to use for the congruence classes modulo ?     Now let's consider the following theorem.   Let be a nonempty set and let be an equivalence relation on . Then can be written as the disjoint union of distinct equivalence classes corresponding to . That is,   For all , if then .    For all , .    For all , if for some , then .        Caption this picture. In particular, can you see see parts a,b, and c of the theorem in the picture?          The Number System  For our purposes, the most important equivalence relation will be congruence modulo . This allows us to define the number system :   For every integer , the integers modulo denoted , is the set of the distinct congruence classes of modulo , i.e.,    We can make into a number system by defining addition and multiplication on the set:   Addition:     Multiplication:    This may seem like a silly thing to do, but remember that is actually an infinite set! In fact, the two 's actually, in a sense, have a different meaning. The one on the left is saying add these infinite sets and the one on the right is saying add these two integers .  Let's consider . And let's find . We are really finding: which is kind of a crazy thing to think about. Using the definition of addition above this is But appears to not be in . Is not closed? Turns out no. Recall that . They are the same sets! So we'll say In our addition and multiplication tables, we'll write this reduced answer. That is, if we get a congruence class that appears to not be in the set, we will choose a representative that is between and .    Complete the following addition and multiplication tables for . (We can skip writing the subscripts, as long as you remember it's modulo !)     +                                                              [1]                                                                                    Fill in the addition and multiplication tables on this page and the next.  These tables have all the elements of . The and are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Which is this table for?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a filed do these have?      Review questions  What is an equivalence relation? What does it mean to be reflexive, symmetric, and transitive?  What is an equivalence class? What is a congruence class?  How do we add and multiply congruence classes?  The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 3   Fractions and relations  We can define a relation on such that if and only if .  Give 3 examples of pairs that are related.  Is this an equivalence relation? Prove or disprove for each of reflexive, symmetric, and transitive.  Find .    When is a field?  Based on your work for this module, do you have a conjecture for when is a field? State your conjecture as is a field if and only if ... . Then, build addition and multiplication tables for two more values of to test out your conjecture.    Multiplicative cancellation  One of the things our high school teachers told us about is multiplicative cancellation (although they probably didn't use those words). As an example, if we have we could cancel the 's so that we have . But in high school we were almost always working in . This question asks about multiplicative cancellation work in .  The statement at the start isn't quite precise enough. There's one value for which the multiplicative cancellation doesn't work, can you find it?  Consider . For with , if does ? (Hint: Look at your multiplication table for !)  Consider . For with , if does ?  You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?  What if I told you is a field? What axioms might you use to prove part (c) is true?     "
+  "body": " Equivalence Relations, Equivalence Classes, and  A Strange New World    Equivalence Relations   Let be a set and let be a binary relation on . Then is called an equivalence relation on provided that satisfies all of the following properties:  Reflexive: For all , .  Symmetric: For all , if then .  Transitive: For all , if and then .        Which of the properties of reflexive, symmetric, and transitive are satisfied by each of the following relations on the given set ? Sketch a proof or a counterexample to justify each of your answers.     Number of digits relation: Let and consider the relation defined by if and only if has the same number of digits as .     Divides relation: Let and consider the relation defined by if and only if .     Sum to 10 relation: Let and consider the relation defined by if and only if .     Rhyming relation: Let be the set of all words in the English language and for words and say if and only if rhymes with .     Fraction relation: Let and for define if and only if .          Reflexive  Symmetric  Transitive    1.          2.          3.          4.          5.                Equivalence Classes    Let be an equivalence relation on a nonempty set , and let . The equivalence class of  (with respect to ) denoted is the set of all elements of that are related to by . More precisely,      Let's find some equivalence classes.   Find all distinct equivalence classes for the equivalence relation defined in (a) on the previous page. Note equivalence classes are sets so use set notation!    A student claims is an equivalence class for the equivalence relation given in (e). on the previous page. Are they correct? Can you find (another) equivalence class for that relation?    In the module prep you hopefully convinced yourself the relation on defined by if and only if is an equivalence relation. Find all distinct equivalence classes of . (These are also called congruence classes .) How many distinct equivalence classes do you think you will get if you replace with ?    We only define equivalence classes for equivalence relations. This question is to think about why we might do that. What do you get when you find equivalence class for in the relation defined in (b) on the previous page? What about ? How is this different than what happened in previous questions?        Some Properties of Equivalence Classes  The reason we define an equivalence relation to have the properties reflexive, symmetric, and transitive is that it leads to equivalence classes that have some special properties.    We'll start by considering the following lemma.   Let be a nonempty set and let be an equivalence relation on . Then for all , if and only if .       Let's see what this lemma means about congruence classes, that is, equivalence classes under the equivalence relation congruence modulo . Give an example of for which congruence classes modulo are equal. Is where is congruence modulo ? Then give an example for which , and determine if .    This Lemma means for a given equivalence class there are many different ways to write it, we call this picking a representative . Which representatives might make sense to use for the congruence classes modulo ?     Now let's consider the following theorem.   Let be a nonempty set and let be an equivalence relation on . Then can be written as the disjoint union of distinct equivalence classes corresponding to . That is,   For all , if then .    For all , .    For all , if for some , then .        Caption this picture. In particular, can you see see parts a,b, and c of the theorem in the picture?          The Number System  For our purposes, the most important equivalence relation will be congruence modulo . This allows us to define the number system :   For every integer , the integers modulo denoted , is the set of the distinct congruence classes of modulo , i.e.,    We can make into a number system by defining addition and multiplication on the set:   Addition:     Multiplication:    This may seem like a silly thing to do, but remember that is actually an infinite set! In fact, the two 's actually, in a sense, have a different meaning. The one on the left is saying add these infinite sets and the one on the right is saying add these two integers .  Let's consider . We'll find . We are really finding: which is kind of a crazy thing to think about. Using the definition of addition above this is But appears to not be in . Is not closed? Turns out that it's OK: Recall that . They are the same sets! So we'll say In our addition and multiplication tables, we'll write this reduced answer. That is, if we get a congruence class that appears to not be in the set, we will choose a representative that is between and .    Complete the following addition and multiplication tables for . (We can skip writing the subscripts, as long as you remember it's modulo !)     +                                                              [1]                                                                                    Fill in the addition and multiplication tables on this page and the next.  These tables have all the elements of . The and are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Which is this table for?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a field do these have?      Review questions  What is an equivalence relation? What does it mean to be reflexive, symmetric, and transitive?  What is an equivalence class? What is a congruence class?  How do we add and multiply congruence classes?  The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 3   Fractions and relations  We can define a relation on such that if and only if .  Give 3 examples of pairs that are related.  Is this an equivalence relation? Prove or disprove for each of reflexive, symmetric, and transitive.  Find .    When is a field?  Based on your work for this module, make a conjecture for when is a field. State your conjecture as is a field if and only if ... . Then, build addition and multiplication tables for two more values of to test out your conjecture.    Multiplicative cancellation  One of the things our high school teachers told us about is multiplicative cancellation (although they probably didn't use those words). As an example, if we have we could cancel the 's so that we have . But in high school we were almost always working in . This question asks about multiplicative cancellation in .  The statement at the start isn't quite precise enough. There's one value for which multiplicative cancellation doesn't work. What is it, and why doesn't it work?  Consider . For with , if does ? (Hint: Look at your multiplication table for !)  Consider . For with , if does ?  You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?  What if I told you is a field? What axioms might you use to prove part (c) is true?     "
 },
 {
   "id": "ws-equivalence-zn-activity-3-1-2",
@@ -493,7 +493,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3.2",
   "title": "",
-  "body": " Let's find some equivalence classes.   Find all distinct equivalence classes for the equivalence relation defined in 1. on the previous page. Note equivalence classes are sets so use set notation!    A student claims is an equivalence class for the equivalence relation given in 5. on the previous page. Are they correct? Can you find (another) equivalence class for that relation?    In the module prep you hopefully convinced yourself the relation on defined by if and only if is an equivalence relation. Find all distinct equivalence classes of . (These are called congruence classes .) How many distinct equivalence classes do you think you will get if you replace with ?    We only define equivalence classes for equivalence relations. This question is to think about why we might do that. What do you get when you find equivalence class for in the relation defined in on the previous page? What about ? How is this different than what happened in previous questions?   "
+  "body": " Let's find some equivalence classes.   Find all distinct equivalence classes for the equivalence relation defined in (a) on the previous page. Note equivalence classes are sets so use set notation!    A student claims is an equivalence class for the equivalence relation given in (e). on the previous page. Are they correct? Can you find (another) equivalence class for that relation?    In the module prep you hopefully convinced yourself the relation on defined by if and only if is an equivalence relation. Find all distinct equivalence classes of . (These are also called congruence classes .) How many distinct equivalence classes do you think you will get if you replace with ?    We only define equivalence classes for equivalence relations. This question is to think about why we might do that. What do you get when you find equivalence class for in the relation defined in (b) on the previous page? What about ? How is this different than what happened in previous questions?   "
 },
 {
   "id": "ws-equivalence-zn-activity-5-1-3",
@@ -502,7 +502,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3.3",
   "title": "",
-  "body": "  We'll start by considering the following lemma.   Let be a nonempty set and let be an equivalence relation on . Then for all , if and only if .       Let's see what this lemma means about congruence classes, that is, equivalence classes under the equivalence relation congruence modulo . Give an example of two elements of , say and for which congruence classes modulo that are equal. Is where is congruence modulo ? Then give an example for which , is ?    This Lemma means for a given equivalence class there are many different ways to write it, we call this picking a representative . Which representatives might make sense to use for the congruence classes modulo ?   "
+  "body": "  We'll start by considering the following lemma.   Let be a nonempty set and let be an equivalence relation on . Then for all , if and only if .       Let's see what this lemma means about congruence classes, that is, equivalence classes under the equivalence relation congruence modulo . Give an example of for which congruence classes modulo are equal. Is where is congruence modulo ? Then give an example for which , and determine if .    This Lemma means for a given equivalence class there are many different ways to write it, we call this picking a representative . Which representatives might make sense to use for the congruence classes modulo ?   "
 },
 {
   "id": "ws-equivalence-zn-activity-5-1-4",
@@ -529,7 +529,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.11",
   "title": "",
-  "body": "Let's consider . And let's find . We are really finding: which is kind of a crazy thing to think about. Using the definition of addition above this is But appears to not be in . Is not closed? Turns out no. Recall that . They are the same sets! So we'll say In our addition and multiplication tables, we'll write this reduced answer. That is, if we get a congruence class that appears to not be in the set, we will choose a representative that is between and .  "
+  "body": "Let's consider . We'll find . We are really finding: which is kind of a crazy thing to think about. Using the definition of addition above this is But appears to not be in . Is not closed? Turns out that it's OK: Recall that . They are the same sets! So we'll say In our addition and multiplication tables, we'll write this reduced answer. That is, if we get a congruence class that appears to not be in the set, we will choose a representative that is between and .  "
 },
 {
   "id": "ws-equivalence-zn-activity-6-1-6",
@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3.8",
   "title": "",
-  "body": "Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a filed do these have? "
+  "body": "Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a field do these have? "
 },
 {
   "id": "ws-equivalence-zn-activity-9-1-2",
@@ -610,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3.2",
   "title": "When is <span class=\"process-math\">\\(\\mathbb{Z}_n\\)<\/span> a field?",
-  "body": " When is a field?  Based on your work for this module, do you have a conjecture for when is a field? State your conjecture as is a field if and only if ... . Then, build addition and multiplication tables for two more values of to test out your conjecture.  "
+  "body": " When is a field?  Based on your work for this module, make a conjecture for when is a field. State your conjecture as is a field if and only if ... . Then, build addition and multiplication tables for two more values of to test out your conjecture.  "
 },
 {
   "id": "ws-equivalence-zn-activity-10-1-4",
@@ -619,7 +619,259 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3.3",
   "title": "Multiplicative cancellation.",
-  "body": " Multiplicative cancellation  One of the things our high school teachers told us about is multiplicative cancellation (although they probably didn't use those words). As an example, if we have we could cancel the 's so that we have . But in high school we were almost always working in . This question asks about multiplicative cancellation work in .  The statement at the start isn't quite precise enough. There's one value for which the multiplicative cancellation doesn't work, can you find it?  Consider . For with , if does ? (Hint: Look at your multiplication table for !)  Consider . For with , if does ?  You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?  What if I told you is a field? What axioms might you use to prove part (c) is true?  "
+  "body": " Multiplicative cancellation  One of the things our high school teachers told us about is multiplicative cancellation (although they probably didn't use those words). As an example, if we have we could cancel the 's so that we have . But in high school we were almost always working in . This question asks about multiplicative cancellation in .  The statement at the start isn't quite precise enough. There's one value for which multiplicative cancellation doesn't work. What is it, and why doesn't it work?  Consider . For with , if does ? (Hint: Look at your multiplication table for !)  Consider . For with , if does ?  You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?  What if I told you is a field? What axioms might you use to prove part (c) is true?  "
+},
+{
+  "id": "ws-XXX-activity",
+  "level": "1",
+  "url": "ws-XXX-activity.html",
+  "type": "Worksheet",
+  "number": "4",
+  "title": "Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations",
+  "body": " Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations  Numbers    Greatest Common Divisors  Here's the formal definition of greatest common divisor:    Let and be integers, not both zero. A common divisor of and is any integer such that and . We say that an integer is the greatest common divisor of and , denoted , provided that is a common divisor of and , and if is a common divisor of and then .      Applying The Euclidean Algorithm  Find using the Euclidean algorithm. If you'd like another example see page 26 of your text.      Why The Euclidean Algorithm Works  Here's a theorem that explains why the Euclidean algorithm works:    Let and be integers, not both and suppose that for some integers and . Then .          Assuming the hypothesis of the theorem, prove that if is a common divisor of and then is a common divisor of and .    Assuming the hypothesis of the theorem, prove that if is a common divisor of and then is a common divisor of and .    How do the previous 2 parts show that ?    How is this theorem related to the Euclidean algorithm?       Linear Combinations and Back Substitution    Let and be integers. A linear combination of and is an integer that can be written as for some integers and .    Recall that we found using the Euclidean algorithm as follows:   Using these equations, we will find integers and such that .   Note from equation we have Solve for in equation and substitute into this equation. Do not simplify.    Rewrite the equation you found in (a) so that you have 45 as a linear combination of and .    Now, using equation , substitute for in the equation you have for part (b). Rewrite so that you have as a linear combination of and .        Using the Euclidean algorithm you can always find . Then using this back-substitution method with the Euclidean algorithm you can always write the greatest common divisor of and as a linear combination of and . Together some call this the Extended Euclidean Algorithm . Using the Euclidean Algorithm find and find and such that .     If time: Are these linear combinations unique? E.g., can you find more than one linear combination of and that equals ?     If time: Use your work finding to write as a linear combination of and .       Bezout's Identity  Here are two important theorems in number theory:   Bezout's Identity   Let and be integers, not both zero. Then can be written as a linear combination of and . That is, there exist integers and such that     This is at first surprising! There is no reason there should be integers and such that . But based on the work on the previous page, you can always back-substitute from the Euclidean algorithm.    Let and be integers, not both zero. Then is equal to the smallest positive linear combination of and .    The fact that it is the smallest positive linear combination is a Weekly Practice Problem - divides every linear combination of and .  We will skip proofs of these theorems and opt to see applications of these theorems instead.   Suppose and . Then, letting and we find . Does it follow from Bezout's Identity that ?    Let and be integers. Suppose there exist integers and such that . Does it follow that ? If so, explain. If not, what can you say about ? Hint: Show divides any linear combination of and .    Let and be integers. Suppose there exist integers and such that . Does it follow that ? If so, explain. If not, what can you say about ? Note: For two integers and , not both , we say and are relatively prime provided that .       Fun With Linear Combinations    Let's see a connection between Multiplicative Inverses and GCD's:    In , find . That is, find the multiplicative inverse of in .    Find a linear combination of and that is equal to . (If you don't see it right away, use the Euclidean Algorithm and back substitution, it's good practice!) How is your answer related to the multiplicative inverse of in ?    Does have a multiplicative inverse in ? How does this relate to greatest common divisors and linear combinations?      In Die Hard 2, there's a scene where a bomb will go off unless they get exactly 4 gallons of water in a jug. In the movie, they are given a 5 gallon jug and a 3 gallon jug and a fountain with unlimited water.    How can you get 4 gallons of water in a jug in this situation?    Note that . Write for some integers and . How does this give you instructions for how to get 1 gallon of water in one of the jugs? (If time: Is there a unique solution?)    In Die Hard 25, they are given a gallon jug and a gallon jug, and asked to get gallons of water in a jug. Is this possible? Why or why not?        Review questions Make sure you can answer the following questions:  What is the formal definition of the greatest common divisor of two integers, that is ?    What is the Euclidean algorithm, how do we apply it, and why does it work?    How can we use the Euclidean algorithm and \"back-substitution\" to write as a linear combination of and ?    What does Bezout's identity say? What are some erroneous applications of Bezout's identity?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 4   (This is good practice for Learning Target 6.) For each of the following values of and , use the Euclidean algorithm to determine . Then find integers and such that .    ,      ,      , . (Note we did in class!)     (This is good practice for Learning Target 7.) Decide whether each of the following statements is true or false. For those that are true, explain why. For those that are false, give a counterexample and then change one word or symbol in the statement to make it true. For each statement, assume that and are positive integers.  If for some integers and , then .  If for some integers and , then .  If for some integers and , then .    Prove that divides every linear combination of and . That is, prove that for all , . Explain why this proves the Corollary to Bezout's Identity given in this packet.     "
+},
+{
+  "id": "ws-XXX-activity-3-1-3",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-3-1-3",
+  "type": "Definition",
+  "number": "4.1",
+  "title": "",
+  "body": "  Let and be integers, not both zero. A common divisor of and is any integer such that and . We say that an integer is the greatest common divisor of and , denoted , provided that is a common divisor of and , and if is a common divisor of and then .   "
+},
+{
+  "id": "ws-XXX-activity-4-1-3",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-4-1-3",
+  "type": "Theorem",
+  "number": "4.2",
+  "title": "",
+  "body": "  Let and be integers, not both and suppose that for some integers and . Then .   "
+},
+{
+  "id": "ws-XXX-activity-4-1-4",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-4-1-4",
+  "type": "Worksheet Exercise",
+  "number": "4.1",
+  "title": "",
+  "body": " Assuming the hypothesis of the theorem, prove that if is a common divisor of and then is a common divisor of and .  "
+},
+{
+  "id": "ws-XXX-activity-4-1-5",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-4-1-5",
+  "type": "Worksheet Exercise",
+  "number": "4.2",
+  "title": "",
+  "body": " Assuming the hypothesis of the theorem, prove that if is a common divisor of and then is a common divisor of and .  "
+},
+{
+  "id": "ws-XXX-activity-4-1-6",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-4-1-6",
+  "type": "Worksheet Exercise",
+  "number": "4.3",
+  "title": "",
+  "body": " How do the previous 2 parts show that ?  "
+},
+{
+  "id": "ws-XXX-activity-4-1-7",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-4-1-7",
+  "type": "Worksheet Exercise",
+  "number": "4.4",
+  "title": "",
+  "body": " How is this theorem related to the Euclidean algorithm?  "
+},
+{
+  "id": "ws-XXX-activity-5-1-2",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-5-1-2",
+  "type": "Definition",
+  "number": "4.7",
+  "title": "",
+  "body": "  Let and be integers. A linear combination of and is an integer that can be written as for some integers and .   "
+},
+{
+  "id": "ws-XXX-activity-5-1-6",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-5-1-6",
+  "type": "Worksheet Exercise",
+  "number": "4.5",
+  "title": "",
+  "body": " Note from equation we have Solve for in equation and substitute into this equation. Do not simplify.  "
+},
+{
+  "id": "ws-XXX-activity-5-1-7",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-5-1-7",
+  "type": "Worksheet Exercise",
+  "number": "4.6",
+  "title": "",
+  "body": " Rewrite the equation you found in (a) so that you have 45 as a linear combination of and .  "
+},
+{
+  "id": "ws-XXX-activity-5-1-8",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-5-1-8",
+  "type": "Worksheet Exercise",
+  "number": "4.7",
+  "title": "",
+  "body": " Now, using equation , substitute for in the equation you have for part (b). Rewrite so that you have as a linear combination of and .  "
+},
+{
+  "id": "ws-XXX-activity-6-1-1",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-6-1-1",
+  "type": "Worksheet Exercise",
+  "number": "4.8",
+  "title": "",
+  "body": " Using the Euclidean algorithm you can always find . Then using this back-substitution method with the Euclidean algorithm you can always write the greatest common divisor of and as a linear combination of and . Together some call this the Extended Euclidean Algorithm . Using the Euclidean Algorithm find and find and such that .  "
+},
+{
+  "id": "ws-XXX-activity-6-1-2",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-6-1-2",
+  "type": "Worksheet Exercise",
+  "number": "4.9",
+  "title": "",
+  "body": "  If time: Are these linear combinations unique? E.g., can you find more than one linear combination of and that equals ?  "
+},
+{
+  "id": "ws-XXX-activity-6-1-3",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-6-1-3",
+  "type": "Worksheet Exercise",
+  "number": "4.10",
+  "title": "",
+  "body": "  If time: Use your work finding to write as a linear combination of and .  "
+},
+{
+  "id": "ws-XXX-activity-7-1-3",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-7-1-3",
+  "type": "Theorem",
+  "number": "4.14",
+  "title": "Bezout’s Identity.",
+  "body": " Bezout's Identity   Let and be integers, not both zero. Then can be written as a linear combination of and . That is, there exist integers and such that    "
+},
+{
+  "id": "ws-XXX-activity-7-1-5",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-7-1-5",
+  "type": "Corollary",
+  "number": "4.15",
+  "title": "",
+  "body": "  Let and be integers, not both zero. Then is equal to the smallest positive linear combination of and .   "
+},
+{
+  "id": "ws-XXX-activity-7-1-8",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-7-1-8",
+  "type": "Worksheet Exercise",
+  "number": "4.11",
+  "title": "",
+  "body": " Suppose and . Then, letting and we find . Does it follow from Bezout's Identity that ?  "
+},
+{
+  "id": "ws-XXX-activity-7-1-9",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-7-1-9",
+  "type": "Worksheet Exercise",
+  "number": "4.12",
+  "title": "",
+  "body": " Let and be integers. Suppose there exist integers and such that . Does it follow that ? If so, explain. If not, what can you say about ? Hint: Show divides any linear combination of and .  "
+},
+{
+  "id": "ws-XXX-activity-7-1-10",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-7-1-10",
+  "type": "Worksheet Exercise",
+  "number": "4.13",
+  "title": "",
+  "body": " Let and be integers. Suppose there exist integers and such that . Does it follow that ? If so, explain. If not, what can you say about ? Note: For two integers and , not both , we say and are relatively prime provided that .  "
+},
+{
+  "id": "ws-XXX-activity-8-1-2",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-8-1-2",
+  "type": "Worksheet Exercise",
+  "number": "4.14",
+  "title": "",
+  "body": "  Let's see a connection between Multiplicative Inverses and GCD's:    In , find . That is, find the multiplicative inverse of in .    Find a linear combination of and that is equal to . (If you don't see it right away, use the Euclidean Algorithm and back substitution, it's good practice!) How is your answer related to the multiplicative inverse of in ?    Does have a multiplicative inverse in ? How does this relate to greatest common divisors and linear combinations?   "
+},
+{
+  "id": "ws-XXX-activity-8-1-3",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-8-1-3",
+  "type": "Worksheet Exercise",
+  "number": "4.15",
+  "title": "",
+  "body": "  In Die Hard 2, there's a scene where a bomb will go off unless they get exactly 4 gallons of water in a jug. In the movie, they are given a 5 gallon jug and a 3 gallon jug and a fountain with unlimited water.    How can you get 4 gallons of water in a jug in this situation?    Note that . Write for some integers and . How does this give you instructions for how to get 1 gallon of water in one of the jugs? (If time: Is there a unique solution?)    In Die Hard 25, they are given a gallon jug and a gallon jug, and asked to get gallons of water in a jug. Is this possible? Why or why not?   "
+},
+{
+  "id": "sec-gcds-euclid-review-1-2",
+  "level": "2",
+  "url": "ws-XXX-activity.html#sec-gcds-euclid-review-1-2",
+  "type": "Worksheet Exercise",
+  "number": "4.16",
+  "title": "",
+  "body": " What is the formal definition of the greatest common divisor of two integers, that is ?  "
+},
+{
+  "id": "sec-gcds-euclid-review-1-3",
+  "level": "2",
+  "url": "ws-XXX-activity.html#sec-gcds-euclid-review-1-3",
+  "type": "Worksheet Exercise",
+  "number": "4.17",
+  "title": "",
+  "body": " What is the Euclidean algorithm, how do we apply it, and why does it work?  "
+},
+{
+  "id": "sec-gcds-euclid-review-1-4",
+  "level": "2",
+  "url": "ws-XXX-activity.html#sec-gcds-euclid-review-1-4",
+  "type": "Worksheet Exercise",
+  "number": "4.18",
+  "title": "",
+  "body": " How can we use the Euclidean algorithm and \"back-substitution\" to write as a linear combination of and ?  "
+},
+{
+  "id": "sec-gcds-euclid-review-1-5",
+  "level": "2",
+  "url": "ws-XXX-activity.html#sec-gcds-euclid-review-1-5",
+  "type": "Worksheet Exercise",
+  "number": "4.19",
+  "title": "",
+  "body": " What does Bezout's identity say? What are some erroneous applications of Bezout's identity?  "
+},
+{
+  "id": "ws-XXX-activity-10-1-2",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-10-1-2",
+  "type": "Worksheet Exercise",
+  "number": "4.1",
+  "title": "",
+  "body": " (This is good practice for Learning Target 6.) For each of the following values of and , use the Euclidean algorithm to determine . Then find integers and such that .    ,      ,      , . (Note we did in class!)   "
+},
+{
+  "id": "ws-XXX-activity-10-1-3",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-10-1-3",
+  "type": "Worksheet Exercise",
+  "number": "4.2",
+  "title": "",
+  "body": " (This is good practice for Learning Target 7.) Decide whether each of the following statements is true or false. For those that are true, explain why. For those that are false, give a counterexample and then change one word or symbol in the statement to make it true. For each statement, assume that and are positive integers.  If for some integers and , then .  If for some integers and , then .  If for some integers and , then .  "
+},
+{
+  "id": "ws-XXX-activity-10-1-4",
+  "level": "2",
+  "url": "ws-XXX-activity.html#ws-XXX-activity-10-1-4",
+  "type": "Worksheet Exercise",
+  "number": "4.3",
+  "title": "",
+  "body": " Prove that divides every linear combination of and . That is, prove that for all , . Explain why this proves the Corollary to Bezout's Identity given in this packet.  "
 },
 {
   "id": "sec-portfolio-problems-2",
