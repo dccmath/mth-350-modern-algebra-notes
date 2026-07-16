@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<worksheet xml:id="ws-XXX-activity">
+
+	<title>Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</title>
+	<introduction><p><alert>Numbers</alert></p></introduction>
+	
+	<page>
+
+	<paragraphs>
+		<title>Greatest Common Divisors</title>
+		
+    <p>Here's the formal definition of greatest common divisor:</p>
+    
+    <definition>
+  	<statement>
+    	<p>
+      Let <m>a</m> and <m>b</m> be integers, not both zero.
+      A <term>common divisor</term> of <m>a</m> and <m>b</m> is any integer <m>k</m>
+      such that <m>k\mid a</m> and <m>k\mid b</m>.
+      We say that an integer <m>d</m> is the <term>greatest common divisor</term> of
+      <m>a</m> and <m>b</m>, denoted <m>\gcd(a,b)</m>, provided that <m>d</m> is
+      a common divisor of <m>a</m> and <m>b</m>, and if <m>k</m> is a common
+      divisor of <m>a</m> and <m>b</m> then <m>k\leq d</m>.
+    	</p>
+  	</statement>
+	</definition>
+    </paragraphs>
+    
+    <paragraphs>
+    	<title>Applying The Euclidean Algorithm</title>
+
+  		<p>
+   		 Find <m>\gcd(27182, 3141)</m> using the Euclidean algorithm.
+    		If you'd like another example see page 26 of your text.
+  		</p>
+    </paragraphs>
+    </page>
+
+
+	<page>
+	
+	<paragraphs>
+		<title>Why The Euclidean Algorithm Works</title>
+
+  <p>
+    Here's a theorem that explains why the Euclidean algorithm works:
+  </p>
+
+  <theorem>
+    <statement>
+      <p>
+        Let <m>a</m> and <m>b</m> be integers, not both <m>0</m> and suppose
+        that
+        <md>
+          b = aq + r
+        </md>
+        for some integers <m>q</m> and <m>r</m>.
+        Then <m>\gcd(b,a) = \gcd(a,r)</m>.
+      </p>
+    </statement>
+  </theorem>
+  <!-- Let $d = \gcd(b,a)$. To prove this theorem we need to show two things: -->
+  <!--	\begin{itemize}-->
+  <!--	\item The integer $d$ is a common divisor of $a$ and $r$.-->
+  <!--	\item If $k$ is a common divisor of $a$ and $r$ then $k\leq d$.-->
+  <!--	\end{itemize}-->
+  		<exercise workspace="2in">
+        <p>
+          Assuming the hypothesis of the theorem, prove that if <m>d</m> is a
+          common divisor of <m>a</m> and <m>b</m> then <m>d</m> is a common
+          divisor of <m>a</m> and <m>r</m>.
+        </p>
+		</exercise>
+
+      	<exercise workspace="2in">
+        <p>
+          Assuming the hypothesis of the theorem, prove that if <m>d</m> is a
+          common divisor of <m>a</m> and <m>r</m> then <m>d</m> is a common
+          divisor of <m>a</m> and <m>b</m>.
+        </p>
+     	</exercise>
+
+      	<exercise workspace="2in">
+        <p>
+          How do the previous 2 parts show that <m>\gcd(a,r) = \gcd(a,b)</m>?
+        </p>
+      	</exercise>
+
+      	<exercise workspace="2in">
+        <p>
+          How is this theorem related to the Euclidean algorithm?
+        </p>
+      	</exercise>
+    
+    </paragraphs>
+
+	</page>
+	
+	
+	<page>
+	<paragraphs>
+	  <title>Linear Combinations and Back Substitution</title>
+
+  <definition>
+    <statement>
+      <p>
+        Let <m>a</m> and <m>b</m> be integers.
+        A <term>linear combination</term> of <m>a</m> and <m>b</m> is an integer
+        that can be written as <m>ax+by</m> for some integers <m>x</m> and
+        <m>y</m>.
+      </p>
+    </statement>
+  </definition>
+  
+        <p>
+          Recall that we found <m>\gcd(540,765) = 45</m> using the Euclidean
+          algorithm as follows:
+        </p>
+        <md number="yes">
+          <mrow xml:id="eu-alg-1">765&amp;= 540\cdot 1 + 225</mrow>
+          <mrow xml:id="eu-alg-2">540&amp;= 225 \cdot 2 + 90</mrow>
+          <mrow xml:id="eu-alg-3">225&amp;= 90 \cdot 2 + 45</mrow>
+          <mrow xml:id="eu-alg-4">90&amp;= 45 \cdot 2 + 0.</mrow>
+        </md>
+        <p>Using these equations, we will find integers <m>x</m> and <m>y</m> such that <m>765 x + 540 y = 45</m>.</p>
+
+		<exercise workspace="2in">
+              <p>
+                Note from equation <xref ref="eu-alg-3" /> we have
+                <md>
+                  45 = 225+90\cdot (-2).
+                </md>
+                Solve for <m>90</m> in equation <xref ref="eu-alg-2" /> and substitute into this
+                equation.
+                Do not simplify.
+              </p>
+           </exercise>
+
+          <exercise workspace="2in">
+              <p>
+                Rewrite the equation you found in (a) so that you have 45 as a
+                linear combination of <m>225</m> and <m>540</m>.
+              </p>
+          </exercise>
+
+          <exercise workspace="2in">
+              <p>
+                Now, using equation <xref ref="eu-alg-1" />, substitute for <m>225</m> in the
+                equation you have for part (b).
+                Rewrite so that you have <m>45</m> as a linear combination of
+                <m>765</m> and <m>540</m>.
+              </p>
+           </exercise>
+    
+    </paragraphs>
+
+	</page>
+	
+	
+	<page>
+	
+	<paragraphs>
+   
+   <exercise workspace="3in">
+              <p>
+                Using the Euclidean algorithm you can always find
+                <m>\gcd(a,b)</m>.
+                Then using this <q>back-substitution</q> method with the Euclidean
+                algorithm you can always write the greatest common divisor of
+                <m>a</m> and <m>b</m> as a linear combination of <m>a</m> and
+                <m>b</m>.
+                Together some call this the <q>Extended Euclidean Algorithm</q>.
+                Using the Euclidean Algorithm find <m>\gcd(816, 188)</m> and
+                find <m>x</m> and <m>y</m> such that
+                <m>\gcd(816,188) = 816x + 188y</m>.
+              </p>
+            </exercise>
+
+            <exercise workspace="3in">
+              <p>
+                <em>If time:</em> Are these linear combinations unique?
+                E.g., can you find more than one linear combination of <m>3</m>
+                and <m>5</m> that equals <m>1</m>?
+              </p>
+            </exercise>
+
+            <exercise workspace="3in">
+              <p>
+                <em>If time:</em> Use your work finding <m>\gcd(27182,3141)</m>
+                to write <m>1</m> as a linear combination of <m>27182</m> and
+                <m>3141</m>.
+              </p>
+            </exercise>
+    
+    </paragraphs>
+
+	</page>
+	
+	<page>
+	
+	<paragraphs>
+		<title>Bezout's Identity</title>
+
+  <p>
+    Here are two important theorems in number theory:
+  </p>
+
+  <theorem>
+  <title>Bezout's Identity</title>
+    <statement>
+      <p>
+        Let <m>a</m> and <m>b</m> be integers, not both
+        zero.
+        Then <m>\gcd(a,b)</m> can be written as a linear combination of <m>a</m>
+        and <m>b</m>.
+        That is, there exist integers <m>x</m> and <m>y</m> such that
+        <md>
+          \gcd(a,b) = ax + by.
+        </md>
+      </p>
+    </statement>
+  </theorem>
+
+  <p>
+    This is at first surprising!
+    There is no reason there should be integers <m>x</m> and <m>y</m> such that
+    <m>12345x+54321y = 3</m>.
+    But based on the work on the previous page, you can always back-substitute
+    from the Euclidean algorithm.
+  </p>
+
+  <corollary>
+    <statement>
+      <p>
+        Let <m>a</m> and <m>b</m> be integers, not both zero.
+        Then <m>\gcd(a,b)</m> is equal to the smallest positive linear
+        combination of <m>a</m> and <m>b</m>.
+      </p>
+    </statement>
+  </corollary>
+
+  <p>
+    The fact that it is the smallest positive linear combination is a Weekly
+    Practice Problem - <m>\gcd(a,b)</m> divides every linear combination of
+    <m>a</m> and <m>b</m>.
+  </p>
+
+  <p>
+    We will skip proofs of these theorems and opt to see applications of these
+    theorems instead.
+  </p>
+
+  <exercise workspace="1.5in">
+        <p>
+          Suppose <m>a=3</m> and <m>b=2</m>.
+          Then, letting <m>x = 1</m> and <m>y=1</m> we find <m>ax+by=5</m>.
+          Does it follow from Bezout's Identity that <m>\gcd(3,2)=5</m>?
+        </p>
+      </exercise>
+
+  <exercise workspace="1.5in">
+        <p>
+          Let <m>a</m> and <m>b</m> be integers.
+          Suppose there exist integers <m>x</m> and <m>y</m> such that
+          <m>ax+by=k</m>.
+          Does it follow that <m>\gcd(a,b)=k</m>?
+          If so, explain.
+          If not, what can you say about <m>\gcd(a,b)</m>?
+          
+          Hint: Show <m>\gcd(a,b)</m> divides any linear combination of <m>a</m> and <m>b</m>.
+        </p>
+      </exercise>
+
+   <exercise workspace="1.5in">
+        <p>
+          Let <m>a</m> and <m>b</m> be integers.
+          Suppose there exist integers <m>x</m> and <m>y</m> such that
+          <m>ax+by=1</m>.
+          Does it follow that <m>\gcd(a,b)=1</m>?
+          If so, explain.
+          If not, what can you say about <m>\gcd(a,b)</m>?
+          Note: For two integers <m>a</m> and <m>b</m>, not both <m>0</m>, we
+          say <m>a</m> and <m>b</m> are <em>relatively prime</em> provided that
+          <m>\gcd(a,b) = 1</m>.
+        </p>
+      </exercise>  
+    </paragraphs>
+	</page>
+	
+	<page>
+	
+	<paragraphs>
+		<title>Fun With Linear Combinations</title>
+
+		<exercise>
+		<introduction>
+        <p>
+          Let's see a connection between Multiplicative Inverses and GCD's:
+         </p>
+         </introduction>
+         
+         <task workspace="1.5in">
+              <p>
+                In <m>\mathbb{Z}_{10}</m>, find <m>([7]_{10})^{-1}</m>.
+                That is, find the multiplicative inverse of <m>[7]</m> in
+                <m>\mathbb{Z}_{10}</m>.
+              </p>
+            </task>
+
+          <task workspace="1.5in">
+              <p>
+                Find a linear combination of <m>7</m> and <m>10</m> that is
+                equal to <m>\gcd(7,10)</m>.
+                (If you don't see it right away, use the Euclidean Algorithm and
+                back substitution, it's good practice!) How is your answer
+                related to the multiplicative inverse of <m>[7]</m> in
+                <m>\mathbb{Z}_{10}</m>?
+              </p>
+            </task>
+
+            <task workspace="1.5in">
+              <p>
+                Does <m>[2]_{10}</m> have a multiplicative inverse in
+                <m>\mathbb{Z}_{10}</m>?
+                How does this relate to greatest common divisors and linear
+                combinations?
+              </p>
+            </task>
+		</exercise>
+
+      <exercise>
+      	<introduction>
+        <p>
+          In Die Hard 2, there's a scene where a bomb will go off unless they
+          get exactly 4 gallons of water in a jug. In the movie, they are given a 5 gallon jug and a 3 gallon jug
+                and a fountain with unlimited water.</p>
+         </introduction>
+         
+          <task workspace="1.5in">
+              <p>
+                How can you get 4 gallons of water in a jug in this situation?
+              </p>
+            </task>
+
+           <task workspace="1.5in">
+              <p>
+                Note that <m>\gcd(5,3)=1</m>.
+                Write <m>1 = 5x+3y</m> for some integers <m>x</m> and <m>y</m>.
+                How does this give you instructions for how to get 1 gallon of
+                water in one of the jugs?
+                (If time: Is there a unique solution?)
+              </p>
+            </task>
+
+            <task workspace="1.5in">
+              <p>
+                In Die Hard 25, they are given a <m>6</m> gallon jug and a
+                <m>15</m> gallon jug, and asked to get <m>4</m> gallons of water
+                in a jug.
+                Is this possible?
+                Why or why not?
+              </p>
+            </task>
+		</exercise>
+    
+    </paragraphs>
+	</page>
+	
+<page xml:id="sec-gcds-euclid-review">
+<paragraphs>
+	<title>Review questions</title>
+    
+    Make sure you can answer the following questions:
+    <exercise>
+    	<p>What is the formal definition of the greatest common divisor of two integers, that is <m>\gcd(a,b)</m>?</p>
+ 	</exercise>
+ 
+ 	<exercise>
+		<p>What is the Euclidean algorithm, how do we apply it, and why does it work?</p>
+	</exercise>
+	
+	<exercise>
+		<p>How can we use the Euclidean algorithm and "back-substitution" to write <m>\gcd(a,b)</m> as a linear combination of <m>a</m> and <m>b</m>?</p>
+	</exercise>
+	
+	<exercise>
+		<p>What does Bezout's identity say? What are some erroneous applications of Bezout's identity?</p>
+	</exercise>
+      
+	<p>The rest of this page is for you to summarize important ideas from the module.</p>
+
+</paragraphs>
+</page>
+
+
+<page>
+
+<paragraphs>
+    <title>Weekly Practice 4</title>
+
+		<exercise number="1">
+		<introduction><p>
+		  (This is good practice for Learning Target 6.) For each of the following values of <m>a</m> and <m>b</m>, use the
+          Euclidean algorithm to determine <m>\gcd(a,b)</m>.
+          Then find integers <m>x</m> and <m>y</m> such that
+          <m>ax+by = \gcd(a,b)</m>.
+          </p></introduction>
+          
+          <task>
+              <p>
+                <m>a= 525</m>, <m>b=252</m>
+              </p>
+           </task>
+
+           <task>
+              <p>
+                <m>a=54321</m>, <m>b=12345</m>
+              </p>
+           </task>
+
+           <task>
+              <p>
+                <m>a=27182</m>, <m>b=-3141</m>.
+                (Note we did <m>\gcd(27182,3141)</m> in class!)
+              </p>
+           </task>
+    	</exercise>
+	
+		<exercise number="2">
+		<introduction><p>(This is good practice for Learning Target 7.) Decide whether each of the following statements is true or false.
+          For those that are true, explain why.
+          For those that are false, give a counterexample and then change
+          <em>one word or symbol</em> in the statement to make it true.
+          For each statement, assume that <m>a,b,</m> and <m>d</m> are positive
+          integers.</p></introduction>
+        	<task><p>If <m>ax+by = 1</m> for some integers <m>x</m> and <m>y</m>,
+                then <m>\gcd(a,b)=1</m>.</p></task>
+            <task><p>If <m>ax+by \neq 1</m> for some integers <m>x</m> and <m>y</m>,
+                then <m>\gcd(a,b)\neq 1</m>.</p></task>
+            <task><p>If <m>x+by=d</m> for some integers <m>x</m> and <m>y</m>, then
+                <m>\gcd(a,b) = d</m>.</p></task>
+		</exercise>
+		
+		<exercise number="3">
+		<statement><p>
+          Prove that <m>\gcd(a,b)</m> divides every linear combination of
+          <m>a</m> and <m>b</m>.
+          That is, prove that for all <m>x,y\in\mathbb{Z}</m>,
+          <m>\gcd(a,b) \mid ax+by</m>.
+          Explain why this proves the Corollary to Bezout's Identity given in
+          this packet.
+        </p></statement>
+		
+		</exercise>
+	
+	</paragraphs>
+	
+ </page>
+ 
+ </worksheet>
+
+<!-- </chapter> -->

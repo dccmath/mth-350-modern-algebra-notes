@@ -72,7 +72,7 @@
     <!-- @level on divisions above.                                   -->
       <blocks level="1" /> <!-- default = 2 -->
       <projects level="0" distinct="yes" />
-      <!--<equations level="2" />-->
+      <equations level="1" />
       <!--<footnotes level="2" />-->
   </numbering>
 

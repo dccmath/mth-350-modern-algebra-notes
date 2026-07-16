@@ -176,7 +176,7 @@
     <task workspace="1in">
         <p>
           Find all <em>distinct</em> equivalence classes for the equivalence
-          relation defined in 1.
+          relation defined in (a)
           on the previous page.
           Note equivalence classes are sets so use set notation!
         </p>
@@ -185,7 +185,7 @@
       <task workspace="1in">
         <p>
           A student claims <m>\mathbb{Z}</m> is an equivalence class for the
-          equivalence relation given in 5.
+          equivalence relation given in (e).
           on the previous page.
           Are they correct?
           Can you find (another) equivalence class for that relation?
@@ -198,7 +198,7 @@
           <m>\Z</m> defined by <m>a\sim b</m> if and only if
           <m>a\equiv b \pmod{4}</m> is an equivalence relation.
           Find all distinct equivalence classes of <m>\sim</m>.
-          (These are called <em>congruence classes</em>.) How many distinct
+          (These are also called <em>congruence classes</em>.) How many distinct
           equivalence classes do you think you will get if you replace <m>4</m>
           with <m>n</m>?
         </p>
@@ -209,7 +209,7 @@
           We only define equivalence classes for equivalence relations.
           This question is to think about why we might do that.
           What do you get when you find <q>equivalence class</q> for <m>a=3</m> in
-          the relation defined in <m>2</m> on the previous page?
+          the relation defined in (b) on the previous page?
           What about <m>a=6</m>?
           How is this different than what happened in previous questions?
         </p>
@@ -247,23 +247,22 @@
         </p>
        </introduction>
 
-       <task workspace="1in">
+       <task workspace="1.5in">
               <p>
                 Let's see what this lemma means about congruence classes, that
                 is, equivalence classes under the equivalence relation
                 congruence modulo <m>n</m>.
-                Give an example of two elements of <m>Z</m>, say <m>a</m> and
-                <m>b</m> for which congruence classes modulo <m>5</m> that are
+                Give an example of <m>a, b \in \mathbb{Z}</m> for which congruence classes modulo <m>5</m> are
                 equal.
                 Is <m>a\sim b</m> where <m>\sim</m> is congruence modulo
                 <m>5</m>?
-                Then give an example for which <m>a\sim b</m>, is
-                <m>[a]_{5} = [b]_{5}</m>?
+                Then give an example for which <m>a\sim b</m>, and determine if
+                <m>[a]_{5} = [b]_{5}</m>.
               </p>
 
             </task>
 
-            <task workspace="1in">
+            <task workspace="1.5in">
               <p>
                 This Lemma means for a given equivalence class there are many
                 different ways to write it, we call this <q>picking a
@@ -335,7 +334,7 @@
 
   <p>
     For our purposes, the most important equivalence relation will be congruence
-    modulo <m>m</m>.
+    modulo <m>n</m>.
     This allows us to define the number system <m>\mathbb{Z}_{n}</m>:</p>
     <definition>
     <statement><p>For every integer <m>n\ge 2</m>, the
@@ -375,7 +374,7 @@
   <m>
     \Z_{4} = \{ [0]_{4}, [1]_{4}, [2]_{4}, [3]_{4}\}
   </m>
-  . And let's find
+  . We'll find
   <m>
     [3]_{4} + [2]_{4}
   </m>
@@ -399,7 +398,7 @@
   <m>
     \Z_{n}
   </m>
-  not closed? Turns out no. Recall that
+  not closed? Turns out that it's OK: Recall that
   <m>
     [5]_{4} = [1]_{4}
   </m>
@@ -2060,7 +2059,7 @@
   </tabular>
 
 	
-	<exercise><p>Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a filed do these have?</p></exercise>
+	<exercise><p>Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a field do these have?</p></exercise>
 </paragraphs>
 </page>
 	
@@ -2102,16 +2101,16 @@
 		<exercise number="2">
 		<title>When is <m>\mathbb{Z}_n</m> a field?</title>
 		<statement><p>
-			Based on your work for this module, do you have a conjecture for when <m>\mathbb{Z}_n</m> is a field? State your conjecture as <q><m>\mathbb{Z}_n</m> is a field if and only if <m>n</m>...</q>. Then, build addition and multiplication tables for two more values of <m>n</m> to test out your conjecture.
+			Based on your work for this module, make a conjecture for when <m>\mathbb{Z}_n</m> is a field. State your conjecture as <q><m>\mathbb{Z}_n</m> is a field if and only if <m>n</m>...</q>. Then, build addition and multiplication tables for two more values of <m>n</m> to test out your conjecture.
 		</p></statement>
 		</exercise>
 		
 		<exercise number="3">
 		<title>Multiplicative cancellation</title>
-		<introduction><p>One of the things our high school teachers told us about is <q>multiplicative cancellation</q> (although they probably didn't use those words). As an example, if we have <m>6x = 5x^2</m> we could <q>cancel</q> the <m>x</m>'s so that we have <m>6 = 5x</m>. But in high school we were almost always working in <m>\mathbb{R}</m>. This question asks about multiplicative cancellation work in <m>\mathbb{Z}_n</m>.</p></introduction>
-		<task><p>The statement at the start isn't quite precise enough. There's one <m>x</m> value for which the multiplicative cancellation doesn't work, can you find it?</p></task>
-		<task><p>Consider <m>n = 12</m>. For <m>[a],[b],[c]\in\mathbb{Z}_{12}</m> with <m>[a] \neq [0]</m>, if <m>[a][c] = [b][c]</m> does <m>[a]=[b]</m>? (Hint: Look at your multiplication table for <m>\mathbb{Z}_{12}</m>!)</p></task>
-		<task><p>Consider <m>n = 11</m>.  For <m>[a],[b],[c]\in\mathbb{Z}_{11}</m> with <m>[a] \neq [0]</m>, if <m>[a][c] = [b][c]</m> does <m>[a]=[b]</m>?</p></task>
+		<introduction><p>One of the things our high school teachers told us about is <q>multiplicative cancellation</q> (although they probably didn't use those words). As an example, if we have <m>6x = 5x^2</m> we could <q>cancel</q> the <m>x</m>'s so that we have <m>6 = 5x</m>. But in high school we were almost always working in <m>\mathbb{R}</m>. This question asks about multiplicative cancellation in <m>\mathbb{Z}_n</m>.</p></introduction>
+		<task><p>The statement at the start isn't quite precise enough. There's one <m>x</m> value for which multiplicative cancellation doesn't work. What is it, and why doesn't it work?</p></task>
+		<task><p>Consider <m>n = 12</m>. For <m>[a],[b],[c]\in\mathbb{Z}_{12}</m> with <m>[c] \neq [0]</m>, if <m>[a][c] = [b][c]</m> does <m>[a]=[b]</m>? (Hint: Look at your multiplication table for <m>\mathbb{Z}_{12}</m>!)</p></task>
+		<task><p>Consider <m>n = 11</m>.  For <m>[a],[b],[c]\in\mathbb{Z}_{11}</m> with <m>[c] \neq [0]</m>, if <m>[a][c] = [b][c]</m> does <m>[a]=[b]</m>?</p></task>
 		<task><p>You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?</p></task>
 		<task><p>What if I told you <m>\mathbb{Z}_{11}</m> is a field? What axioms might you use to prove part (c) is true?</p></task>
 		</exercise>

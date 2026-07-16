@@ -15,6 +15,7 @@
     <xi:include href="./mod-fields.ptx" />
     <xi:include href="./mod-divisibility.ptx" />
     <xi:include href="./mod-equivalence-zn.ptx" />
+    <xi:include href="./mod-gcds-euclid.ptx" />
 
 	<xi:include href="./sec-portfolio-problems.ptx" />
 
