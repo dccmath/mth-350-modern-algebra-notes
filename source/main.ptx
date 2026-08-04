@@ -1,26 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <!-- we first include a file which contains the docinfo element: -->
+<!-- This is the main course file for ... . It is used to generate all the public facing course materials so those can be hosted online.  -->
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- Include common macros etc: -->
   <xi:include href="./docinfo.ptx" />
-
-  <book xml:id="my-great-book">
+  <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
+  <book>
     <title>MTH 350: Modern Algebra I</title>
     <subtitle>Class notes, weekly practice, and portfolio problems</subtitle>
 
-    <!-- Include frontmatter -->
+    <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
 
-    <!-- Include chapters -->
-    <xi:include href="./mod-fields.ptx" />
-    <xi:include href="./mod-divisibility.ptx" />
-    <xi:include href="./mod-equivalence-zn.ptx" />
-    <xi:include href="./mod-gcds-euclid.ptx" />
+    <chapter xml:id="course-notes">
+      <title>Weekly notes</title>
 
-	<xi:include href="./sec-portfolio-problems.ptx" />
+      <introduction>
+        <p>
+          These are copies of the in-class activities distributed during the semester.
+        </p>
+      </introduction>
 
-    <!-- Include backmatter -->
-    <xi:include href="./backmatter.ptx" />
+      <!-- Remove the example and replace with your own activities -->
+    	 <xi:include href="./notes/mod-fields.ptx" />
+   		 <xi:include href="./notes/mod-divisibility.ptx" />
+    	 <xi:include href="./notes/mod-equivalence-zn.ptx" />
+   		 <xi:include href="./notes/mod-gcds-euclid.ptx" />
+   		 <xi:include href="./notes/mod-units-zero-divisors-integral-domains.ptx" />
 
-  </book>
-</pretext>
+      <!-- Add more xi:include files here to include them in the main course -->
+    </chapter>
+
+    <chapter xml:id="portfolios">
+      <title>Portfolio problems</title>
+      
+      <xi:include href="./portfolios/sec-portfolio-problems.ptx" />
+      <!-- Include handouts -->
+      <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
+    </chapter>
+
+    <chapter xml:id="homework">
+      <title>Homework</title>
+
+      <!-- Include homework files -->
+      <!--<xi:include href="./homework/homework01.ptx"/>-->
+
+    </chapter>
+
+    <!-- Include additional chapters for other categories -->
+
+    </book>
+  </pretext>

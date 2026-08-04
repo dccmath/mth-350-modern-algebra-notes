@@ -16,12 +16,12 @@
     <!-- Level at which html output is split into separate pages: 0 gives -->
     <!-- a single page, 1 is chapter, 2 is section, and so on through 6.  -->
     <!-- The default depends on the type of document.                     -->
-      <chunking level="2" />
+      <chunking level="0" />
 
     <!-- Depth of the table of contents, from 0 through 6.  A value of 0 -->
     <!-- means no table of contents.  The default depends on the type of -->
     <!-- document and the conversion.                                    -->
-      <!--<tableofcontents level="1" />-->
+    <tableofcontents level="0" />
 
     <!-- Visibility of exercise components where they first appear.          -->
     <!-- There are four components (statement/hint/answer/solution) for each -->
@@ -95,8 +95,7 @@
     <!-- is a space-separated list of component names of your own choosing. -->
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
-    <!-- In this example, we include the w1s components from the sample activity to show solutions. -->
-      <version include="w1s"/>
+    <version include="online"/>
 
     <!-- Optional source files are named by attributes on the source     -->
     <!-- element itself, as filenames relative to the file holding your  -->
@@ -119,14 +118,14 @@
     <!-- @part-structure is "decorative" (the default) or              -->
     <!-- "structural"; the latter restarts chapter numbering within    -->
     <!-- each part.  Parts only matter if your book has them.          -->
-      <divisions level="0"/>
+    <divisions level="0"/>
 
     <!-- How many levels deep the numbering of these items runs.  Values -->
     <!-- may not exceed the divisions @level above.  Defaults depend on  -->
     <!-- the type of document.                                           -->
-      <blocks level="1" /> <!-- default = 2 -->
-      <projects level="0" distinct="yes" />
-      <equations level="1" />
+    <blocks level="0" />
+    <equations level="0" />
+    <footnotes level="0" />
 
     <!-- By default the "blocks" sequence above also numbers project-like  -->
     <!-- items, figure-like items (figure/table/listing/list), inline      -->
@@ -135,10 +134,10 @@
     <!-- of serial numbers, in which case its own @level applies.  While a -->
     <!-- group shares the blocks count, its @level is ignored, which is    -->
     <!-- why the "projects" entry below has no effect as written.          -->
-      <projects level="0" />
-      <!--<figures distinct="no" level="0" />-->
-      <!--<exercises distinct="no" level="0" />-->
-      <!--<openproblems distinct="no" level="0" />-->
+    <projects level="0" />
+    <!--<figures distinct="no" level="0" />-->
+    <!--<exercises distinct="no" level="0" />-->
+    <!--<openproblems distinct="no" level="0" />-->
   </numbering>
 
   <!-- LaTeX (and therefore PDF) specific options.                     -->
@@ -222,15 +221,13 @@
   <!--   that copies an iframe snippet for your website or LMS.         -->
   <!-- @design-width is an integer, default 600, used as the base when  -->
   <!--   a percentage width for an interactive must become pixels.      -->
-  <!-- The embed-button below makes it easy to copy the code for an     -->
-  <!-- iframe into your LMS.                                            -->
-  <html embed-button="yes">
+  <html>
   <!-- Replace the <html> tag above with the one below to try these-->
   <!--
     <html
           short-answer-responses="graded"
           favicon="none"
-          embed-button="yes"
+          embed-button="no"
           design-width="600"
       >
   -->
@@ -291,7 +288,6 @@
         theme="denver"
         primary-color="#386F94"
         primary-color-dark="#5192BD"
-        provide-dark-mode="yes"
     />
 
     <!-- Search.  @variant is "textbook" (the default; the value          -->
@@ -306,7 +302,10 @@
     <!-- not on the path to the current page; the default is "no".       -->
     <!-- @preexpanded-levels, 0 through 6 (default 0), says how many     -->
     <!-- levels are expanded initially away from that path.              -->
-      <!--<tableofcontents focused="no" preexpanded-levels="0" />-->
+    <!-- NOTE: the entry below spells the element "toc", which PreTeXt   -->
+    <!-- does not recognize, so it currently has no effect.  The name to -->
+    <!-- use is "tableofcontents", as in the comment above.              -->
+    <tableofcontents focused="yes" preexpanded-levels="0" />
 
     <!-- Navigation.  @logic is "linear" (the default) or "tree"; -->
     <!-- @upbutton is "yes" (the default) or "no".                -->

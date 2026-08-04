@@ -391,22 +391,24 @@
 
   <p>Make sure you can answer the following questions:</p>
 
-<exercise><p>
+<ul>
+	<li><p>
         What is the definition of <q><m>a</m> divides <m>b</m></q>?
         Does <m>0 \mid x</m> where <m>x\in \mathbb{Z}</m>?
         Does <m>x\mid 0</m> where <m>x\in \mathbb{Z}</m>.
-      </p></exercise>
+      </p></li>
                 
-<exercise><p>
+<li><p>
         State the division algorithm and apply to any pair of integers
         satisfying the hypothesis.
-      </p></exercise>
+      </p></li>
       
-<exercise><p>
+<li><p>
 		State the definition of <q><m>a\equiv b\pmod{n}</m></q> and be able to
         determine if any pair of integers <m>a</m> and <m>b</m> are congruent
         modulo <m>n</m>.
-		</p></exercise>
+		</p></li>
+</ul>
                 
 <p>The rest of this page is for you to summarize important ideas from the module.</p>
 

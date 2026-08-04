@@ -687,21 +687,23 @@
 <page>
 <paragraphs>
 <title>Review questions</title>
-<exercise><p>What are the sets
+<ul>
+	<li><p>What are the sets
                 <m>\mathbb{N}, \mathbb{W}, \mathbb{Z}, \mathbb{R}, \mathbb{C}, \mathbb{R}\setminus\mathbb{Q},</m>
                 and <m>\mathcal{M}_{2}(\mathbb{R})</m>?</p>
-                </exercise>
+                </li>
                 
-<exercise><p>What is a binary operation?
-                And what does it mean for a binary operation to be closed?</p></exercise>
+	<li><p>What is a binary operation?
+                And what does it mean for a binary operation to be closed?</p></li>
                 
-<exercise><p>What are properties of fields?
+	<li><p>What are properties of fields?
                 Which of
                 <m>\mathbb{N}, \mathbb{W}, \mathbb{Z}, \mathbb{R}, \mathbb{C}, \mathbb{R}\setminus\mathbb{Q},</m>
                 and <m>\mathcal{M}_{2}(\mathbb{R})</m> are fields?
-                If they are not fields, which properties are they missing?</p></exercise>
+                If they are not fields, which properties are they missing?</p></li>
 
-<exercise><p>Why do you think DocK called fields <q>The Good Place</q>?</p></exercise>
+	<li><p>Why do you think DocK called fields <q>The Good Place</q>?</p></li>
+</ul>
 
 <p>The rest of this page is for you to summarize important ideas from the module.</p>
 

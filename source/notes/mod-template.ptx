@@ -46,11 +46,13 @@
 <page>
 <paragraphs>
 <title>Review questions</title>
-<exercise><p>A review question
-        </p></exercise>
-                
-<exercise><p>Another review question
-		</p></exercise>
+Make sure you can answer the following questions:
+
+<ul>
+	<li><p></p></li>
+	<li><p></p></li>
+	<li><p></p></li>
+</ul>
                 
 <p>The rest of this page is for you to summarize important ideas from the module.</p>
 

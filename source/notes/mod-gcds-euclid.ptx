@@ -373,21 +373,23 @@
 	<title>Review questions</title>
     
     Make sure you can answer the following questions:
-    <exercise>
+    <ul>
+    <li>
     	<p>What is the formal definition of the greatest common divisor of two integers, that is <m>\gcd(a,b)</m>?</p>
- 	</exercise>
+ 	</li>
  
- 	<exercise>
+ 	<li>
 		<p>What is the Euclidean algorithm, how do we apply it, and why does it work?</p>
-	</exercise>
+	</li>
 	
-	<exercise>
+	<li>
 		<p>How can we use the Euclidean algorithm and "back-substitution" to write <m>\gcd(a,b)</m> as a linear combination of <m>a</m> and <m>b</m>?</p>
-	</exercise>
+	</li>
 	
-	<exercise>
+	<li>
 		<p>What does Bezout's identity say? What are some erroneous applications of Bezout's identity?</p>
-	</exercise>
+	</li>
+	</ul>
       
 	<p>The rest of this page is for you to summarize important ideas from the module.</p>
 

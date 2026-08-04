@@ -234,7 +234,7 @@
 	<introduction>
         <p>
           We'll start by considering the following lemma.
-          <lemma>
+          <lemma xml:id="lem-equivclasses">
             <statement>
               <p>
                 Let <m>S</m> be a nonempty set and let <m>\sim</m> be an
@@ -2067,14 +2067,16 @@
 <page>
 <paragraphs>
 <title>Review questions</title>
-<exercise><p>What is an equivalence relation? What does it mean to be reflexive, symmetric, and transitive?
-        </p></exercise>
+<ul>
+	<li><p>What is an equivalence relation? What does it mean to be reflexive, symmetric, and transitive?
+        </p></li>
                 
-<exercise><p>What is an equivalence class? What is a congruence class?
-		</p></exercise>
+	<li><p>What is an equivalence class? What is a congruence class?
+		</p></li>
 		
-<exercise><p>How do we add and multiply congruence classes?
-		</p></exercise>
+	<li><p>How do we add and multiply congruence classes?
+		</p></li>
+</ul>
                 
 <p>The rest of this page is for you to summarize important ideas from the module.</p>
 
