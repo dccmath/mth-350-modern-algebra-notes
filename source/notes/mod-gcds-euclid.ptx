@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<worksheet xml:id="ws-XXX-activity">
+<worksheet xml:id="ws-gcd-activity">
 
-	<title>Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</title>
+	<title>Week 4: Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</title>
 	<introduction><p><alert>Numbers</alert></p></introduction>
 	
 	<page>
