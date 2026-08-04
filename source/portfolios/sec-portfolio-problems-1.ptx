@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <chapter xml:id="sec-portfolio-problems" xmlns:xi="http://www.w3.org/2001/XInclude"> -->
+<!-- <title>Portfolio problems</title> -->
+
+	<!-- 
+	<section>
+	<title>Portfolio Problems 1, 2, 3</title>
+	-->
+	
+	<section>
+	<title>Portfolio Problems 1, 2, and 3</title>
+	
+	<introduction>
+		<p>Read the guidelines on the problem portfolio information and the writing guidelines before starting. The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately.</p>
+		
+		<p>You can submit 3 drafts per week, so there’s effectively unlimited attempts on any particular problem.</p>
+				
+		<p>You’ll put all your final drafts of your problems in a portfolio template (select all and copy). You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.</p>
+	</introduction>
+	
+	<project>
+		<title>Additive and Multiplicative Cancellation</title>
+		<introduction><p>In this problem you should use only the axioms of fields, and should do so explicitly. E.g., you can’t just switch <m>ab</m> to <m>ba</m> without saying commutative property of multiplication!</p></introduction>
+			<task><p>Prove that in a field, additive cancellation holds. That is, prove that if <m>F</m> is a field, <m>a, b, c \in F</m>, and <m>a + c = b + c</m>, then <m>a = b</m>.</p></task>
+			<task><p>Prove that in a field, multiplicative cancellation holds. That is, if <m>F</m> is a field, <m>a, b, c \in F</m>, <m>c \neq 0_{F}</m>, and <m>ac = bc</m>, then <m>a = b</m>.</p></task>
+	</project>
+	
+	<project>
+		<title>Are additive identities unique?</title>
+		<p>One of the field axioms is that a field <m>F</m> has an additive identity. That is, there exists an element <m>0_{F} \in F</m> such that <m>a + 0_{F} = a</m>. In math we care about the difference between <q>an</q> and <q>the</q>. If we say there’s <q>an</q> additive identity, then we’re not excluding the possibility of there being more than one. Whereas when we say <q>the</q>, we mean there’s exactly one.</p>
+		<p>So, can we refer to <q>the</q> additive identity of a field? That is, are additive identities unique? Prove (using definitions
+and field axioms) or disprove.</p>
+		<p>Note: If you prove, you should state your result as a theorem. One phrasing of the theorem could be <q>Let <m>F</m> be a field and suppose that <m>0_{F}</m> and <m>0'_{F}</m> are both additive identities for <m>F</m>. Then <m>0_{F} = 0'_{F}</m>.</q></p>
+	</project>
+	
+	<project>
+		<title>Practice with division</title>
+		<introduction><p>Let <m>a</m>, <m>b</m>, and <m>c</m> be integers. What conclusions, if any, can be drawn from the following situations? (You can say <q>no conclusions</q> for one, prove your other two answers.)</p></introduction>
+			<task><p><m>a \mid c</m> and <m>b \mid c</m>.</p></task>
+			<task><p><m>a \mid b</m> and <m>b \mid c</m>.</p></task>
+			<task><p><m>a \mid b</m> and <m>a \mid c</m>.</p></task>
+	</project>
+	
+	</section>
+
+<!-- </chapter> -->

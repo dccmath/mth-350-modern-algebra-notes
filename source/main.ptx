@@ -15,12 +15,6 @@
     <chapter xml:id="course-notes">
       <title>Weekly notes</title>
 
-      <introduction>
-        <p>
-          These are copies of the in-class activities distributed during the semester.
-        </p>
-      </introduction>
-
       <!-- Remove the example and replace with your own activities -->
     	 <xi:include href="./notes/mod-fields.ptx" />
    		 <xi:include href="./notes/mod-divisibility.ptx" />
@@ -34,7 +28,10 @@
     <chapter xml:id="portfolios">
       <title>Portfolio problems</title>
       
-      <xi:include href="./portfolios/sec-portfolio-problems.ptx" />
+      <xi:include href="./portfolios/sec-portfolio-problems-1.ptx" />
+      <xi:include href="./portfolios/sec-portfolio-problems-2.ptx" />
+      <xi:include href="./portfolios/sec-portfolio-problems-3.ptx" />
+      <xi:include href="./portfolios/sec-portfolio-problems-4.ptx" />
       <!-- Include handouts -->
       <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
     </chapter>

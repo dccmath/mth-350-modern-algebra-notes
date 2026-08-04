@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <chapter xml:id="sec-portfolio-problems" xmlns:xi="http://www.w3.org/2001/XInclude"> -->
+<!-- <title>Portfolio problems</title> -->
+
+	<!-- 
+	<section>
+	<title>Portfolio Problems 1, 2, 3</title>
+	-->
+	
+	
+	<section>
+	<title>Portfolio Problems 10, 11, and 12</title>
+	
+	<introduction>
+		<p><alert>This is the last problem set! Remember that you need to complete 10 out of 12 problems for your portfolio.</alert></p>
+		<p>Read the guidelines on the problem portfolio information and the writing guidelines before starting. The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately.</p>
+		
+		<p>You can submit 3 drafts per week, so there’s effectively unlimited attempts on any particular problem.</p>
+				
+		<p>You’ll put all your final drafts of your problems in a portfolio template (select all and copy). You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.</p>
+	</introduction>
+	
+	<project>
+		<introduction><p>
+			<em>We won’t explicitly cover this definition in class, this problem can be done any time! Please ask me if you need help (instead of asking AI!) There are also hints (commented out) in the Overleaf document.</em></p>
+			<p>Let <m>R</m> be a ring and let <m>r \in R</m>. The <term>centralizer</term> of <m>r</m> is defined to be the set of all <m>x \in R</m> such that <m>xr = rx</m>. We write <m>C(r)</m> for the centralizer of <m>r \in R</m>.</p>
+		</introduction>
+		<task><p>Find two elements of the centralizer of <m>\begin{bmatrix}1 &amp; 2 \\ 3 &amp; 4\end{bmatrix}</m> in <m>\mathcal{M}_{2 \times 2}</m>.</p></task>
+		<task><p>Prove that <m>C(r)</m> is a subring of <m>R</m>. (Use the subring test from Module 8!)</p></task>
+		<task><p>Is the centralizer of <m>r</m> necessarily commutative?</p></task>
+	</project>
+	
+	<project>
+		<introduction><p>
+			(Can be done after Module 9.) Recall that an <term>invariant</term> of a ring isomorphism is a property that is shared by
+rings that are isomorphic. That is, if <m>R</m> is isomorphic to <m>S</m> and <m>R</m> satisfies some property (like having identity), then <m>S</m> must have the same property.
+		</p></introduction>
+		<task><p>Prove the following: Let <m>R</m> and <m>S</m> be rings, and let <m>\phi : R \to S</m> be an isomorphism. If <m>R</m> has identity, say <m>1_{R}</m>, then <m>S</m> also has identity. Specifically, <m>\phi(1_{R})</m> is an identity for <m>S</m>. (Note, this proof is on page 109 in Activity 7.14, as usual you must fill in the missing details and expand on the <q>?</q>s.)</p></task>
+		<task><p>Use part (a) to show that <m>\mathbb{Z}</m> is not isomorphic to <m>\mathbb{E}</m>.</p></task>
+		<task><p>Prove that if <m>R</m> and <m>S</m> are isomorphic rings and <m>R</m> is commutative then <m>S</m> is commutative.</p></task>
+		<task><p>Use part (c) to show that <m>\mathbb{R}</m> and <m>\mathcal{M}_{2\times 2}</m> are not isomorphic.</p></task>
+	</project>
+	
+	<project><p>
+		Let <m>R</m> be a ring. For any integer <m>n \geq 1</m> and any <m>x \in \mathbb{R}</m> we define <md>nx = \underbrace{x + x + \cdots + x}_{n}.</md> The <term>characteristic</term> of <m>R</m>, denoted char(<m>R</m>), is the smallest positive integer <m>k</m> such that <m>kx = 0_{R}</m> for all <m>x \in R</m>. If no such integer exists, then <m>R</m> is said to have <term>characteristic zero</term>. Find the characteristic of <m>\mathcal{M}_{2 \times 2}(\mathbb{Z}_{m})</m>. Prove your answer. (You might take inspiration from the proof of Theorem 5.12 on p. 79 of your textbook.)
+	</p></project>
+	</section>
+
+<!-- </chapter> -->

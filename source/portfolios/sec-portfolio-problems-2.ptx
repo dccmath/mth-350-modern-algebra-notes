@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <chapter xml:id="sec-portfolio-problems" xmlns:xi="http://www.w3.org/2001/XInclude"> -->
+<!-- <title>Portfolio problems</title> -->
+
+	<!-- 
+	<section>
+	<title>Portfolio Problems 1, 2, 3</title>
+	-->
+	
+	
+	<section>
+		<title>Portfolio Problems 4, 5, and 6</title>
+		<introduction>
+			<p>Read the guidelines on the problem portfolio information and the writing guidelines before starting. The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately.</p>
+		
+			<p>You can submit 3 drafts per week, so there’s effectively unlimited attempts on any particular problem.</p>
+				
+			<p>You’ll put all your final drafts of your problems in a portfolio template (select all and copy). You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.</p>
+		</introduction>
+		
+		<project>
+			<title>Proving the division algorithm</title>
+				<p>(Related to Module 2) Prove the following:
+			Let <m>a</m> and <m>b</m> be integers with <m>a > 0</m>. Then there exist unique integers <m>q</m>
+and <m>r</m> such that:</p>
+			<md>b = aq + r \text{ and } 0 \leq r \lt a.</md>
+			<p><alert>Note:</alert> There's a <q>complete</q> proof of this starting on p. 14 in your textbook. You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of <q>?</q> in it. Your proof here should expand on every <q>?</q>, plus anywhere else that you had to stop and think! If you aren't sure why there is a <q>?</q>, that's an indication that you should think more and/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.</p>
+		</project>
+
+		<project>
+			<title>Well-defined operations</title>
+			<introduction>
+				<p>(Related to Module 3) In class we mentioned that adding and multiplying elements of <m>\mathbb{Z}_n</m> means we are adding/multiplying infinite sets. This may seem very natural and may not concern you at all, but it will all be total nonsense if addition and multiplication in <m>\mathbb{Z}_n</m> isn’t <em>well-defined</em>. This problem is to show you what can happen if an operation is not well-defined, and also prove that the addition and multiplication we’ve defined is well-defined.</p>
+			</introduction>
+			
+			<task><p>Let <m>\diamond</m> be the operation on <m>\mathbb{Z}_5</m> defined as
+					<md>[a] \diamond [b] = \begin{cases}
+							[1] &amp; \text{If } a \text{ and } b \text{ have the same parity} \\
+							[0] &amp; \text{If } a \text{ and } b \text{ have opposite parity}
+						\end{cases}
+					</md>
+					Note that <term>parity</term> refers to whether an integer is even or odd. Thus, two integers have the same parity if they are both even or both odd. Likewise they have opposite parity if one is even and one is odd.</p>
+					<p>Use the above definition to compute <m>[1]\diamond[3]</m>, <m>[1]\diamond[8]</m>, <m>[6]\diamond[13]</m>, and <m>[11]\diamond[13]</m>.</p>
+			</task>
+			
+			<task><p>What is the relationship between <m>[1]</m>, <m>[6]</m>, and <m>[11]</m> in <m>\mathbb{Z}_5</m>? What is the
+relationship between <m>[3]</m>, <m>[8]</m>, and <m>[13]</m> in <m>\mathbb{Z}_5</m>?</p>
+			</task>
+			
+			<task><p>Let <m>\star</m> denote a binary operation on a set <m>S</m>. Then <m>\star</m> is said to be
+well-defined provided that whenever <m>a = x</m> and <m>b = y</m> in <m>S</m> we have <m>a \star b = x \star y</m>. Is <m>\diamond</m> well-defined? Explain very clearly and refer to your work in the previous part.
+				</p>
+			</task>
+			
+			<task><p>Prove addition and multiplication in <m>\mathbb{Z}_n</m> as defined in class are well-defined. There’s a proof of addition on page 32 of your book, use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!
+				</p>
+			</task>
+		</project>
+		
+		<project>
+			<title>Greatest common divisors</title>
+			<introduction>
+				<p>(Related to Module 4)</p>
+			</introduction>
+			
+			<task><p>Let <m>a</m> and <m>b</m> be integers, not both 0. Prove that if there exist <m>x, y \in \mathbb{Z}</m> such that <m>ax + by = d</m>, then <m>\gcd(a, b) \mid d</m>.
+				</p>
+			</task>
+			
+			<task><p>Prove that for all nonzero integers <m>a</m>, <m>b</m>, and <m>c</m>, <m>\gcd(a, bc) = 1</m> if and
+only if <m>\gcd(a, b) = 1</m> and <m>\gcd(a, c) = 1</m>. (You’ll need to apply Bezout’s identity).
+				</p>
+			</task>
+		</project>
+ 
+	</section>
+
+<!-- </chapter> -->
