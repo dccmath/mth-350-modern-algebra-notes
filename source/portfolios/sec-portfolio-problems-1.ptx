@@ -12,16 +12,20 @@
 	<title>Portfolio Problems 1, 2, and 3</title>
 	
 	<introduction>
-		<p>Read the guidelines on the problem portfolio information and the writing guidelines before starting. The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately.</p>
+		<p>Read the guidelines in the Syllabus and review the <url href="https://drive.google.com/file/d/1SrXw12ncNCllbHoDThrkhmcRPjdCBqCV/view?usp=sharing">MTH 210 writing guidelines</url> before starting.</p>
+		
+		<p>The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately. In particular, remember the golden rule:</p>
+		
+		<p><em>Every sentence that you submit must be one that you have generated yourself and that you fully understand.</em></p>
 		
 		<p>You can submit 3 drafts per week, so there’s effectively unlimited attempts on any particular problem.</p>
 				
-		<p>You’ll put all your final drafts of your problems in a portfolio template (select all and copy). You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.</p>
+		<p>You'll put all your final drafts of your problems in a <url href="https://www.overleaf.com/read/ycxmsnhfwnzm#31988b">portfolio template</url>. You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.</p>
 	</introduction>
 	
 	<project>
 		<title>Additive and Multiplicative Cancellation</title>
-		<introduction><p>In this problem you should use only the axioms of fields, and should do so explicitly. E.g., you can’t just switch <m>ab</m> to <m>ba</m> without saying commutative property of multiplication!</p></introduction>
+		<introduction><p>In this problem you should use only the axioms of fields, and should do so explicitly. E.g., you can’t just switch <m>ab</m> to <m>ba</m> without citing the commutative property of multiplication!</p></introduction>
 			<task><p>Prove that in a field, additive cancellation holds. That is, prove that if <m>F</m> is a field, <m>a, b, c \in F</m>, and <m>a + c = b + c</m>, then <m>a = b</m>.</p></task>
 			<task><p>Prove that in a field, multiplicative cancellation holds. That is, if <m>F</m> is a field, <m>a, b, c \in F</m>, <m>c \neq 0_{F}</m>, and <m>ac = bc</m>, then <m>a = b</m>.</p></task>
 	</project>
@@ -36,7 +40,7 @@ and field axioms) or disprove.</p>
 	
 	<project>
 		<title>Practice with division</title>
-		<introduction><p>Let <m>a</m>, <m>b</m>, and <m>c</m> be integers. What conclusions, if any, can be drawn from the following situations? (You can say <q>no conclusions</q> for one, prove your other two answers.)</p></introduction>
+		<introduction><p>Let <m>a</m>, <m>b</m>, and <m>c</m> be integers. What conclusions, if any, can be drawn from the following situations? (You can say <q>no conclusions</q> for at most one, for two others make a clear and strong statement and prove it.)</p></introduction>
 			<task><p><m>a \mid c</m> and <m>b \mid c</m>.</p></task>
 			<task><p><m>a \mid b</m> and <m>b \mid c</m>.</p></task>
 			<task><p><m>a \mid b</m> and <m>a \mid c</m>.</p></task>

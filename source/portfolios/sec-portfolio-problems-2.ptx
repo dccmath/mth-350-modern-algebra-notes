@@ -11,13 +11,20 @@
 	
 	<section>
 		<title>Portfolio Problems 4, 5, and 6</title>
-		<introduction>
-			<p>Read the guidelines on the problem portfolio information and the writing guidelines before starting. The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately.</p>
+	<introduction>
+		<p>Read the guidelines in the Syllabus and review the <url href="https://drive.google.com/file/d/1SrXw12ncNCllbHoDThrkhmcRPjdCBqCV/view?usp=sharing">MTH 210 writing guidelines</url> before starting.</p>
 		
-			<p>You can submit 3 drafts per week, so there’s effectively unlimited attempts on any particular problem.</p>
-				
-			<p>You’ll put all your final drafts of your problems in a portfolio template (select all and copy). You can start using that now for drafts, but please edit so that you only turn in the one appropriate problem under each assignment on Blackboard! Please start early and ask for help when you need it.</p>
-		</introduction>
+		<p>The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately. In particular, remember the golden rule:</p>
+		
+		<p><em>Every sentence that you submit must be one that you have generated yourself and that you fully understand.</em></p>
+		
+		<p>Other reminders:
+		<ul>
+			<li><p>You can submit 3 drafts per week, including revisions of a previous problem.</p></li>
+			<li><p>You'll put all your final drafts of your problems in a <url href="https://www.overleaf.com/read/ycxmsnhfwnzm#31988b">portfolio template</url>. You can start using that now for drafts. Start early and ask for help when you need it!</p></li>
+		</ul>
+		</p>
+	</introduction>
 		
 		<project>
 			<title>Proving the division algorithm</title>
@@ -25,7 +32,7 @@
 			Let <m>a</m> and <m>b</m> be integers with <m>a > 0</m>. Then there exist unique integers <m>q</m>
 and <m>r</m> such that:</p>
 			<md>b = aq + r \text{ and } 0 \leq r \lt a.</md>
-			<p><alert>Note:</alert> There's a <q>complete</q> proof of this starting on p. 14 in your textbook. You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of <q>?</q> in it. Your proof here should expand on every <q>?</q>, plus anywhere else that you had to stop and think! If you aren't sure why there is a <q>?</q>, that's an indication that you should think more and/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.</p>
+			<p><alert>Note:</alert> There's a <q>complete</q> proof of this starting on p. 14 in your textbook. You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of <q>?</q> in it. Your proof here should add detailed explanation for every <q>?</q>, plus anywhere else that you had to stop and think! If you aren't sure why there is a <q>?</q>, that's an indication that you should think more and/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.</p>
 		</project>
 
 		<project>
@@ -53,7 +60,7 @@ well-defined provided that whenever <m>a = x</m> and <m>b = y</m> in <m>S</m> we
 				</p>
 			</task>
 			
-			<task><p>Prove addition and multiplication in <m>\mathbb{Z}_n</m> as defined in class are well-defined. There’s a proof of addition on page 32 of your book, use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!
+			<task><p>Prove that addition and multiplication in <m>\mathbb{Z}_n</m>, as defined in class, are well-defined. There’s a proof of addition on page 32 of your book, use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!
 				</p>
 			</task>
 		</project>
