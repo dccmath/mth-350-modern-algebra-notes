@@ -3,7 +3,7 @@
 
 <worksheet xml:id="ws-equivalence-zn-activity">
 
-	<title>Week 3: Equivalence Relations, Equivalence Classes, and <m>\mathbb{Z}_n</m></title>
+	<title>Module 3: Equivalence Relations, Equivalence Classes, and <m>\mathbb{Z}_n</m></title>
 	<introduction><p><alert>A Strange New World</alert></p></introduction>
 	
 	<page>
@@ -579,7 +579,7 @@
 
 
 <page>
-<paragraphs>
+
 	<exercise>
 		<p>Fill in the addition and multiplication tables on this page and the next.</p>
 		<p>These tables have all the elements of <m>\mathbb{Z}_{11}</m>. The <m>+</m> and <m>\cdot</m> are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).</p>
@@ -1263,12 +1263,10 @@
     </row>
   </tabular>
 
-</paragraphs>
 </page>
 
 
 <page>
-<paragraphs>
 	<exercise><p>Which <m>n</m> is this table for?</p></exercise>
 	
 
@@ -2060,7 +2058,7 @@
 
 	
 	<exercise><p>Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a field do these have?</p></exercise>
-</paragraphs>
+
 </page>
 	
 

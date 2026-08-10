@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<worksheet xml:id="ws-algebra-in-other-activity">
+
+	<title>Module 7: Algebra in Other Number Systems</title>
+	<introduction><p><alert>Into the Wild</alert></p></introduction>
+	
+	<page>
+
+	<paragraphs>
+		<title>Power Sets</title>
+		
+		<definition>
+			<statement><p>
+			 Let <m>S</m> be a set.
+  The <term>power set</term> of <m>S</m> denoted <m>\mathcal{P}(S)</m> is the
+  collection of all subsets of <m>S</m>.
+  That is <m>\mathcal{P}(S)=\{T: T\subseteq S\}</m>.
+ 			</p></statement>
+		</definition>
+
+		<definition>
+			<statement><p>
+				For any sets <m>A</m> and <m>B</m>, the <term>symmetric difference</term> of
+  <m>A</m> and <m>B</m>, denoted <m>A \triangle B</m> is the set of all elements
+  that belong to either <m>A</m> or <m>B</m>, but not both.
+  That is,
+  <md>
+    A \triangle B = \{x: x\in A\cup B \text{ and }x\not\in A\cap B\}.
+  </md>
+
+			</p></statement>
+		</definition>
+		
+		<definition>
+			<statement><p>
+				  For any natural number <m>n</m>, the number system <m>\mathcal{P}_{n}</m> is
+  <m>(\mathcal{P}(\{1,2,\dots, n\}), \triangle, \cap)</m>.
+  That is, the elements are the sets that are subsets of
+  <m>\{1,2,\dots, n\}</m>, and for <m>A,B\in \mathcal{P}_{n}</m> we define
+  <m>A+B = A\triangle B</m> and <m>A\cdot B = A \cap B</m>.
+			</p></statement>
+		</definition>
+    </paragraphs>
+    
+    <paragraphs>
+    	<title>Working with <m>\mathcal{P}_{n}</m></title>
+	
+		<exercise workspace="1in">
+			<p>Write the addition and multiplication tables for <m>\mathcal{P}_{2}</m>.</p>
+		</exercise>
+		
+		<exercise workspace="1in">
+			<p>Is there an additive identity in <m>\mathcal{P}_{2}</m>? What about a multiplicative identity in <m>\mathcal{P}_{2}</m>? Do these generalize to <m>\mathcal{P}_{n}</m>?</p>
+		</exercise>
+	</paragraphs>
+    </page>
+
+	<page>
+	
+		<exercise workspace="1.5in">
+			<p>Does every element of <m>\mathcal{P}_{2}</m> have an additive inverse? What elements of <m>\mathcal{P}_{n}</m> do you think have an additive inverse?</p>
+		</exercise>
+		
+		<exercise workspace="1.5in">
+			<p>Is every nonzero element of <m>\mathcal{P}_{2}</m> a unit? What elements of <m>\mathcal{P}_{n}</m> do you think are units?</p>
+		</exercise>
+
+		<exercise workspace="1.5in">
+			<p>Does <m>\mathcal{P}_{2}</m> have zero divisors? Do you think <m>\mathcal{P}_{n}</m> has zero divisors?</p>
+		</exercise>
+		
+		<exercise workspace="1.5in">
+			<p>Do you think <m>\mathcal{P}_{n}</m> is a ring? A commutative ring? A ring with identity? An integral domain? A field?</p>
+		</exercise>
+	</page>
+	
+	<page>
+		<paragraphs>
+		<title>Polynomials</title>
+		
+		<definition>
+			<statement>
+			<p>
+  Let <m>R</m> be a commutative ring.
+  A <term>polynomial in <m>x</m> over <m>R</m> </term> is an expression of the form
+  <md>
+    a_{n}x^{n} + a_{n-1}x^{n-1}+ \cdots a_{2}x^{2} + a_{1}x^{1} + a_{0}x^{0},
+  </md>
+  where <m>n</m> is a nonnegative integer and
+  <m>a_{n},a_{n-1},\dots,a_{2},a_{1},a_{0}</m> are elements of <m>R</m>.
+  The <em>polynomial ring over <m>R</m> </em> is the set of all polynomials over
+  the ring <m>R</m>, and is denoted <m>R[x]</m>.
+  (Note this language implies the polynomials form a ring.
+  We'll take this as true, and just verify a couple of properties.
+  The proof is mostly tedious and not insightful.
+</p>
+			</statement>
+		</definition>
+		
+		<definition>
+			<statement>
+			<p>
+  <term>Adding Polynomials</term>: The <term>sum of polynomials</term> <m>p(x)</m> and <m>q(x)</m> is defined to be
+  <md>
+    p(x) + q(x) = (a_{n}+b_{n})x^{n} + (a_{n-1}+b_{n-1})x^{n-1}+ \cdots + (a_{1}+b_{1}) x + (a_{0}+b_{0}).
+  </md>
+</p>
+			</statement>
+		</definition>
+		
+		<definition>
+			<statement>
+			<p>
+  <term>Multiplying Polynomials</term>: The
+  <term>product of polynomials</term> <m>p(x)</m> (of degree <m>m</m>) and
+  <m>q(x)</m> (of degree <m>n</m>) is defined to be
+  <md>
+    p(x)q(x) = c_{m+n}x^{m+n}+ c_{m+n-1}x^{m+n-1}+ \cdots + c_{2}x^{2} + c_{1}x + c_{0}.
+  </md>
+  where for each <m>k</m> with <m>0\le k \le m+n</m>,
+  <md>
+    c_{k} = a_{k}b_{0} + a_{k-1}b_{1} + a_{k-2}b_{2} + \cdots + a_{2}b_{k-2}+ a_{1}b_{k-1}+a_{0}b_{k}.
+  </md>
+</p>
+			</statement>
+		</definition>
+		
+		<exercise workspace="1.5in">
+		<p>
+  Add and multiply <m>p(x) = 2x^{2}+4x+2</m> and <m>q(x)=3x+3</m> using the
+  definitions above.
+  Does this agree with what you think the sum and product should be?
+		</p>
+		</exercise>
+		
+		<exercise workspace="1.5in">
+		<p>
+  <em>If time:</em> Let <m>r(x)= 5x+4</m>.
+  Find <m>p(x)(q(x)+r(x))</m> and <m>p(x)q(x)+p(x)r(x)</m>.
+  What property of rings does this illustrate?
+		</p>
+		</exercise>
+		
+		</paragraphs>
+	</page>
+	
+	<page>
+		<exercise workspace="1.5in">
+		<p>
+  Is <m>\mathbb{Z}[x]</m> a commutative ring with identity?
+  Is <m>\mathbb{E}[x]</m> a commutative ring with identity?
+  Is <m>R[x]</m> always, sometimes or never a commutative ring?
+  A ring with identity?
+		</p>
+		</exercise>
+		
+		<exercise workspace="1.5in">
+		<p>
+  Let <m>f(x)=[2]x^{2} + [4]x + [2]</m> and <m>g(x) = [3]x+[3]</m> be
+  polynomials in <m>\mathbb{Z}_{6}[x]</m>.
+  Find <m>f(x)g(x)</m>.
+  Is <m>R[x]</m> always, sometimes, or never an integral domain?
+		</p>
+		</exercise>
+		
+		<exercise workspace="1.5in">
+		<p>
+  At some point you (maybe) learned that the if <m>p(x)</m> has degree <m>m</m>
+  and <m>q(x)</m> has degree <m>n</m> then the degree of <m>p(x)q(x)</m> is
+  <m>m+n</m>.
+  There, you were thinking about <m>\mathbb{R}[x]</m>.
+  Do the degrees work out this way in <m>R[x]</m> for any commutative ring
+  <m>R</m>?
+  If not always, when will it work?
+  To explain, determine what the <q>leading coefficient</q> of <m>p(x)q(x)</m> is
+  for arbitrary polynomials <m>p(x)</m> and <m>q(x)</m>.
+		</p>
+		</exercise>
+		
+		<exercise workspace="1.5in">
+		<p>
+  If <m>R</m> has an identity, the multiplicative identity of <m>R[x]</m> is
+  <m>i(x) = 1</m>.
+  What elements of <m>R[x]</m> will have multiplicative inverses?
+		</p>
+		</exercise>
+	</page>
+
+<page xml:id="sec-alegbra-in-other-review">
+
+<paragraphs>
+<title>Review questions</title>
+Make sure you can answer the following questions:
+
+<ul>
+	<li><p>What axioms hold in a ring?</p></li>
+	<li><p>What is <m>\mathcal{P}_n</m> and is it a ring, an integral domain, a field?</p></li>
+	<li><p>What is <m>R[x]</m> for a commutative ring <m>R</m> and is it a ring, an integral domain, a field?</p></li>
+</ul>
+                
+<p>The rest of this page is for you to summarize important ideas from the module.</p>
+
+</paragraphs>
+
+</page>
+
+
+<page>
+
+<paragraphs>
+    <title>Weekly Practice 7</title>
+
+		<exercise number="1">
+		<title>Positive reals</title>
+		<introduction><p>
+    Let <m>\mathbb{R}^{+}</m> denote the set of all positive real numbers.
+    (Note <m>0</m> is not positive!) For all <m>x,y\in \mathbb{R}^{+}</m> define
+    <md>
+        x\oplus y = xy \text{ and }x\otimes y = x^{\log(y)}.
+    </md>
+
+		</p></introduction>
+		
+		<task><p>With these properties, does <m>\mathbb{R}^{+}</m> have an additive identity?
+    If so, what is it?</p></task>
+		<task><p>With these properties, does <m>\mathbb{R}^{+}</m> have a multiplicative
+    identity?
+    If so, what is it?</p></task>
+		<task><p>Is <m>\mathbb{R}^{+}</m> a ring with these operations?
+    Explain each axiom.</p></task>
+		<task><p>Does <m>\mathbb{R}^{+}</m> have zero divisors using these operations?</p></task>
+		<task><p>Is <m>\mathbb{R}^{+}</m> an integral domain using these operations?</p></task>
+    	</exercise>
+	
+
+		<exercise number="2">
+		<title>Complex numbers</title>
+		<introduction><p>A <term>complex number</term> is any number of the form <m>a+bi</m> where
+    <m>a,b\in \mathbb{R}</m> and <m>i</m> is an imaginary number with the
+    property that <m>i^{2} = -1</m>.
+    For a complex number <m>x=a+bi</m>, the real number is called the
+    <term>real part</term> of <m>x</m> and <m>b</m> is called the
+    <term>imaginary part</term> of <m>x</m>.
+    So
+    <md>
+        \mathbb{C}= \{a+bi: a\in \mathbb{R}, b\in\mathbb{R}, \text{ and }i^{2} = -1\}.
+    </md>
+    Furthermore, addition and multiplication within <m>\mathbb{C}</m> are
+    defined by
+    <md>
+        (a+bi) + (c+di) = (a+c) + (b+d)i
+    </md>
+    and
+    <md>
+        (a+bi)(c+di) = (ac - bd) + (ad+bc)i.
+    </md>
+    The complex numbers turn out to be a field.
+    Let's show every nonzero element has a multiplicative inverse.
+    That is, we want to show, for <m>x=a+bi</m> where <m>a</m> and <m>b</m> are
+    not both <m>0</m>, there exists <m>y=c+di</m> such that
+    <md>
+        1 + 0i = xy = (a+bi)\cdot (c+di) = (ac-bd) +(ad+bc)i.
+    </md>
+	</p>
+
+	<p>
+    So we want <m>ac-bd = 1</m> and <m>ad+bc = 0</m>.
+	</p>
+		</introduction>
+
+        	<task><p>
+    Solve the system of equations
+</p>
+<md>
+    <mrow>ac-bd&amp;= 1</mrow>
+    <mrow>ad+bc&amp;= 0</mrow>
+</md>
+<p>
+    for <m>c</m> and <m>d</m>, getting expressions that only depend on <m>a</m>
+    and <m>b</m>.
+    (You can do so using substitution.
+    One way is to solve for <m>d</m> in the second equation, plug your answer
+    into the first equation, and then solve for <m>c</m>.
+    Then use what you know for <m>c</m> to find <m>d</m>.)
+</p>
+</task>
+            <task><p>Verify that your
+    answer in (a) gives the multiplicative inverse for <m>a+bi</m>.
+    That is, <m>(a+bi)(c+di) = 1 + 0i</m>.</p></task>
+		</exercise>
+		
+	</paragraphs>
+</page>
+
+<page>
+
+		<exercise number="3">
+		<title>Examples or not?</title>
+		<introduction><p>Give an example of each of the following or explain why no such example exists.
+		</p></introduction>
+		
+		<task><p>Two polynomials of degree <m>1</m> in <m>\mathbb{Z}_{4}[x]</m> whose product
+    is a polynomial of degree <m>1</m>.</p></task>
+		<task><p>Two polynomials of degree <m>3</m> in <m>\mathbb{R}[x]</m> whose sum is a
+    polynomial of degree <m>1</m>.</p></task>
+		<task><p>Two polynomials of degree <m>2</m> in <m>\mathbb{Z}_{4}[x]</m> whose product
+    is a polynomial of degree <m>5</m>.</p></task>
+		</exercise>
+	
+	
+ </page>
+ 
+ </worksheet>
+ 

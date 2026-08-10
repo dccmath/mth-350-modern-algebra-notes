@@ -3,7 +3,7 @@
 
 <worksheet xml:id="ws-gcd-activity">
 
-	<title>Week 4: Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</title>
+	<title>Module 4: Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</title>
 	<introduction><p><alert>Numbers</alert></p></introduction>
 	
 	<page>
@@ -161,7 +161,6 @@
 	
 	<page>
 	
-	<paragraphs>
    
    <exercise workspace="3in">
               <p>
@@ -193,8 +192,7 @@
                 <m>3141</m>.
               </p>
             </exercise>
-    
-    </paragraphs>
+   
 
 	</page>
 	

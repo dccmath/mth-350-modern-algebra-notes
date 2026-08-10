@@ -3,7 +3,7 @@
 
 <worksheet xml:id="ws-rings-activity">
 
-	<title>Week 5: Rings, Units, Zero Divisors, and Integral Domains</title>
+	<title>Module 5: Rings, Units, Zero Divisors, and Integral Domains</title>
 	<introduction><p><alert>Almost Perfect</alert></p></introduction>
 	
 	<page>
@@ -37,6 +37,7 @@
 
 	<page>
 	<paragraphs>
+	<title>Examples and non-examples</title>
 
 <p>
   For each of the definitions below, list an example and a non-example.
@@ -253,7 +254,7 @@
 </page>
 
 <page>
-<paragraphs>
+
 		<exercise workspace="1.5in">
 				<p>
                 (Backward direction of the unit part.) Suppose
@@ -306,7 +307,7 @@
                 <m>[a] \cdot [\frac{n}{d}] = [0]</m>.
               </p>
           </exercise>
-    </paragraphs>
+
 	</page>
 
 	<page>

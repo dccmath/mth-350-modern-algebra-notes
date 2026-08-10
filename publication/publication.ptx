@@ -124,7 +124,7 @@
     <!-- How many levels deep the numbering of these items runs.  Values -->
     <!-- may not exceed the divisions @level above.  Defaults depend on  -->
     <!-- the type of document.                                           -->
-      <blocks level="1" /> <!-- default = 2 -->
+      <blocks level="0" distinct="yes" /> <!-- default = 2 -->
       <projects level="0" distinct="yes" />
       <equations level="1" />
 
@@ -137,7 +137,7 @@
     <!-- why the "projects" entry below has no effect as written.          -->
       <projects level="0" />
       <!--<figures distinct="no" level="0" />-->
-      <!--<exercises distinct="no" level="0" />-->
+      <exercises distinct="yes" level="0" />
       <!--<openproblems distinct="no" level="0" />-->
   </numbering>
 

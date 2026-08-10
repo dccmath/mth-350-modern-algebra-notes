@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<worksheet xml:id="ws-proofs-activity">
+
+	<title>Module 6: What Properties Hold When?</title>
+	<introduction><p><alert>Proofs</alert></p></introduction>
+	
+	<page>
+
+	<paragraphs>
+		<title>Rings</title>
+		
+    <p>
+       Here's a reminder of the ring axioms which we will use in this module!
+    </p>
+    
+    		<definition>
+			<p>A <term>ring</term> is a set <m>R</m> together with two binary operations, called addition (<m>+</m>) and multiplication (<m>\cdot</m>), such that all of the following axioms hold:</p>
+			
+			<ul>
+				<li><p><em>The set <m>R</m> is closed under addition and multiplication,</em> meaning that for all <m>x, y \in R</m>, <m>x+y \in R</m> and <m>x \cdot y \in R</m>.</p></li>
+				
+				<li><p><em>Addition is associative,</em> meaning that for all <m>x, y, z \in R</m>, <m>(x+y)+z = x+(y+z)</m>.</p></li>
+				
+				<li><p><em>Addition is commutative,</em> meaning that for all <m>x, y \in R</m>, <m>x +y = y+x</m>.</p></li>
+				
+				<li><p><em>The set <m>R</m> contains an additive identity,</em> also called a <em>zero element</em>, meaning that there exists some element <m>0_{R} \in R</m> such that <m>x+0_{R} = x</m> for all <m>x \in R</m>.</p></li>
+				
+				<li><p><em>Every element of <m>R</m> has an additive inverse within <m>R</m></em>, meaning that for every <m>x \in R</m>, there exists <m>y \in R</m> such that <m>x + y = 0_{R}</m>.</p></li>
+				
+				<li><p><em>Multiplication is associative,</em> meaning that for all <m>x, y, z \in R</m>, <m>(x \cdot y) \cdot z = x \cdot (y \cdot z)</m>.</p></li>
+				
+				<li><p><em>Multiplication distributes over addition,</em> meaning that for all <m>x, y, z \in R</m>, <m>x \cdot (y+z) = x \cdot y + x \cdot z</m> and <m>(x+y) \cdot z = x \cdot z + y \cdot z</m>.</p></li>
+			</ul>
+			
+		</definition>
+
+    </paragraphs>
+    </page>
+
+
+	<page>
+	
+	<p>
+    Here's a list of theorems.
+    If we can prove these using ring axioms, we know they are true about all
+    rings including - square matrices <m>\mathcal{M}_{n\times n}</m>, integers
+    <m>\mathbb{Z}</m>, even integers <m>\mathbb{E}</m>, the rational numbers
+    <m>\mathbb{Q}</m>, polynomials <m>R[x]</m> for a commutative ring <m>R</m>,
+    the real numbers <m>\mathbb{R}</m>, the complex numbers <m>\mathbb{C}</m>,
+    and anything else we can show is a ring.
+	</p>
+
+<theorem>
+    <statement>
+        <p>
+            (Additive Cancellation) Let <m>R</m> be a ring.
+            For all <m>x,y,z\in R</m>, if <m>x+z = y+z</m> then <m>x=y</m>.
+        </p>
+    </statement>
+</theorem>
+
+<theorem xml:id="proofs-thm-mult-0">
+    <statement>
+        <p>
+            (Multiplication by <m>0</m> ) Let <m>R</m> be a ring and let
+            <m>0</m> be the additive identity of <m>R</m>.
+            Then <m>0x=0=x0</m> for all <m>x\in R</m>.
+        </p>
+    </statement>
+</theorem>
+
+<theorem>
+    <statement>
+        <p>
+            (Uniqueness) Let <m>R</m> be a ring.
+            <ul>
+                <li>
+                    <p>
+                        (Additive identities) Suppose that both <m>0</m> and
+                        <m>0'</m> are zero elements for <m>R</m>.
+                        Then <m>0=0'</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        (Additive inverses) Let <m>x\in R</m>.
+                        Suppose that both <m>y</m> and <m>y'</m> are additive
+                        inverses for <m>x</m>.
+                        Then <m>y=y'</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        (Multiplicative identities) Suppose that both <m>1</m>
+                        and <m>1'</m> are both identities for <m>R</m>.
+                        Then <m>1=1'</m>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        (Multiplicative inverses) Let <m>x\in R</m>.
+                        Suppose that both <m>y</m> and <m>y'</m> are
+                        multiplicative inverses for <m>x</m>.
+                        Then <m>y=y'</m>.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</theorem>
+
+<theorem>
+    <statement>
+        <p>
+            (Fields are integral domains.) Let <m>R</m> be a ring with identity
+            and let <m>x\in R</m> be a unit.
+            Then <m>x</m> is not a zero divisor.
+        </p>
+    </statement>
+</theorem>
+
+<theorem>
+    <statement>
+        <p>
+            (Finite integral domains are fields.) Let <m>R</m> be a finite
+            integral domain.
+            Let <m>a\in R</m> with <m>a\neq 0</m>.
+            Then <m>a</m> is a unit.
+        </p>
+    </statement>
+</theorem>
+
+<p>
+    In the following theorem note that the symbol <m>-x</m> means <q>the additive
+    inverse of <m>x</m></q>.
+    We define subtraction in terms of addition, e.g., <m>x-y = x + (-y)</m>.
+</p>
+
+<theorem>
+    <statement>
+        <p>
+            (The negatives.) Let <m>R</m> be a ring, and let <m>x,y,z \in R</m>.
+            Then
+        </p>
+       
+       <sidebyside>
+       	<ul>
+			<li><p><m>-(-x) = x</m></p></li>
+			<li><p><m>x(-y)=-(xy) = (-x)y</m></p></li>
+			<li><p><m>(-x)(-y) = xy</m></p></li>
+		</ul>
+		<ul>
+			<li><p><m>x(y-z) = xy-xz</m></p></li>
+			<li><p><m>(y-z)x= yx-zx</m></p></li>
+			<li><p><m>-(x+y)=-x-y</m></p></li>
+		</ul>
+       </sidebyside>
+
+    </statement>
+</theorem>
+
+<theorem>
+    <statement>
+        <p>
+            (Generalized Distributive Law) Let <m>R</m> be a ring, let
+            <m>n\ge 2</m>, and let <m>a,b_{1},b_{2},\dots, b_{n}\in R</m>.
+            Then
+            <ul>
+                <li>
+                    <p>
+                        <m>a(b_{1}+b_{2}+\cdots+b_{n})=ab_{1}+ab_{2}+\cdots+ab_{n}</m>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>(b_{1}+b_{2}+\cdots+b_{n})a = b_{1}a+b_{2}a+\cdots+b_{n}a.</m>
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</theorem>
+
+	
+	</page>
+	
+	<page>
+		<paragraphs>
+			<title>Let's prove some theorems!</title>
+			
+			<exercise workspace="2in">
+			
+				<p>In Weekly Practice 1 you proved in any field <m>F</m> and any <m>a\in F</m>, <m>0_{F}\cdot a = 0_{F}</m>. You actually only needed the ring axioms. Let's recall that proof.
+</p>
+
+<!-- Find a way to insert the original theorem here, OPEN, rather than having a duplicate theorem statement below -->
+<!-- <xref ref="proofs-thm-mult-0" /> -->
+
+<theorem>
+  <statement>
+    <p>
+      (Multiplication by <m>0</m> ) Let <m>R</m> be a ring and let <m>0</m> be
+      the additive identity of <m>R</m>.
+      Then <m>0x=0=x0</m> for all <m>x\in R</m>.
+    </p>
+<p>
+  Prove it!
+  Hint: Consider <m>(0+0)x</m> in two different ways.
+</p>
+
+  </statement>
+</theorem>
+
+</exercise>
+
+<exercise workspace="2in">
+<p> In Problem 5 of the proof portfolio, you'll prove
+  additive and multiplicative cancellation holds in fields.
+  For additive cancellation, you only need the ring axioms.
+  Let's prove multiplicative cancellation holds in more than just fields.
+</p>
+
+<theorem>
+  <statement>
+    <p>
+      (Multiplicative Cancellation) Let <m>R</m> be a ring and let <m>z</m> be a
+      nonzero element of <m>R</m> that is not a zero divisor.
+      For <m>x,y\in R</m>, if <m>xz=yz</m>, then <m>x=y</m>.
+      Similarly if <m>zx = zy</m> then <m>x=y</m>.
+    </p>
+  </statement>
+</theorem>
+
+<p>
+  Prove it!
+  Hint: Starting with <m>xz=yz</m>, add <m>(-y)z</m> to both sides.
+</p>
+</exercise>
+			
+		</paragraphs>
+	</page>
+	
+	
+<page>
+
+<p>
+  We established in the preview activity for this
+  module that every field is an integral domain.
+  It turns out every <em>finite</em> integral domain is a field.
+</p>
+
+<theorem>
+  <statement>
+    <p>
+      (Finite integral domains are fields.) Let <m>R</m> be a finite integral
+      domain.
+      Let <m>a\in R</m> with <m>a\neq 0</m>.
+      Then <m>a</m> is a unit.
+    </p>
+  </statement>
+</theorem>
+
+<p>
+  Prove it!
+  Okay, this one has a trick, so let's walk through some parts.
+</p>
+
+	<exercise workspace="1in">
+      <p>
+        Since <m>R</m> is an integral domain, <m>R</m> has identity.
+        Consider the set <m>A</m>:
+        <md>
+          A := R- \{0\} = \{1, a_{1},a_{2},\dots, a_{n}\}.
+        </md>
+        Let <m>a\in R</m> with <m>a\neq 0</m>.
+        Multiply each element of <m>R-\{0\}</m> by <m>a</m> to get
+        <md>
+          B := \{a,aa_{1},aa_{2},\dots, aa_{n}\}.
+        </md>
+        Explain why all elements of <m>B</m> are unique.
+        (Go by contradiction - suppose for some <m>i,j</m>,
+        <m>aa_{i} = aa_{j}</m>.
+        Then what?
+      </p>
+     </exercise>
+
+
+	<exercise workspace="1in">
+      <p>
+        Why does this imply that <m>a</m> has an inverse?
+      </p>
+    </exercise>
+
+    <exercise workspace="0.5in">
+      <p>
+        Give an example of an infinite integral domain that is not a field.
+      </p>
+    </exercise>
+
+    <exercise workspace="0.5in">
+      <p>
+        For which <m>n</m> is <m>\mathbb{Z}_{n}</m> an integral domain?
+        For which <m>n</m> is <m>\mathbb{Z}_{n}</m> a field?
+      </p>
+    </exercise>
+
+<p>
+  You may read <m>-x</m> as <q>negative <m>x</m>.</q>
+  When talking about rings, the symbol <m>-x</m> means <q>the additive inverse of
+  <m>x</m>.</q>
+  But the theorem labeled <q>the negatives</q> tells us that <m>-x</m> works like
+  the negative we are familiar with.
+</p>
+
+<theorem>
+  <statement>
+    <p>
+      Let <m>R</m> be a ring and let <m>x,y\in R</m>.
+      Then <m>x(-y) = -(xy)</m>.
+    </p>
+  </statement>
+</theorem>
+
+<exercise workspace="1in">
+<p>
+  Prove it!
+  You want to show <q>the additive inverse of <m>xy</m> is <m>x(-y)</m>.</q>
+  So we want to show <m>xy+x(-y)=0</m>.
+  What ring axioms can you use to show this is true?
+</p>
+</exercise>
+
+</page>
+
+
+
+<page xml:id="sec-proofs-review">
+
+<paragraphs>
+<title>Review questions</title>
+Make sure you can answer the following questions:
+
+<ul>
+  <li>
+    <p>
+      When does additive cancellation hold?
+      When does multiplicative cancellation hold?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      How do we usually prove uniqueness?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      What is the relationship between fields and integral domains?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      What do we say instead of <q>negative</q> when reading <m>-x</m>?
+      How do we prove things about <q>negatives</q>?
+    </p>
+  </li>
+
+  <li>
+    <p>
+      How do we prove <m>0\times x = 0</m> for any ring <m>R</m> and
+      <m>x\in R</m>?
+    </p>
+  </li>
+</ul>
+        
+<p>The rest of this page is for you to summarize important ideas from the module.</p>
+
+</paragraphs>
+
+</page>
+
+
+<page>
+
+<paragraphs>
+    <title>Weekly Practice 6</title>
+
+
+		<exercise number="1">
+		<title>Matrix problems</title>
+		<statement><p>
+  Prove <m>\mathcal{M}_{2\times 2}(\mathbb{R})</m> (two by two matrices with
+  entries from the real numbers) has a zero divisor.
+  What reason besides having zero divisors is
+  <m>\mathcal{M}_{2\times 2}(\mathbb{R})</m> not an integral domain?
+		</p></statement>
+    	</exercise>
+	
+		<exercise number="2">
+		<title>A negative result</title>
+		<statement>
+		<p>
+  We showed (or assume we showed) that for a ring <m>R</m> and <m>x,y\in R</m>,
+  we have <m>x(-y) = -(xy)=(-x)y</m>.
+  Consider the following proof that <m>xy =(-x)(-y)</m>.
+</p>
+
+  <p>
+    <em>Proof:</em> From <m>x(-y)=-(xy)=(-x)y</m> we obtain <m>(-x)(-y) = x[-(-y)] = xy</m>,
+    since in any ring the inverse of the inverse of an element is the original
+    element.
+  </p>
+
+<p>
+  Fill in the details.
+  Then use the result to prove that if <m>u</m> in <m>R</m> is a unit, then
+  <m>-u</m> is also a unit.
+</p>
+
+		</statement>
+		</exercise>
+		
+		<exercise number="3">
+		<title>Yay, induction!</title>
+		<statement><p>
+  Prove the generalized distributive law by induction.
+  Let <m>R</m> be a ring, let <m>n\ge 2</m>, and let
+  <m>a,b_{1},b_{2},\dots, b_{n}\in R</m>.
+  Then <m>a(b_{1}+b_{2}+\cdots+b_{n})=ab_{1}+ab_{2}+\cdots+ab_{n}</m>.
+	</p></statement>
+		
+		</exercise>
+	
+	</paragraphs>
+	
+ </page>
+ 
+ </worksheet>
+
+<!-- </chapter> -->

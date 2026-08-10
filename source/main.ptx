@@ -13,7 +13,7 @@
     <xi:include href="./frontmatter.ptx" />
 
     <chapter xml:id="course-notes">
-      <title>Weekly notes</title>
+      <title>Module notes</title>
 
       <!-- Remove the example and replace with your own activities -->
     	 <xi:include href="./notes/mod-fields.ptx" />
@@ -21,6 +21,8 @@
     	 <xi:include href="./notes/mod-equivalence-zn.ptx" />
    		 <xi:include href="./notes/mod-gcds-euclid.ptx" />
    		 <xi:include href="./notes/mod-units-zero-divisors-integral-domains.ptx" />
+		 <xi:include href="./notes/mod-proofs.ptx" />
+		 <xi:include href="./notes/mod-algebra-in-other.ptx" />
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
