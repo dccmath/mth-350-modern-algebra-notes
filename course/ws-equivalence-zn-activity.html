@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Week 3: Equivalence Relations, Equivalence Classes, and \mathbb{Z}_n</title>
+<title>Module 3: Equivalence Relations, Equivalence Classes, and \mathbb{Z}_n</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -36,7 +36,7 @@ lang: "en-US",
 <meta name="twitter:description" content="Class notes, weekly practice, and portfolio problems">
 <meta property="og:description" content="Class notes, weekly practice, and portfolio problems">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.48"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.48"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -58,14 +58,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.2';
+eBookConfig.runestone_version = '8.2.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.ed2cce180827a7ad.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.18fa7ea1d9f376c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -73,7 +73,7 @@ eBookConfig.enable_chatcodes =  false;
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
 <div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">MTH 350: Modern Algebra I</span> <span class="subtitle">Class notes, weekly practice, and portfolio problems</span></a></div>
-<p class="byline">David Clark</p>
+<p class="byline">Lauren Keough</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
 <div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -134,13 +134,15 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
-<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Weekly notes</span></a></div>
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Module notes</span></a></div>
 <ul class="structural toc-item-list contains-active" id="ptx-toc-group-course-notes">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-fields-activity.html" class="internal"><span class="title">Week 1: Fields</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-divisibility-activity.html" class="internal"><span class="title">Week 2: Divisibility of Integers, Division Algorithm, Integer Congruence</span></a></div></li>
-<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="ws-equivalence-zn-activity.html" class="internal"><span class="title">Week 3: Equivalence Relations, Equivalence Classes, and <span class="process-math">\(\mathbb{Z}_n\)</span></span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-gcd-activity.html" class="internal"><span class="title">Week 4: Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-rings-activity.html" class="internal"><span class="title">Week 5: Rings, Units, Zero Divisors, and Integral Domains</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-fields-activity.html" class="internal"><span class="title">Module 1: Fields</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-divisibility-activity.html" class="internal"><span class="title">Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="ws-equivalence-zn-activity.html" class="internal"><span class="title">Module 3: Equivalence Relations, Equivalence Classes, and <span class="process-math">\(\mathbb{Z}_n\)</span></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-gcd-activity.html" class="internal"><span class="title">Module 4: Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-rings-activity.html" class="internal"><span class="title">Module 5: Rings, Units, Zero Divisors, and Integral Domains</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-proofs-activity.html" class="internal"><span class="title">Module 6: What Properties Hold When?</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-algebra-in-other-activity.html" class="internal"><span class="title">Module 7: Algebra in Other Number Systems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -181,7 +183,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <section class="worksheet" id="ws-equivalence-zn-activity" data-margins="0.75in 0.75in 0.75in 0.75in">
 <h1 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 3: Equivalence Relations, Equivalence Classes, and <span class="process-math">\(\mathbb{Z}_n\)</span></span><div class="print-links"><a href="?printpreview=ws-equivalence-zn-activity" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Module 3: Equivalence Relations, Equivalence Classes, and <span class="process-math">\(\mathbb{Z}_n\)</span></span><div class="print-links"><a href="?printpreview=ws-equivalence-zn-activity" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
 <section class="introduction" id="ws-equivalence-zn-activity-2">
 <div class="para" id="ws-equivalence-zn-activity-2-1">
@@ -189,7 +191,7 @@ eBookConfig.enable_chatcodes =  false;
 </div></section><section class="onepage" id="ws-equivalence-zn-activity-3">
 <section class="paragraphs" id="ws-equivalence-zn-activity-3-1"><h2 class="heading"><span class="title">Equivalence Relations.</span></h2>
 <article class="definition definition-like" id="ws-equivalence-zn-activity-3-1-2"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="ws-equivalence-zn-activity-3-1-2-1-1">
 <div class="para">Let <span class="process-math">\(S\)</span> be a set and let <span class="process-math">\(\sim\)</span> be a binary relation on <span class="process-math">\(S\text{.}\)</span>  Then <span class="process-math">\(\sim\)</span> is called an <dfn class="terminology">equivalence relation</dfn> on <span class="process-math">\(S\)</span> provided that <span class="process-math">\(\sim\)</span> satisfies all of the following properties:</div>
@@ -215,7 +217,7 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 41"><a tabindex="-1" href="#ws-equivalence-zn-activity-3-1-2" title="Copy heading and permalink for Definition 41" aria-label="Copy heading and permalink for Definition 41">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 11"><a tabindex="-1" href="#ws-equivalence-zn-activity-3-1-2" title="Copy heading and permalink for Definition 11" aria-label="Copy heading and permalink for Definition 11">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ws-equivalence-zn-activity-3-1-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="introduction" id="ws-equivalence-zn-activity-3-1-3-1">
@@ -254,7 +256,7 @@ eBookConfig.enable_chatcodes =  false;
 </article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#ws-equivalence-zn-activity-3-1-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
 </article>
 <div class="para" id="ws-equivalence-zn-activity-3-1-4">
-<figure class="table table-like" id="ws-equivalence-zn-activity-3-1-4-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Table 43"><a tabindex="-1" href="#ws-equivalence-zn-activity-3-1-4-1" title="Copy heading and permalink for Table 43" aria-label="Copy heading and permalink for Table 43">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="ws-equivalence-zn-activity-3-1-4-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Table 12"><a tabindex="-1" href="#ws-equivalence-zn-activity-3-1-4-1" title="Copy heading and permalink for Table 12" aria-label="Copy heading and permalink for Table 12">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b2 r2 l0 t2 lines"></td>
 <td class="c m b2 r2 l0 t2 lines">Reflexive</td>
@@ -298,7 +300,7 @@ eBookConfig.enable_chatcodes =  false;
 </section></section><section class="onepage" id="ws-equivalence-zn-activity-4">
 <section class="paragraphs" id="ws-equivalence-zn-activity-4-1"><h2 class="heading"><span class="title">Equivalence Classes.</span></h2>
 <article class="definition definition-like" id="ws-equivalence-zn-activity-4-1-2"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="ws-equivalence-zn-activity-4-1-2-1-1">
 <div class="para">Let <span class="process-math">\(\sim\)</span> be an equivalence relation on a nonempty set <span class="process-math">\(S\text{,}\)</span> and let <span class="process-math">\(a\in S\text{.}\)</span> The <em class="emphasis">equivalence class of <span class="process-math">\(a\)</span></em> (with respect to <span class="process-math">\(\sim\)</span> ) denoted <span class="process-math">\([a]_{\sim}\)</span> is the set of all elements of <span class="process-math">\(S\)</span> that are related to <span class="process-math">\(a\)</span> by <span class="process-math">\(\sim\text{.}\)</span> More precisely,</div>
@@ -309,7 +311,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-4-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 44"><a tabindex="-1" href="#ws-equivalence-zn-activity-4-1-2" title="Copy heading and permalink for Definition 44" aria-label="Copy heading and permalink for Definition 44">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 13"><a tabindex="-1" href="#ws-equivalence-zn-activity-4-1-2" title="Copy heading and permalink for Definition 13" aria-label="Copy heading and permalink for Definition 13">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ws-equivalence-zn-activity-4-1-3"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="introduction" id="ws-equivalence-zn-activity-4-1-3-1">
@@ -349,11 +351,11 @@ eBookConfig.enable_chatcodes =  false;
 <div class="introduction" id="ws-equivalence-zn-activity-5-1-3-1">
 <div class="para" id="ws-equivalence-zn-activity-5-1-3-1-1">We’ll start by considering the following lemma. 
 <article class="lemma theorem-like" id="lem-equivclasses"><h4 class="heading">
-<span class="type">Lemma</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Lemma</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="lem-equivclasses-1-1">Let <span class="process-math">\(S\)</span> be a nonempty set and let <span class="process-math">\(\sim\)</span> be an equivalence relation on <span class="process-math">\(S\text{.}\)</span> Then for all <span class="process-math">\(a,b\in S\text{,}\)</span> <span class="process-math">\([a]=[b]\)</span> if and only if <span class="process-math">\(a\sim b\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#lem-equivclasses-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Lemma 47"><a tabindex="-1" href="#lem-equivclasses" title="Copy heading and permalink for Lemma 47" aria-label="Copy heading and permalink for Lemma 47">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Lemma 14"><a tabindex="-1" href="#lem-equivclasses" title="Copy heading and permalink for Lemma 14" aria-label="Copy heading and permalink for Lemma 14">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-5-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
@@ -373,7 +375,7 @@ eBookConfig.enable_chatcodes =  false;
 <article class="exercise exercise-like" id="ws-equivalence-zn-activity-5-1-4"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="ws-equivalence-zn-activity-5-1-4-1">Now let’s consider the following theorem. 
 <article class="theorem theorem-like" id="ws-equivalence-zn-activity-5-1-4-1-1"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para logical" id="ws-equivalence-zn-activity-5-1-4-1-1-1-1">
 <div class="para">Let <span class="process-math">\(S\)</span> be a nonempty set and let <span class="process-math">\(\sim\)</span> be an equivalence relation on <span class="process-math">\(S\text{.}\)</span> Then <span class="process-math">\(S\)</span> can be written as the disjoint union of distinct equivalence classes corresponding to <span class="process-math">\(\sim\text{.}\)</span> That is,</div>
@@ -396,7 +398,7 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-5-1-4-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Theorem 49"><a tabindex="-1" href="#ws-equivalence-zn-activity-5-1-4-1-1" title="Copy heading and permalink for Theorem 49" aria-label="Copy heading and permalink for Theorem 49">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 15"><a tabindex="-1" href="#ws-equivalence-zn-activity-5-1-4-1-1" title="Copy heading and permalink for Theorem 15" aria-label="Copy heading and permalink for Theorem 15">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-5-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="ws-equivalence-zn-activity-5-1-4-2">Caption this picture. In particular, can you see see parts a,b, and c of the theorem in the picture?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-5-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -416,7 +418,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="ws-equivalence-zn-activity-6-1-2">For our purposes, the most important equivalence relation will be congruence modulo <span class="process-math">\(n\text{.}\)</span> This allows us to define the number system <span class="process-math">\(\mathbb{Z}_{n}\text{:}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="ws-equivalence-zn-activity-6-1-3"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="ws-equivalence-zn-activity-6-1-3-1-1">
 <div class="para">For every integer <span class="process-math">\(n\ge 2\text{,}\)</span> the <dfn class="terminology">integers modulo <span class="process-math">\(n\)</span></dfn> denoted <span class="process-math">\(\mathbb{Z}_{n}\text{,}\)</span> is the set of the distinct congruence classes of <span class="process-math">\(\Z\)</span> modulo <span class="process-math">\(n\text{,}\)</span> i.e.,</div>
@@ -427,7 +429,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 50"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-3" title="Copy heading and permalink for Definition 50" aria-label="Copy heading and permalink for Definition 50">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 16"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-3" title="Copy heading and permalink for Definition 16" aria-label="Copy heading and permalink for Definition 16">🔗</a></div>
 </article>
 <div class="para logical" id="ws-equivalence-zn-activity-6-1-4">
 <div class="para">We can make <span class="process-math">\(\Z_{n}\)</span> into a number system by defining addition and multiplication on the set:</div>
@@ -447,7 +449,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="ws-equivalence-zn-activity-6-1-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para logical" id="ws-equivalence-zn-activity-6-1-5-1">
@@ -472,7 +474,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">In our addition and multiplication tables, we’ll write this “reduced” answer. That is, if we get a congruence class that appears to not be in the set, we will choose a “representative” that is between <span class="process-math">\(0\)</span> and <span class="process-math">\(n-1\)</span> .</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Example 51"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-5" title="Copy heading and permalink for Example 51" aria-label="Copy heading and permalink for Example 51">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 17"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-5" title="Copy heading and permalink for Example 17" aria-label="Copy heading and permalink for Example 17">🔗</a></div>
 </article></details>
 <article class="exercise exercise-like" id="ws-equivalence-zn-activity-6-1-6"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="ws-equivalence-zn-activity-6-1-6-1">Complete the following addition and multiplication tables for <span class="process-math">\(\mathbb{Z}_{4}\text{.}\)</span> (We can skip writing the subscripts, as long as you remember it’s modulo <span class="process-math">\(4\text{!}\)</span>)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -558,13 +560,12 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1-6" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: The Number System \Z_{n}"><a tabindex="-1" href="#ws-equivalence-zn-activity-6-1" title="Copy heading and permalink for Paragraphs: The Number System \Z_{n}" aria-label="Copy heading and permalink for Paragraphs: The Number System \Z_{n}">🔗</a></div>
 </section></section><section class="onepage" id="ws-equivalence-zn-activity-7">
-<section class="paragraphs" id="ws-equivalence-zn-activity-7-1">
-<article class="exercise exercise-like" id="ws-equivalence-zn-activity-7-1-1"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="ws-equivalence-zn-activity-7-1-1-1">Fill in the addition and multiplication tables on this page and the next.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-7-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="ws-equivalence-zn-activity-7-1"><h2 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="ws-equivalence-zn-activity-7-1-1">Fill in the addition and multiplication tables on this page and the next.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ws-equivalence-zn-activity-7-1-1-2">These tables have all the elements of <span class="process-math">\(\mathbb{Z}_{11}\text{.}\)</span> The <span class="process-math">\(+\)</span> and <span class="process-math">\(\cdot\)</span> are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-7-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-equivalence-zn-activity-7-1-2">These tables have all the elements of <span class="process-math">\(\mathbb{Z}_{11}\text{.}\)</span> The <span class="process-math">\(+\)</span> and <span class="process-math">\(\cdot\)</span> are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6"><a tabindex="-1" href="#ws-equivalence-zn-activity-7-1-1" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6"><a tabindex="-1" href="#ws-equivalence-zn-activity-7-1" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
 </article><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(+\)</span></td>
@@ -735,7 +736,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 </table></div>
-<div class="para" id="ws-equivalence-zn-activity-7-1-3"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="ws-equivalence-zn-activity-7-3"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\cdot\)</span></td>
@@ -905,14 +906,11 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r2 l0 t0 lines"></td>
 <td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
-</table></div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs"><a tabindex="-1" href="#ws-equivalence-zn-activity-7-1" title="Copy heading and permalink for Paragraphs" aria-label="Copy heading and permalink for Paragraphs">🔗</a></div>
-</section></section><section class="onepage" id="ws-equivalence-zn-activity-8">
-<section class="paragraphs" id="ws-equivalence-zn-activity-8-1">
-<article class="exercise exercise-like" id="ws-equivalence-zn-activity-8-1-1"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="ws-equivalence-zn-activity-8-1-1-1">Which <span class="process-math">\(n\)</span> is this table for?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</table></div></section><section class="onepage" id="ws-equivalence-zn-activity-8">
+<article class="exercise exercise-like" id="ws-equivalence-zn-activity-8-1"><h2 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="ws-equivalence-zn-activity-8-1-1">Which <span class="process-math">\(n\)</span> is this table for?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 7"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-1-1" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 7"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-1" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
 </article><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(+\)</span></td>
@@ -1110,7 +1108,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 </table></div>
-<div class="para" id="ws-equivalence-zn-activity-8-1-3"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="ws-equivalence-zn-activity-8-3"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\cdot\)</span></td>
@@ -1308,12 +1306,11 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 </table></div>
-<article class="exercise exercise-like" id="ws-equivalence-zn-activity-8-1-5"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="ws-equivalence-zn-activity-8-1-5-1">Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a field do these have?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="ws-equivalence-zn-activity-8-5"><h2 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="ws-equivalence-zn-activity-8-5-1">Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a field do these have?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 8"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-1-5" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-1" title="Copy heading and permalink for Paragraphs" aria-label="Copy heading and permalink for Paragraphs">🔗</a></div>
-</section></section><section class="onepage" id="ws-equivalence-zn-activity-9">
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 8"><a tabindex="-1" href="#ws-equivalence-zn-activity-8-5" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div>
+</article></section><section class="onepage" id="ws-equivalence-zn-activity-9">
 <section class="paragraphs" id="ws-equivalence-zn-activity-9-1"><h2 class="heading"><span class="title">Review questions.</span></h2>
 <ul class="disc" id="ws-equivalence-zn-activity-9-1-2">
 <li id="ws-equivalence-zn-activity-9-1-2-1">
@@ -1400,7 +1397,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Task 3.e"><a tabindex="-1" href="#ws-equivalence-zn-activity-10-1-4-7" title="Copy heading and permalink for Task 3.e" aria-label="Copy heading and permalink for Task 3.e">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3: Multiplicative cancellation"><a tabindex="-1" href="#ws-equivalence-zn-activity-10-1-4" title="Copy heading and permalink for Worksheet Exercise 3: Multiplicative cancellation" aria-label="Copy heading and permalink for Worksheet Exercise 3: Multiplicative cancellation">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Weekly Practice 3"><a tabindex="-1" href="#ws-equivalence-zn-activity-10-1" title="Copy heading and permalink for Paragraphs: Weekly Practice 3" aria-label="Copy heading and permalink for Paragraphs: Weekly Practice 3">🔗</a></div>
-</section></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Week 3: Equivalence Relations, Equivalence Classes, and \mathbb{Z}_n"><a tabindex="-1" href="#ws-equivalence-zn-activity" title="Copy heading and permalink for Worksheet: Week 3: Equivalence Relations, Equivalence Classes, and \mathbb{Z}_n" aria-label="Copy heading and permalink for Worksheet: Week 3: Equivalence Relations, Equivalence Classes, and \mathbb{Z}_n">🔗</a></div>
+</section></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Module 3: Equivalence Relations, Equivalence Classes, and \mathbb{Z}_n"><a tabindex="-1" href="#ws-equivalence-zn-activity" title="Copy heading and permalink for Worksheet: Module 3: Equivalence Relations, Equivalence Classes, and \mathbb{Z}_n" aria-label="Copy heading and permalink for Worksheet: Module 3: Equivalence Relations, Equivalence Classes, and \mathbb{Z}_n">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Week 2: Divisibility of Integers, Division Algorithm, Integer Congruence</title>
+<title>Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -36,7 +36,7 @@ lang: "en-US",
 <meta name="twitter:description" content="Class notes, weekly practice, and portfolio problems">
 <meta property="og:description" content="Class notes, weekly practice, and portfolio problems">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.48"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.48"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -58,14 +58,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.2';
+eBookConfig.runestone_version = '8.2.4';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.ed2cce180827a7ad.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.18fa7ea1d9f376c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -73,7 +73,7 @@ eBookConfig.enable_chatcodes =  false;
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
 <div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">MTH 350: Modern Algebra I</span> <span class="subtitle">Class notes, weekly practice, and portfolio problems</span></a></div>
-<p class="byline">David Clark</p>
+<p class="byline">Lauren Keough</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
 <div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -134,13 +134,15 @@ eBookConfig.enable_chatcodes =  false;
 <div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
-<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Weekly notes</span></a></div>
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Module notes</span></a></div>
 <ul class="structural toc-item-list contains-active" id="ptx-toc-group-course-notes">
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-fields-activity.html" class="internal"><span class="title">Week 1: Fields</span></a></div></li>
-<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="ws-divisibility-activity.html" class="internal"><span class="title">Week 2: Divisibility of Integers, Division Algorithm, Integer Congruence</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-equivalence-zn-activity.html" class="internal"><span class="title">Week 3: Equivalence Relations, Equivalence Classes, and <span class="process-math">\(\mathbb{Z}_n\)</span></span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-gcd-activity.html" class="internal"><span class="title">Week 4: Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-rings-activity.html" class="internal"><span class="title">Week 5: Rings, Units, Zero Divisors, and Integral Domains</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-fields-activity.html" class="internal"><span class="title">Module 1: Fields</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="ws-divisibility-activity.html" class="internal"><span class="title">Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-equivalence-zn-activity.html" class="internal"><span class="title">Module 3: Equivalence Relations, Equivalence Classes, and <span class="process-math">\(\mathbb{Z}_n\)</span></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-gcd-activity.html" class="internal"><span class="title">Module 4: Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-rings-activity.html" class="internal"><span class="title">Module 5: Rings, Units, Zero Divisors, and Integral Domains</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-proofs-activity.html" class="internal"><span class="title">Module 6: What Properties Hold When?</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-algebra-in-other-activity.html" class="internal"><span class="title">Module 7: Algebra in Other Number Systems</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -184,7 +186,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <section class="worksheet" id="ws-divisibility-activity" data-margins="0.75in 0.75in 0.75in 0.75in">
 <h1 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Week 2: Divisibility of Integers, Division Algorithm, Integer Congruence</span><div class="print-links"><a href="?printpreview=ws-divisibility-activity" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence</span><div class="print-links"><a href="?printpreview=ws-divisibility-activity" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
 <section class="introduction" id="ws-divisibility-activity-2">
 <div class="para" id="ws-divisibility-activity-2-1">
@@ -194,7 +196,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="ws-divisibility-activity-3-1-2">We’ll assume the following about the integers as <em class="emphasis">axioms</em>. We don’t prove axioms, we use them as building blocks to prove them. They give us a floor to stand on. Otherwise it’s turtles all the way down.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="axiom theorem-like" id="ws-divisibility-activity-3-1-3"><h3 class="heading">
-<span class="type">Axiom</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axioms of Integer Arithmetic.</span>
+<span class="type">Axiom</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Axioms of Integer Arithmetic.</span>
 </h3>
 <div class="para logical" id="ws-divisibility-activity-3-1-3-2-1">
 <ul class="disc" id="ws-divisibility-activity-3-1-3-2-1-1">
@@ -242,7 +244,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-3-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Axiom 10: Axioms of Integer Arithmetic"><a tabindex="-1" href="#ws-divisibility-activity-3-1-3" title="Copy heading and permalink for Axiom 10: Axioms of Integer Arithmetic" aria-label="Copy heading and permalink for Axiom 10: Axioms of Integer Arithmetic">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Axiom 3: Axioms of Integer Arithmetic"><a tabindex="-1" href="#ws-divisibility-activity-3-1-3" title="Copy heading and permalink for Axiom 3: Axioms of Integer Arithmetic" aria-label="Copy heading and permalink for Axiom 3: Axioms of Integer Arithmetic">🔗</a></div>
 </article>
 <div class="para" id="ws-divisibility-activity-3-1-4">Which axioms of a field are the integers missing?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-3-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -250,23 +252,23 @@ eBookConfig.enable_chatcodes =  false;
 </section></section><section class="onepage" id="ws-divisibility-activity-4">
 <section class="paragraphs" id="ws-divisibility-activity-4-1"><h2 class="heading"><span class="title">Divides.</span></h2>
 <article class="definition definition-like" id="ws-divisibility-activity-4-1-2"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="ws-divisibility-activity-4-1-2-1-1">An integer <span class="process-math">\(a\)</span> <dfn class="terminology">divides</dfn> an integer <span class="process-math">\(b\text{,}\)</span> denoted <span class="process-math">\(a\mid b\text{,}\)</span> if there exists an integer <span class="process-math">\(q\)</span> such that <span class="process-math">\(b=aq\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-4-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 11"><a tabindex="-1" href="#ws-divisibility-activity-4-1-2" title="Copy heading and permalink for Definition 11" aria-label="Copy heading and permalink for Definition 11">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 4"><a tabindex="-1" href="#ws-divisibility-activity-4-1-2" title="Copy heading and permalink for Definition 4" aria-label="Copy heading and permalink for Definition 4">🔗</a></div>
 </article>
 <div class="para" id="ws-divisibility-activity-4-1-3">In a popular high school mathematics textbook, students are told that one of the theorems in number theory is the following:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="divides-div-thm"><h3 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="divides-div-thm-1">If <span class="process-math">\(a,b,\)</span> and <span class="process-math">\(c\)</span> are integers where <span class="process-math">\(a\)</span> is a factor of <span class="process-math">\(b\)</span> and <span class="process-math">\(a\)</span> is a factor of <span class="process-math">\(c\text{,}\)</span> then <span class="process-math">\(a\)</span> is a factor of <span class="process-math">\(b+c\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#divides-div-thm-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Theorem 12"><a tabindex="-1" href="#divides-div-thm" title="Copy heading and permalink for Theorem 12" aria-label="Copy heading and permalink for Theorem 12">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 5"><a tabindex="-1" href="#divides-div-thm" title="Copy heading and permalink for Theorem 5" aria-label="Copy heading and permalink for Theorem 5">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ws-divisibility-activity-4-1-5"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="ws-divisibility-activity-4-1-5-1-1">Prove <a href="ws-divisibility-activity.html#divides-div-thm" class="xref" data-knowl="./knowl/xref/divides-div-thm.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12">Theorem 12</a>. It may help to translate this to use the word “divides”.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-4-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-divisibility-activity-4-1-5-1-1">Prove <a href="ws-divisibility-activity.html#divides-div-thm" class="xref" data-knowl="./knowl/xref/divides-div-thm.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5">Theorem 5</a>. It may help to translate this to use the word “divides”.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-4-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3in"></div>
 <div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#ws-divisibility-activity-4-1-5" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
@@ -274,11 +276,11 @@ eBookConfig.enable_chatcodes =  false;
 <article class="exercise exercise-like" id="ws-divisibility-activity-4-1-6"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="ws-divisibility-activity-4-1-6-1-1">Students are then asked about generalizing the theorem to: 
 <article class="theorem theorem-like" id="ws-divisibility-activity-4-1-6-1-1-1"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="ws-divisibility-activity-4-1-6-1-1-1-1">If <span class="process-math">\(a,b,\)</span> and <span class="process-math">\(c\)</span> are integers where <span class="process-math">\(a\)</span> is a factor of <span class="process-math">\(b\)</span> and <span class="process-math">\(a\)</span> is a factor of <span class="process-math">\(c\text{,}\)</span> then <span class="process-math">\(a\)</span> is a factor of <span class="process-math">\(bm+cn\)</span> for all integers <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-4-1-6-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Theorem 15"><a tabindex="-1" href="#ws-divisibility-activity-4-1-6-1-1-1" title="Copy heading and permalink for Theorem 15" aria-label="Copy heading and permalink for Theorem 15">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 6"><a tabindex="-1" href="#ws-divisibility-activity-4-1-6-1-1-1" title="Copy heading and permalink for Theorem 6" aria-label="Copy heading and permalink for Theorem 6">🔗</a></div>
 </article> Is this true? Prove or disprove.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-4-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3in"></div>
@@ -287,7 +289,7 @@ eBookConfig.enable_chatcodes =  false;
 </section></section><section class="onepage" id="ws-divisibility-activity-5">
 <section class="paragraphs" id="ws-divisibility-activity-5-1"><h2 class="heading"><span class="title">The Division Algorithm.</span></h2>
 <article class="theorem theorem-like" id="ws-divisibility-activity-5-1-2"><h3 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Division Algorithm.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Division Algorithm.</span>
 </h3>
 <div class="para" id="ws-divisibility-activity-5-1-2-2-1">Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be integers with <span class="process-math">\(a&gt;0\text{.}\)</span> Then there exist unique integers <span class="process-math">\(q\)</span> and <span class="process-math">\(r\)</span> such that<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-5-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -298,7 +300,7 @@ b = aq + r \text{ and } 0\leq r &lt;a
 </div>
 <div class="para" id="ws-divisibility-activity-5-1-2-2-3">We call <span class="process-math">\(q\)</span> the <dfn class="terminology">quotient</dfn> and <span class="process-math">\(r\)</span> the <dfn class="terminology">remainder</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-5-1-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Theorem 16: The Division Algorithm"><a tabindex="-1" href="#ws-divisibility-activity-5-1-2" title="Copy heading and permalink for Theorem 16: The Division Algorithm" aria-label="Copy heading and permalink for Theorem 16: The Division Algorithm">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 7: The Division Algorithm"><a tabindex="-1" href="#ws-divisibility-activity-5-1-2" title="Copy heading and permalink for Theorem 7: The Division Algorithm" aria-label="Copy heading and permalink for Theorem 7: The Division Algorithm">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="ws-divisibility-activity-5-1-3"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="para" id="ws-divisibility-activity-5-1-3-1-1">Practice one more time: Come up with two integers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> that satisfy the <em class="emphasis">hypothesis</em> of the division algorithm. (If you want a challenge, throw in a negative integer.) Trade these numbers with another group member and then apply the division algorithm to the numbers you receive.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-5-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -345,11 +347,11 @@ S = \{ x\in \mathbb{Z}: x\ge 0 \text{ and }x=b-am \text{ for some }m\in\mathbb{Z
 <div class="para" id="ws-divisibility-activity-6-1-3-1-1">We will take the following as an axiom:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-6-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <article class="axiom theorem-like" id="ws-divisibility-activity-6-1-3-1-2"><h4 class="heading">
-<span class="type">Axiom</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Well-Ordering Principle.</span>
+<span class="type">Axiom</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Well-Ordering Principle.</span>
 </h4>
 <div class="para" id="ws-divisibility-activity-6-1-3-1-2-2-1">Every nonempty subset of the whole numbers contains a least element.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-6-1-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Axiom 23: The Well-Ordering Principle"><a tabindex="-1" href="#ws-divisibility-activity-6-1-3-1-2" title="Copy heading and permalink for Axiom 23: The Well-Ordering Principle" aria-label="Copy heading and permalink for Axiom 23: The Well-Ordering Principle">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Axiom 8: The Well-Ordering Principle"><a tabindex="-1" href="#ws-divisibility-activity-6-1-3-1-2" title="Copy heading and permalink for Axiom 8: The Well-Ordering Principle" aria-label="Copy heading and permalink for Axiom 8: The Well-Ordering Principle">🔗</a></div>
 </article> 
 <div class="para" id="ws-divisibility-activity-6-1-3-1-3">Do you think <span class="process-math">\(S\)</span> as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in <span class="process-math">\(S\)</span> if <span class="process-math">\(b&lt;0\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-6-1-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -389,11 +391,11 @@ S = \{ x\in \mathbb{Z}: x\ge 0 \text{ and }x=b-am \text{ for some }m\in\mathbb{Z
 </section></section><section class="onepage" id="ws-divisibility-activity-7">
 <section class="paragraphs" id="ws-divisibility-activity-7-1"><h2 class="heading"><span class="title">Congruence.</span></h2>
 <article class="definition definition-like" id="ws-divisibility-activity-7-1-2"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para" id="ws-divisibility-activity-7-1-2-1-1">Let <span class="process-math">\(n\)</span> be a natural number, and let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be integers. Then <span class="process-math">\(a\)</span> <dfn class="terminology">is congruent to <span class="process-math">\(b\)</span> modulo <span class="process-math">\(n\)</span></dfn> denoted <span class="process-math">\(a\equiv b \pmod{n}\)</span> provided that <span class="process-math">\(n\)</span> divides <span class="process-math">\(a-b\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-7-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Definition 28"><a tabindex="-1" href="#ws-divisibility-activity-7-1-2" title="Copy heading and permalink for Definition 28" aria-label="Copy heading and permalink for Definition 28">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 9"><a tabindex="-1" href="#ws-divisibility-activity-7-1-2" title="Copy heading and permalink for Definition 9" aria-label="Copy heading and permalink for Definition 9">🔗</a></div>
 </article>
 <div class="para" id="ws-divisibility-activity-7-1-3">
 <em class="emphasis">Examples:</em> Here’s a chance to remember congruences:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -499,11 +501,11 @@ x_{12}\equiv -(x_{1}, x_{2}, \dots, x_{11}) \cdot (3,1,3,1,3,1,3,1,3,1,3) \pmod{
 <div class="para" id="ws-divisibility-activity-10-1-3-2-1">Consider the following theorem:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-10-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="ws-divisibility-activity-10-1-3-2-2"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="ws-divisibility-activity-10-1-3-2-2-1-1">Let <span class="process-math">\(n\)</span> be a natural number, and let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be integers. Then <span class="process-math">\(a\equiv b \pmod{n}\)</span> if and only if <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> yield the same remainder when divided by <span class="process-math">\(n\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-divisibility-activity-10-1-3-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Theorem 38"><a tabindex="-1" href="#ws-divisibility-activity-10-1-3-2-2" title="Copy heading and permalink for Theorem 38" aria-label="Copy heading and permalink for Theorem 38">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 10"><a tabindex="-1" href="#ws-divisibility-activity-10-1-3-2-2" title="Copy heading and permalink for Theorem 10" aria-label="Copy heading and permalink for Theorem 10">🔗</a></div>
 </article>
 </div>
 <article class="task exercise-like" id="ws-divisibility-activity-10-1-3-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
@@ -542,7 +544,7 @@ x_{12}\equiv -(x_{1}, x_{2}, \dots, x_{11}) \cdot (3,1,3,1,3,1,3,1,3,1,3) \pmod{
 <div class="autopermalink" aria-hidden="true" data-description="Task 4.b"><a tabindex="-1" href="#ws-divisibility-activity-10-1-5-4" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4: Another way congruences are weird"><a tabindex="-1" href="#ws-divisibility-activity-10-1-5" title="Copy heading and permalink for Worksheet Exercise 4: Another way congruences are weird" aria-label="Copy heading and permalink for Worksheet Exercise 4: Another way congruences are weird">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Weekly Practice 2"><a tabindex="-1" href="#ws-divisibility-activity-10-1" title="Copy heading and permalink for Paragraphs: Weekly Practice 2" aria-label="Copy heading and permalink for Paragraphs: Weekly Practice 2">🔗</a></div>
-</section></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Week 2: Divisibility of Integers, Division Algorithm, Integer Congruence"><a tabindex="-1" href="#ws-divisibility-activity" title="Copy heading and permalink for Worksheet: Week 2: Divisibility of Integers, Division Algorithm, Integer Congruence" aria-label="Copy heading and permalink for Worksheet: Week 2: Divisibility of Integers, Division Algorithm, Integer Congruence">🔗</a></div>
+</section></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence"><a tabindex="-1" href="#ws-divisibility-activity" title="Copy heading and permalink for Worksheet: Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence" aria-label="Copy heading and permalink for Worksheet: Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
