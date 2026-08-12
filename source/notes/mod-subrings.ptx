@@ -18,9 +18,7 @@
   some subsets of <m>R</m>?
 	</p>
 	
-	<p>
-  <ol>
-    <li>
+	<exercise>
       <p>
         The set <m>R</m> is closed under addition.
       </p>
@@ -31,108 +29,106 @@
       <p>
         Some subsets of <m>R</m> have this property.
       </p>
-    </sidebyside>
-    </li>
+      </sidebyside>
+    </exercise>
 
-    <li>
+    <exercise>
       <p>
         The set <m>R</m> is closed under multiplication.
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <sidebyside>
       <p>
         All subsets of <m>R</m> have this property
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
       <p>
         Some subsets of <m>R</m> have this property.
       </p>
-    </li>
+      </sidebyside>
+    </exercise>
 
-    <li>
+    <exercise>
       <p>
         Addition is associative.
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <sidebyside>
       <p>
         All subsets of <m>R</m> have this property
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
       <p>
         Some subsets of <m>R</m> have this property.
       </p>
-    </li>
+      </sidebyside>
+    </exercise>
 
-    <li>
+    <exercise>
       <p>
         Addition is commutative.
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <sidebyside>
       <p>
         All subsets of <m>R</m> have this property
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
       <p>
         Some subsets of <m>R</m> have this property.
       </p>
-    </li>
+      </sidebyside>
+    </exercise>
 
-    <li>
+    <exercise>
       <p>
         The set <m>R</m> contains an additive identity.
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <sidebyside>
       <p>
         All subsets of <m>R</m> have this property
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
       <p>
         Some subsets of <m>R</m> have this property.
       </p>
-    </li>
+      </sidebyside>
+    </exercise>
 
-    <li>
+    <exercise>
       <p>
         Every element of <m>R</m> has an additive inverse within <m>R</m>.
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <sidebyside>
       <p>
         All subsets of <m>R</m> have this property
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
       <p>
         Some subsets of <m>R</m> have this property.
       </p>
-    </li>
+      </sidebyside>
+    </exercise>
 
-    <li>
+    <exercise>
       <p>
         Multiplication is associative.
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <sidebyside>
       <p>
         All subsets of <m>R</m> have this property
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
       <p>
         Some subsets of <m>R</m> have this property.
       </p>
-    </li>
+      </sidebyside>
+    </exercise>
 
-    <li>
+    <exercise>
       <p>
         Multiplication distributes over addition.
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <sidebyside>
       <p>
         All subsets of <m>R</m> have this property
       </p>
-      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
       <p>
         Some subsets of <m>R</m> have this property.
       </p>
-    </li>
-  </ol>
-</p>
+      </sidebyside>
+    </exercise>
 
     </paragraphs>
     </page>
@@ -141,37 +137,613 @@
 	<page>
 	
 	<paragraphs>
-		<title>Another section</title>
-    <p>
-        More stuff
-    </p>
+		<title>Subrings</title>
     
+    	<definition>
+			<p>
+    Let <m>R</m> be a ring, and let <m>S</m> be a subset of <m>R</m>.
+    Then <m>S</m> is said to be a <term>subring</term> of <m>R</m> provided
+    that <m>S</m> itself is a ring with the operations of addition and
+    multiplication defined the same as in <m>R</m>.
+			</p>
+		</definition>
+		
+		<p>
+    As seen on the previous page - some properties of a ring are <q>inherited</q>
+    for every subset of a ring <m>R</m>.
+    This leads us to the subring test.
+		</p>
+		
+		<theorem>
+		<statement>
+			Let <m>R</m> be a ring and let <m>S</m> be a subset of <m>R</m>. Then <m>S</m> is a subring of <m>R</m> if
+    <ol>
+        <li>
+            <p>
+                <m>S</m> is closed under addition
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>S</m> is closed under multiplication
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>S</m> contains <m>0_{R}</m>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>S</m> is closed under additive inverses
+            </p>
+        </li>
+    </ol>
+		</statement>
+		</theorem>
+		
+		<p>
+    The Subring Test <trademark/> simplifies this even further, by combining
+    closure under addition and closure under additive inverses into closure
+    under subtraction.
+    Also, if <m>S</m> is nonempty and closed under subtraction, then <m>S</m>
+    contains <m>0_{R}</m>.
+		</p>
+		
+		<theorem>
+		<title>The Subring Test</title>
+		<statement>
+			Let <m>R</m> be a ring and let <m>S</m> be a subset of <m>R</m>. Then <m>S</m> is a subring of <m>R</m> if and only if
+    <ol>
+        <li>
+            <p>
+                <m>S</m> is nonempty
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>S</m> is closed under subtraction
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>S</m> is closed under multiplication
+            </p>
+        </li>
+    </ol>
+		</statement>
+		</theorem>
+    
+    
+    <p>Let's work with subrings. Prove or disprove using the subring test:</p>
+    
+    <exercise workspace="1in">
+		<p>The set <m>\mathbb{E}</m> of even integers is a subring of <m>\mathbb{Z}</m>.</p>
+    </exercise>
     </paragraphs>
 
 	</page>
 
-<page xml:id="sec-subrings-review">
+	<page>
+		<exercise workspace="1in">
+		<p>The set
+    		<md>
+      		  K = \left\{ \begin{bmatrix}a &amp; b \\ c &amp; 0\end{bmatrix}: a,b,c\in\mathbb{R}\right\}
+   			</md>
+   		 is a subring of <m>\mathcal{M}_{2\times 2}(\mathbb{R})</m>.</p>
+	    </exercise>
+		
+		<exercise workspace="1in">
+		<p>
+    The set <m>2\mathbb{Z}_{6} = \{ [0], [2], [4]\}</m> (with addition and
+    multiplication defined as in <m>\mathbb{Z}_{6}</m> ) is a subring of
+    <m>\mathbb{Z}_{6}</m>.
+		</p>
+		</exercise>
+		
+		<exercise workspace="1in">
+		<p>
+    Give an example of a subset of <m>\mathbb{Z}_{6}</m> that is <em>not</em> a subring.
+		</p>
+		</exercise>
+		
+		<exercise workspace="1in">
+			<p>For each of the sets above, say the <em>strongest</em> possible thing. E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?</p>
+		</exercise>
+	</page>
+	
+	
+	<page>
+		<paragraphs>
+			<title>Ideals</title>
+			
+		<p>An ideal is a special kind of subring.</p>
+		
+		<definition>
+			<p>
+    An <term>ideal</term> <m>I</m> in a ring <m>R</m> is a subring of <m>R</m>
+    such that <m>rx\in I</m> and <m>xr\in I</m> for all <m>r\in R</m> and
+    <m>x\in I</m>.
+			</p>
+		</definition>
+		
+		<p>
+    That is, if you multiply an element of <m>R</m> by an element of <m>I</m>
+    (in any order), the element of <m>R</m> gets <q>sucked in</q> to <m>I</m>.
+    So sometimes we say that ideals have the <q>sucking property</q>.
+		</p>
+		
+		<exercise>
+			<introduction>
+				<p>Determine whether the following are ideals of <m>\mathbb{Z}</m>. Justify your answer.</p>
+			</introduction>
+			
+			<task workspace="0.5in">
+				<p>
+    				<m>\{0\}</m>
+				</p>
+			</task>
+			
+			<task workspace="0.5in">
+				<p>
+   					 <m>\mathbb{Z}</m>
+				</p>
+			</task>
+			
+			<task workspace="0.5in">
+				<p>
+    				 <m>\mathbb{E}</m>
+				</p>
+			</task>
+			
+			<task workspace="0.5in">
+				<p>
+    				<m>J = \{3x: x\in \mathbb{Z}\}</m>
+				</p>
+			</task>
+			
+			<task workspace="0.5in">
+				<p>
+    				<m>\mathbb{E}\cap J</m>
+				</p>
+			</task>
+			
+			<task workspace="0.5in">
+				<p>
+    				<m>\mathbb{E}\cup J</m>
+				</p>
+			</task>
+		</exercise>
+		</paragraphs>
+	</page>
+	
+	<page>
+		<paragraphs>
+			<title>Field Extensions</title>
+			
+		<p>The topic of field extensions is of central importance to much of abstract algebra. Many of the questions pertaining to field extensions have to do with finding solutions to polynomials. E.g.,
+<m>
+    f(x) = x^{2} -2\in \mathbb{Q}[x]
+</m>
+, but doesn't have roots in
+<m>
+    \mathbb{Q}
+</m>
+(that is no
+<m>
+    x
+</m>
+for which
+<m>
+    f(x)=0
+</m>
+).</p>
 
-<paragraphs>
-	<title>Summarize</title>
-    
-    <exercise>
-    	<statement>
-			Statement of a summary exercise
-		</statement>
- </exercise>
- </paragraphs>
-</page>
+<p>There are two roots for
+<m>
+    f(x)
+</m>
+in
+<m>
+    \mathbb{R}
+</m>
+:
+<m>
+    \sqrt{2}
+</m>
+and
+<m>
+    -\sqrt{2}
+</m>
+. But if we use the set
+<m>
+    \mathbb{Q}\cup \{\sqrt{2},-\sqrt{2}\}
+</m>
+, then it's not even a ring. So instead we define field extensions, like
+<m>
+    \mathbb{Q}(\sqrt{2})
+</m>
+.
+</p>
+
+<p>Define
+<md>
+    \mathbb{Q}(\sqrt{2}) = \{a + b\sqrt{2}: a, b\in \mathbb{Q}\}.
+</md>
+</p>
+
+<exercise workspace="2in">
+<p>
+    Show <m>\mathbb{Q}(\sqrt{2})</m> is a subring of <m>\mathbb{R}</m>, and
+    therefore is a ring.
+</p>
+</exercise>
+
+<exercise workspace="2in">
+<p>
+    What do we still need to show that <m>\mathbb{Q}(\sqrt{2})</m> is a field?
+    Prove these properties hold.
+</p>
+</exercise>
+
+<exercise workspace="0.5in">
+<p>
+    Let <m>F</m> be a field.
+    A <term>subfield</term> of <m>F</m> is a subring of <m>F</m> that is also
+    a field.
+    If <m>F</m> is a subfield of another field <m>E</m> then <m>E</m> is said to
+    be a <term>field extension</term> (or simply an <term>extension</term> )
+    of <m>F</m>.
+    How can <m>\mathbb{Q}(\sqrt{2})</m> be seen as a subfield?
+    As a field extension?
+    How can <m>\mathbb{C}</m> be seen as a field extension?
+</p>
+</exercise>
+
+		</paragraphs>
+	</page>
 
 <page>
+	<paragraphs>
+		<title>Direct Sums</title>
+		
+		<definition>
+			 <p>Let <m>R</m>
+ and
+ <m>
+     S
+ </m>
+ be rings. The
+ <term>
+     Cartesian product
+ </term>
+ of
+ <m>
+     R
+ </m>
+ and
+ <m>
+     S
+ </m>
+ is the set
+ <md>
+     R\times S = \{ (r,s): r\in R \text{ and }s\in S\}.
+ </md>
+ The
+ <term>
+     direct sum
+ </term>
+ of
+ <m>
+     R
+ </m>
+ and
+ <m>
+     S
+ </m>
+ , denoted
+ <m>
+     R\oplus S
+ </m>
+ is the set
+ <m>
+     R\times S
+ </m>
+ with addition and multiplication defined componentwise - that is,
+ <md>
+     (r_{1}, s_{1}) + (r_{2},s_{2}) = (r_{1} + r_{2}, s_{1} + s_{2}) \text{ and }(r_{1},s_{1})(r_{2},s_{2}) = (r_{1}r_{2},s_{1}s_{2}).
+ </md>
+ 			</p>
+		</definition>
+		
+		<exercise>
+			<p>Make addition and multiplication tables for  <m>\mathbb{Z}_2\oplus \mathbb{Z}_3</m>.</p>
+		</exercise>
+		
+		<p>
+			<tabular halign="center">
+    <row bottom="medium">
+      <cell right="medium">
+        <m>+</m>
+      </cell>
+      <cell right="medium">
+        <m>([0]_2,[0]_3)</m>
+      </cell>
+      <cell right="medium">
+        <m>([0]_2,[1]_3)</m>
+      </cell>
+      <cell right="medium">
+        <m>([0]_2,[2]_3)</m>
+      </cell>
+      <cell right="medium">
+        <m>([1]_2,[0]_3)</m>
+      </cell>
+      <cell right="medium">
+        <m>([1]_2,[1]_3)</m>
+      </cell>
+      <cell>
+        <m>([1]_2,[2]_3)</m>
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" bottom="medium">
+        <m>([0]_2,[0]_3)</m>
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell halign="left" bottom="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium">
+        <m>([0]_2,[1]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium">
+        <m>([0]_2,[2]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium">
+        <m>([1]_2,[0]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium">
+        <m>([1]_2,[1]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        <m>([1]_2,[2]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+  </tabular>
+  </p>
+  
+	<p>
+<tabular halign="center">
+    <row bottom="medium">
+      <cell right="medium">
+        <m>\times</m>
+      </cell>
+      <cell right="medium">
+        <m>([0]_2,[0]_3)</m>
+      </cell>
+      <cell right="medium">
+        <m>([0]_2,[1]_3)</m>
+      </cell>
+      <cell right="medium">
+        <m>([0]_2,[2]_3)</m>
+      </cell>
+      <cell right="medium">
+        <m>([1]_2,[0]_3)</m>
+      </cell>
+      <cell right="medium">
+        <m>([1]_2,[1]_3)</m>
+      </cell>
+      <cell>
+        <m>([1]_2,[2]_3)</m>
+      </cell>
+    </row>
+    <row>
+      <cell right="medium" bottom="medium">
+        <m>([0]_2,[0]_3)</m>
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell right="medium" bottom="medium">
+      </cell>
+      <cell halign="left" bottom="medium">
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium">
+        <m>([0]_2,[1]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium">
+        <m>([0]_2,[2]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium">
+        <m>([1]_2,[0]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row bottom="medium">
+      <cell right="medium">
+        <m>([1]_2,[1]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        <m>([1]_2,[2]_3)</m>
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell right="medium">
+      </cell>
+      <cell>
+      </cell>
+    </row>
+  </tabular>
+  </p>
+			
+			<p>Say the <em>strongest</em> possible thing about <m>\mathbb{Z}_2\oplus \mathbb{Z}_3</m>. E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?</p>
+
+		
+		
+	</paragraphs>
+</page>
+
+
+
+<page xml:id="sec-subrings-review">
 <paragraphs>
 <title>Review questions</title>
-Make sure you can answer the following questions:
+Make sure you can answer the following questions: 
 
 <ul>
-	<li><p></p></li>
-	<li><p></p></li>
-	<li><p></p></li>
+	<li><p>What is a subring? What is the subring test? Why does it make sense? How do you apply it?</p></li>
+	<li><p>What is an ideal?</p></li>
+	<li><p>What is a subfield? What additional properties does it have that a subring doesn't? What is a field extension?</p></li>
+	<li><p>What is a direct sum?</p></li>
 </ul>
                 
 <p>The rest of this page is for you to summarize important ideas from the module.</p>
@@ -184,25 +756,84 @@ Make sure you can answer the following questions:
 <page>
 
 <paragraphs>
-    <title>Weekly Practice XXX</title>
+    <title>Weekly Practice 8</title>
 
 		<exercise number="1">
-		<title>Title of the exercise</title>
-		<statement><p>Think about some stuff
-		</p></statement>
-    	</exercise>
+		<title>Subring or not?</title>
+		<introduction><p>Assume <m>\mathcal{M}_{2\times 2}(\mathbb{Z})</m> is a ring.</p></introduction>
+        	<task><p>Decide whether each of the following sets is a subring of the ring <m>\mathcal{M}_{2\times 2} (\mathbb{Z})</m>. Prove or disprove!</p>
+		
+			<ol>
+				<li><p><m>S_1 = \left\{ \begin{bmatrix} x &amp; 0 \\ x &amp; 0 \end{bmatrix} : x\in \mathbb{Z}\right\}</m></p></li>
+				<li><p><m>S_2 = \left\{ \begin{bmatrix} x &amp; x \\ 0 &amp; 0 \end{bmatrix} : x\in \mathbb{Z}\right\}</m></p></li>
+				<li><p><m>S_3 = \left\{ \begin{bmatrix} x &amp; y \\ x &amp; y \end{bmatrix} : x,y \in \mathbb{Z}\right\}</m></p></li>
+				<li><p><m>S_4 = \left\{ \begin{bmatrix} x &amp; 0 \\ y &amp; z \end{bmatrix} : x,y,z\in \mathbb{Z}\right\}</m></p></li>
+			</ol>
+			</task>
+			
+            <task><p>Which of the sets
+     <m>
+         S_{i}
+     </m>
+     for
+     <m>
+         1\le i\le 4
+     </m>
+     have multiplicative identities? For those that do, which elements are units? (Hint: Recall a matrix is invertible if and only if the determinant is nonzero. And taking the determinant of a
+     <m>
+         2\times 2
+     </m>
+     matrix is simple!)</p></task>
+		</exercise>
 	
 		<exercise number="2">
-		<title>Another exercise title</title>
-		<introduction><p>Introductory explanation.</p></introduction>
-        	<task><p>A task</p></task>
-            <task><p>Another task</p></task>
+		<title>Principal ideals</title>
+		<introduction><p>
+    Let <m>R</m> be a commutative ring with identity and let <m>a\in R</m>.
+    The set
+    <md>
+        \langle a \rangle = \{ra: r\in R\}
+    </md>
+    is an ideal, called the
+    <term>principal ideal generated by <m>a</m></term>.
+</p></introduction>
+        	<task><p>
+    For <m>R = \mathbb{Z}</m>, describe the principal ideals
+    <m>\langle 2 \rangle</m>, <m>\langle -9 \rangle</m>,
+    <m>\langle 9 \rangle</m>, <m>\langle 0 \rangle</m>,
+    <m>\langle 27 \rangle</m>, <m>\langle 3 \rangle</m>.
+</p></task>
+            <task><p>
+    Determine which subset relations hold among the above ideals.
+    E.g.
+    is <m>\langle 3 \rangle \subset \langle 27\rangle</m> or
+    <m>\langle 27 \rangle \subset \langle 3\rangle</m> or neither? Make a complete list (or diagram!).
+</p></task>
+
+			<task>
+			<p>Fill in the blanks of the following conjecture (you don't need to prove):</p>
+			<p>
+			    <em>Conjecture:</em> Let <m>x,y,z \in \mathbb{Z}</m>.
+    Then <m>z \in \langle x \rangle</m> if and only if <fillin /> and
+    <m>\langle x \rangle \subseteq \langle y \rangle</m> if and only if <fillin />.
+			</p>
+			</task>
 		</exercise>
 		
 		<exercise number="3">
-		<title>Yet another title</title>
-		<statement><p>Things to do
-		</p></statement>
+		<title>Same or different?</title>
+		<statement><p>
+    Compare and contrast the addition and multiplication tables for
+    <m>\mathbb{Z}_{2} \oplus \mathbb{Z}_{3}</m> and <m>\mathbb{Z}_{6}</m>.
+    Are they both commutative?
+    Do they both have identity?
+    Do they each have units?
+    How many?
+    Do they each have zero divisors?
+    How many?
+    Could they be considered the same in some way?
+    If not, what makes them different? (Why do you think this is even a question worth asking?)
+</p></statement>
 		
 		</exercise>
 	
