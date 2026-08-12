@@ -1342,6 +1342,249 @@ var ptx_lunr_docs = [
   "body": " Examples or not?  Give an example of each of the following or explain why no such example exists.  Two polynomials of degree in whose product is a polynomial of degree .  Two polynomials of degree in whose sum is a polynomial of degree .  Two polynomials of degree in whose product is a polynomial of degree .  "
 },
 {
+  "id": "ws-subrings-activity",
+  "level": "1",
+  "url": "ws-subrings-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Module 8: Subrings, Extensions, Direct Sums",
+  "body": " Module 8: Subrings, Extensions, Direct Sums  Standing on Shoulders of Giants    What Properties are Inherited?  Here are the properties of a ring. Say is a ring. For each, do you think the property holds for any subset of , or just some subsets of ?   The set is closed under addition.   All subsets of have this property  Some subsets of have this property.     The set is closed under multiplication.   All subsets of have this property  Some subsets of have this property.     Addition is associative.   All subsets of have this property  Some subsets of have this property.     Addition is commutative.   All subsets of have this property  Some subsets of have this property.     The set contains an additive identity.   All subsets of have this property  Some subsets of have this property.     Every element of has an additive inverse within .   All subsets of have this property  Some subsets of have this property.     Multiplication is associative.   All subsets of have this property  Some subsets of have this property.     Multiplication distributes over addition.   All subsets of have this property  Some subsets of have this property.        Subrings   Let be a ring, and let be a subset of . Then is said to be a subring of provided that itself is a ring with the operations of addition and multiplication defined the same as in .   As seen on the previous page - some properties of a ring are inherited for every subset of a ring . This leads us to the subring test.   Let be a ring and let be a subset of . Then is a subring of if    is closed under addition     is closed under multiplication     contains      is closed under additive inverses      The Subring Test simplifies this even further, by combining closure under addition and closure under additive inverses into closure under subtraction. Also, if is nonempty and closed under subtraction, then contains .   The Subring Test  Let be a ring and let be a subset of . Then is a subring of if and only if    is nonempty     is closed under subtraction     is closed under multiplication      Let's work with subrings. Prove or disprove using the subring test:   The set of even integers is a subring of .       The set is a subring of .    The set (with addition and multiplication defined as in ) is a subring of .    Give an example of a subset of that is not a subring.    For each of the sets above, say the strongest possible thing. E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?      Ideals  An ideal is a special kind of subring.   An ideal  in a ring is a subring of such that and for all and .   That is, if you multiply an element of by an element of (in any order), the element of gets sucked in to . So sometimes we say that ideals have the sucking property .    Determine whether the following are ideals of . Justify your answer.                                      Field Extensions  The topic of field extensions is of central importance to much of abstract algebra. Many of the questions pertaining to field extensions have to do with finding solutions to polynomials. E.g., , but doesn't have roots in (that is no for which ).  There are two roots for in : and . But if we use the set , then it's not even a ring. So instead we define field extensions, like .  Define    Show is a subring of , and therefore is a ring.    What do we still need to show that is a field? Prove these properties hold.    Let be a field. A subfield of is a subring of that is also a field. If is a subfield of another field then is said to be a field extension (or simply an extension ) of . How can be seen as a subfield? As a field extension? How can be seen as a field extension?       Direct Sums   Let and be rings. The Cartesian product of and is the set The direct sum of and , denoted is the set with addition and multiplication defined componentwise - that is,     Make addition and multiplication tables for .                                                                                                                                                                                                                                                                     Say the strongest possible thing about . E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?      Review questions Make sure you can answer the following questions:  What is a subring? What is the subring test? Why does it make sense? How do you apply it?  What is an ideal?  What is a subfield? What additional properties does it have that a subring doesn't? What is a field extension?  What is a direct sum?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 8   Subring or not?  Assume is a ring.  Decide whether each of the following sets is a subring of the ring . Prove or disprove!         Which of the sets for have multiplicative identities? For those that do, which elements are units? (Hint: Recall a matrix is invertible if and only if the determinant is nonzero. And taking the determinant of a matrix is simple!)    Principal ideals  Let be a commutative ring with identity and let . The set is an ideal, called the principal ideal generated by .  For , describe the principal ideals , , , , , .  Determine which subset relations hold among the above ideals. E.g. is or or neither?   Fill in the blanks of the following conjecture (you don't need to prove):   Conjecture: Let . Then if and only if and if and only if .     Same or different?  Compare and contrast the addition and multiplication tables for and . Are they both commutative? Do they both have identity? Do they each have units? How many? Do they each have zero divisors? How many? Could they be considered the same in some way? If not, what makes them different?     "
+},
+{
+  "id": "ws-subrings-activity-3-1-3",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": " The set is closed under addition.   All subsets of have this property  Some subsets of have this property.   "
+},
+{
+  "id": "ws-subrings-activity-3-1-4",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": " The set is closed under multiplication.   All subsets of have this property  Some subsets of have this property.   "
+},
+{
+  "id": "ws-subrings-activity-3-1-5",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": " Addition is associative.   All subsets of have this property  Some subsets of have this property.   "
+},
+{
+  "id": "ws-subrings-activity-3-1-6",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": " Addition is commutative.   All subsets of have this property  Some subsets of have this property.   "
+},
+{
+  "id": "ws-subrings-activity-3-1-7",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-7",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": " The set contains an additive identity.   All subsets of have this property  Some subsets of have this property.   "
+},
+{
+  "id": "ws-subrings-activity-3-1-8",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-8",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": " Every element of has an additive inverse within .   All subsets of have this property  Some subsets of have this property.   "
+},
+{
+  "id": "ws-subrings-activity-3-1-9",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-9",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": " Multiplication is associative.   All subsets of have this property  Some subsets of have this property.   "
+},
+{
+  "id": "ws-subrings-activity-3-1-10",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-10",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": " Multiplication distributes over addition.   All subsets of have this property  Some subsets of have this property.   "
+},
+{
+  "id": "ws-subrings-activity-4-1-2",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-2",
+  "type": "Definition",
+  "number": "43",
+  "title": "",
+  "body": " Let be a ring, and let be a subset of . Then is said to be a subring of provided that itself is a ring with the operations of addition and multiplication defined the same as in .  "
+},
+{
+  "id": "ws-subrings-activity-4-1-4",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-4",
+  "type": "Theorem",
+  "number": "44",
+  "title": "",
+  "body": " Let be a ring and let be a subset of . Then is a subring of if    is closed under addition     is closed under multiplication     contains      is closed under additive inverses     "
+},
+{
+  "id": "ws-subrings-activity-4-1-6",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-6",
+  "type": "Theorem",
+  "number": "45",
+  "title": "The Subring Test.",
+  "body": " The Subring Test  Let be a ring and let be a subset of . Then is a subring of if and only if    is nonempty     is closed under subtraction     is closed under multiplication     "
+},
+{
+  "id": "ws-subrings-activity-4-1-8",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-8",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "",
+  "body": " The set of even integers is a subring of .  "
+},
+{
+  "id": "ws-subrings-activity-5-1",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-5-1",
+  "type": "Worksheet Exercise",
+  "number": "10",
+  "title": "",
+  "body": " The set is a subring of .  "
+},
+{
+  "id": "ws-subrings-activity-5-2",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-5-2",
+  "type": "Worksheet Exercise",
+  "number": "11",
+  "title": "",
+  "body": " The set (with addition and multiplication defined as in ) is a subring of .  "
+},
+{
+  "id": "ws-subrings-activity-5-3",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-5-3",
+  "type": "Worksheet Exercise",
+  "number": "12",
+  "title": "",
+  "body": " Give an example of a subset of that is not a subring.  "
+},
+{
+  "id": "ws-subrings-activity-5-4",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-5-4",
+  "type": "Worksheet Exercise",
+  "number": "13",
+  "title": "",
+  "body": " For each of the sets above, say the strongest possible thing. E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?  "
+},
+{
+  "id": "ws-subrings-activity-6-1-3",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-6-1-3",
+  "type": "Definition",
+  "number": "46",
+  "title": "",
+  "body": " An ideal  in a ring is a subring of such that and for all and .  "
+},
+{
+  "id": "ws-subrings-activity-6-1-5",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-6-1-5",
+  "type": "Worksheet Exercise",
+  "number": "14",
+  "title": "",
+  "body": "  Determine whether the following are ideals of . Justify your answer.                                 "
+},
+{
+  "id": "ws-subrings-activity-7-1-5",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-7-1-5",
+  "type": "Worksheet Exercise",
+  "number": "15",
+  "title": "",
+  "body": " Show is a subring of , and therefore is a ring.  "
+},
+{
+  "id": "ws-subrings-activity-7-1-6",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-7-1-6",
+  "type": "Worksheet Exercise",
+  "number": "16",
+  "title": "",
+  "body": " What do we still need to show that is a field? Prove these properties hold.  "
+},
+{
+  "id": "ws-subrings-activity-7-1-7",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-7-1-7",
+  "type": "Worksheet Exercise",
+  "number": "17",
+  "title": "",
+  "body": " Let be a field. A subfield of is a subring of that is also a field. If is a subfield of another field then is said to be a field extension (or simply an extension ) of . How can be seen as a subfield? As a field extension? How can be seen as a field extension?  "
+},
+{
+  "id": "ws-subrings-activity-8-1-2",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-8-1-2",
+  "type": "Definition",
+  "number": "47",
+  "title": "",
+  "body": " Let and be rings. The Cartesian product of and is the set The direct sum of and , denoted is the set with addition and multiplication defined componentwise - that is,   "
+},
+{
+  "id": "ws-subrings-activity-8-1-3",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-8-1-3",
+  "type": "Worksheet Exercise",
+  "number": "18",
+  "title": "",
+  "body": " Make addition and multiplication tables for .  "
+},
+{
+  "id": "ws-subrings-activity-10-1-2",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-10-1-2",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Subring or not?",
+  "body": " Subring or not?  Assume is a ring.  Decide whether each of the following sets is a subring of the ring . Prove or disprove!         Which of the sets for have multiplicative identities? For those that do, which elements are units? (Hint: Recall a matrix is invertible if and only if the determinant is nonzero. And taking the determinant of a matrix is simple!)  "
+},
+{
+  "id": "ws-subrings-activity-10-1-3",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-10-1-3",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Principal ideals.",
+  "body": " Principal ideals  Let be a commutative ring with identity and let . The set is an ideal, called the principal ideal generated by .  For , describe the principal ideals , , , , , .  Determine which subset relations hold among the above ideals. E.g. is or or neither?   Fill in the blanks of the following conjecture (you don't need to prove):   Conjecture: Let . Then if and only if and if and only if .   "
+},
+{
+  "id": "ws-subrings-activity-10-1-4",
+  "level": "2",
+  "url": "ws-subrings-activity.html#ws-subrings-activity-10-1-4",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Same or different?",
+  "body": " Same or different?  Compare and contrast the addition and multiplication tables for and . Are they both commutative? Do they both have identity? Do they each have units? How many? Do they each have zero divisors? How many? Could they be considered the same in some way? If not, what makes them different?  "
+},
+{
   "id": "portfolios-2",
   "level": "1",
   "url": "portfolios-2.html",

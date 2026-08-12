@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Module 8: Subrings, Extensions, Direct Sums</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="MTH 350: Modern Algebra I">
+<meta property="og:title" content="MTH 350: Modern Algebra I">
+<meta property="book:title" content="MTH 350: Modern Algebra I">
+<meta name="twitter:description" content="Class notes, weekly practice, and portfolio problems">
+<meta property="og:description" content="Class notes, weekly practice, and portfolio problems">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.48"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.48"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">MTH 350: Modern Algebra I</span> <span class="subtitle">Class notes, weekly practice, and portfolio problems</span></a></div>
+<p class="byline">Lauren Keough</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="ws-algebra-in-other-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="portfolios.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Module notes</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-course-notes">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-fields-activity.html" class="internal"><span class="title">Module 1: Fields</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-divisibility-activity.html" class="internal"><span class="title">Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-equivalence-zn-activity.html" class="internal"><span class="title">Module 3: Equivalence Relations, Equivalence Classes, and <span class="process-math">\(\mathbb{Z}_n\)</span></span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-gcd-activity.html" class="internal"><span class="title">Module 4: Greatest Common Divisors, the Euclidean Algorithm, and Linear Combinations</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-rings-activity.html" class="internal"><span class="title">Module 5: Rings, Units, Zero Divisors, and Integral Domains</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-proofs-activity.html" class="internal"><span class="title">Module 6: What Properties Hold When?</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-algebra-in-other-activity.html" class="internal"><span class="title">Module 7: Algebra in Other Number Systems</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="ws-subrings-activity.html" class="internal"><span class="title">Module 8: Subrings, Extensions, Direct Sums</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="portfolios.html" class="internal"><span class="title">Portfolio problems</span></a></div>
+<ul id="ptx-toc-group-portfolios" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="portfolios-2.html" class="internal"><span class="title">Portfolio Problems 1, 2, and 3</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="portfolios-3.html" class="internal"><span class="title">Portfolio Problems 4, 5, and 6</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="portfolios-4.html" class="internal"><span class="title">Portfolio Problems 7, 8, and 9</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="portfolios-5.html" class="internal"><span class="title">Portfolio Problems 10, 11, and 12</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="ws-subrings-activity" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h1 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Module 8: Subrings, Extensions, Direct Sums</span><div class="print-links"><a href="?printpreview=ws-subrings-activity" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h1>
+<section class="introduction" id="ws-subrings-activity-2">
+<div class="para" id="ws-subrings-activity-2-1">
+<em class="alert">Standing on Shoulders of Giants</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="onepage" id="ws-subrings-activity-3">
+<section class="paragraphs" id="ws-subrings-activity-3-1"><h2 class="heading"><span class="title">What Properties are Inherited?</span></h2>
+<div class="para" id="ws-subrings-activity-3-1-2">Here are the properties of a ring. Say <span class="process-math">\(R\)</span> is a ring. For each, do you think the property holds for any subset of <span class="process-math">\(R\text{,}\)</span> or just some subsets of <span class="process-math">\(R\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="ws-subrings-activity-3-1-3"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-3-1-3-1">The set <span class="process-math">\(R\)</span> is closed under addition.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-3-2-1">All subsets of <span class="process-math">\(R\)</span> have this property<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-3-2-2">Some subsets of <span class="process-math">\(R\)</span> have this property.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#ws-subrings-activity-3-1-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-3-1-4"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-3-1-4-1">The set <span class="process-math">\(R\)</span> is closed under multiplication.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-4-2-1">All subsets of <span class="process-math">\(R\)</span> have this property<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-4-2-2">Some subsets of <span class="process-math">\(R\)</span> have this property.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#ws-subrings-activity-3-1-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-3-1-5"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-3-1-5-1">Addition is associative.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-5-2-1">All subsets of <span class="process-math">\(R\)</span> have this property<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-5-2-2">Some subsets of <span class="process-math">\(R\)</span> have this property.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#ws-subrings-activity-3-1-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-3-1-6"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-3-1-6-1">Addition is commutative.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-6-2-1">All subsets of <span class="process-math">\(R\)</span> have this property<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-6-2-2">Some subsets of <span class="process-math">\(R\)</span> have this property.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#ws-subrings-activity-3-1-6" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-3-1-7"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-3-1-7-1">The set <span class="process-math">\(R\)</span> contains an additive identity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-7-2-1">All subsets of <span class="process-math">\(R\)</span> have this property<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-7-2-2">Some subsets of <span class="process-math">\(R\)</span> have this property.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#ws-subrings-activity-3-1-7" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-3-1-8"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-3-1-8-1">Every element of <span class="process-math">\(R\)</span> has an additive inverse within <span class="process-math">\(R\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-8-2-1">All subsets of <span class="process-math">\(R\)</span> have this property<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-8-2-2">Some subsets of <span class="process-math">\(R\)</span> have this property.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6"><a tabindex="-1" href="#ws-subrings-activity-3-1-8" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-3-1-9"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-3-1-9-1">Multiplication is associative.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-9-2-1">All subsets of <span class="process-math">\(R\)</span> have this property<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-9-2-2">Some subsets of <span class="process-math">\(R\)</span> have this property.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-9-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 7"><a tabindex="-1" href="#ws-subrings-activity-3-1-9" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-3-1-10"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-3-1-10-1">Multiplication distributes over addition.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-10-2-1">All subsets of <span class="process-math">\(R\)</span> have this property<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="ws-subrings-activity-3-1-10-2-2">Some subsets of <span class="process-math">\(R\)</span> have this property.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-3-1-10-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 8"><a tabindex="-1" href="#ws-subrings-activity-3-1-10" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: What Properties are Inherited?"><a tabindex="-1" href="#ws-subrings-activity-3-1" title="Copy heading and permalink for Paragraphs: What Properties are Inherited?" aria-label="Copy heading and permalink for Paragraphs: What Properties are Inherited?">🔗</a></div>
+</section></section><section class="onepage" id="ws-subrings-activity-4">
+<section class="paragraphs" id="ws-subrings-activity-4-1"><h2 class="heading"><span class="title">Subrings.</span></h2>
+<article class="definition definition-like" id="ws-subrings-activity-4-1-2"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="ws-subrings-activity-4-1-2-1">Let <span class="process-math">\(R\)</span> be a ring, and let <span class="process-math">\(S\)</span> be a subset of <span class="process-math">\(R\text{.}\)</span> Then <span class="process-math">\(S\)</span> is said to be a <dfn class="terminology">subring</dfn> of <span class="process-math">\(R\)</span> provided that <span class="process-math">\(S\)</span> itself is a ring with the operations of addition and multiplication defined the same as in <span class="process-math">\(R\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 43"><a tabindex="-1" href="#ws-subrings-activity-4-1-2" title="Copy heading and permalink for Definition 43" aria-label="Copy heading and permalink for Definition 43">🔗</a></div>
+</article>
+<div class="para" id="ws-subrings-activity-4-1-3">As seen on the previous page - some properties of a ring are “inherited” for every subset of a ring <span class="process-math">\(R\text{.}\)</span> This leads us to the subring test.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="ws-subrings-activity-4-1-4"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>Let <span class="process-math">\(R\)</span> be a ring and let <span class="process-math">\(S\)</span> be a subset of <span class="process-math">\(R\text{.}\)</span> Then <span class="process-math">\(S\)</span> is a subring of <span class="process-math">\(R\)</span> if 
+<ol class="lower-alpha lower-alpha-level-1" id="ws-subrings-activity-4-1-4-1-6">
+<li id="ws-subrings-activity-4-1-4-1-6-1">
+<div class="para" id="ws-subrings-activity-4-1-4-1-6-1-1">
+<span class="process-math">\(S\)</span> is closed under addition<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-4-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#ws-subrings-activity-4-1-4-1-6-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="ws-subrings-activity-4-1-4-1-6-2">
+<div class="para" id="ws-subrings-activity-4-1-4-1-6-2-1">
+<span class="process-math">\(S\)</span> is closed under multiplication<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-4-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#ws-subrings-activity-4-1-4-1-6-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="ws-subrings-activity-4-1-4-1-6-3">
+<div class="para" id="ws-subrings-activity-4-1-4-1-6-3-1">
+<span class="process-math">\(S\)</span> contains <span class="process-math">\(0_{R}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-4-1-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#ws-subrings-activity-4-1-4-1-6-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="ws-subrings-activity-4-1-4-1-6-4">
+<div class="para" id="ws-subrings-activity-4-1-4-1-6-4-1">
+<span class="process-math">\(S\)</span> is closed under additive inverses<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-4-1-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item d"><a tabindex="-1" href="#ws-subrings-activity-4-1-4-1-6-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 44"><a tabindex="-1" href="#ws-subrings-activity-4-1-4" title="Copy heading and permalink for Theorem 44" aria-label="Copy heading and permalink for Theorem 44">🔗</a></div>
+</article>
+<div class="para" id="ws-subrings-activity-4-1-5">The Subring Test ™ simplifies this even further, by combining closure under addition and closure under additive inverses into closure under subtraction. Also, if <span class="process-math">\(S\)</span> is nonempty and closed under subtraction, then <span class="process-math">\(S\)</span> contains <span class="process-math">\(0_{R}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="ws-subrings-activity-4-1-6"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Subring Test.</span>
+</h3>Let <span class="process-math">\(R\)</span> be a ring and let <span class="process-math">\(S\)</span> be a subset of <span class="process-math">\(R\text{.}\)</span> Then <span class="process-math">\(S\)</span> is a subring of <span class="process-math">\(R\)</span> if and only if 
+<ol class="lower-alpha lower-alpha-level-1" id="ws-subrings-activity-4-1-6-2-6">
+<li id="ws-subrings-activity-4-1-6-2-6-1">
+<div class="para" id="ws-subrings-activity-4-1-6-2-6-1-1">
+<span class="process-math">\(S\)</span> is nonempty<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-6-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item a"><a tabindex="-1" href="#ws-subrings-activity-4-1-6-2-6-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="ws-subrings-activity-4-1-6-2-6-2">
+<div class="para" id="ws-subrings-activity-4-1-6-2-6-2-1">
+<span class="process-math">\(S\)</span> is closed under subtraction<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-6-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item b"><a tabindex="-1" href="#ws-subrings-activity-4-1-6-2-6-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="ws-subrings-activity-4-1-6-2-6-3">
+<div class="para" id="ws-subrings-activity-4-1-6-2-6-3-1">
+<span class="process-math">\(S\)</span> is closed under multiplication<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-6-2-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item c"><a tabindex="-1" href="#ws-subrings-activity-4-1-6-2-6-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 45: The Subring Test"><a tabindex="-1" href="#ws-subrings-activity-4-1-6" title="Copy heading and permalink for Theorem 45: The Subring Test" aria-label="Copy heading and permalink for Theorem 45: The Subring Test">🔗</a></div>
+</article>
+<div class="para" id="ws-subrings-activity-4-1-7">Let’s work with subrings. Prove or disprove using the subring test:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="ws-subrings-activity-4-1-8"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-4-1-8-1">The set <span class="process-math">\(\mathbb{E}\)</span> of even integers is a subring of <span class="process-math">\(\mathbb{Z}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-4-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 9"><a tabindex="-1" href="#ws-subrings-activity-4-1-8" title="Copy heading and permalink for Worksheet Exercise 9" aria-label="Copy heading and permalink for Worksheet Exercise 9">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Subrings"><a tabindex="-1" href="#ws-subrings-activity-4-1" title="Copy heading and permalink for Paragraphs: Subrings" aria-label="Copy heading and permalink for Paragraphs: Subrings">🔗</a></div>
+</section></section><section class="onepage" id="ws-subrings-activity-5">
+<article class="exercise exercise-like" id="ws-subrings-activity-5-1"><h2 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para logical" id="ws-subrings-activity-5-1-1">
+<div class="para">The set</div>
+<div class="displaymath process-math" id="ws-subrings-activity-5-1-1-1">
+\begin{equation*}
+K = \left\{ \begin{bmatrix}a &amp; b \\ c &amp; 0\end{bmatrix}: a,b,c\in\mathbb{R}\right\}
+\end{equation*}
+</div>
+<div class="para">is a subring of <span class="process-math">\(\mathcal{M}_{2\times 2}(\mathbb{R})\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 10"><a tabindex="-1" href="#ws-subrings-activity-5-1" title="Copy heading and permalink for Worksheet Exercise 10" aria-label="Copy heading and permalink for Worksheet Exercise 10">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-5-2"><h2 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="ws-subrings-activity-5-2-1">The set <span class="process-math">\(2\mathbb{Z}_{6} = \{ [0], [2], [4]\}\)</span> (with addition and multiplication defined as in <span class="process-math">\(\mathbb{Z}_{6}\)</span> ) is a subring of <span class="process-math">\(\mathbb{Z}_{6}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 11"><a tabindex="-1" href="#ws-subrings-activity-5-2" title="Copy heading and permalink for Worksheet Exercise 11" aria-label="Copy heading and permalink for Worksheet Exercise 11">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-5-3"><h2 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="ws-subrings-activity-5-3-1">Give an example of a subset of <span class="process-math">\(\mathbb{Z}_{6}\)</span> that is <em class="emphasis">not</em> a subring.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 12"><a tabindex="-1" href="#ws-subrings-activity-5-3" title="Copy heading and permalink for Worksheet Exercise 12" aria-label="Copy heading and permalink for Worksheet Exercise 12">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-5-4"><h2 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2>
+<div class="para" id="ws-subrings-activity-5-4-1">For each of the sets above, say the <em class="emphasis">strongest</em> possible thing. E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 13"><a tabindex="-1" href="#ws-subrings-activity-5-4" title="Copy heading and permalink for Worksheet Exercise 13" aria-label="Copy heading and permalink for Worksheet Exercise 13">🔗</a></div>
+</article></section><section class="onepage" id="ws-subrings-activity-6">
+<section class="paragraphs" id="ws-subrings-activity-6-1"><h2 class="heading"><span class="title">Ideals.</span></h2>
+<div class="para" id="ws-subrings-activity-6-1-2">An ideal is a special kind of subring.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="ws-subrings-activity-6-1-3"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="ws-subrings-activity-6-1-3-1">An <dfn class="terminology">ideal</dfn> <span class="process-math">\(I\)</span> in a ring <span class="process-math">\(R\)</span> is a subring of <span class="process-math">\(R\)</span> such that <span class="process-math">\(rx\in I\)</span> and <span class="process-math">\(xr\in I\)</span> for all <span class="process-math">\(r\in R\)</span> and <span class="process-math">\(x\in I\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 46"><a tabindex="-1" href="#ws-subrings-activity-6-1-3" title="Copy heading and permalink for Definition 46" aria-label="Copy heading and permalink for Definition 46">🔗</a></div>
+</article>
+<div class="para" id="ws-subrings-activity-6-1-4">That is, if you multiply an element of <span class="process-math">\(R\)</span> by an element of <span class="process-math">\(I\)</span> (in any order), the element of <span class="process-math">\(R\)</span> gets “sucked in” to <span class="process-math">\(I\text{.}\)</span> So sometimes we say that ideals have the “sucking property”.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="ws-subrings-activity-6-1-5"><h3 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="ws-subrings-activity-6-1-5-1">
+<div class="para" id="ws-subrings-activity-6-1-5-1-1">Determine whether the following are ideals of <span class="process-math">\(\mathbb{Z}\text{.}\)</span> Justify your answer.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ws-subrings-activity-6-1-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="ws-subrings-activity-6-1-5-2-1">
+<span class="process-math">\(\{0\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 14.a"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-2" title="Copy heading and permalink for Task 14.a" aria-label="Copy heading and permalink for Task 14.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws-subrings-activity-6-1-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ws-subrings-activity-6-1-5-3-1">
+<span class="process-math">\(\mathbb{Z}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 14.b"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-3" title="Copy heading and permalink for Task 14.b" aria-label="Copy heading and permalink for Task 14.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws-subrings-activity-6-1-5-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="ws-subrings-activity-6-1-5-4-1">
+<span class="process-math">\(\mathbb{E}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 14.c"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-4" title="Copy heading and permalink for Task 14.c" aria-label="Copy heading and permalink for Task 14.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws-subrings-activity-6-1-5-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="ws-subrings-activity-6-1-5-5-1">
+<span class="process-math">\(J = \{3x: x\in \mathbb{Z}\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 14.d"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-5" title="Copy heading and permalink for Task 14.d" aria-label="Copy heading and permalink for Task 14.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws-subrings-activity-6-1-5-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="ws-subrings-activity-6-1-5-6-1">
+<span class="process-math">\(\mathbb{E}\cap J\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 14.e"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-6" title="Copy heading and permalink for Task 14.e" aria-label="Copy heading and permalink for Task 14.e">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws-subrings-activity-6-1-5-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="ws-subrings-activity-6-1-5-7-1">
+<span class="process-math">\(\mathbb{E}\cup J\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 14.f"><a tabindex="-1" href="#ws-subrings-activity-6-1-5-7" title="Copy heading and permalink for Task 14.f" aria-label="Copy heading and permalink for Task 14.f">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 14"><a tabindex="-1" href="#ws-subrings-activity-6-1-5" title="Copy heading and permalink for Worksheet Exercise 14" aria-label="Copy heading and permalink for Worksheet Exercise 14">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Ideals"><a tabindex="-1" href="#ws-subrings-activity-6-1" title="Copy heading and permalink for Paragraphs: Ideals" aria-label="Copy heading and permalink for Paragraphs: Ideals">🔗</a></div>
+</section></section><section class="onepage" id="ws-subrings-activity-7">
+<section class="paragraphs" id="ws-subrings-activity-7-1"><h2 class="heading"><span class="title">Field Extensions.</span></h2>
+<div class="para" id="ws-subrings-activity-7-1-2">The topic of field extensions is of central importance to much of abstract algebra. Many of the questions pertaining to field extensions have to do with finding solutions to polynomials. E.g., <span class="process-math">\(f(x) = x^{2} -2\in \mathbb{Q}[x]\)</span> , but doesn’t have roots in <span class="process-math">\(\mathbb{Q}\)</span> (that is no <span class="process-math">\(x\)</span> for which <span class="process-math">\(f(x)=0\)</span> ).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ws-subrings-activity-7-1-3">There are two roots for <span class="process-math">\(f(x)\)</span> in <span class="process-math">\(\mathbb{R}\)</span> : <span class="process-math">\(\sqrt{2}\)</span> and <span class="process-math">\(-\sqrt{2}\)</span> . But if we use the set <span class="process-math">\(\mathbb{Q}\cup \{\sqrt{2},-\sqrt{2}\}\)</span> , then it’s not even a ring. So instead we define field extensions, like <span class="process-math">\(\mathbb{Q}(\sqrt{2})\)</span> .<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ws-subrings-activity-7-1-4">
+<div class="para">Define</div>
+<div class="displaymath process-math" id="ws-subrings-activity-7-1-4-1">
+\begin{equation*}
+\mathbb{Q}(\sqrt{2}) = \{a + b\sqrt{2}: a, b\in \mathbb{Q}\}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-7-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="ws-subrings-activity-7-1-5"><h3 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-7-1-5-1">Show <span class="process-math">\(\mathbb{Q}(\sqrt{2})\)</span> is a subring of <span class="process-math">\(\mathbb{R}\text{,}\)</span> and therefore is a ring.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-7-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 15"><a tabindex="-1" href="#ws-subrings-activity-7-1-5" title="Copy heading and permalink for Worksheet Exercise 15" aria-label="Copy heading and permalink for Worksheet Exercise 15">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-7-1-6"><h3 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-7-1-6-1">What do we still need to show that <span class="process-math">\(\mathbb{Q}(\sqrt{2})\)</span> is a field? Prove these properties hold.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-7-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 16"><a tabindex="-1" href="#ws-subrings-activity-7-1-6" title="Copy heading and permalink for Worksheet Exercise 16" aria-label="Copy heading and permalink for Worksheet Exercise 16">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-7-1-7"><h3 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-7-1-7-1">Let <span class="process-math">\(F\)</span> be a field. A <dfn class="terminology">subfield</dfn> of <span class="process-math">\(F\)</span> is a subring of <span class="process-math">\(F\)</span> that is also a field. If <span class="process-math">\(F\)</span> is a subfield of another field <span class="process-math">\(E\)</span> then <span class="process-math">\(E\)</span> is said to be a <dfn class="terminology">field extension</dfn> (or simply an <dfn class="terminology">extension</dfn> ) of <span class="process-math">\(F\text{.}\)</span> How can <span class="process-math">\(\mathbb{Q}(\sqrt{2})\)</span> be seen as a subfield? As a field extension? How can <span class="process-math">\(\mathbb{C}\)</span> be seen as a field extension?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-7-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="0.5in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 17"><a tabindex="-1" href="#ws-subrings-activity-7-1-7" title="Copy heading and permalink for Worksheet Exercise 17" aria-label="Copy heading and permalink for Worksheet Exercise 17">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Field Extensions"><a tabindex="-1" href="#ws-subrings-activity-7-1" title="Copy heading and permalink for Paragraphs: Field Extensions" aria-label="Copy heading and permalink for Paragraphs: Field Extensions">🔗</a></div>
+</section></section><section class="onepage" id="ws-subrings-activity-8">
+<section class="paragraphs" id="ws-subrings-activity-8-1"><h2 class="heading"><span class="title">Direct Sums.</span></h2>
+<article class="definition definition-like" id="ws-subrings-activity-8-1-2"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="ws-subrings-activity-8-1-2-1">
+<div class="para">Let <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> be rings. The <dfn class="terminology">Cartesian product</dfn> of <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> is the set</div>
+<div class="displaymath process-math" id="ws-subrings-activity-8-1-2-1-6">
+\begin{equation*}
+R\times S = \{ (r,s): r\in R \text{ and }s\in S\}.
+\end{equation*}
+</div>
+<div class="para">The <dfn class="terminology">direct sum</dfn> of <span class="process-math">\(R\)</span> and <span class="process-math">\(S\)</span> , denoted <span class="process-math">\(R\oplus S\)</span> is the set <span class="process-math">\(R\times S\)</span> with addition and multiplication defined componentwise - that is,</div>
+<div class="displaymath process-math" id="ws-subrings-activity-8-1-2-1-12">
+\begin{equation*}
+(r_{1}, s_{1}) + (r_{2},s_{2}) = (r_{1} + r_{2}, s_{1} + s_{2}) \text{ and }(r_{1},s_{1})(r_{2},s_{2}) = (r_{1}r_{2},s_{1}s_{2}).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-8-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 47"><a tabindex="-1" href="#ws-subrings-activity-8-1-2" title="Copy heading and permalink for Definition 47" aria-label="Copy heading and permalink for Definition 47">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-8-1-3"><h3 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ws-subrings-activity-8-1-3-1">Make addition and multiplication tables for  <span class="process-math">\(\mathbb{Z}_2\oplus \mathbb{Z}_3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-8-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 18"><a tabindex="-1" href="#ws-subrings-activity-8-1-3" title="Copy heading and permalink for Worksheet Exercise 18" aria-label="Copy heading and permalink for Worksheet Exercise 18">🔗</a></div>
+</article>
+<div class="para" id="ws-subrings-activity-8-1-4">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(+\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[0]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[1]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[2]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[0]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[1]_3)\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(([1]_2,[2]_3)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[0]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[1]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[2]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[0]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[1]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[2]_3)\)</span></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-8-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ws-subrings-activity-8-1-5">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\times\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[0]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[1]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[2]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[0]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[1]_3)\)</span></td>
+<td class="c m b2 r0 l0 t0 lines"><span class="process-math">\(([1]_2,[2]_3)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[0]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[1]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([0]_2,[2]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[0]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[1]_3)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines"><span class="process-math">\(([1]_2,[2]_3)\)</span></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r2 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-8-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ws-subrings-activity-8-1-6">Say the <em class="emphasis">strongest</em> possible thing about <span class="process-math">\(\mathbb{Z}_2\oplus \mathbb{Z}_3\text{.}\)</span> E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-8-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Direct Sums"><a tabindex="-1" href="#ws-subrings-activity-8-1" title="Copy heading and permalink for Paragraphs: Direct Sums" aria-label="Copy heading and permalink for Paragraphs: Direct Sums">🔗</a></div>
+</section></section><section class="onepage" id="sec-subrings-review">
+<section class="paragraphs" id="sec-subrings-review-1"><h2 class="heading"><span class="title">Review questions.</span></h2>
+<ul class="disc" id="sec-subrings-review-1-2">
+<li id="sec-subrings-review-1-2-1">
+<div class="para" id="sec-subrings-review-1-2-1-1">What is a subring? What is the subring test? Why does it make sense? How do you apply it?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-subrings-review-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-subrings-review-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-subrings-review-1-2-2">
+<div class="para" id="sec-subrings-review-1-2-2-1">What is an ideal?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-subrings-review-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-subrings-review-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-subrings-review-1-2-3">
+<div class="para" id="sec-subrings-review-1-2-3-1">What is a subfield? What additional properties does it have that a subring doesn’t? What is a field extension?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-subrings-review-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-subrings-review-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-subrings-review-1-2-4">
+<div class="para" id="sec-subrings-review-1-2-4-1">What is a direct sum?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-subrings-review-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-subrings-review-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="sec-subrings-review-1-3">The rest of this page is for you to summarize important ideas from the module.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-subrings-review-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Review questions"><a tabindex="-1" href="#sec-subrings-review-1" title="Copy heading and permalink for Paragraphs: Review questions" aria-label="Copy heading and permalink for Paragraphs: Review questions">🔗</a></div>
+</section></section><section class="onepage" id="ws-subrings-activity-10">
+<section class="paragraphs" id="ws-subrings-activity-10-1"><h2 class="heading"><span class="title">Weekly Practice 8.</span></h2>
+<article class="exercise exercise-like" id="ws-subrings-activity-10-1-2"><h3 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Subring or not?</span>
+</h3>
+<div class="introduction" id="ws-subrings-activity-10-1-2-2">
+<div class="para" id="ws-subrings-activity-10-1-2-2-1">Assume <span class="process-math">\(\mathcal{M}_{2\times 2}(\mathbb{Z})\)</span> is a ring.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ws-subrings-activity-10-1-2-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="ws-subrings-activity-10-1-2-3-1">Decide whether each of the following sets is a subring of the ring <span class="process-math">\(\mathcal{M}_{2\times 2} (\mathbb{Z})\text{.}\)</span> Prove or disprove!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="lower-alpha lower-alpha-level-1" id="ws-subrings-activity-10-1-2-3-2">
+<li id="ws-subrings-activity-10-1-2-3-2-1">
+<div class="para" id="ws-subrings-activity-10-1-2-3-2-1-1">
+<span class="process-math">\(\displaystyle S_1 = \left\{ \begin{bmatrix} x &amp; 0 \\ x &amp; 0 \end{bmatrix} : x\in \mathbb{Z}\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.a"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="ws-subrings-activity-10-1-2-3-2-2">
+<div class="para" id="ws-subrings-activity-10-1-2-3-2-2-1">
+<span class="process-math">\(\displaystyle S_2 = \left\{ \begin{bmatrix} x &amp; x \\ 0 &amp; 0 \end{bmatrix} : x\in \mathbb{Z}\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.b"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3-2-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="ws-subrings-activity-10-1-2-3-2-3">
+<div class="para" id="ws-subrings-activity-10-1-2-3-2-3-1">
+<span class="process-math">\(\displaystyle S_3 = \left\{ \begin{bmatrix} x &amp; y \\ x &amp; y \end{bmatrix} : x,y \in \mathbb{Z}\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.c"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3-2-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+<li id="ws-subrings-activity-10-1-2-3-2-4">
+<div class="para" id="ws-subrings-activity-10-1-2-3-2-4-1">
+<span class="process-math">\(\displaystyle S_4 = \left\{ \begin{bmatrix} x &amp; 0 \\ y &amp; z \end{bmatrix} : x,y,z\in \mathbb{Z}\right\}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.d"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3-2-4" title="Copy heading and permalink for Item 1.d" aria-label="Copy heading and permalink for Item 1.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-3" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws-subrings-activity-10-1-2-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ws-subrings-activity-10-1-2-4-1">Which of the sets <span class="process-math">\(S_{i}\)</span> for <span class="process-math">\(1\le i\le 4\)</span> have multiplicative identities? For those that do, which elements are units? (Hint: Recall a matrix is invertible if and only if the determinant is nonzero. And taking the determinant of a <span class="process-math">\(2\times 2\)</span> matrix is simple!)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#ws-subrings-activity-10-1-2-4" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1: Subring or not?"><a tabindex="-1" href="#ws-subrings-activity-10-1-2" title="Copy heading and permalink for Worksheet Exercise 1: Subring or not?" aria-label="Copy heading and permalink for Worksheet Exercise 1: Subring or not?">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-10-1-3"><h3 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Principal ideals.</span>
+</h3>
+<div class="introduction" id="ws-subrings-activity-10-1-3-2">
+<div class="para logical" id="ws-subrings-activity-10-1-3-2-1">
+<div class="para">Let <span class="process-math">\(R\)</span> be a commutative ring with identity and let <span class="process-math">\(a\in R\text{.}\)</span> The set</div>
+<div class="displaymath process-math" id="ws-subrings-activity-10-1-3-2-1-3">
+\begin{equation*}
+\langle a \rangle = \{ra: r\in R\}
+\end{equation*}
+</div>
+<div class="para">is an ideal, called the <dfn class="terminology">principal ideal generated by <span class="process-math">\(a\)</span></dfn>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ws-subrings-activity-10-1-3-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="ws-subrings-activity-10-1-3-3-1">For <span class="process-math">\(R = \mathbb{Z}\text{,}\)</span> describe the principal ideals <span class="process-math">\(\langle 2 \rangle\text{,}\)</span> <span class="process-math">\(\langle -9 \rangle\text{,}\)</span> <span class="process-math">\(\langle 9 \rangle\text{,}\)</span> <span class="process-math">\(\langle 0 \rangle\text{,}\)</span> <span class="process-math">\(\langle 27 \rangle\text{,}\)</span> <span class="process-math">\(\langle 3 \rangle\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#ws-subrings-activity-10-1-3-3" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws-subrings-activity-10-1-3-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ws-subrings-activity-10-1-3-4-1">Determine which subset relations hold among the above ideals. E.g. is <span class="process-math">\(\langle 3 \rangle \subset \langle 27\rangle\)</span> or <span class="process-math">\(\langle 27 \rangle \subset \langle 3\rangle\)</span> or neither?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#ws-subrings-activity-10-1-3-4" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws-subrings-activity-10-1-3-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="ws-subrings-activity-10-1-3-5-1">Fill in the blanks of the following conjecture (you don’t need to prove):<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ws-subrings-activity-10-1-3-5-2">
+<em class="emphasis">Conjecture:</em> Let <span class="process-math">\(x,y,z \in \mathbb{Z}\text{.}\)</span> Then <span class="process-math">\(z \in \langle x \rangle\)</span> if and only if <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> and <span class="process-math">\(\langle x \rangle \subseteq \langle y \rangle\)</span> if and only if <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.c"><a tabindex="-1" href="#ws-subrings-activity-10-1-3-5" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2: Principal ideals"><a tabindex="-1" href="#ws-subrings-activity-10-1-3" title="Copy heading and permalink for Worksheet Exercise 2: Principal ideals" aria-label="Copy heading and permalink for Worksheet Exercise 2: Principal ideals">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-subrings-activity-10-1-4"><h3 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Same or different?</span>
+</h3>
+<div class="para" id="ws-subrings-activity-10-1-4-2-1">Compare and contrast the addition and multiplication tables for <span class="process-math">\(\mathbb{Z}_{2} \oplus \mathbb{Z}_{3}\)</span> and <span class="process-math">\(\mathbb{Z}_{6}\text{.}\)</span> Are they both commutative? Do they both have identity? Do they each have units? How many? Do they each have zero divisors? How many? Could they be considered the same in some way? If not, what makes them different?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-subrings-activity-10-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3: Same or different?"><a tabindex="-1" href="#ws-subrings-activity-10-1-4" title="Copy heading and permalink for Worksheet Exercise 3: Same or different?" aria-label="Copy heading and permalink for Worksheet Exercise 3: Same or different?">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Weekly Practice 8"><a tabindex="-1" href="#ws-subrings-activity-10-1" title="Copy heading and permalink for Paragraphs: Weekly Practice 8" aria-label="Copy heading and permalink for Paragraphs: Weekly Practice 8">🔗</a></div>
+</section></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Module 8: Subrings, Extensions, Direct Sums"><a tabindex="-1" href="#ws-subrings-activity" title="Copy heading and permalink for Worksheet: Module 8: Subrings, Extensions, Direct Sums" aria-label="Copy heading and permalink for Worksheet: Module 8: Subrings, Extensions, Direct Sums">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ws-algebra-in-other-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="portfolios.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
