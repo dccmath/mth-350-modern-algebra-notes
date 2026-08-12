@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<worksheet xml:id="ws-subrings-activity">
+
+	<title>Module 8: Subrings, Extensions, Direct Sums</title>
+	<introduction><p><alert>Standing on Shoulders of Giants</alert></p></introduction>
+	
+	<page>
+
+	<paragraphs>
+		<title>What Properties are Inherited?</title>
+		
+    <p>
+  Here are the properties of a ring.
+  Say <m>R</m> is a ring.
+  For each, do you think the property holds for any subset of <m>R</m>, or just
+  some subsets of <m>R</m>?
+	</p>
+	
+	<p>
+  <ol>
+    <li>
+      <p>
+        The set <m>R</m> is closed under addition.
+      </p>
+      <sidebyside>
+      <p>
+        All subsets of <m>R</m> have this property
+      </p>
+      <p>
+        Some subsets of <m>R</m> have this property.
+      </p>
+    </sidebyside>
+    </li>
+
+    <li>
+      <p>
+        The set <m>R</m> is closed under multiplication.
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        All subsets of <m>R</m> have this property
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        Some subsets of <m>R</m> have this property.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Addition is associative.
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        All subsets of <m>R</m> have this property
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        Some subsets of <m>R</m> have this property.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Addition is commutative.
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        All subsets of <m>R</m> have this property
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        Some subsets of <m>R</m> have this property.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The set <m>R</m> contains an additive identity.
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        All subsets of <m>R</m> have this property
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        Some subsets of <m>R</m> have this property.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Every element of <m>R</m> has an additive inverse within <m>R</m>.
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        All subsets of <m>R</m> have this property
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        Some subsets of <m>R</m> have this property.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Multiplication is associative.
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        All subsets of <m>R</m> have this property
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        Some subsets of <m>R</m> have this property.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Multiplication distributes over addition.
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        All subsets of <m>R</m> have this property
+      </p>
+      <TODO type="unknown-macro"> <!--todo: unknown macro "\hfill"--> <c>\hfill</c> </TODO>
+      <p>
+        Some subsets of <m>R</m> have this property.
+      </p>
+    </li>
+  </ol>
+</p>
+
+    </paragraphs>
+    </page>
+
+
+	<page>
+	
+	<paragraphs>
+		<title>Another section</title>
+    <p>
+        More stuff
+    </p>
+    
+    </paragraphs>
+
+	</page>
+
+<page xml:id="sec-subrings-review">
+
+<paragraphs>
+	<title>Summarize</title>
+    
+    <exercise>
+    	<statement>
+			Statement of a summary exercise
+		</statement>
+ </exercise>
+ </paragraphs>
+</page>
+
+<page>
+<paragraphs>
+<title>Review questions</title>
+Make sure you can answer the following questions:
+
+<ul>
+	<li><p></p></li>
+	<li><p></p></li>
+	<li><p></p></li>
+</ul>
+                
+<p>The rest of this page is for you to summarize important ideas from the module.</p>
+
+</paragraphs>
+
+</page>
+
+
+<page>
+
+<paragraphs>
+    <title>Weekly Practice XXX</title>
+
+		<exercise number="1">
+		<title>Title of the exercise</title>
+		<statement><p>Think about some stuff
+		</p></statement>
+    	</exercise>
+	
+		<exercise number="2">
+		<title>Another exercise title</title>
+		<introduction><p>Introductory explanation.</p></introduction>
+        	<task><p>A task</p></task>
+            <task><p>Another task</p></task>
+		</exercise>
+		
+		<exercise number="3">
+		<title>Yet another title</title>
+		<statement><p>Things to do
+		</p></statement>
+		
+		</exercise>
+	
+	</paragraphs>
+	
+ </page>
+ 
+ </worksheet>
+
+<!-- </chapter> -->

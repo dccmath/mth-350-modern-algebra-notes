@@ -23,6 +23,7 @@
    		 <xi:include href="./notes/mod-units-zero-divisors-integral-domains.ptx" />
 		 <xi:include href="./notes/mod-proofs.ptx" />
 		 <xi:include href="./notes/mod-algebra-in-other.ptx" />
+		 <xi:include href="./notes/mod-subrings.ptx" />
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
