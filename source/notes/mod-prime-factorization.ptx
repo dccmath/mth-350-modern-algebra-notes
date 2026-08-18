@@ -28,7 +28,7 @@
     
     <p>Let's prove it! We'll start with the proof of existence. Let <m>n \geq 2</m> and let the statement <m>P(n)</m> be that <m>n</m> is either prime or a product of primes.</p>
     
-    <exercise workspace="1in">
+    <exercise workspace="0.5in">
     	<p>Prove the base case. (What is there to do, even??)</p>
     </exercise>
     
@@ -45,7 +45,7 @@
   Explain why <m>P(n+1)</m> is true in this case.
 		</p></task>
 		
-		<task workspace="2.12in">
+		<task workspace="2.1in">
 		<p>
   For the second case, suppose <m>n+1</m> is not prime.
   Explain why it is possible to find integers <m>x</m> and <m>y</m> such that
@@ -53,14 +53,14 @@
 		</p>
 		</task>
 		
-		<task workspace="2.12in">
+		<task workspace="2.1in">
 		<p>
   What does the induction hypothesis allow you to conclude about the integers
   <m>x</m> and <m>y</m> from part (b)?
 		</p>
 		</task>
 		
-		<task workspace="2.12in">
+		<task workspace="2.2in">
 		<p>
   Explain how your answers to parts (b) and (c) prove that <m>n+1</m> is a
   product of primes.
@@ -72,7 +72,7 @@
     <p>There is a fill-in-the-blank proof near the end of Investigation 1 (p. 14-15) in your textbook.</p>
     </paragraphs>
  
- 
+ <page>
 	<paragraphs>
 		<title>Euclid's Lemma</title>
 		
@@ -143,7 +143,9 @@
 		</exercise>
 		
 	</paragraphs>
-	
+</page>
+
+<page>
 	<paragraphs>
 	<title>Uniqueness proof</title>
 		<p>Now we're ready to prove the <q>uniqueness</q> part of the Fundamental Theorem of Arithmetic. Recall:</p>
@@ -209,7 +211,8 @@
 	</exercise>
 
 	</paragraphs>
-	
+</page>
+
 <page>
 
 	<paragraphs>
