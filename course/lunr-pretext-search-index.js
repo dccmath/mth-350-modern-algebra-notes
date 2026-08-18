@@ -40,7 +40,7 @@ var ptx_lunr_docs = [
   "id": "ws-fields-activity-5-1",
   "level": "2",
   "url": "ws-fields-activity.html#ws-fields-activity-5-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": "  For one of the sets on page 1, determine which of the 8 properties of a field it has and which it doesn't (assume the addition and multiplication you've been taught in the past for each set). Is the set a field?   "
@@ -49,7 +49,7 @@ var ptx_lunr_docs = [
   "id": "ws-fields-activity-6-1-3",
   "level": "2",
   "url": "ws-fields-activity.html#ws-fields-activity-6-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": "  Which of the properties of a field do polynomials have?   "
@@ -58,7 +58,7 @@ var ptx_lunr_docs = [
   "id": "ws-fields-activity-6-2-2",
   "level": "2",
   "url": "ws-fields-activity.html#ws-fields-activity-6-2-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": " Consider . That is, the real numbers, but in the field axioms, replace addition with subtraction, and multiplication with division. Is a field?  "
@@ -67,7 +67,7 @@ var ptx_lunr_docs = [
   "id": "ws-rectangle-math-1-6",
   "level": "2",
   "url": "ws-fields-activity.html#ws-rectangle-math-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": " Your goal is to figure out if the properties of a field hold with this new multiplication. But wait! You also need a set and an addition. Let's decide our set is the whole numbers, and the addition is the standard addition you know and love. I recommend you start by computing rectangle multiplication for a few pairs of whole numbers!  "
@@ -76,7 +76,7 @@ var ptx_lunr_docs = [
   "id": "sec-fields-review-1-2",
   "level": "2",
   "url": "ws-fields-activity.html#sec-fields-review-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "5",
   "title": "",
   "body": " Fill in the table below to indicate which properties hold in which number systems. You can use Y\/N for yes\/no or checkmarks and X's, or colors, or whatever works best for you.                                         Closed under addition                          Closed under multiplication                          Addition associative                          Multiplication associative                          Addition commutative                          Multiplication commutative                          Additive identity                          Multiplicative identity                          Additive inverses                          Multiplicative inverses                          Multiplication distributes over addition                            "
@@ -85,7 +85,7 @@ var ptx_lunr_docs = [
   "id": "ws-fields-activity-10-1-2",
   "level": "2",
   "url": "ws-fields-activity.html#ws-fields-activity-10-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "A field of ordered pairs?",
   "body": " A field of ordered pairs?  Consider the set (the set of all ordered pairs of integers). For , we define addition as and we define multiplication as . Which of the field properties hold for ? Does your answer change for ?   "
@@ -94,7 +94,7 @@ var ptx_lunr_docs = [
   "id": "ws-fields-activity-10-1-3",
   "level": "2",
   "url": "ws-fields-activity.html#ws-fields-activity-10-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "Playing with distribution.",
   "body": " Playing with distribution  It is one of the axioms of the integers that multiplication distributes over addition. That is, for all integers and , .  What it would mean for addition to distribute over multiplication in the integers? Write a precise definition. (Like what's written at the start of this question.)  In the integers does addition distribute over multiplication? Give a proof or a counterexample.  In the integers, does addition distribute over addition? Write a precise definition, and give a proof or a counterexample.  "
@@ -103,7 +103,7 @@ var ptx_lunr_docs = [
   "id": "ws-fields-activity-10-1-4",
   "level": "2",
   "url": "ws-fields-activity.html#ws-fields-activity-10-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "Messing with zero.",
   "body": " Messing with zero  You've known for a while that for any integer , .     How would you explain to an elementary schooler that ?    It turns out to be true in any field  that for any , , where is the additive identity.   Prove that for any field and any that using only the field properties.   Consider in two different ways. See me if\/when you get stuck!    "
@@ -148,7 +148,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-4-1-5",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-4-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": "  Prove . It may help to translate this to use the word divides .   "
@@ -157,7 +157,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-4-1-6",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-4-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": "  Students are then asked about generalizing the theorem to:  If and are integers where is a factor of and is a factor of , then is a factor of for all integers and .  Is this true? Prove or disprove.   "
@@ -175,7 +175,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-5-1-3",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": "  Practice one more time: Come up with two integers and that satisfy the hypothesis of the division algorithm. (If you want a challenge, throw in a negative integer.) Trade these numbers with another group member and then apply the division algorithm to the numbers you receive.   "
@@ -184,7 +184,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-5-1-4",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": "  What is different about applying the division algorithm when ?   "
@@ -193,7 +193,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-5-1-5",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "5",
   "title": "",
   "body": "  Do you think we should we assume the division algorithm as an axiom or try to prove it?   "
@@ -202,7 +202,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-5-1-6",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-5-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "6",
   "title": "",
   "body": "  Spoiler alert: We will prove it, since it turns out we can derive it from another, simpler axiom. To start, let's do an example. Let and . Consider Find some elements of and what appears to be the least element of ?   "
@@ -211,7 +211,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-6-1-2",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "7",
   "title": "",
   "body": "  If prove that . (Use the definition of the set .) If , is ?    "
@@ -220,7 +220,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-6-1-3",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "8",
   "title": "",
   "body": "  We will take the following as an axiom:   The Well-Ordering Principle  Every nonempty subset of the whole numbers contains a least element.   Do you think as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in if ?   Choose and show that and so .  "
@@ -229,7 +229,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-6-1-4",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "9",
   "title": "",
   "body": "  At this point you are hopefully thinking that is a nonempty subset of the whole numbers. So, we can apply the well-ordering principle and get a least element. We will show the least element is the remainder. So, let be the least element of . Since , we know there is an integer such that . Thus . That's good news! We also need that . Why do we know ?   "
@@ -238,7 +238,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-6-1-5",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "10",
   "title": "",
   "body": "  Now let's show . Suppose, for the sake of a contradiction that . Show . (Recall and .)   "
@@ -247,7 +247,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-6-1-6",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "11",
   "title": "",
   "body": " You've reached a contradiction, how?  "
@@ -256,7 +256,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-6-1-7",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-6-1-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "12",
   "title": "",
   "body": "  What remains to be proven to show the division algorithm is that and is unique. You can find a partial proof near the end of Investigation 1, which will help you on your first problem set!   "
@@ -274,7 +274,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-7-1-4",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "13",
   "title": "",
   "body": "  Give an example of two integers that are congruent modulo , where one is positive and one is negative.   "
@@ -283,7 +283,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-7-1-5",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "14",
   "title": "",
   "body": "  Characterize all the integers such that . What are all the integers such that ?   "
@@ -292,7 +292,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-7-1-6",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "15",
   "title": "",
   "body": "  Prove that, for all and , if and then .   "
@@ -301,7 +301,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-7-1-7",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-7-1-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "16",
   "title": "",
   "body": "  Prove that for all and , if and then .   "
@@ -310,7 +310,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-8-1-2",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-8-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "17",
   "title": "",
   "body": "  Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Will this be a field?   "
@@ -319,7 +319,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-8-1-3",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-8-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "18",
   "title": "",
   "body": "   Check digits: A UPC is a Universal Product Code, or the barcode on products. UPCs consist of 12 digits, and the last digit is known as a check digit. A check digit is there for error detection when a code is entered (they do this with your routing numbers for banks too). If the first 11 digits are , the check digit will be  where is the dot product, so multiply the entries in the same place, and then add up all the results. Verify that the check digit is correct on the box of Famous Amos cookies. Do the multiplication in your head using modular arithmetic!      "
@@ -328,7 +328,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-8-1-4",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-8-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "19",
   "title": "",
   "body": "  My birthday was on a Thursday this year. Determine the next time my birthday will be on a Thursday again. (Use modular arithmetic! Also, leap years happen every 4 years, in years congruent to mod .) When will my birthday next be on a Sunday?   "
@@ -337,7 +337,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-10-1-2",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-10-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "Fun (?) with fields (?).",
   "body": " Fun (?) with fields (?)  Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of this number system (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Is this set a field?  "
@@ -346,7 +346,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-10-1-3",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-10-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "Another way to talk about congruences.",
   "body": " Another way to talk about congruences  Consider the following theorem:    Let be a natural number, and let and be integers. Then if and only if and yield the same remainder when divided by (where the remainder is given by the Division Algorithm).     Do a couple examples of the theorem (in both directions!) below to gain a better understanding of what the theorem says.  Prove (at least) one direction of the theorem.  "
@@ -355,7 +355,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-10-1-4",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-10-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "UPCs!",
   "body": " UPCs!  Find a product with a UPC and verify the check digit.  "
@@ -364,7 +364,7 @@ var ptx_lunr_docs = [
   "id": "ws-divisibility-activity-10-1-5",
   "level": "2",
   "url": "ws-divisibility-activity.html#ws-divisibility-activity-10-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "Another way congruences are weird.",
   "body": " Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has exactly 2 solutions.  "
@@ -391,7 +391,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-3-1-3",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-3-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": "  Which of the properties of reflexive, symmetric, and transitive are satisfied by each of the following relations on the given set ? Sketch a proof or a counterexample to justify each of your answers.     Number of digits relation: Let and consider the relation defined by if and only if has the same number of digits as .     Divides relation: Let and consider the relation defined by if and only if .     Sum to 10 relation: Let and consider the relation defined by if and only if .     Rhyming relation: Let be the set of all words in the English language and for words and say if and only if rhymes with .     Fraction relation: Let and for define if and only if .   "
@@ -409,7 +409,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-4-1-3",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-4-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": " Let's find some equivalence classes.   Find all distinct equivalence classes for the equivalence relation defined in (a) on the previous page. Note equivalence classes are sets so use set notation!    A student claims is an equivalence class for the equivalence relation given in (e). on the previous page. Are they correct? Can you find (another) equivalence class for that relation?    In the module prep you hopefully convinced yourself the relation on defined by if and only if is an equivalence relation. Find all distinct equivalence classes of . (These are also called congruence classes .) How many distinct equivalence classes do you think you will get if you replace with ?    We only define equivalence classes for equivalence relations. This question is to think about why we might do that. What do you get when you find equivalence class for in the relation defined in (b) on the previous page? What about ? How is this different than what happened in previous questions?   "
@@ -418,7 +418,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-5-1-3",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-5-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": "  We'll start by considering the following lemma.   Let be a nonempty set and let be an equivalence relation on . Then for all , if and only if .       Let's see what this lemma means about congruence classes, that is, equivalence classes under the equivalence relation congruence modulo . Give an example of for which congruence classes modulo are equal. Is where is congruence modulo ? Then give an example for which , and determine if .    This Lemma means for a given equivalence class there are many different ways to write it, we call this picking a representative . Which representatives might make sense to use for the congruence classes modulo ?   "
@@ -427,7 +427,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-5-1-4",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-5-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": " Now let's consider the following theorem.   Let be a nonempty set and let be an equivalence relation on . Then can be written as the disjoint union of distinct equivalence classes corresponding to . That is,   For all , if then .    For all , .    For all , if for some , then .        Caption this picture. In particular, can you see see parts a,b, and c of the theorem in the picture?     "
@@ -454,7 +454,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-6-1-6",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-6-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "5",
   "title": "",
   "body": " Complete the following addition and multiplication tables for . (We can skip writing the subscripts, as long as you remember it's modulo !)     +                                                              [1]                                                                              "
@@ -463,7 +463,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-7-1",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-7-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "6",
   "title": "",
   "body": " Fill in the addition and multiplication tables on this page and the next.  These tables have all the elements of . The and are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).  "
@@ -472,7 +472,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-8-1",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-8-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "7",
   "title": "",
   "body": "Which is this table for? "
@@ -481,7 +481,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-8-5",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-8-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "8",
   "title": "",
   "body": "Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a field do these have? "
@@ -490,7 +490,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-10-1-2",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-10-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "Fractions and relations.",
   "body": " Fractions and relations  We can define a relation on such that if and only if .  Give 3 examples of pairs that are related.  Is this an equivalence relation? Prove or disprove for each of reflexive, symmetric, and transitive.  Find .  "
@@ -499,7 +499,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-10-1-3",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-10-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "When is <span class=\"process-math\">\\(\\mathbb{Z}_n\\)<\/span> a field?",
   "body": " When is a field?  Based on your work for this module, make a conjecture for when is a field. State your conjecture as is a field if and only if ... . Then, build addition and multiplication tables for two more values of to test out your conjecture.  "
@@ -508,7 +508,7 @@ var ptx_lunr_docs = [
   "id": "ws-equivalence-zn-activity-10-1-4",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-10-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "Multiplicative cancellation.",
   "body": " Multiplicative cancellation  One of the things our high school teachers told us about is multiplicative cancellation (although they probably didn't use those words). As an example, if we have we could cancel the 's so that we have . But in high school we were almost always working in . This question asks about multiplicative cancellation in .  The statement at the start isn't quite precise enough. There's one value for which multiplicative cancellation doesn't work. What is it, and why doesn't it work?  Consider . For with , if does ? (Hint: Look at your multiplication table for !)  Consider . For with , if does ?  You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?  What if I told you is a field? What axioms might you use to prove part (c) is true?  "
@@ -544,7 +544,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-4-1-4",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-4-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": " Assuming the hypothesis of the theorem, prove that if is a common divisor of and then is a common divisor of and .  "
@@ -553,7 +553,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-4-1-5",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-4-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": " Assuming the hypothesis of the theorem, prove that if is a common divisor of and then is a common divisor of and .  "
@@ -562,7 +562,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-4-1-6",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-4-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": " How do the previous 2 parts show that ?  "
@@ -571,7 +571,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-4-1-7",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-4-1-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": " How is this theorem related to the Euclidean algorithm?  "
@@ -589,7 +589,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-5-1-6",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-5-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "5",
   "title": "",
   "body": " Note from equation we have Solve for in equation and substitute into this equation. Do not simplify.  "
@@ -598,7 +598,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-5-1-7",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-5-1-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "6",
   "title": "",
   "body": " Rewrite the equation you found in (a) so that you have 45 as a linear combination of and .  "
@@ -607,7 +607,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-5-1-8",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-5-1-8",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "7",
   "title": "",
   "body": " Now, using equation , substitute for in the equation you have for part (b). Rewrite so that you have as a linear combination of and .  "
@@ -616,7 +616,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-6-1",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-6-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "8",
   "title": "",
   "body": " Using the Euclidean algorithm you can always find . Then using this back-substitution method with the Euclidean algorithm you can always write the greatest common divisor of and as a linear combination of and . Together some call this the Extended Euclidean Algorithm . Using the Euclidean Algorithm find and find and such that .  "
@@ -625,7 +625,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-6-2",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-6-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "9",
   "title": "",
   "body": "  If time: Are these linear combinations unique? E.g., can you find more than one linear combination of and that equals ?  "
@@ -634,7 +634,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-6-3",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-6-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "10",
   "title": "",
   "body": "  If time: Use your work finding to write as a linear combination of and .  "
@@ -661,7 +661,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-7-1-8",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-7-1-8",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "11",
   "title": "",
   "body": " Suppose and . Then, letting and we find . Does it follow from Bezout's Identity that ?  "
@@ -670,7 +670,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-7-1-9",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-7-1-9",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "12",
   "title": "",
   "body": " Let and be integers. Suppose there exist integers and such that . Does it follow that ? If so, explain. If not, what can you say about ? Hint: Show divides any linear combination of and .  "
@@ -679,7 +679,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-7-1-10",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-7-1-10",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "13",
   "title": "",
   "body": " Let and be integers. Suppose there exist integers and such that . Does it follow that ? If so, explain. If not, what can you say about ? Note: For two integers and , not both , we say and are relatively prime provided that .  "
@@ -688,7 +688,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-8-1-2",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-8-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "14",
   "title": "",
   "body": "  Let's see a connection between Multiplicative Inverses and GCD's:    In , find . That is, find the multiplicative inverse of in .    Find a linear combination of and that is equal to . (If you don't see it right away, use the Euclidean Algorithm and back substitution, it's good practice!) How is your answer related to the multiplicative inverse of in ?    Does have a multiplicative inverse in ? How does this relate to greatest common divisors and linear combinations?   "
@@ -697,7 +697,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-8-1-3",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-8-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "15",
   "title": "",
   "body": "  In Die Hard 2, there's a scene where a bomb will go off unless they get exactly 4 gallons of water in a jug. In the movie, they are given a 5 gallon jug and a 3 gallon jug and a fountain with unlimited water.    How can you get 4 gallons of water in a jug in this situation?    Note that . Write for some integers and . How does this give you instructions for how to get 1 gallon of water in one of the jugs? (If time: Is there a unique solution?)    In Die Hard 25, they are given a gallon jug and a gallon jug, and asked to get gallons of water in a jug. Is this possible? Why or why not?   "
@@ -706,7 +706,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-10-1-2",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-10-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": " (This is good practice for Learning Target 6.) For each of the following values of and , use the Euclidean algorithm to determine . Then find integers and such that .    ,      ,      , . (Note we did in class!)   "
@@ -715,7 +715,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-10-1-3",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-10-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": " (This is good practice for Learning Target 7.) Decide whether each of the following statements is true or false. For those that are true, explain why. For those that are false, give a counterexample and then change one word or symbol in the statement to make it true. For each statement, assume that and are positive integers.  If for some integers and , then .  If for some integers and , then .  If for some integers and , then .  "
@@ -724,7 +724,7 @@ var ptx_lunr_docs = [
   "id": "ws-gcd-activity-10-1-4",
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-10-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": " Prove that divides every linear combination of and . That is, prove that for all , . Explain why this proves the Corollary to Bezout's Identity given in this packet.  "
@@ -751,7 +751,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-4-1-3",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-4-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": "  Commutative ring: Let be a ring. Then is said to be commutative if multiplication in is commutative, that is, if for all .   Example:  Nonexample:   "
@@ -760,7 +760,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-4-1-4",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-4-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": "  Ring with identity: Let be a ring. An identity for is an element such that and for all . If such an element exists, then is said to be a ring with identity .   Example:  Nonexample:   "
@@ -769,7 +769,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-4-1-5",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-4-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": "  Zero divisors: Let be a ring. An element is said to be a zero divisor if and or for some nonzero .   Example (ring and element):  Nonexample:   "
@@ -778,7 +778,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-4-1-6",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-4-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": "  Multiplicative inverse: Let be a ring with identity and let . An element is said to be a multiplicative inverse of provided that .   Example (ring and element):  Nonexample:   "
@@ -787,7 +787,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-4-1-7",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-4-1-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "5",
   "title": "",
   "body": "  Units: Let be a ring with identity. An element is said to be a unit provided that contains a multiplicative inverse for . In other words, is a unit if and only if there exists such that .   Example (ring and element):  Nonexample:   "
@@ -796,7 +796,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-4-1-8",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-4-1-8",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "6",
   "title": "",
   "body": "  Integral Domain: An integral domain is a commutative ring with identity that contains no zero divisors.   Example:  Nonexample:   "
@@ -805,7 +805,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-4-1-9",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-4-1-9",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "7",
   "title": "",
   "body": "  Field: A field is a commutative ring with identity in which every nonzero element has a multiplicative inverse.   Example:  Nonexample:   "
@@ -814,7 +814,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-5-1-3",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-5-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "8",
   "title": "",
   "body": " Look back at multiplication tables you have for various . For at least four of them, list the units and the zero divisors.    units  zero divisors   "
@@ -823,7 +823,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-5-1-4",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-5-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "9",
   "title": "",
   "body": "  Determining whether an element of is a unit or a zero divisor has something to do with last week's module. What do you notice about the units and zero divisors in your lists? (Hint: Consider their relationship to .) Then fill in the conjectures:    Let with , and let . Then is a unit in if and only if...    Let with , and let . Then is a zero divisor in if and only if...   "
@@ -832,7 +832,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-5-1-5",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-5-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "10",
   "title": "",
   "body": " In last week's module you found and . Reduce both sides modulo to find the multiplicative inverse of in .  "
@@ -841,7 +841,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-5-1-6",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-5-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "11",
   "title": "",
   "body": "  Proofs! Next we'll prove the conjectures you made above. First, we'll prove the forward direction of the unit part.  Suppose with and . Suppose is a unit in .    Write down what it means for to be a unit in .    Recall from Module 3 that two equivalence classes are equal, , if and only if . Translate your statement above using this fact.    Find a linear combination of and that is equal to . What does this say about ? (Hint: Bezout's identity.)   "
@@ -850,7 +850,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-6-1",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-6-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "12",
   "title": "",
   "body": " (Backward direction of the unit part.) Suppose with and . Suppose . Apply Bezout's identity and reduce modulo . How does this show is a unit in ?  "
@@ -859,7 +859,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-6-2",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-6-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "13",
   "title": "",
   "body": "  (Forward direction of the zero divisor part.) Suppose with , and . Suppose is a zero divisor in .    Write down a careful definition of what it means for to be a zero divisor.    Suppose . Apply Bezout's identity, and multiply the result by . Conclude . Why is this a contradiction?   "
@@ -868,7 +868,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-6-3",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-6-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "14",
   "title": "",
   "body": " (Finally: Backward direction of the zero divisor part.) Suppose with and with . Suppose . Let . Show that is an integer, and .  "
@@ -877,7 +877,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-7-1",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-7-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "15",
   "title": "",
   "body": " Be careful - not everything has to be a unit or a zero divisor (or ). What are the units in ? What are the zero divisors in ? Are there elements that are neither units nor zero divisors?  "
@@ -895,7 +895,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-7-2-3",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-7-2-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "16",
   "title": "",
   "body": " Is a commutative ring with identity? Is a commutative ring with identity? Is always, sometimes or never a commutative ring with identity?  "
@@ -904,7 +904,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-7-2-4",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-7-2-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "17",
   "title": "",
   "body": " Let and be polynomials in . Find . Is always, sometimes, or never an integral domain?  "
@@ -913,7 +913,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-9-1-2",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-9-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": " Let with , . Determine whether each of the following statements are true or false. Justify your answers. Not all of these are true!    If is a zero divisor, then is not a unit.    If is not a unit, then is a zero divisor.    If is a unit then is not a zero divisor.    If is not a zero divisor, then is a unit.   "
@@ -922,7 +922,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-9-1-3",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-9-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": " Back to units and zero divisors in .  Consider . Since 16 and 24 are not relatively prime, it should follow that is a zero divisor in . Let's show is a zero divisor. Find . Show is a nonzero integer, and .  Generalize what you did in part (a) to , thus showing that if then is a zero divisor in .  Now, assume is a unit. Let's show . Since is a unit, there exists such that . This can be rewritten as . This means and are equal as congruence classes.  First, recall this Lemma from Module 3:    Apply the Lemma (here is congruence modulo ), and then work with what you get to show that there's a linear combination of and equal to . Then conclude that .  "
@@ -931,7 +931,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-9-1-4",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-9-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": " Let be a ring. Suppose that due to a printer error, the addition and multiplication tables for were printed with several missing entries, as shown below:     +                                                                                                      Using only the ring axioms, complete the tables. Explain how each entry you add can be determined from the ring axioms and the entries already completed. (Hints: Some important ring axioms are addition being commutative, and the distributive property. Recall Weekly Practice from Module 1 #3. Also, you can use Proof Portfolio Problem 6a, which is true in rings (not just fields). Note 5b is not true for all rings.)    "
@@ -940,7 +940,7 @@ var ptx_lunr_docs = [
   "id": "ws-rings-activity-9-1-5",
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-9-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": " For which is an integral domain? A field?  "
@@ -1030,7 +1030,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-5-1-2",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-5-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": " In Weekly Practice 1 you proved in any field and any , . You actually only needed the ring axioms. Let's recall that proof.      (Multiplication by ) Let be a ring and let be the additive identity of . Then for all .  Prove it! Hint: Consider in two different ways.    "
@@ -1039,7 +1039,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-5-1-3",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-5-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": " In Problem 5 of the proof portfolio, you'll prove additive and multiplicative cancellation holds in fields. For additive cancellation, you only need the ring axioms. Let's prove multiplicative cancellation holds in more than just fields.    (Multiplicative Cancellation) Let be a ring and let be a nonzero element of that is not a zero divisor. For , if , then . Similarly if then .    Prove it! Hint: Starting with , add to both sides.  "
@@ -1057,7 +1057,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-6-4",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-6-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": " Since is an integral domain, has identity. Consider the set : Let with . Multiply each element of by to get Explain why all elements of are unique. (Go by contradiction - suppose for some , . Then what?  "
@@ -1066,7 +1066,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-6-5",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-6-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": " Why does this imply that has an inverse?  "
@@ -1075,7 +1075,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-6-6",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-6-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "5",
   "title": "",
   "body": " Give an example of an infinite integral domain that is not a field.  "
@@ -1084,7 +1084,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-6-7",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-6-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "6",
   "title": "",
   "body": " For which is an integral domain? For which is a field?  "
@@ -1102,7 +1102,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-6-10",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-6-10",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "7",
   "title": "",
   "body": " Prove it! You want to show the additive inverse of is . So we want to show . What ring axioms can you use to show this is true?  "
@@ -1111,7 +1111,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-8-1-2",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-8-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "Matrix problems.",
   "body": " Matrix problems  Prove (two by two matrices with entries from the real numbers) has a zero divisor. What reason besides having zero divisors is not an integral domain?  "
@@ -1120,7 +1120,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-8-1-3",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-8-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "A negative result.",
   "body": " A negative result   We showed (or assume we showed) that for a ring and , we have . Consider the following proof that .   Proof: From we obtain , since in any ring the inverse of the inverse of an element is the original element.  Fill in the details. Then use the result to prove that if in is a unit, then is also a unit.   "
@@ -1129,7 +1129,7 @@ var ptx_lunr_docs = [
   "id": "ws-proofs-activity-8-1-4",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-8-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "Yay, induction!",
   "body": " Yay, induction!  Prove the generalized distributive law by induction. Let be a ring, let , and let . Then .  "
@@ -1174,7 +1174,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-3-2-2",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-3-2-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": " Write the addition and multiplication tables for .  "
@@ -1183,7 +1183,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-3-2-3",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-3-2-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": " Is there an additive identity in ? What about a multiplicative identity in ? Do these generalize to ?  "
@@ -1192,7 +1192,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-4-1",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-4-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": " Does every element of have an additive inverse? What elements of do you think have an additive inverse?  "
@@ -1201,7 +1201,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-4-2",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-4-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": " Is every nonzero element of a unit? What elements of do you think are units?  "
@@ -1210,7 +1210,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-4-3",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-4-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "5",
   "title": "",
   "body": " Does have zero divisors? Do you think has zero divisors?  "
@@ -1219,7 +1219,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-4-4",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-4-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "6",
   "title": "",
   "body": " Do you think is a ring? A commutative ring? A ring with identity? An integral domain? A field?  "
@@ -1255,7 +1255,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-5-1-5",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-5-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "7",
   "title": "",
   "body": " Add and multiply and using the definitions above. Does this agree with what you think the sum and product should be?  "
@@ -1264,7 +1264,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-5-1-6",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-5-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "8",
   "title": "",
   "body": "  If time: Let . Find and . What property of rings does this illustrate?  "
@@ -1273,7 +1273,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-6-1",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-6-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "9",
   "title": "",
   "body": " Is a commutative ring with identity? Is a commutative ring with identity? Is always, sometimes or never a commutative ring? A ring with identity?  "
@@ -1282,7 +1282,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-6-2",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-6-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "10",
   "title": "",
   "body": " Let and be polynomials in . Find . Is always, sometimes, or never an integral domain?  "
@@ -1291,7 +1291,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-6-3",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-6-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "11",
   "title": "",
   "body": " At some point you (maybe) learned that the if has degree and has degree then the degree of is . There, you were thinking about . Do the degrees work out this way in for any commutative ring ? If not always, when will it work? To explain, determine what the leading coefficient of is for arbitrary polynomials and .  "
@@ -1300,7 +1300,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-6-4",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-6-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "12",
   "title": "",
   "body": " If has an identity, the multiplicative identity of is . What elements of will have multiplicative inverses?  "
@@ -1309,7 +1309,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-8-1-2",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-8-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "Positive reals.",
   "body": " Positive reals  Let denote the set of all positive real numbers. (Note is not positive!) For all define   With these properties, does have an additive identity? If so, what is it?  With these properties, does have a multiplicative identity? If so, what is it?  Is a ring with these operations? Explain each axiom.  Does have zero divisors using these operations?  Is an integral domain using these operations?  "
@@ -1318,7 +1318,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-8-1-3",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-8-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "Complex numbers.",
   "body": " Complex numbers  A complex number is any number of the form where and is an imaginary number with the property that . For a complex number , the real number is called the real part of and is called the imaginary part of . So Furthermore, addition and multiplication within are defined by and The complex numbers turn out to be a field. Let's show every nonzero element has a multiplicative inverse. That is, we want to show, for where and are not both , there exists such that   So we want and .   Solve the system of equations   for and , getting expressions that only depend on and . (You can do so using substitution. One way is to solve for in the second equation, plug your answer into the first equation, and then solve for . Then use what you know for to find .)   Verify that your answer in (a) gives the multiplicative inverse for . That is, .  "
@@ -1327,7 +1327,7 @@ var ptx_lunr_docs = [
   "id": "ws-algebra-in-other-activity-9-1",
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-9-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "Examples or not?",
   "body": " Examples or not?  Give an example of each of the following or explain why no such example exists.  Two polynomials of degree in whose product is a polynomial of degree .  Two polynomials of degree in whose sum is a polynomial of degree .  Two polynomials of degree in whose product is a polynomial of degree .  "
@@ -1345,7 +1345,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-3-1-3",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": " The set is closed under addition.   All subsets of have this property  Some subsets of have this property.   "
@@ -1354,7 +1354,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-3-1-4",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": " The set is closed under multiplication.   All subsets of have this property  Some subsets of have this property.   "
@@ -1363,7 +1363,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-3-1-5",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": " Addition is associative.   All subsets of have this property  Some subsets of have this property.   "
@@ -1372,7 +1372,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-3-1-6",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": " Addition is commutative.   All subsets of have this property  Some subsets of have this property.   "
@@ -1381,7 +1381,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-3-1-7",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "5",
   "title": "",
   "body": " The set contains an additive identity.   All subsets of have this property  Some subsets of have this property.   "
@@ -1390,7 +1390,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-3-1-8",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-8",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "6",
   "title": "",
   "body": " Every element of has an additive inverse within .   All subsets of have this property  Some subsets of have this property.   "
@@ -1399,7 +1399,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-3-1-9",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-9",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "7",
   "title": "",
   "body": " Multiplication is associative.   All subsets of have this property  Some subsets of have this property.   "
@@ -1408,7 +1408,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-3-1-10",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-3-1-10",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "8",
   "title": "",
   "body": " Multiplication distributes over addition.   All subsets of have this property  Some subsets of have this property.   "
@@ -1444,7 +1444,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-4-1-8",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-8",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "9",
   "title": "",
   "body": " The set of even integers is a subring of .  "
@@ -1453,7 +1453,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-5-1",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-5-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "10",
   "title": "",
   "body": " The set is a subring of .  "
@@ -1462,7 +1462,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-5-2",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-5-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "11",
   "title": "",
   "body": " The set (with addition and multiplication defined as in ) is a subring of .  "
@@ -1471,7 +1471,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-5-3",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-5-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "12",
   "title": "",
   "body": " Give an example of a subset of that is not a subring.  "
@@ -1480,7 +1480,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-5-4",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-5-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "13",
   "title": "",
   "body": " For each of the sets above, say the strongest possible thing. E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?  "
@@ -1498,7 +1498,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-6-1-5",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-6-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "14",
   "title": "",
   "body": "  Determine whether the following are ideals of . Justify your answer.                                 "
@@ -1507,7 +1507,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-7-1-5",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-7-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "15",
   "title": "",
   "body": " Show is a subring of , and therefore is a ring.  "
@@ -1516,7 +1516,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-7-1-6",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-7-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "16",
   "title": "",
   "body": " What do we still need to show that is a field? Prove these properties hold.  "
@@ -1525,7 +1525,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-7-1-7",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-7-1-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "17",
   "title": "",
   "body": " Let be a field. A subfield of is a subring of that is also a field. If is a subfield of another field then is said to be a field extension (or simply an extension ) of . How can be seen as a subfield? As a field extension? How can be seen as a field extension?  "
@@ -1543,7 +1543,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-8-1-3",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-8-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "18",
   "title": "",
   "body": " Make addition and multiplication tables for .  "
@@ -1552,7 +1552,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-10-1-2",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-10-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "Subring or not?",
   "body": " Subring or not?  Assume is a ring.  Decide whether each of the following sets is a subring of the ring . Prove or disprove!         Which of the sets for have multiplicative identities? For those that do, which elements are units? (Hint: Recall a matrix is invertible if and only if the determinant is nonzero. And taking the determinant of a matrix is simple!)  "
@@ -1561,7 +1561,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-10-1-3",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-10-1-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "Principal ideals.",
   "body": " Principal ideals  Let be a commutative ring with identity and let . The set is an ideal, called the principal ideal generated by .  For , describe the principal ideals , , , , , .  Determine which subset relations hold among the above ideals. E.g. is or or neither? Make a complete list (or diagram!).   Fill in the blanks of the following conjecture (you don't need to prove):   Conjecture: Let . Then if and only if and if and only if .   "
@@ -1570,7 +1570,7 @@ var ptx_lunr_docs = [
   "id": "ws-subrings-activity-10-1-4",
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-10-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "Same or different?",
   "body": " Same or different?  Compare and contrast the addition and multiplication tables for and . Are they both commutative? Do they both have identity? Do they each have units? How many? Do they each have zero divisors? How many? Could they be considered the same in some way? If not, what makes them different? (Why do you think this is even a question worth asking?)  "
@@ -1606,7 +1606,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-4-2-3",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-4-2-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "",
   "body": " We'll do the isomorphism part first. Come up with a reasonable function that maps elements of to elements of .  "
@@ -1615,7 +1615,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-4-2-4",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-4-2-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "",
   "body": " Show is an injection by showing that for two matrices and in , if then .  "
@@ -1624,7 +1624,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-5-1",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-5-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "",
   "body": " Show is a surjection by showing that for an arbitrary , there exists an element of that maps to it.  "
@@ -1633,7 +1633,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-5-2",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-5-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "4",
   "title": "",
   "body": " Show preserves addition, that is, show for all , .  "
@@ -1642,7 +1642,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-5-3",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-5-3",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "5",
   "title": "",
   "body": " Show preserves multiplication, that is, show .  "
@@ -1651,7 +1651,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-5-4",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-5-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "6",
   "title": "",
   "body": " This means . If time: Since is a field, this will actually imply that Is a field. So every nonzero element of is a unit. Can you find the inverse for an arbitrary matrix?  "
@@ -1678,7 +1678,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-6-1-5",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "7",
   "title": "",
   "body": " We'll do a direct proof. What should you assume?  "
@@ -1687,7 +1687,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-6-1-6",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "8",
   "title": "",
   "body": " One thing you are assuming is that has a multiplicative identity. Write what you can conclude using the definition of multiplicative identity.  "
@@ -1696,7 +1696,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-6-1-7",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "9",
   "title": "",
   "body": " One thing you are assuming is that . Write what you can conclude using the definition of isomorphism.  "
@@ -1705,7 +1705,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-6-1-8",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-8",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "10",
   "title": "",
   "body": " How can you rewrite and ) using the definition of isomorphism?  "
@@ -1714,7 +1714,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-6-1-9",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-9",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "11",
   "title": "",
   "body": " How can you rewrite and using ?  "
@@ -1723,7 +1723,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-6-1-10",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-10",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "12",
   "title": "",
   "body": " Let . Use that is a surjection and your work above to show that for all , .  "
@@ -1732,7 +1732,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-7-1",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-7-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "13",
   "title": "",
   "body": " Which of the following do you think are invariants of ring isomorphism?   Number of elements    Commutativity    The existence of an identity    The existence or number of zero divisors    The existence or number of units (in a ring with identity)    Being a field    Being an integral domain     "
@@ -1741,7 +1741,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-7-2",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-7-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "14",
   "title": "",
   "body": " Spoiler alert: they are all invariants!  Show that commutativity is an invariant and use it to conclude that is not isomorphic to .  "
@@ -1750,7 +1750,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-8-1-4",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-8-1-4",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "15",
   "title": "",
   "body": " Show that . (Hint: it suffices to show that for all . You may need to use that fact that is surjective.)  "
@@ -1759,7 +1759,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-8-1-5",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-8-1-5",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "16",
   "title": "",
   "body": " Using a similar argument as above, show that .  "
@@ -1768,7 +1768,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-8-1-6",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-8-1-6",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "17",
   "title": "",
   "body": " Use the definition of isomorphism and your answers to the previous parts to argue that is an element of and . (Hint: Apply to both sides of the equation .)  "
@@ -1777,7 +1777,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-8-1-7",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-8-1-7",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "18",
   "title": "",
   "body": " Explain why the result you proved in the previous part is a contradiction. Deduce that cannot be isomorphic to .  "
@@ -1786,7 +1786,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-10-1-2",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-10-1-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "1",
   "title": "The number of zero divisors in a ring is an invariant.",
   "body": " The number of zero divisors in a ring is an invariant  Prove that the number of zero divisors in a ring is an invariant under isomorphism by filling in the blanks below.    We will use a lemma, which we will assume without proof.    Let and be isomorphic rings. Let be the additive identity of and be the additive identity of . For any isomorphism , .      Let and be isomorphic rings and let and be the subset of zero divisors of and , respectively. Then and hence, the number of zero divisors is an invariant of ring isomorphism.     Let and be isomorphic rings. Thus, there exists an isomorphism . This means    We will show that if then . That is, we will show that if is a zero divisor in then is . Since is a zero divisor in , and there exists a such that and or . Without loss of generality, suppose . Then   By the lemma  and  . Thus is a . Since is a bijection, .     Use this to prove that is not isomorphic to .   "
@@ -1795,7 +1795,7 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-11-1",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-11-1",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "2",
   "title": "A matrix isomorphism.",
   "body": " A matrix isomorphism  Let . Let be defined by This problem will show is an isomorphism and thus and are isomorphic.  Show is an injection by showing for if then . Then show is a surjection by showing for an arbitrary there exists such that .  Show preserves addition by showing for all , .  Show preserves multiplication by showing for all , .  The above problems show that is an isomorphism and hence and are isomorphic. Since being a field is an invariant and is a field, we can conclude is a field. Thus, every nonzero element of is a unit. What is the identity of ? Find the multiplicative inverse of .  "
@@ -1804,10 +1804,280 @@ var ptx_lunr_docs = [
   "id": "ws-iso-activity-11-2",
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-11-2",
-  "type": "Worksheet Exercise",
+  "type": "Exercise",
   "number": "3",
   "title": "Homomorphisms: Kind of like isomorphisms, but not.",
   "body": " Homomorphisms: Kind of like isomorphisms, but not  Let and be rings. A function is a homomorphism of rings if and for all . (Notice how this is very similar to the definition of isomorphism , but something important is missing -- which requirement of an isomorphism is not required here?)  Define by . Show that is a homomorphism.  The kernel of a homomorphism is the set . Find for the in part (a).  Prove the kernel you found in part b is an ideal of . (It turns out the kernel of a ring homomorphism is always an ideal.)  "
+},
+{
+  "id": "ws-prime-factorization-activity",
+  "level": "1",
+  "url": "ws-prime-factorization-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Module 10: Prime Factorization &amp; Division Reprise",
+  "body": " Module 10: Prime Factorization & Division Reprise  Atoms    A prime number is an integer whose only positive divisors are 1 and . A positive integer that is greater than 1 and not prime is said to be composite .     The Fundamental Theorem of Arithmetic    Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.     Example: We'll do a proof by (strong) induction. Let the statement be that is either prime or a product of primes. Say that we are doing the inductive step and need to show that :   Let's prove it! We'll start with the proof of existence. Let and let the statement be that is either prime or a product of primes.   Prove the base case. (What is there to do, even??)    For the inductive step, assume that for some integer , are all true. That is, suppose that for every integer with , is either prime or a product of primes. (This is our inductive hypothesis .)  For the first case, suppose is prime. Explain why is true in this case.   For the second case, suppose is not prime. Explain why it is possible to find integers and such that and .    What does the induction hypothesis allow you to conclude about the integers and from part (b)?    Explain how your answers to parts (b) and (c) prove that is a product of primes. Deduce that is true.    There is a fill-in-the-blank proof near the end of Investigation 1 (p. 14-15) in your textbook.     Euclid's Lemma  To prove the uniqueness part of the Fundamental Theorem of Arithmetic we will need to establish a result called Euclid's Lemma.   Euclid's Lemma   Let and be integers, and let be a prime. If then or .     Pick a non-prime number and show that Euclid's Lemma is not true for . (Show the negation of the conditional statement is true for some choice of integers and .)    Explain why the following is a more general result. That is, why does Euclid's Lemma follow as a corollary from this theorem?    Let and be integers. If and then .      let's prove the theorem, and then get Euclid's Lemma as a corollary.   Use Bezout's identity to translate the assumption into an equation involving a linear combination.    Multiply both sides of your equation from part (a) by an appropriate quantity in order to obtain an equation of the form     How can you use part (b) to conclude ?        Uniqueness proof  Now we're ready to prove the uniqueness part of the Fundamental Theorem of Arithmetic. Recall:   Fundamental Theorem of Arithmetic   Every integer greater than is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.    We'll use the strong form of Euclid's Lemma:   Euclid's Lemma - Strong Form   Let be integers and let be a prime. If , then for some with .     Let be an integer. As usual with uniqueness proofs, we will assume there are two possibilities for the prime factorization. Use 's and 's to describe how is prime factored in two ways.    Explain why Euclid's Lemma - Strong Form implies that for some . Deduce that for some .    Explain how your answer to would allow you to cancel a factor from each side of the equation from . (Does multiplicative cancellation hold in the integers? Why?)    Suppose in , you assumed was the least integer that could be prime factored in ways. Why now do you have a contradiction?       Primes in  Recall that , the set of even integers, is a commutative ring without identity. We have the following definitions:   For , we say that   -divides  provided that there exists such that .    A prime number in  is a positive integer that cannot be written as a product of two other integers in . That is is prime provided that there do not exist even integers and such that .     Let's see if the Fundamental Theorem of Arithmetic holds in .   Give two examples and a non-example of pairs of integers and such that  -divides . (Try to find an example where in the integers, but in .    What are the first 10 prime numbers in ?    Find a way to write as a product of primes in     Can you find another way to write 60 as a product of primes in ?    Is the Fundamental Theorem of Arithmetic true for ? Explain.    Is Euclid's Lemma true for ? Explain.       Irreducible Polynomials  In the integers, we have that Euclid's Lemma holds for prime integers. It turns out there's a difference between being prime and Euclid's Lemma holding in general rings. We have the following definitions, for an integral domain :   Suppose is nonzero and is not a unit. Then is called irreducible in if whenever , with , at least one of or must be a unit in . Otherwise is said to be reducible .    The nonzero element is called prime if it is not a unit and whenever for any , then either or .     It turns out that prime elements are always irreducible, and in something called a principal ideal domain a nonzero element is prime if and only if it is irreducible. But prime and irreducible are not the same in general. To illustrate this point, let's think about irreducible polynomials.    For an integral domain , a polynomial from that is neither the zero polynomial nor a unit in is said to be irreducible over if whenever is expressed as a product with and from , then or is a unit in . A nonzero, nonunit element of that is not irreducible over is called reducible .    The following are examples of reducible and irreducible polynomials.   Consider . Is reducible or irreducible over ? ? ? ? (Hint: What are the units in these integral domains? What are the roots of the polynomial?)    Consider . Show is reducible over . (Hint: Find roots.) Is reducible over ?       Review questions Make sure you can answer the following questions:  How do we define a prime integer?  What does the Fundamental Theorem of Arithmetic say?  How do we prove the existence part of the Fundamental Theorem of Arithmetic? How do we prove the uniqueness part of the Fundamental Theorem of Arithmetic?  What does Euclid's Lemma say? What is an example of Euclid's Lemma not working for non-prime integers? How can we generalize Euclid's Lemma to non primes? To more integers?  What is the difference between being prime and irreducible?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 10   Non-unique factorization  Find an element of other than that has more than one prime factorization in .     An irrational property  Recall that an irrational number is one that cannot be written as a ratio for integers and and . Use Euclid's Lemma to prove that for all positive integers and , if is not an integer then is irrational.     Reducible and irreducible polynomials  Take the following theorem without proof (for now): Let be a field. If and the degree of is or , then is reducible over if and only if has a zero in .  Explain why , , and are fields.  Determine if the these polynomials are reducible or irreducible, by finding zeros and applying the theorem.     over      over      over     (Side quest - you don't have to do this one!) Can you find polynomials and such that for the fields for which is reducible?     "
+},
+{
+  "id": "ws-prime-factorization-activity-3",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-3",
+  "type": "Definition",
+  "number": "53",
+  "title": "",
+  "body": "  A prime number is an integer whose only positive divisors are 1 and . A positive integer that is greater than 1 and not prime is said to be composite .   "
+},
+{
+  "id": "ws-prime-factorization-activity-4-2",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-2",
+  "type": "Theorem",
+  "number": "54",
+  "title": "",
+  "body": "  Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.   "
+},
+{
+  "id": "ws-prime-factorization-activity-4-3",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-3",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " Example: We'll do a proof by (strong) induction. Let the statement be that is either prime or a product of primes. Say that we are doing the inductive step and need to show that :  "
+},
+{
+  "id": "ws-prime-factorization-activity-4-5",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-5",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": " Prove the base case. (What is there to do, even??)  "
+},
+{
+  "id": "ws-prime-factorization-activity-4-6",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-6",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": " For the inductive step, assume that for some integer , are all true. That is, suppose that for every integer with , is either prime or a product of primes. (This is our inductive hypothesis .)  For the first case, suppose is prime. Explain why is true in this case.   For the second case, suppose is not prime. Explain why it is possible to find integers and such that and .    What does the induction hypothesis allow you to conclude about the integers and from part (b)?    Explain how your answers to parts (b) and (c) prove that is a product of primes. Deduce that is true.   "
+},
+{
+  "id": "ws-prime-factorization-activity-5-1-3",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-3",
+  "type": "Lemma",
+  "number": "55",
+  "title": "Euclid’s Lemma.",
+  "body": " Euclid's Lemma   Let and be integers, and let be a prime. If then or .   "
+},
+{
+  "id": "ws-prime-factorization-activity-5-1-4",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": " Pick a non-prime number and show that Euclid's Lemma is not true for . (Show the negation of the conditional statement is true for some choice of integers and .)  "
+},
+{
+  "id": "ws-prime-factorization-activity-5-1-5",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": " Explain why the following is a more general result. That is, why does Euclid's Lemma follow as a corollary from this theorem?    Let and be integers. If and then .    "
+},
+{
+  "id": "ws-prime-factorization-activity-5-1-6",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": " let's prove the theorem, and then get Euclid's Lemma as a corollary.   Use Bezout's identity to translate the assumption into an equation involving a linear combination.    Multiply both sides of your equation from part (a) by an appropriate quantity in order to obtain an equation of the form     How can you use part (b) to conclude ?   "
+},
+{
+  "id": "ws-prime-factorization-activity-6-1-3",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-3",
+  "type": "Theorem",
+  "number": "57",
+  "title": "Fundamental Theorem of Arithmetic.",
+  "body": " Fundamental Theorem of Arithmetic   Every integer greater than is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.   "
+},
+{
+  "id": "ws-prime-factorization-activity-6-1-5",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-5",
+  "type": "Lemma",
+  "number": "58",
+  "title": "Euclid’s Lemma - Strong Form.",
+  "body": " Euclid's Lemma - Strong Form   Let be integers and let be a prime. If , then for some with .   "
+},
+{
+  "id": "e-lem-start",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#e-lem-start",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": " Let be an integer. As usual with uniqueness proofs, we will assume there are two possibilities for the prime factorization. Use 's and 's to describe how is prime factored in two ways.  "
+},
+{
+  "id": "e-lem-pt2",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#e-lem-pt2",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": " Explain why Euclid's Lemma - Strong Form implies that for some . Deduce that for some .  "
+},
+{
+  "id": "ws-prime-factorization-activity-6-1-8",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-8",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": " Explain how your answer to would allow you to cancel a factor from each side of the equation from . (Does multiplicative cancellation hold in the integers? Why?)  "
+},
+{
+  "id": "ws-prime-factorization-activity-6-1-9",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-9",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": " Suppose in , you assumed was the least integer that could be prime factored in ways. Why now do you have a contradiction?  "
+},
+{
+  "id": "ws-prime-factorization-activity-7-1-2",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "  -divides  prime number in  "
+},
+{
+  "id": "ws-prime-factorization-activity-7-1-4",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-4",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": " Give two examples and a non-example of pairs of integers and such that  -divides . (Try to find an example where in the integers, but in .  "
+},
+{
+  "id": "ws-prime-factorization-activity-7-1-5",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-5",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": " What are the first 10 prime numbers in ?  "
+},
+{
+  "id": "ws-prime-factorization-activity-7-1-6",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-6",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": " Find a way to write as a product of primes in   "
+},
+{
+  "id": "ws-prime-factorization-activity-7-1-7",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-7",
+  "type": "Exercise",
+  "number": "14",
+  "title": "",
+  "body": " Can you find another way to write 60 as a product of primes in ?  "
+},
+{
+  "id": "ws-prime-factorization-activity-7-1-8",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-8",
+  "type": "Exercise",
+  "number": "15",
+  "title": "",
+  "body": " Is the Fundamental Theorem of Arithmetic true for ? Explain.  "
+},
+{
+  "id": "ws-prime-factorization-activity-7-1-9",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-9",
+  "type": "Exercise",
+  "number": "16",
+  "title": "",
+  "body": " Is Euclid's Lemma true for ? Explain.  "
+},
+{
+  "id": "ws-prime-factorization-activity-8-1-2",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "irreducible reducible prime "
+},
+{
+  "id": "ws-prime-factorization-activity-8-1-4",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-4",
+  "type": "Definition",
+  "number": "59",
+  "title": "",
+  "body": "  For an integral domain , a polynomial from that is neither the zero polynomial nor a unit in is said to be irreducible over if whenever is expressed as a product with and from , then or is a unit in . A nonzero, nonunit element of that is not irreducible over is called reducible .   "
+},
+{
+  "id": "ws-prime-factorization-activity-8-1-6",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-6",
+  "type": "Exercise",
+  "number": "17",
+  "title": "",
+  "body": " Consider . Is reducible or irreducible over ? ? ? ? (Hint: What are the units in these integral domains? What are the roots of the polynomial?)  "
+},
+{
+  "id": "ws-prime-factorization-activity-8-1-7",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-7",
+  "type": "Exercise",
+  "number": "18",
+  "title": "",
+  "body": " Consider . Show is reducible over . (Hint: Find roots.) Is reducible over ?  "
+},
+{
+  "id": "ws-prime-factorization-activity-10-1-2",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-10-1-2",
+  "type": "Exercise",
+  "number": "1",
+  "title": "Non-unique factorization.",
+  "body": " Non-unique factorization  Find an element of other than that has more than one prime factorization in .   "
+},
+{
+  "id": "ws-prime-factorization-activity-10-1-3",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-10-1-3",
+  "type": "Exercise",
+  "number": "2",
+  "title": "An irrational property.",
+  "body": " An irrational property  Recall that an irrational number is one that cannot be written as a ratio for integers and and . Use Euclid's Lemma to prove that for all positive integers and , if is not an integer then is irrational.   "
+},
+{
+  "id": "ws-prime-factorization-activity-10-1-4",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-10-1-4",
+  "type": "Exercise",
+  "number": "3",
+  "title": "Reducible and irreducible polynomials.",
+  "body": " Reducible and irreducible polynomials  Take the following theorem without proof (for now): Let be a field. If and the degree of is or , then is reducible over if and only if has a zero in .  Explain why , , and are fields.  Determine if the these polynomials are reducible or irreducible, by finding zeros and applying the theorem.     over      over      over     (Side quest - you don't have to do this one!) Can you find polynomials and such that for the fields for which is reducible?  "
 },
 {
   "id": "portfolios-2",
