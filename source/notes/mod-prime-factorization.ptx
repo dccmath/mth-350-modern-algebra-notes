@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<worksheet xml:id="ws-prime-factorization-activity">
+
+	<title>Module 10: Prime Factorization &amp; Division Reprise</title>
+	<introduction><p><alert>Atoms</alert></p></introduction>
+	
+
+
+	<definition>
+		<statement>
+			<p>A <term>prime number</term> is an integer <m>p > 1</m> whose only positive divisors are 1 and <m>p</m>. A positive integer that is greater than 1 and not prime is said to be <term>composite</term>.</p>
+		</statement>
+	</definition>
+	
+	<paragraphs>
+		<title>The Fundamental Theorem of Arithmetic</title>
+		
+	<theorem>
+		<statement>
+			<p>Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.</p>
+		</statement>
+	</theorem>
+    <exercise workspace="1.5in">
+    	<p><em>Example:</em> We'll do a proof by (strong) induction. Let the statement <m>P(n)</m> be that <m>n</m> is either prime or a product of primes. Say that we are doing the inductive step and need to show that <m>P(6359) \to P(6360)</m>:</p>
+    </exercise>
+    
+    <p>Let's prove it! We'll start with the proof of existence. Let <m>n \geq 2</m> and let the statement <m>P(n)</m> be that <m>n</m> is either prime or a product of primes.</p>
+    
+    <exercise workspace="1in">
+    	<p>Prove the base case. (What is there to do, even??)</p>
+    </exercise>
+    
+    <exercise>
+    	<introduction><p>
+  For the inductive step, assume that for some integer <m>n\ge 2</m>,
+  <m>P(2), P(3), \dots, P(n)</m> are all true.
+  That is, suppose that for every integer <m>k</m> with <m>2\le k \le n</m>,
+  <m>k</m> is either prime or a product of primes.
+  (This is our <em>inductive hypothesis</em>.)
+		</p></introduction>
+		<task workspace="1in"><p>
+  For the first case, suppose <m>n+1</m> is prime.
+  Explain why <m>P(n+1)</m> is true in this case.
+		</p></task>
+		
+		<task workspace="2.12in">
+		<p>
+  For the second case, suppose <m>n+1</m> is not prime.
+  Explain why it is possible to find integers <m>x</m> and <m>y</m> such that
+  <m>n+1=xy</m> and <m>2\le x,y\le n</m>.
+		</p>
+		</task>
+		
+		<task workspace="2.12in">
+		<p>
+  What does the induction hypothesis allow you to conclude about the integers
+  <m>x</m> and <m>y</m> from part (b)?
+		</p>
+		</task>
+		
+		<task workspace="2.12in">
+		<p>
+  Explain how your answers to parts (b) and (c) prove that <m>n+1</m> is a
+  product of primes.
+  Deduce that <m>P(n+1)</m> is true.
+		</p>
+		</task>
+    </exercise>
+    
+    <p>There is a fill-in-the-blank proof near the end of Investigation 1 (p. 14-15) in your textbook.</p>
+    </paragraphs>
+ 
+ 
+	<paragraphs>
+		<title>Euclid's Lemma</title>
+		
+		<p>To prove the uniqueness part of the Fundamental Theorem of Arithmetic we will need to establish a result called Euclid's Lemma.</p>
+		
+		<lemma>
+   		<title>Euclid's Lemma</title>
+
+   		<statement>
+        <p>
+            Let <m>a</m> and <m>b</m> be integers, and let <m>p</m> be a prime.
+            If <m>p\mid ab</m> then <m>p\mid a</m> or <m>p\mid b</m>.
+        </p>
+  	  </statement>
+		</lemma>
+		
+		<exercise workspace="1in">
+		<p>
+    Pick a non-prime number <m>k</m> and show that Euclid's Lemma is not true
+    for <m>k</m>.
+    (Show the negation of the conditional statement is true for some choice of
+    integers <m>a</m> and <m>b</m>.)
+		</p>
+		</exercise>
+		
+		<exercise workspace="1in">
+			<p>
+    Explain why the following is a more general result.
+    That is, why does Euclid's Lemma follow as a corollary from this theorem?
+</p>
+
+<theorem>
+    <statement>
+        <p>
+            Let <m>a,b,</m> and <m>c</m> be integers.
+            If <m>c\mid ab</m> and <m>\gcd(c,a) = 1</m> then <m>c\mid b</m>.
+        </p>
+    </statement>
+</theorem>
+		</exercise>
+		
+		<exercise>
+			<introduction><p>let's prove the theorem, and then get Euclid's Lemma as a corollary.</p></introduction>
+			
+			<task workspace="0.25in">
+			<p>
+    Use Bezout's identity to translate the assumption <m>\gcd(c,a) = 1</m> into
+    an equation involving a linear combination.
+			</p>
+
+			</task>
+
+			<task workspace="0.2in">
+			<p>
+    Multiply both sides of your equation from part (a) by an appropriate
+    quantity in order to obtain an equation of the form
+    <md>
+        b = \underline{\hspace{.25in}}+ \underline{\hspace{.25in}}.
+    </md>
+			</p>
+			</task>
+			
+			<task workspace="0.2in">
+			<p>
+    How can you use part (b) to conclude <m>c\mid b</m>?
+			</p>
+			</task>
+		</exercise>
+		
+	</paragraphs>
+	
+	<paragraphs>
+	<title>Uniqueness proof</title>
+		<p>Now we're ready to prove the <q>uniqueness</q> part of the Fundamental Theorem of Arithmetic. Recall:</p>
+		
+	<theorem>
+    <title>Fundamental Theorem of Arithmetic</title>
+
+    <statement>
+        <p>
+            Every integer greater than <m>1</m> is either prime or a product of primes.
+            Furthermore, this factorization is unique up to the order of the factors.
+        </p>
+    </statement>
+	</theorem>
+	
+		<p>We'll use the strong form of Euclid's Lemma:</p>
+		
+	<lemma>
+    <title>Euclid's Lemma - Strong Form</title>
+
+    <statement>
+        <p>
+            Let <m>a_{1},a_{2},\dots, a_{n}</m> be integers and let <m>p</m> be
+            a prime.
+            If <m>p\mid a_{1}a_{2}\dots_{a}n</m>, then <m>p\mid a_{i}</m> for
+            some <m>i</m> with <m>1\le i \le n</m>.
+        </p>
+    </statement>
+	</lemma>
+	
+	<exercise workspace="1in" xml:id="e-lem-start">
+	<p>
+    Let <m>n\ge 2</m> be an integer.
+    As usual with uniqueness proofs, we will assume there are two possibilities
+    for the prime factorization.
+    Use <m>p_{i}</m> 's and <m>q_{i}</m> 's to describe how <m>n</m> is prime
+    factored in two ways.
+	</p>
+	</exercise>
+
+	<exercise workspace="0.75in" xml:id="e-lem-pt2">
+<p>
+    Explain why Euclid's Lemma - Strong Form implies that <m>p_{1}\mid q_{i}</m>
+    for some <m>i</m>.
+    Deduce that <m>p_{1} = q_{i}</m> for some <m>i</m>.
+</p>
+	</exercise>
+
+	<exercise workspace="0.75in">
+<p>
+    Explain how your answer to <xref ref="e-lem-pt2" /> would allow you to cancel a factor from
+    each side of the equation from <xref ref="e-lem-start" />.
+    (Does multiplicative cancellation hold in the integers? Why?)
+</p>
+	</exercise>
+
+	<exercise workspace="0.75in">
+<p>
+    Suppose in <xref ref="e-lem-start" />, you assumed <m>n</m> was the least integer that could be prime
+    factored in <m>2</m> ways.
+    Why now do you have a contradiction?
+</p>
+	</exercise>
+
+	</paragraphs>
+	
+<page>
+
+	<paragraphs>
+		<title>Primes in <m>\mathbb{E}</m></title>
+
+<p>
+    Recall that <m>\mathbb{E}</m>, the set of even integers, is a commutative ring without identity.
+    We have the following definitions:
+    <ul>
+        <li>
+            <p>
+                For <m>a,b\in \mathbb{E}</m>, we say that
+                <term> <m>a</m> <m>\mathbb{E}</m>-divides <m>b</m> </term>
+                provided that there exists <m>c\in \mathbb{E}</m> such that
+                <m>ac = b</m>.
+            </p>
+        </li>
+
+        <li>
+            <p>
+                A <term>prime number in <m>\mathbb{E}</m> </term> is a
+                positive integer <m>p</m> that cannot be written as a product of
+                two other integers in <m>\mathbb{E}</m>.
+                That is <m>p\in\mathbb{E}</m> is prime provided that there do
+                not exist even integers <m>x</m> and <m>y</m> such that
+                <m>p=xy</m>.
+            </p>
+        </li>
+    </ul>
+</p>
+
+	<p>
+    Let's see if the Fundamental Theorem of Arithmetic holds in
+    <m>\mathbb{E}</m>.
+</p>
+
+	<exercise workspace="0.5in">
+<p>
+    Give two examples and a non-example of pairs of integers <m>a</m> and
+    <m>b</m> such that <m>a</m> <m>\mathbb{E}</m>-divides <m>b</m>.
+    (Try to find an example where <m>a\mid b</m> in the integers, but
+    <m>a\nmid b</m> in <m>\mathbb{E}</m>.
+</p>
+	</exercise>
+
+	<exercise workspace="0.5in">
+<p>
+    What are the first 10 prime numbers in <m>\mathbb{E}</m>?
+</p>
+	</exercise>
+	
+	<exercise workspace="0.35in">
+<p>
+    Find a way to write <m>60</m> as a product of primes in <m>\mathbb{E}</m>
+</p>
+	</exercise>
+	
+	<exercise workspace="0.5in">
+<p>
+    Can you find another way to write 60 as a product of primes in
+    <m>\mathbb{E}</m>?
+</p>
+	</exercise>
+
+	<exercise workspace="0.35in">
+<p>
+    Is the Fundamental Theorem of Arithmetic true for <m>\mathbb{E}</m>? Explain.
+</p>
+	</exercise>
+
+	<exercise workspace="0.35in">
+<p>
+    Is Euclid's Lemma true for <m>\mathbb{E}</m>? Explain.
+</p>
+	</exercise>
+	</paragraphs>
+</page>
+
+<page>	
+	<paragraphs>
+		<title>Irreducible Polynomials</title>
+		
+		<p>
+    In the integers, we have that Euclid's Lemma holds for prime integers.
+    It turns out there's a difference between being prime and Euclid's Lemma
+    holding in general rings.
+    We have the following definitions, for an integral domain <m>R</m>:
+    <ul>
+        <li>
+            <p>
+                Suppose <m>r\in R</m> is nonzero and is not a unit.
+                Then <m>r</m> is called <term>irreducible</term> in <m>R</m>
+                if whenever <m>r=ab</m>, with <m>a,b\in R</m>, at least one of
+                <m>a</m> or <m>b</m> must be a unit in <m>R</m>.
+                Otherwise <m>r</m> is said to be <term>reducible</term>.
+            </p>
+        </li>
+
+        <li>
+            <p>
+                The nonzero element <m>p\in R</m> is called <term>prime</term>
+                if it is not a unit and whenever <m>p\mid ab</m> for any
+                <m>a,b\in R</m>, then either <m>p\mid a</m> or <m>p\mid b</m>.
+            </p>
+        </li>
+    </ul>
+</p>
+
+<p>
+    It turns out that prime elements are always irreducible, and in something
+    called a <q>principal ideal domain</q> a nonzero element is prime if and only
+    if it is irreducible.
+    But prime and irreducible are not the same in general. To illustrate this point, let's think about irreducible polynomials.</p>
+
+<definition>
+    <statement>
+        <p>
+           
+            For an integral domain <m>D</m>, a polynomial <m>f(x)</m> from
+            <m>D[x]</m> that is neither the zero polynomial nor a unit in
+            <m>D[x]</m> is said to be <term>irreducible over <m>D</m></term>
+            if whenever <m>f(x)</m> is expressed as a product
+            <m>f(x)=g(x)h(x)</m> with <m>g(x)</m> and <m>h(x)</m> from
+            <m>D[x]</m>, then <m>g(x)</m> or <m>h(x)</m> is a unit in
+            <m>D[x]</m>.
+            A nonzero, nonunit element of <m>D[x]</m> that is not irreducible
+            over <m>D</m> is called <term>reducible</term>.
+        </p>
+    </statement>
+</definition>
+
+<p>
+    The following are examples of reducible and irreducible polynomials.
+</p>
+
+	<exercise workspace="1.5in">
+<p>
+    Consider <m>f(x)=2x^{2}+4</m>.
+    Is <m>f(x)</m> reducible or irreducible over <m>\mathbb{Z}</m>?
+    <m>\mathbb{Q}</m>?
+    <m>\mathbb{R}</m>?
+    <m>\mathbb{C}</m>?
+    (Hint: What are the units in these integral domains?
+    What are the roots of the polynomial?)
+</p>
+	</exercise>
+	
+	<exercise workspace="1.5in">
+<p>
+    Consider <m>g(x) = x^{2}+1</m>.
+    Show <m>g(x)</m> is reducible over <m>\mathbb{Z}_{5}</m>.
+    (Hint: Find roots.) Is <m>g(x)</m> reducible over <m>\mathbb{Z}_{3}</m>?
+</p>
+	</exercise>
+
+	</paragraphs>
+</page>
+
+<page xml:id="sec-prime-factorization-review">
+
+<paragraphs>
+<title>Review questions</title>
+Make sure you can answer the following questions:
+
+<ul>
+	<li><p>How do we define a prime integer?</p></li>
+	<li><p>What does the Fundamental Theorem of Arithmetic say?</p></li>
+	<li><p>How do we prove the existence part of the Fundamental Theorem of Arithmetic? How do we prove the uniqueness part of the Fundamental Theorem of Arithmetic?</p></li>
+	<li><p>What does Euclid's Lemma say? What is an example of Euclid's Lemma not working for non-prime integers? How can we generalize Euclid's Lemma to non primes? To more integers?</p></li>
+	<li><p>What is the difference between being prime and irreducible?</p></li>
+</ul>
+                
+<p>The rest of this page is for you to summarize important ideas from the module.</p>
+
+</paragraphs>
+
+</page>
+
+
+<page>
+
+<paragraphs>
+    <title>Weekly Practice 10</title>
+
+		<exercise number="1">
+		<title>Non-unique factorization</title>
+		<statement><p>
+    Find an element of <m>\mathbb{E}</m> other than <m>60</m> that has more than
+    one prime factorization in <m>\mathbb{E}</m>.
+    <!--inv 4 #9-->
+		</p></statement>
+    	</exercise>
+	
+		<exercise number="2">
+		<title>An irrational property</title>
+		<statement><p>
+    Recall that an irrational number is one that cannot be written as a ratio
+    <m>\frac{a}{b}</m> for integers <m>a</m> and <m>b</m> and <m>b\neq 0</m>.
+    Use Euclid's Lemma to prove that for all positive integers <m>n</m> and
+    <m>q</m>, if <m>\sqrt[q]{n}</m> is not an integer then <m>\sqrt[q]{n}</m> is
+    irrational.
+    <!--Inv 4 #2-->
+		</p></statement>
+		</exercise>
+		
+		<exercise number="3">
+		<title>Reducible and irreducible polynomials</title>
+		<introduction><p>
+    Take the following theorem without proof (for now): Let <m>F</m> be a field.
+    If <m>f(x)\in F[x]</m> and the degree of <m>f(x)</m> is <m>2</m> or
+    <m>3</m>, then <m>f(x)</m> is reducible over <m>F</m> if and only if
+    <m>f(x)</m> has a zero in <m>F</m>.
+</p></introduction>
+        	<task><p>
+    Explain why <m>\mathbb{Z}_{5}</m>, <m>\mathbb{Z}_{3}</m>, and
+    <m>\mathbb{Z}_{2}</m> are fields.
+			</p></task>
+			
+			<task><p>
+    Determine if the these polynomials are reducible or irreducible, by finding
+    zeros and applying the theorem.
+</p>
+
+<ul>
+<li>
+<p>
+    <m>f(x) = x^{3}+1</m> over <m>\mathbb{Z}_{5}</m>
+</p>
+</li>
+<li>
+<p>
+    <m>f(x) = x^{3}+1</m> over <m>\mathbb{Z}_{3}</m>
+</p>
+</li>
+<li>
+<p>
+    <m>f(x) = x^{3}+1</m> over <m>\mathbb{Z}_{2}</m>
+</p>
+</li></ul>
+			</task>
+            <task><p>
+    (Side quest - you don't have to do this one!) Can you find polynomials
+    <m>g(x)</m> and <m>h(x)</m> such that <m>f(x)=g(x)h(x)</m> for the fields
+    for which <m>f(x)</m> is reducible?
+			</p></task>
+		</exercise>
+		
+	
+	</paragraphs>
+	
+ </page>
+ 
+ </worksheet>
+
+<!-- </chapter> -->
