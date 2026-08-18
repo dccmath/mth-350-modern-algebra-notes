@@ -115,7 +115,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence",
-  "body": " Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence  The Leftovers    The Integers  We'll assume the following about the integers as axioms . We don't prove axioms, we use them as building blocks to prove them. They give us a floor to stand on. Otherwise it's turtles all the way down.   Axioms of Integer Arithmetic     The integers are closed under addition and multiplication , meaning that for all integers and , both and are also integers.  Addition and multiplication are commutative , meaning that for all integers and , and .  Addition and multiplication are associative , meaning that for all integers and , and  Multiplication distributes over addition , meaning that for all integers and .  The integer 0 is an additive identity , meaning that for every integer .  The integer 1 is a multiplicative identity , meaning that for every integer .  Every integer has an additive inverse , typically denoted ; in particular, for every integer .       Which axioms of a field are the integers missing?      Divides    An integer  divides an integer , denoted , if there exists an integer such that .    In a popular high school mathematics textbook, students are told that one of the theorems in number theory is the following:   If and are integers where is a factor of and is a factor of , then is a factor of .     Prove . It may help to translate this to use the word divides .      Students are then asked about generalizing the theorem to:  If and are integers where is a factor of and is a factor of , then is a factor of for all integers and .  Is this true? Prove or disprove.        The Division Algorithm   The Division Algorithm   Let and be integers with . Then there exist unique integers and such that   We call the quotient and the remainder .      Practice one more time: Come up with two integers and that satisfy the hypothesis of the division algorithm. (If you want a challenge, throw in a negative integer.) Trade these numbers with another group member and then apply the division algorithm to the numbers you receive.      What is different about applying the division algorithm when ?      Do you think we should we assume the division algorithm as an axiom or try to prove it?      Spoiler alert: We will prove it, since it turns out we can derive it from another, simpler axiom. To start, let's do an example. Let and . Consider Find some elements of and what appears to be the least element of ?        More Division Algorithm    If prove that . (Use the definition of the set .) If , is ?       We will take the following as an axiom:   The Well-Ordering Principle  Every nonempty subset of the whole numbers contains a least element.   Do you think as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in if ?   Choose and show that and so .     At this point you are hopefully thinking that is a nonempty subset of the whole numbers. So, we can apply the well-ordering principle and get a least element. We will show the least element is the remainder. So, let be the least element of . Since , we know there is an integer such that . Thus . That's good news! We also need that . Why do we know ?      Now let's show . Suppose, for the sake of a contradiction that . Show . (Recall and .)     You've reached a contradiction, how?     What remains to be proven to show the division algorithm is that and is unique. You can find a partial proof near the end of Investigation 1, which will help you on your first problem set!        Congruence    Let be a natural number, and let and be integers. Then  is congruent to modulo denoted provided that divides .    Examples: Here's a chance to remember congruences:    Give an example of two integers that are congruent modulo , where one is positive and one is negative.      Characterize all the integers such that . What are all the integers such that ?      Prove that, for all and , if and then .      Prove that for all and , if and then .        Fun with Congruence (and a connection to fields)    Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Will this be a field?       Check digits: A UPC is a Universal Product Code, or the barcode on products. UPCs consist of 12 digits, and the last digit is known as a check digit. A check digit is there for error detection when a code is entered (they do this with your routing numbers for banks too). If the first 11 digits are , the check digit will be  where is the dot product, so multiply the entries in the same place, and then add up all the results. Verify that the check digit is correct on the box of Famous Amos cookies. Do the multiplication in your head using modular arithmetic!         My birthday was on a Thursday this year. Determine the next time my birthday will be on a Thursday again. (Use modular arithmetic! Also, leap years happen every 4 years, in years congruent to mod .) When will my birthday next be on a Sunday?        Review questions  Make sure you can answer the following questions:   What is the definition of divides ? Does where ? Does where .  State the division algorithm and apply to any pair of integers satisfying the hypothesis.  State the definition of and be able to determine if any pair of integers and are congruent modulo .   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 2   Fun (?) with fields (?)  Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of this number system (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Is this set a field?    Another way to talk about congruences  Consider the following theorem:    Let be a natural number, and let and be integers. Then if and only if and yield the same remainder when divided by .     Do a couple examples of the theorem (in both directions!) below to gain a better understanding of what the theorem says.  Prove (at least) one direction of the theorem.    UPCs!  Find a product with a UPC and verify the check digit.    Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has 2 solutions.     "
+  "body": " Module 2: Divisibility of Integers, Division Algorithm, Integer Congruence  The Leftovers    The Integers  We'll assume the following about the integers as axioms . We don't prove axioms, we use them as building blocks to prove them. They give us a floor to stand on. Otherwise it's turtles all the way down.   Axioms of Integer Arithmetic     The integers are closed under addition and multiplication , meaning that for all integers and , both and are also integers.  Addition and multiplication are commutative , meaning that for all integers and , and .  Addition and multiplication are associative , meaning that for all integers and , and  Multiplication distributes over addition , meaning that for all integers and .  The integer 0 is an additive identity , meaning that for every integer .  The integer 1 is a multiplicative identity , meaning that for every integer .  Every integer has an additive inverse , typically denoted ; in particular, for every integer .       Which axioms of a field are the integers missing?      Divides    An integer  divides an integer , denoted , if there exists an integer such that .    In a popular high school mathematics textbook, students are told that one of the theorems in number theory is the following:   If and are integers where is a factor of and is a factor of , then is a factor of .     Prove . It may help to translate this to use the word divides .      Students are then asked about generalizing the theorem to:  If and are integers where is a factor of and is a factor of , then is a factor of for all integers and .  Is this true? Prove or disprove.        The Division Algorithm   The Division Algorithm   Let and be integers with . Then there exist unique integers and such that   We call the quotient and the remainder .      Practice one more time: Come up with two integers and that satisfy the hypothesis of the division algorithm. (If you want a challenge, throw in a negative integer.) Trade these numbers with another group member and then apply the division algorithm to the numbers you receive.      What is different about applying the division algorithm when ?      Do you think we should we assume the division algorithm as an axiom or try to prove it?      Spoiler alert: We will prove it, since it turns out we can derive it from another, simpler axiom. To start, let's do an example. Let and . Consider Find some elements of and what appears to be the least element of ?        More Division Algorithm    If prove that . (Use the definition of the set .) If , is ?       We will take the following as an axiom:   The Well-Ordering Principle  Every nonempty subset of the whole numbers contains a least element.   Do you think as defined earlier is always a nonempty subset of the whole numbers? What element can you be sure is in if ?   Choose and show that and so .     At this point you are hopefully thinking that is a nonempty subset of the whole numbers. So, we can apply the well-ordering principle and get a least element. We will show the least element is the remainder. So, let be the least element of . Since , we know there is an integer such that . Thus . That's good news! We also need that . Why do we know ?      Now let's show . Suppose, for the sake of a contradiction that . Show . (Recall and .)     You've reached a contradiction, how?     What remains to be proven to show the division algorithm is that and is unique. You can find a partial proof near the end of Investigation 1, which will help you on your first problem set!        Congruence    Let be a natural number, and let and be integers. Then  is congruent to modulo denoted provided that divides .    Examples: Here's a chance to remember congruences:    Give an example of two integers that are congruent modulo , where one is positive and one is negative.      Characterize all the integers such that . What are all the integers such that ?      Prove that, for all and , if and then .      Prove that for all and , if and then .        Fun with Congruence (and a connection to fields)    Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Will this be a field?       Check digits: A UPC is a Universal Product Code, or the barcode on products. UPCs consist of 12 digits, and the last digit is known as a check digit. A check digit is there for error detection when a code is entered (they do this with your routing numbers for banks too). If the first 11 digits are , the check digit will be  where is the dot product, so multiply the entries in the same place, and then add up all the results. Verify that the check digit is correct on the box of Famous Amos cookies. Do the multiplication in your head using modular arithmetic!         My birthday was on a Thursday this year. Determine the next time my birthday will be on a Thursday again. (Use modular arithmetic! Also, leap years happen every 4 years, in years congruent to mod .) When will my birthday next be on a Sunday?        Review questions  Make sure you can answer the following questions:   What is the definition of divides ? Does where ? Does where .  State the division algorithm and apply to any pair of integers satisfying the hypothesis.  State the definition of and be able to determine if any pair of integers and are congruent modulo .   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 2   Fun (?) with fields (?)  Consider the set and define addition by and multiplication by . Find the multiplicative and additive identities of this number system (if they exist), and find the additive and multiplicative inverses of each element (if they exist). Is this set a field?    Another way to talk about congruences  Consider the following theorem:    Let be a natural number, and let and be integers. Then if and only if and yield the same remainder when divided by (where the remainder is given by the Division Algorithm).     Do a couple examples of the theorem (in both directions!) below to gain a better understanding of what the theorem says.  Prove (at least) one direction of the theorem.    UPCs!  Find a product with a UPC and verify the check digit.    Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has exactly 2 solutions.     "
 },
 {
   "id": "ws-divisibility-activity-3-1-3",
@@ -349,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "Another way to talk about congruences.",
-  "body": " Another way to talk about congruences  Consider the following theorem:    Let be a natural number, and let and be integers. Then if and only if and yield the same remainder when divided by .     Do a couple examples of the theorem (in both directions!) below to gain a better understanding of what the theorem says.  Prove (at least) one direction of the theorem.  "
+  "body": " Another way to talk about congruences  Consider the following theorem:    Let be a natural number, and let and be integers. Then if and only if and yield the same remainder when divided by (where the remainder is given by the Division Algorithm).     Do a couple examples of the theorem (in both directions!) below to gain a better understanding of what the theorem says.  Prove (at least) one direction of the theorem.  "
 },
 {
   "id": "ws-divisibility-activity-10-1-4",
@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "Another way congruences are weird.",
-  "body": " Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has 2 solutions.  "
+  "body": " Another way congruences are weird  In high school algebra, linear equations, like always had one solution. Consider the set and define addition by and multiplication by .  Show that in the equation has no solutions.  Find a linear equation in the number system that has exactly 2 solutions.  "
 },
 {
   "id": "ws-equivalence-zn-activity",
@@ -376,7 +376,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Module 3: Equivalence Relations, Equivalence Classes, and <span class=\"process-math\">\\(\\mathbb{Z}_n\\)<\/span>",
-  "body": " Module 3: Equivalence Relations, Equivalence Classes, and  A Strange New World    Equivalence Relations   Let be a set and let be a binary relation on . Then is called an equivalence relation on provided that satisfies all of the following properties:  Reflexive: For all , .  Symmetric: For all , if then .  Transitive: For all , if and then .        Which of the properties of reflexive, symmetric, and transitive are satisfied by each of the following relations on the given set ? Sketch a proof or a counterexample to justify each of your answers.     Number of digits relation: Let and consider the relation defined by if and only if has the same number of digits as .     Divides relation: Let and consider the relation defined by if and only if .     Sum to 10 relation: Let and consider the relation defined by if and only if .     Rhyming relation: Let be the set of all words in the English language and for words and say if and only if rhymes with .     Fraction relation: Let and for define if and only if .          Reflexive  Symmetric  Transitive    1.          2.          3.          4.          5.                Equivalence Classes    Let be an equivalence relation on a nonempty set , and let . The equivalence class of  (with respect to ) denoted is the set of all elements of that are related to by . More precisely,      Let's find some equivalence classes.   Find all distinct equivalence classes for the equivalence relation defined in (a) on the previous page. Note equivalence classes are sets so use set notation!    A student claims is an equivalence class for the equivalence relation given in (e). on the previous page. Are they correct? Can you find (another) equivalence class for that relation?    In the module prep you hopefully convinced yourself the relation on defined by if and only if is an equivalence relation. Find all distinct equivalence classes of . (These are also called congruence classes .) How many distinct equivalence classes do you think you will get if you replace with ?    We only define equivalence classes for equivalence relations. This question is to think about why we might do that. What do you get when you find equivalence class for in the relation defined in (b) on the previous page? What about ? How is this different than what happened in previous questions?        Some Properties of Equivalence Classes  The reason we define an equivalence relation to have the properties reflexive, symmetric, and transitive is that it leads to equivalence classes that have some special properties.    We'll start by considering the following lemma.   Let be a nonempty set and let be an equivalence relation on . Then for all , if and only if .       Let's see what this lemma means about congruence classes, that is, equivalence classes under the equivalence relation congruence modulo . Give an example of for which congruence classes modulo are equal. Is where is congruence modulo ? Then give an example for which , and determine if .    This Lemma means for a given equivalence class there are many different ways to write it, we call this picking a representative . Which representatives might make sense to use for the congruence classes modulo ?     Now let's consider the following theorem.   Let be a nonempty set and let be an equivalence relation on . Then can be written as the disjoint union of distinct equivalence classes corresponding to . That is,   For all , if then .    For all , .    For all , if for some , then .        Caption this picture. In particular, can you see see parts a,b, and c of the theorem in the picture?          The Number System  For our purposes, the most important equivalence relation will be congruence modulo . This allows us to define the number system :   For every integer , the integers modulo denoted , is the set of the distinct congruence classes of modulo , i.e.,    We can make into a number system by defining addition and multiplication on the set:   Addition:     Multiplication:    This may seem like a silly thing to do, but remember that is actually an infinite set! In fact, the two 's actually, in a sense, have a different meaning. The one on the left is saying add these infinite sets and the one on the right is saying add these two integers .  Let's consider . We'll find . We are really finding: which is kind of a crazy thing to think about. Using the definition of addition above this is But appears to not be in . Is not closed? Turns out that it's OK: Recall that . They are the same sets! So we'll say In our addition and multiplication tables, we'll write this reduced answer. That is, if we get a congruence class that appears to not be in the set, we will choose a representative that is between and .    Complete the following addition and multiplication tables for . (We can skip writing the subscripts, as long as you remember it's modulo !)     +                                                              [1]                                                                                   Fill in the addition and multiplication tables on this page and the next.  These tables have all the elements of . The and are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Which is this table for?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a field do these have?     Review questions   What is an equivalence relation? What does it mean to be reflexive, symmetric, and transitive?  What is an equivalence class? What is a congruence class?  How do we add and multiply congruence classes?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 3   Fractions and relations  We can define a relation on such that if and only if .  Give 3 examples of pairs that are related.  Is this an equivalence relation? Prove or disprove for each of reflexive, symmetric, and transitive.  Find .    When is a field?  Based on your work for this module, make a conjecture for when is a field. State your conjecture as is a field if and only if ... . Then, build addition and multiplication tables for two more values of to test out your conjecture.    Multiplicative cancellation  One of the things our high school teachers told us about is multiplicative cancellation (although they probably didn't use those words). As an example, if we have we could cancel the 's so that we have . But in high school we were almost always working in . This question asks about multiplicative cancellation in .  The statement at the start isn't quite precise enough. There's one value for which multiplicative cancellation doesn't work. What is it, and why doesn't it work?  Consider . For with , if does ? (Hint: Look at your multiplication table for !)  Consider . For with , if does ?  You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?  What if I told you is a field? What axioms might you use to prove part (c) is true?     "
+  "body": " Module 3: Equivalence Relations, Equivalence Classes, and  A Strange New World    Equivalence Relations   Let be a set and let be a binary relation on . Then is called an equivalence relation on provided that satisfies all of the following properties:  Reflexive: For all , .  Symmetric: For all , if then .  Transitive: For all , if and then .        Which of the properties of reflexive, symmetric, and transitive are satisfied by each of the following relations on the given set ? Sketch a proof or a counterexample to justify each of your answers.     Number of digits relation: Let and consider the relation defined by if and only if has the same number of digits as .     Divides relation: Let and consider the relation defined by if and only if .     Sum to 10 relation: Let and consider the relation defined by if and only if .     Rhyming relation: Let be the set of all words in the English language and for words and say if and only if rhymes with .     Fraction relation: Let and for define if and only if .         Reflexive  Symmetric  Transitive    1.          2.          3.          4.          5.               Equivalence Classes    Let be an equivalence relation on a nonempty set , and let . The equivalence class of  (with respect to ) denoted is the set of all elements of that are related to by . More precisely,      Let's find some equivalence classes.   Find all distinct equivalence classes for the equivalence relation defined in (a) on the previous page. Note equivalence classes are sets so use set notation!    A student claims is an equivalence class for the equivalence relation given in (e). on the previous page. Are they correct? Can you find (another) equivalence class for that relation?    In the module prep you hopefully convinced yourself the relation on defined by if and only if is an equivalence relation. Find all distinct equivalence classes of . (These are also called congruence classes .) How many distinct equivalence classes do you think you will get if you replace with ?    We only define equivalence classes for equivalence relations. This question is to think about why we might do that. What do you get when you find equivalence class for in the relation defined in (b) on the previous page? What about ? How is this different than what happened in previous questions?        Some Properties of Equivalence Classes  The reason we define an equivalence relation to have the properties reflexive, symmetric, and transitive is that it leads to equivalence classes that have some special properties.    We'll start by considering the following lemma.   Let be a nonempty set and let be an equivalence relation on . Then for all , if and only if .       Let's see what this lemma means about congruence classes, that is, equivalence classes under the equivalence relation congruence modulo . Give an example of for which congruence classes modulo are equal. Is where is congruence modulo ? Then give an example for which , and determine if .    This Lemma means for a given equivalence class there are many different ways to write it, we call this picking a representative . Which representatives might make sense to use for the congruence classes modulo ?     Now let's consider the following theorem.   Let be a nonempty set and let be an equivalence relation on . Then can be written as the disjoint union of distinct equivalence classes corresponding to . That is,   For all , if then .    For all , .    For all , if for some , then .        Caption this picture. In particular, can you see see parts a,b, and c of the theorem in the picture?          The Number System  For our purposes, the most important equivalence relation will be congruence modulo . This allows us to define the number system :   For every integer , the integers modulo denoted , is the set of the distinct congruence classes of modulo , i.e.,    We can make into a number system by defining addition and multiplication on the set:   Addition:     Multiplication:    This may seem like a silly thing to do, but remember that is actually an infinite set! In fact, the two 's actually, in a sense, have a different meaning. The one on the left is saying add these infinite sets and the one on the right is saying add these two integers .  Let's consider . We'll find . We are really finding: which is kind of a crazy thing to think about. Using the definition of addition above this is But appears to not be in . Is not closed? Turns out that it's OK: Recall that . They are the same sets! So we'll say In our addition and multiplication tables, we'll write this reduced answer. That is, if we get a congruence class that appears to not be in the set, we will choose a representative that is between and .    Complete the following addition and multiplication tables for . (We can skip writing the subscripts, as long as you remember it's modulo !)     +                                                              [1]                                                                                   Fill in the addition and multiplication tables on this page and the next.  These tables have all the elements of . The and are for addition and multiplication as defined on the previous page! You need not write the brackets, but make sure you are picking a representative between 0 and 10. Note - Google sheets will do mod for you (use a formula like =MOD(9*8,11)).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Which is this table for?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Make as many observations as possible about the tables you have made. What do you notice? What do you wonder? What patterns do you see? In what ways are these like the integers? In what ways are they not? What properties of a field do these have?     Review questions   What is an equivalence relation? What does it mean to be reflexive, symmetric, and transitive?  What is an equivalence class? What is a congruence class?  How do we add and multiply congruence classes?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 3   Fractions and relations  We can define a relation on such that if and only if .  Give 3 examples of pairs that are related.  Is this an equivalence relation? Prove or disprove for each of reflexive, symmetric, and transitive.  Find .    When is a field?  Based on your work for this module, make a conjecture for when is a field. State your conjecture as is a field if and only if ... . Then, build addition and multiplication tables for two more values of to test out your conjecture.    Multiplicative cancellation  One of the things our high school teachers told us about is multiplicative cancellation (although they probably didn't use those words). As an example, if we have we could cancel the 's so that we have . But in high school we were almost always working in . This question asks about multiplicative cancellation in .  The statement at the start isn't quite precise enough. There's one value for which multiplicative cancellation doesn't work. What is it, and why doesn't it work?  Consider . For with , if does ? (Hint: Look at your multiplication table for !)  Consider . For with , if does ?  You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?  What if I told you is a field? What axioms might you use to prove part (c) is true?     "
 },
 {
   "id": "ws-equivalence-zn-activity-3-1-2",
@@ -397,20 +397,11 @@ var ptx_lunr_docs = [
   "body": "  Which of the properties of reflexive, symmetric, and transitive are satisfied by each of the following relations on the given set ? Sketch a proof or a counterexample to justify each of your answers.     Number of digits relation: Let and consider the relation defined by if and only if has the same number of digits as .     Divides relation: Let and consider the relation defined by if and only if .     Sum to 10 relation: Let and consider the relation defined by if and only if .     Rhyming relation: Let be the set of all words in the English language and for words and say if and only if rhymes with .     Fraction relation: Let and for define if and only if .   "
 },
 {
-  "id": "ws-equivalence-zn-activity-3-1-4-1",
-  "level": "2",
-  "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-3-1-4-1",
-  "type": "Table",
-  "number": "12",
-  "title": "",
-  "body": "     Reflexive  Symmetric  Transitive    1.          2.          3.          4.          5.          "
-},
-{
   "id": "ws-equivalence-zn-activity-4-1-2",
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-4-1-2",
   "type": "Definition",
-  "number": "13",
+  "number": "12",
   "title": "",
   "body": "  Let be an equivalence relation on a nonempty set , and let . The equivalence class of  (with respect to ) denoted is the set of all elements of that are related to by . More precisely,    "
 },
@@ -446,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-6-1-3",
   "type": "Definition",
-  "number": "16",
+  "number": "15",
   "title": "",
   "body": " For every integer , the integers modulo denoted , is the set of the distinct congruence classes of modulo , i.e.,   "
 },
@@ -455,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-equivalence-zn-activity.html#ws-equivalence-zn-activity-6-1-5",
   "type": "Example",
-  "number": "17",
+  "number": "16",
   "title": "",
   "body": "Let's consider . We'll find . We are really finding: which is kind of a crazy thing to think about. Using the definition of addition above this is But appears to not be in . Is not closed? Turns out that it's OK: Recall that . They are the same sets! So we'll say In our addition and multiplication tables, we'll write this reduced answer. That is, if we get a congruence class that appears to not be in the set, we will choose a representative that is between and .  "
 },
@@ -536,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-3-1-3",
   "type": "Definition",
-  "number": "18",
+  "number": "17",
   "title": "",
   "body": "  Let and be integers, not both zero. A common divisor of and is any integer such that and . We say that an integer is the greatest common divisor of and , denoted , provided that is a common divisor of and , and if is a common divisor of and then .   "
 },
@@ -545,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-4-1-3",
   "type": "Theorem",
-  "number": "19",
+  "number": "18",
   "title": "",
   "body": "  Let and be integers, not both and suppose that for some integers and . Then .   "
 },
@@ -590,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-5-1-2",
   "type": "Definition",
-  "number": "20",
+  "number": "19",
   "title": "",
   "body": "  Let and be integers. A linear combination of and is an integer that can be written as for some integers and .   "
 },
@@ -653,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-7-1-3",
   "type": "Theorem",
-  "number": "21",
+  "number": "20",
   "title": "Bezout’s Identity.",
   "body": " Bezout's Identity   Let and be integers, not both zero. Then can be written as a linear combination of and . That is, there exist integers and such that    "
 },
@@ -662,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-gcd-activity.html#ws-gcd-activity-7-1-5",
   "type": "Corollary",
-  "number": "22",
+  "number": "21",
   "title": "",
   "body": "  Let and be integers, not both zero. Then is equal to the smallest positive linear combination of and .   "
 },
@@ -752,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-3-1-2",
   "type": "Definition",
-  "number": "23",
+  "number": "22",
   "title": "",
   "body": " A ring is a set together with two binary operations, called addition ( ) and multiplication ( ), such that all of the following axioms hold:   The set is closed under addition and multiplication, meaning that for all , and .  Addition is associative, meaning that for all , .  Addition is commutative, meaning that for all , .  The set contains an additive identity, also called a zero element , meaning that there exists some element such that for all .  Every element of has an additive inverse within , meaning that for every , there exists such that .  Multiplication is associative, meaning that for all , .  Multiplication distributes over addition, meaning that for all , and .   "
 },
@@ -896,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-rings-activity.html#ws-rings-activity-7-2-2",
   "type": "Definition",
-  "number": "24",
+  "number": "23",
   "title": "",
   "body": " Let be a commutative ring. A polynomial in over  is an expression of the form where is a nonnegative integer and are elements of . The polynomial ring over  is the set of all polynomials over the ring , and is denoted .  "
 },
@@ -968,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-3-1-3",
   "type": "Definition",
-  "number": "25",
+  "number": "24",
   "title": "",
   "body": " A ring is a set together with two binary operations, called addition ( ) and multiplication ( ), such that all of the following axioms hold:   The set is closed under addition and multiplication, meaning that for all , and .  Addition is associative, meaning that for all , .  Addition is commutative, meaning that for all , .  The set contains an additive identity, also called a zero element , meaning that there exists some element such that for all .  Every element of has an additive inverse within , meaning that for every , there exists such that .  Multiplication is associative, meaning that for all , .  Multiplication distributes over addition, meaning that for all , and .   "
 },
@@ -977,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-2",
   "type": "Theorem",
-  "number": "26",
+  "number": "25",
   "title": "",
   "body": "  (Additive Cancellation) Let be a ring. For all , if then .   "
 },
@@ -986,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#proofs-thm-mult-0",
   "type": "Theorem",
-  "number": "27",
+  "number": "26",
   "title": "",
   "body": "  (Multiplication by ) Let be a ring and let be the additive identity of . Then for all .   "
 },
@@ -995,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-4",
   "type": "Theorem",
-  "number": "28",
+  "number": "27",
   "title": "",
   "body": "  (Uniqueness) Let be a ring.   (Additive identities) Suppose that both and are zero elements for . Then .    (Additive inverses) Let . Suppose that both and are additive inverses for . Then .    (Multiplicative identities) Suppose that both and are both identities for . Then     (Multiplicative inverses) Let . Suppose that both and are multiplicative inverses for . Then .      "
 },
@@ -1004,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-5",
   "type": "Theorem",
-  "number": "29",
+  "number": "28",
   "title": "",
   "body": "  (Fields are integral domains.) Let be a ring with identity and let be a unit. Then is not a zero divisor.   "
 },
@@ -1013,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-6",
   "type": "Theorem",
-  "number": "30",
+  "number": "29",
   "title": "",
   "body": "  (Finite integral domains are fields.) Let be a finite integral domain. Let with . Then is a unit.   "
 },
@@ -1022,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-8",
   "type": "Theorem",
-  "number": "31",
+  "number": "30",
   "title": "",
   "body": "  (The negatives.) Let be a ring, and let . Then               "
 },
@@ -1031,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-9",
   "type": "Theorem",
-  "number": "32",
+  "number": "31",
   "title": "",
   "body": "  (Generalized Distributive Law) Let be a ring, let , and let . Then               "
 },
@@ -1058,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-6-2",
   "type": "Theorem",
-  "number": "35",
+  "number": "34",
   "title": "",
   "body": "  (Finite integral domains are fields.) Let be a finite integral domain. Let with . Then is a unit.   "
 },
@@ -1103,7 +1094,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-6-9",
   "type": "Theorem",
-  "number": "36",
+  "number": "35",
   "title": "",
   "body": "  Let be a ring and let . Then .   "
 },
@@ -1157,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-3-1-2",
   "type": "Definition",
-  "number": "37",
+  "number": "36",
   "title": "",
   "body": " Let be a set. The power set of denoted is the collection of all subsets of . That is .  "
 },
@@ -1166,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-3-1-3",
   "type": "Definition",
-  "number": "38",
+  "number": "37",
   "title": "",
   "body": " For any sets and , the symmetric difference of and , denoted is the set of all elements that belong to either or , but not both. That is,   "
 },
@@ -1175,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-3-1-4",
   "type": "Definition",
-  "number": "39",
+  "number": "38",
   "title": "",
   "body": " For any natural number , the number system is . That is, the elements are the sets that are subsets of , and for we define and .  "
 },
@@ -1238,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-5-1-2",
   "type": "Definition",
-  "number": "40",
+  "number": "39",
   "title": "",
   "body": "  Let be a commutative ring. A polynomial in over  is an expression of the form where is a nonnegative integer and are elements of . The polynomial ring over  is the set of all polynomials over the ring , and is denoted . (Note this language implies the polynomials form a ring. We'll take this as true, and just verify a couple of properties. The proof is mostly tedious and not insightful.   "
 },
@@ -1247,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-5-1-3",
   "type": "Definition",
-  "number": "41",
+  "number": "40",
   "title": "",
   "body": "   Adding Polynomials : The sum of polynomials  and is defined to be    "
 },
@@ -1256,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-5-1-4",
   "type": "Definition",
-  "number": "42",
+  "number": "41",
   "title": "",
   "body": "   Multiplying Polynomials : The product of polynomials  (of degree ) and (of degree ) is defined to be where for each with ,    "
 },
@@ -1348,7 +1339,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Module 8: Subrings, Extensions, Direct Sums",
-  "body": " Module 8: Subrings, Extensions, Direct Sums  Standing on Shoulders of Giants    What Properties are Inherited?  Here are the properties of a ring. Say is a ring. For each, do you think the property holds for any subset of , or just some subsets of ?   The set is closed under addition.   All subsets of have this property  Some subsets of have this property.     The set is closed under multiplication.   All subsets of have this property  Some subsets of have this property.     Addition is associative.   All subsets of have this property  Some subsets of have this property.     Addition is commutative.   All subsets of have this property  Some subsets of have this property.     The set contains an additive identity.   All subsets of have this property  Some subsets of have this property.     Every element of has an additive inverse within .   All subsets of have this property  Some subsets of have this property.     Multiplication is associative.   All subsets of have this property  Some subsets of have this property.     Multiplication distributes over addition.   All subsets of have this property  Some subsets of have this property.        Subrings   Let be a ring, and let be a subset of . Then is said to be a subring of provided that itself is a ring with the operations of addition and multiplication defined the same as in .   As seen on the previous page - some properties of a ring are inherited for every subset of a ring . This leads us to the subring test.   Let be a ring and let be a subset of . Then is a subring of if    is closed under addition     is closed under multiplication     contains      is closed under additive inverses      The Subring Test simplifies this even further, by combining closure under addition and closure under additive inverses into closure under subtraction. Also, if is nonempty and closed under subtraction, then contains .   The Subring Test  Let be a ring and let be a subset of . Then is a subring of if and only if    is nonempty     is closed under subtraction     is closed under multiplication      Let's work with subrings. Prove or disprove using the subring test:   The set of even integers is a subring of .       The set is a subring of .    The set (with addition and multiplication defined as in ) is a subring of .    Give an example of a subset of that is not a subring.    For each of the sets above, say the strongest possible thing. E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?      Ideals  An ideal is a special kind of subring.   An ideal  in a ring is a subring of such that and for all and .   That is, if you multiply an element of by an element of (in any order), the element of gets sucked in to . So sometimes we say that ideals have the sucking property .    Determine whether the following are ideals of . Justify your answer.                                      Field Extensions  The topic of field extensions is of central importance to much of abstract algebra. Many of the questions pertaining to field extensions have to do with finding solutions to polynomials. E.g., , but doesn't have roots in (that is no for which ).  There are two roots for in : and . But if we use the set , then it's not even a ring. So instead we define field extensions, like .  Define    Show is a subring of , and therefore is a ring.    What do we still need to show that is a field? Prove these properties hold.    Let be a field. A subfield of is a subring of that is also a field. If is a subfield of another field then is said to be a field extension (or simply an extension ) of . How can be seen as a subfield? As a field extension? How can be seen as a field extension?       Direct Sums   Let and be rings. The Cartesian product of and is the set The direct sum of and , denoted is the set with addition and multiplication defined componentwise - that is,     Make addition and multiplication tables for .                                                                                                                                                                                                                                                                     Say the strongest possible thing about . E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?      Review questions Make sure you can answer the following questions:  What is a subring? What is the subring test? Why does it make sense? How do you apply it?  What is an ideal?  What is a subfield? What additional properties does it have that a subring doesn't? What is a field extension?  What is a direct sum?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 8   Subring or not?  Assume is a ring.  Decide whether each of the following sets is a subring of the ring . Prove or disprove!         Which of the sets for have multiplicative identities? For those that do, which elements are units? (Hint: Recall a matrix is invertible if and only if the determinant is nonzero. And taking the determinant of a matrix is simple!)    Principal ideals  Let be a commutative ring with identity and let . The set is an ideal, called the principal ideal generated by .  For , describe the principal ideals , , , , , .  Determine which subset relations hold among the above ideals. E.g. is or or neither?   Fill in the blanks of the following conjecture (you don't need to prove):   Conjecture: Let . Then if and only if and if and only if .     Same or different?  Compare and contrast the addition and multiplication tables for and . Are they both commutative? Do they both have identity? Do they each have units? How many? Do they each have zero divisors? How many? Could they be considered the same in some way? If not, what makes them different?     "
+  "body": " Module 8: Subrings, Extensions, Direct Sums  Standing on Shoulders of Giants    What Properties are Inherited?  Here are the properties of a ring. Say is a ring. For each, do you think the property holds for any subset of , or just some subsets of ?   The set is closed under addition.   All subsets of have this property  Some subsets of have this property.     The set is closed under multiplication.   All subsets of have this property  Some subsets of have this property.     Addition is associative.   All subsets of have this property  Some subsets of have this property.     Addition is commutative.   All subsets of have this property  Some subsets of have this property.     The set contains an additive identity.   All subsets of have this property  Some subsets of have this property.     Every element of has an additive inverse within .   All subsets of have this property  Some subsets of have this property.     Multiplication is associative.   All subsets of have this property  Some subsets of have this property.     Multiplication distributes over addition.   All subsets of have this property  Some subsets of have this property.        Subrings   Let be a ring, and let be a subset of . Then is said to be a subring of provided that itself is a ring with the operations of addition and multiplication defined the same as in .   As seen on the previous page - some properties of a ring are inherited for every subset of a ring . This leads us to the subring test.   Let be a ring and let be a subset of . Then is a subring of if    is closed under addition     is closed under multiplication     contains      is closed under additive inverses      The Subring Test simplifies this even further, by combining closure under addition and closure under additive inverses into closure under subtraction. Also, if is nonempty and closed under subtraction, then contains .   The Subring Test  Let be a ring and let be a subset of . Then is a subring of if and only if    is nonempty     is closed under subtraction     is closed under multiplication      Let's work with subrings. Prove or disprove using the subring test:   The set of even integers is a subring of .       The set is a subring of .    The set (with addition and multiplication defined as in ) is a subring of .    Give an example of a subset of that is not a subring.    For each of the sets above, say the strongest possible thing. E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?      Ideals  An ideal is a special kind of subring.   An ideal  in a ring is a subring of such that and for all and .   That is, if you multiply an element of by an element of (in any order), the element of gets sucked in to . So sometimes we say that ideals have the sucking property .    Determine whether the following are ideals of . Justify your answer.                                      Field Extensions  The topic of field extensions is of central importance to much of abstract algebra. Many of the questions pertaining to field extensions have to do with finding solutions to polynomials. E.g., , but doesn't have roots in (that is no for which ).  There are two roots for in : and . But if we use the set , then it's not even a ring. So instead we define field extensions, like .  Define    Show is a subring of , and therefore is a ring.    What do we still need to show that is a field? Prove these properties hold.    Let be a field. A subfield of is a subring of that is also a field. If is a subfield of another field then is said to be a field extension (or simply an extension ) of . How can be seen as a subfield? As a field extension? How can be seen as a field extension?       Direct Sums   Let and be rings. The Cartesian product of and is the set The direct sum of and , denoted is the set with addition and multiplication defined componentwise - that is,     Make addition and multiplication tables for .                                                                                                                                                                                                                                                                     Say the strongest possible thing about . E.g., is it a ring? Is it a commutative ring? Is it a ring with identity? Is it an integral domain? Is it a field?      Review questions Make sure you can answer the following questions:  What is a subring? What is the subring test? Why does it make sense? How do you apply it?  What is an ideal?  What is a subfield? What additional properties does it have that a subring doesn't? What is a field extension?  What is a direct sum?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 8   Subring or not?  Assume is a ring.  Decide whether each of the following sets is a subring of the ring . Prove or disprove!         Which of the sets for have multiplicative identities? For those that do, which elements are units? (Hint: Recall a matrix is invertible if and only if the determinant is nonzero. And taking the determinant of a matrix is simple!)    Principal ideals  Let be a commutative ring with identity and let . The set is an ideal, called the principal ideal generated by .  For , describe the principal ideals , , , , , .  Determine which subset relations hold among the above ideals. E.g. is or or neither? Make a complete list (or diagram!).   Fill in the blanks of the following conjecture (you don't need to prove):   Conjecture: Let . Then if and only if and if and only if .     Same or different?  Compare and contrast the addition and multiplication tables for and . Are they both commutative? Do they both have identity? Do they each have units? How many? Do they each have zero divisors? How many? Could they be considered the same in some way? If not, what makes them different? (Why do you think this is even a question worth asking?)     "
 },
 {
   "id": "ws-subrings-activity-3-1-3",
@@ -1427,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-2",
   "type": "Definition",
-  "number": "43",
+  "number": "42",
   "title": "",
   "body": " Let be a ring, and let be a subset of . Then is said to be a subring of provided that itself is a ring with the operations of addition and multiplication defined the same as in .  "
 },
@@ -1436,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-4",
   "type": "Theorem",
-  "number": "44",
+  "number": "43",
   "title": "",
   "body": " Let be a ring and let be a subset of . Then is a subring of if    is closed under addition     is closed under multiplication     contains      is closed under additive inverses     "
 },
@@ -1445,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-6",
   "type": "Theorem",
-  "number": "45",
+  "number": "44",
   "title": "The Subring Test.",
   "body": " The Subring Test  Let be a ring and let be a subset of . Then is a subring of if and only if    is nonempty     is closed under subtraction     is closed under multiplication     "
 },
@@ -1499,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-6-1-3",
   "type": "Definition",
-  "number": "46",
+  "number": "45",
   "title": "",
   "body": " An ideal  in a ring is a subring of such that and for all and .  "
 },
@@ -1544,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-8-1-2",
   "type": "Definition",
-  "number": "47",
+  "number": "46",
   "title": "",
   "body": " Let and be rings. The Cartesian product of and is the set The direct sum of and , denoted is the set with addition and multiplication defined componentwise - that is,   "
 },
@@ -1573,7 +1564,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "Principal ideals.",
-  "body": " Principal ideals  Let be a commutative ring with identity and let . The set is an ideal, called the principal ideal generated by .  For , describe the principal ideals , , , , , .  Determine which subset relations hold among the above ideals. E.g. is or or neither?   Fill in the blanks of the following conjecture (you don't need to prove):   Conjecture: Let . Then if and only if and if and only if .   "
+  "body": " Principal ideals  Let be a commutative ring with identity and let . The set is an ideal, called the principal ideal generated by .  For , describe the principal ideals , , , , , .  Determine which subset relations hold among the above ideals. E.g. is or or neither? Make a complete list (or diagram!).   Fill in the blanks of the following conjecture (you don't need to prove):   Conjecture: Let . Then if and only if and if and only if .   "
 },
 {
   "id": "ws-subrings-activity-10-1-4",
@@ -1582,7 +1573,241 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "Same or different?",
-  "body": " Same or different?  Compare and contrast the addition and multiplication tables for and . Are they both commutative? Do they both have identity? Do they each have units? How many? Do they each have zero divisors? How many? Could they be considered the same in some way? If not, what makes them different?  "
+  "body": " Same or different?  Compare and contrast the addition and multiplication tables for and . Are they both commutative? Do they both have identity? Do they each have units? How many? Do they each have zero divisors? How many? Could they be considered the same in some way? If not, what makes them different? (Why do you think this is even a question worth asking?)  "
+},
+{
+  "id": "ws-iso-activity",
+  "level": "1",
+  "url": "ws-iso-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Module 9: Isomorphisms and Invariants",
+  "body": " Module 9: Isomorphisms and Invariants  Same, Same, Different    Isomorphisms  We conjectured in a weekly practice problem that was essentially the same as .  Here are the addition and multiplication tables for .         (0,0)  (0,1)  (0,2)  (1,0)  (1,1)  (1,2)    (0,0)  (0,0)  (0,1)  (0,2)  (1,0)  (1,1)  (1,2)    (0,1)  (0,1)  (0,2)  (0,0)  (1,1)  (1,2)  (1,0)    (0,2)  (0,2)  (0,0)  (0,1)  (1,2)  (1,0)  (1,1)    (1,0)  (1,0)  (1,1)  (1,2)  (0,0)  (0,1)  (0,2)    (1,1)  (1,1)  (1,2)  (1,0)  (0,1)  (0,2)  (0,0)    (1,2)  (1,2)  (1,0)  (1,1)  (0,2)  (0,0)  (0,1)         (0,0)  (0,1)  (0,2)  (1,0)  (1,1)  (1,2)    (0,0)  (0,0)  (0,0)  (0,0)  (0,0)  (0,0)  (0,0)    (0,1)  (0,0)  (0,1)  (0,2)  (0,0)  (0,1)  (0,2)    (0,2)  (0,0)  (0,2)  (0,1)  (0,0)  (0,2)  (0,1)    (1,0)  (0,0)  (0,0)  (0,0)  (1,0)  (1,0)  (1,0)    (1,1)  (0,0)  (0,1)  (0,2)  (1,0)  (1,1)  (1,2)    (1,2)  (0,0)  (0,2)  (0,1)  (1,0)  (1,2)  (1,1)     Here are the addition and multiplication tables for .        0  1  2  3  4  5    0  0  1  2  3  4  5    1  1  2  3  4  5  0    2  2  3  4  5  0  1    3  3  4  5  0  1  2    4  4  5  0  1  2  3    5  5  0  1  2  3  4         0  1  2  3  4  5    0  0  0  0  0  0  0    1  0  1  2  3  4  5    2  0  2  4  0  2  4    3  0  3  0  3  0  3    4  0  4  2  0  4  2    5  0  5  4  3  2  1     Match up the elements of with the elements of .  Hint: Match up identities, units, and zero divisors, and use and .                Write new copies of both tables, but replace each element with your matched up element of .     Isomorphism definition  What we want is for the addition and multiplication tables to match up (up to a reordering). Of course, writing this all down and redrawing addition and multiplication tables would be tedious, and impossible for infinite groups. So, consider that in our addition table we had: and we said So the header column of this entry gets replaced with , the header row with and the entry with . For this to match the addition table, we need which it does! Calling our map or function and writing and , what we need is We call this idea, that , preserving addition .    Let and be rings. An isomorphism is a bijective function such that for all , If there exists an isomorphism from to , then is said to be isomorphic to , denoted .      Proving isomorphism    Let . Then is a ring and .     We'll do the isomorphism part first. Come up with a reasonable function that maps elements of to elements of .    Show is an injection by showing that for two matrices and in , if then .       Show is a surjection by showing that for an arbitrary , there exists an element of that maps to it.    Show preserves addition, that is, show for all , .    Show preserves multiplication, that is, show .    This means . If time: Since is a field, this will actually imply that Is a field. So every nonzero element of is a unit. Can you find the inverse for an arbitrary matrix?      Invariants    An invariant of ring isomorphism is a property such that if satisfies and then satisfies .    Let's prove that having a multiplicative identity is an invariant of rings. That is:    If and are rings, if has a multiplicative identity and , then has a multiplicative identity.     We'll do a direct proof. What should you assume?    One thing you are assuming is that has a multiplicative identity. Write what you can conclude using the definition of multiplicative identity.    One thing you are assuming is that . Write what you can conclude using the definition of isomorphism.    How can you rewrite and ) using the definition of isomorphism?    How can you rewrite and using ?    Let . Use that is a surjection and your work above to show that for all , .       Which of the following do you think are invariants of ring isomorphism?   Number of elements    Commutativity    The existence of an identity    The existence or number of zero divisors    The existence or number of units (in a ring with identity)    Being a field    Being an integral domain       Spoiler alert: they are all invariants!  Show that commutativity is an invariant and use it to conclude that is not isomorphic to .      Disproving isomorphism  Turns out rings can have lots of things in common, e.g., both being fields, and yet not be isomorphic. For example, and are both infinitely large fields, but they are not isomorphic.  Suppose that is an isomorphism.   Show that . (Hint: it suffices to show that for all . You may need to use that fact that is surjective.)    Using a similar argument as above, show that .    Use the definition of isomorphism and your answers to the previous parts to argue that is an element of and . (Hint: Apply to both sides of the equation .)    Explain why the result you proved in the previous part is a contradiction. Deduce that cannot be isomorphic to .       Review questions Make sure you can answer the following questions:  What is the definition of ring isomorphism?  How do you prove two rings are isomorphic?  What are some examples of invariants?  Can you use an invariant to prove two rings are isomorphic? Can you use an invariant to prove two rings are not isomorphic?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 9   The number of zero divisors in a ring is an invariant  Prove that the number of zero divisors in a ring is an invariant under isomorphism by filling in the blanks below.    We will use a lemma, which we will assume without proof.    Let and be isomorphic rings. Let be the additive identity of and be the additive identity of . For any isomorphism , .      Let and be isomorphic rings and let and be the subset of zero divisors of and , respectively. Then and hence, the number of zero divisors is an invariant of ring isomorphism.     Let and be isomorphic rings. Thus, there exists an isomorphism . This means    We will show that if then . That is, we will show that if is a zero divisor in then is . Since is a zero divisor in , and there exists a such that and or . Without loss of generality, suppose . Then   By the lemma  and  . Thus is a . Since is a bijection, .     Use this to prove that is not isomorphic to .        A matrix isomorphism  Let . Let be defined by This problem will show is an isomorphism and thus and are isomorphic.  Show is an injection by showing for if then . Then show is a surjection by showing for an arbitrary there exists such that .  Show preserves addition by showing for all , .  Show preserves multiplication by showing for all , .  The above problems show that is an isomorphism and hence and are isomorphic. Since being a field is an invariant and is a field, we can conclude is a field. Thus, every nonzero element of is a unit. What is the identity of ? Find the multiplicative inverse of .    Homomorphisms: Kind of like isomorphisms, but not  Let and be rings. A function is a homomorphism of rings if and for all . (Notice how this is very similar to the definition of isomorphism , but something important is missing -- which requirement of an isomorphism is not required here?)  Define by . Show that is a homomorphism.  The kernel of a homomorphism is the set . Find for the in part (a).  Prove the kernel you found in part b is an ideal of . (It turns out the kernel of a ring homomorphism is always an ideal.)    "
+},
+{
+  "id": "ws-iso-activity-4-1-3",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-4-1-3",
+  "type": "Definition",
+  "number": "47",
+  "title": "",
+  "body": "  Let and be rings. An isomorphism is a bijective function such that for all , If there exists an isomorphism from to , then is said to be isomorphic to , denoted .   "
+},
+{
+  "id": "ws-iso-activity-4-2-2",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-4-2-2",
+  "type": "Theorem",
+  "number": "48",
+  "title": "",
+  "body": "  Let . Then is a ring and .   "
+},
+{
+  "id": "ws-iso-activity-4-2-3",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-4-2-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": " We'll do the isomorphism part first. Come up with a reasonable function that maps elements of to elements of .  "
+},
+{
+  "id": "ws-iso-activity-4-2-4",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-4-2-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": " Show is an injection by showing that for two matrices and in , if then .  "
+},
+{
+  "id": "ws-iso-activity-5-1",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-5-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": " Show is a surjection by showing that for an arbitrary , there exists an element of that maps to it.  "
+},
+{
+  "id": "ws-iso-activity-5-2",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-5-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": " Show preserves addition, that is, show for all , .  "
+},
+{
+  "id": "ws-iso-activity-5-3",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-5-3",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": " Show preserves multiplication, that is, show .  "
+},
+{
+  "id": "ws-iso-activity-5-4",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-5-4",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": " This means . If time: Since is a field, this will actually imply that Is a field. So every nonzero element of is a unit. Can you find the inverse for an arbitrary matrix?  "
+},
+{
+  "id": "ws-iso-activity-6-1-2",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-6-1-2",
+  "type": "Definition",
+  "number": "49",
+  "title": "",
+  "body": "  An invariant of ring isomorphism is a property such that if satisfies and then satisfies .   "
+},
+{
+  "id": "ws-iso-activity-6-1-4",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-6-1-4",
+  "type": "Theorem",
+  "number": "50",
+  "title": "",
+  "body": "  If and are rings, if has a multiplicative identity and , then has a multiplicative identity.   "
+},
+{
+  "id": "ws-iso-activity-6-1-5",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-6-1-5",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": " We'll do a direct proof. What should you assume?  "
+},
+{
+  "id": "ws-iso-activity-6-1-6",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-6-1-6",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": " One thing you are assuming is that has a multiplicative identity. Write what you can conclude using the definition of multiplicative identity.  "
+},
+{
+  "id": "ws-iso-activity-6-1-7",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-6-1-7",
+  "type": "Worksheet Exercise",
+  "number": "9",
+  "title": "",
+  "body": " One thing you are assuming is that . Write what you can conclude using the definition of isomorphism.  "
+},
+{
+  "id": "ws-iso-activity-6-1-8",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-6-1-8",
+  "type": "Worksheet Exercise",
+  "number": "10",
+  "title": "",
+  "body": " How can you rewrite and ) using the definition of isomorphism?  "
+},
+{
+  "id": "ws-iso-activity-6-1-9",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-6-1-9",
+  "type": "Worksheet Exercise",
+  "number": "11",
+  "title": "",
+  "body": " How can you rewrite and using ?  "
+},
+{
+  "id": "ws-iso-activity-6-1-10",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-6-1-10",
+  "type": "Worksheet Exercise",
+  "number": "12",
+  "title": "",
+  "body": " Let . Use that is a surjection and your work above to show that for all , .  "
+},
+{
+  "id": "ws-iso-activity-7-1",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-7-1",
+  "type": "Worksheet Exercise",
+  "number": "13",
+  "title": "",
+  "body": " Which of the following do you think are invariants of ring isomorphism?   Number of elements    Commutativity    The existence of an identity    The existence or number of zero divisors    The existence or number of units (in a ring with identity)    Being a field    Being an integral domain     "
+},
+{
+  "id": "ws-iso-activity-7-2",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-7-2",
+  "type": "Worksheet Exercise",
+  "number": "14",
+  "title": "",
+  "body": " Spoiler alert: they are all invariants!  Show that commutativity is an invariant and use it to conclude that is not isomorphic to .  "
+},
+{
+  "id": "ws-iso-activity-8-1-4",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-8-1-4",
+  "type": "Worksheet Exercise",
+  "number": "15",
+  "title": "",
+  "body": " Show that . (Hint: it suffices to show that for all . You may need to use that fact that is surjective.)  "
+},
+{
+  "id": "ws-iso-activity-8-1-5",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-8-1-5",
+  "type": "Worksheet Exercise",
+  "number": "16",
+  "title": "",
+  "body": " Using a similar argument as above, show that .  "
+},
+{
+  "id": "ws-iso-activity-8-1-6",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-8-1-6",
+  "type": "Worksheet Exercise",
+  "number": "17",
+  "title": "",
+  "body": " Use the definition of isomorphism and your answers to the previous parts to argue that is an element of and . (Hint: Apply to both sides of the equation .)  "
+},
+{
+  "id": "ws-iso-activity-8-1-7",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-8-1-7",
+  "type": "Worksheet Exercise",
+  "number": "18",
+  "title": "",
+  "body": " Explain why the result you proved in the previous part is a contradiction. Deduce that cannot be isomorphic to .  "
+},
+{
+  "id": "ws-iso-activity-10-1-2",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-10-1-2",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "The number of zero divisors in a ring is an invariant.",
+  "body": " The number of zero divisors in a ring is an invariant  Prove that the number of zero divisors in a ring is an invariant under isomorphism by filling in the blanks below.    We will use a lemma, which we will assume without proof.    Let and be isomorphic rings. Let be the additive identity of and be the additive identity of . For any isomorphism , .      Let and be isomorphic rings and let and be the subset of zero divisors of and , respectively. Then and hence, the number of zero divisors is an invariant of ring isomorphism.     Let and be isomorphic rings. Thus, there exists an isomorphism . This means    We will show that if then . That is, we will show that if is a zero divisor in then is . Since is a zero divisor in , and there exists a such that and or . Without loss of generality, suppose . Then   By the lemma  and  . Thus is a . Since is a bijection, .     Use this to prove that is not isomorphic to .   "
+},
+{
+  "id": "ws-iso-activity-11-1",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-11-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "A matrix isomorphism.",
+  "body": " A matrix isomorphism  Let . Let be defined by This problem will show is an isomorphism and thus and are isomorphic.  Show is an injection by showing for if then . Then show is a surjection by showing for an arbitrary there exists such that .  Show preserves addition by showing for all , .  Show preserves multiplication by showing for all , .  The above problems show that is an isomorphism and hence and are isomorphic. Since being a field is an invariant and is a field, we can conclude is a field. Thus, every nonzero element of is a unit. What is the identity of ? Find the multiplicative inverse of .  "
+},
+{
+  "id": "ws-iso-activity-11-2",
+  "level": "2",
+  "url": "ws-iso-activity.html#ws-iso-activity-11-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Homomorphisms: Kind of like isomorphisms, but not.",
+  "body": " Homomorphisms: Kind of like isomorphisms, but not  Let and be rings. A function is a homomorphism of rings if and for all . (Notice how this is very similar to the definition of isomorphism , but something important is missing -- which requirement of an isomorphism is not required here?)  Define by . Show that is a homomorphism.  The kernel of a homomorphism is the set . Find for the in part (a).  Prove the kernel you found in part b is an ideal of . (It turns out the kernel of a ring homomorphism is always an ideal.)  "
 },
 {
   "id": "portfolios-2",
@@ -1627,7 +1852,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Portfolio Problems 4, 5, and 6",
-  "body": " Portfolio Problems 4, 5, and 6   Read the guidelines in the Syllabus and review the MTH 210 writing guidelines before starting.  The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately. In particular, remember the golden rule:  Every sentence that you submit must be one that you have generated yourself and that you fully understand.  Other reminders:  You can submit 3 drafts per week, including revisions of a previous problem.  You'll put all your final drafts of your problems in a portfolio template . You can start using that now for drafts. Start early and ask for help when you need it!      Proving the division algorithm  (Related to Module 2) Prove the following: Let and be integers with . Then there exist unique integers and such that:   Note: There's a complete proof of this starting on p. 14 in your textbook. You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of ? in it. Your proof here should add detailed explanation for every ? , plus anywhere else that you had to stop and think! If you aren't sure why there is a ? , that's an indication that you should think more and\/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.    Well-defined operations   (Related to Module 3) In class we mentioned that adding and multiplying elements of means we are adding\/multiplying infinite sets. This may seem very natural and may not concern you at all, but it will all be total nonsense if addition and multiplication in isn’t well-defined . This problem is to show you what can happen if an operation is not well-defined, and also prove that the addition and multiplication we’ve defined is well-defined.   Let be the operation on defined as Note that parity refers to whether an integer is even or odd. Thus, two integers have the same parity if they are both even or both odd. Likewise they have opposite parity if one is even and one is odd.  Use the above definition to compute , , , and .   What is the relationship between , , and in ? What is the relationship between , , and in ?   Let denote a binary operation on a set . Then is said to be well-defined provided that whenever and in we have . Is well-defined? Explain very clearly and refer to your work in the previous part.   Prove that addition and multiplication in , as defined in class, are well-defined. There’s a proof of addition on page 32 of your book, use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!     Greatest common divisors   (Related to Module 4)   Let and be integers, not both 0. Prove that if there exist such that , then .   Prove that for all nonzero integers , , and , if and only if and . (You’ll need to apply Bezout’s identity).    "
+  "body": " Portfolio Problems 4, 5, and 6   Read the guidelines in the Syllabus and review the MTH 210 writing guidelines before starting.  The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately. In particular, remember the golden rule:  Every sentence that you submit must be one that you have generated yourself and that you fully understand.  Other reminders:  You can submit 3 drafts per week, including revisions of a previous problem.  You'll put all your final drafts of your problems in a portfolio template . You can start using that now for drafts. Start early and ask for help when you need it!      Proving the division algorithm  (Related to Module 2) Prove the following: Let and be integers with . Then there exist unique integers and such that:   Note: There's a complete proof of this starting on p. 14 in your textbook (this is the very end of Section 1). You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of ? in it. Your proof here should add detailed explanation for every ? , plus anywhere else that you had to stop and think! If you aren't sure why there is a ? , that's an indication that you should think more and\/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.    Well-defined operations   (Related to Module 3) In class we mentioned that adding and multiplying elements of means we are adding\/multiplying infinite sets. This may seem very natural and may not concern you at all, but it will all be total nonsense if addition and multiplication in isn’t well-defined . This problem is to show you what can happen if an operation is not well-defined, and also prove that the addition and multiplication we’ve defined is well-defined.   Let be the operation on defined as Note that parity refers to whether an integer is even or odd. Thus, two integers have the same parity if they are both even or both odd. Likewise they have opposite parity if one is even and one is odd.  Use the above definition to compute , , , and .   What is the relationship between , , and in ? What is the relationship between , , and in ?   Let denote a binary operation on a set . Then is said to be well-defined provided that whenever and in we have . Is well-defined? Explain very clearly and refer to your work in the previous part.   Prove that addition and multiplication in , as defined in class, are well-defined. There’s a proof of addition on page 32 of your book (just after Definition 2.16). Use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!     Greatest common divisors   (Related to Module 4)   Let and be integers, not both 0. Prove that if there exist such that , then .   Prove that for all nonzero integers , , and , if and only if and . (You’ll need to apply Bezout’s identity).    "
 },
 {
   "id": "portfolios-3-3",
@@ -1636,7 +1861,7 @@ var ptx_lunr_docs = [
   "type": "Portfolio Problem",
   "number": "4",
   "title": "Proving the division algorithm.",
-  "body": " Proving the division algorithm  (Related to Module 2) Prove the following: Let and be integers with . Then there exist unique integers and such that:   Note: There's a complete proof of this starting on p. 14 in your textbook. You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of ? in it. Your proof here should add detailed explanation for every ? , plus anywhere else that you had to stop and think! If you aren't sure why there is a ? , that's an indication that you should think more and\/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.  "
+  "body": " Proving the division algorithm  (Related to Module 2) Prove the following: Let and be integers with . Then there exist unique integers and such that:   Note: There's a complete proof of this starting on p. 14 in your textbook (this is the very end of Section 1). You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of ? in it. Your proof here should add detailed explanation for every ? , plus anywhere else that you had to stop and think! If you aren't sure why there is a ? , that's an indication that you should think more and\/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.  "
 },
 {
   "id": "portfolios-3-4",
@@ -1645,7 +1870,7 @@ var ptx_lunr_docs = [
   "type": "Portfolio Problem",
   "number": "5",
   "title": "Well-defined operations.",
-  "body": " Well-defined operations   (Related to Module 3) In class we mentioned that adding and multiplying elements of means we are adding\/multiplying infinite sets. This may seem very natural and may not concern you at all, but it will all be total nonsense if addition and multiplication in isn’t well-defined . This problem is to show you what can happen if an operation is not well-defined, and also prove that the addition and multiplication we’ve defined is well-defined.   Let be the operation on defined as Note that parity refers to whether an integer is even or odd. Thus, two integers have the same parity if they are both even or both odd. Likewise they have opposite parity if one is even and one is odd.  Use the above definition to compute , , , and .   What is the relationship between , , and in ? What is the relationship between , , and in ?   Let denote a binary operation on a set . Then is said to be well-defined provided that whenever and in we have . Is well-defined? Explain very clearly and refer to your work in the previous part.   Prove that addition and multiplication in , as defined in class, are well-defined. There’s a proof of addition on page 32 of your book, use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!   "
+  "body": " Well-defined operations   (Related to Module 3) In class we mentioned that adding and multiplying elements of means we are adding\/multiplying infinite sets. This may seem very natural and may not concern you at all, but it will all be total nonsense if addition and multiplication in isn’t well-defined . This problem is to show you what can happen if an operation is not well-defined, and also prove that the addition and multiplication we’ve defined is well-defined.   Let be the operation on defined as Note that parity refers to whether an integer is even or odd. Thus, two integers have the same parity if they are both even or both odd. Likewise they have opposite parity if one is even and one is odd.  Use the above definition to compute , , , and .   What is the relationship between , , and in ? What is the relationship between , , and in ?   Let denote a binary operation on a set . Then is said to be well-defined provided that whenever and in we have . Is well-defined? Explain very clearly and refer to your work in the previous part.   Prove that addition and multiplication in , as defined in class, are well-defined. There’s a proof of addition on page 32 of your book (just after Definition 2.16). Use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!   "
 },
 {
   "id": "portfolios-3-5",
