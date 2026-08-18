@@ -32,7 +32,7 @@
 			Let <m>a</m> and <m>b</m> be integers with <m>a > 0</m>. Then there exist unique integers <m>q</m>
 and <m>r</m> such that:</p>
 			<md>b = aq + r \text{ and } 0 \leq r \lt a.</md>
-			<p><alert>Note:</alert> There's a <q>complete</q> proof of this starting on p. 14 in your textbook. You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of <q>?</q> in it. Your proof here should add detailed explanation for every <q>?</q>, plus anywhere else that you had to stop and think! If you aren't sure why there is a <q>?</q>, that's an indication that you should think more and/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.</p>
+			<p><alert>Note:</alert> There's a <q>complete</q> proof of this starting on p. 14 in your textbook (this is the very end of Section 1). You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of <q>?</q> in it. Your proof here should add detailed explanation for every <q>?</q>, plus anywhere else that you had to stop and think! If you aren't sure why there is a <q>?</q>, that's an indication that you should think more and/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.</p>
 		</project>
 
 		<project>
@@ -60,7 +60,7 @@ well-defined provided that whenever <m>a = x</m> and <m>b = y</m> in <m>S</m> we
 				</p>
 			</task>
 			
-			<task><p>Prove that addition and multiplication in <m>\mathbb{Z}_n</m>, as defined in class, are well-defined. There’s a proof of addition on page 32 of your book, use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!
+			<task><p>Prove that addition and multiplication in <m>\mathbb{Z}_n</m>, as defined in class, are well-defined. There’s a proof of addition on page 32 of your book (just after Definition 2.16). Use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!
 				</p>
 			</task>
 		</project>

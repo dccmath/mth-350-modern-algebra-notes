@@ -444,7 +444,7 @@
                 Let <m>n</m> be a natural number, and let <m>a</m> and <m>b</m>
                 be integers.
                 Then <m>a\equiv b \pmod{n}</m> if and only if <m>a</m> and
-                <m>b</m> yield the same remainder when divided by <m>n</m>.
+                <m>b</m> yield the same remainder when divided by <m>n</m> (where the remainder is given by the Division Algorithm).
               </p>
             </statement>
           </theorem>
@@ -477,7 +477,7 @@
 			
 			<task><p>
                 Find a linear equation in the number system
-                <m>(A,\oplus_{4}, \otimes_{4})</m> that has 2 solutions.
+                <m>(A,\oplus_{4}, \otimes_{4})</m> that has exactly 2 solutions.
               </p></task>
 		</exercise>
 	

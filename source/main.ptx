@@ -24,6 +24,7 @@
 		 <xi:include href="./notes/mod-proofs.ptx" />
 		 <xi:include href="./notes/mod-algebra-in-other.ptx" />
 		 <xi:include href="./notes/mod-subrings.ptx" />
+		 <xi:include href="./notes/mod-isomorphism.ptx" />
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>

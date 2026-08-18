@@ -71,7 +71,7 @@
 </exercise>
 
 	<p>
-<table>
+
   <tabular halign="center" top="medium">
     <row bottom="medium">
       <cell halign="left" left="medium" right="medium">
@@ -142,7 +142,7 @@
       </cell>
     </row>
   </tabular>
-</table>
+
 	</p>
 	
     </paragraphs>

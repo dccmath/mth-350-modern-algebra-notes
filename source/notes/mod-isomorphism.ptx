@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<worksheet xml:id="ws-iso-activity">
+
+	<title>Module 9: Isomorphisms and Invariants</title>
+	<introduction><p><alert>Same, Same, Different</alert></p></introduction>
+	
+	<page>
+
+	<paragraphs>
+		<title>Isomorphisms</title>
+		
+    <p>
+       We conjectured in a weekly practice problem that <m>\mathbb{Z}_6</m> was essentially the same as <m>\mathbb{Z}_2 \oplus \mathbb{Z}_3</m>.
+	</p>
+
+	<p>Here are the addition and multiplication tables for <m>\mathbb{Z}_2 \oplus \mathbb{Z}_3</m>.</p>
+	
+	</paragraphs>
+	
+	<sidebyside>
+		<tabular halign="center">
+    <row bottom="medium">
+      <cell right="medium">
+        <m>+</m>
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (0,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (0,1)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (0,2)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (1,0)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (1,1)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (1,2)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+    </row>
+	  </tabular>
+	  
+	   <tabular halign="center">
+    <row bottom="medium">
+      <cell right="medium">
+      	<m>\times</m>
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (0,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (0,1)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (0,2)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (1,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (1,1)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        (1,2)
+      </cell>
+      <cell>
+        (0,0)
+      </cell>
+      <cell>
+        (0,2)
+      </cell>
+      <cell>
+        (0,1)
+      </cell>
+      <cell>
+        (1,0)
+      </cell>
+      <cell>
+        (1,2)
+      </cell>
+      <cell>
+        (1,1)
+      </cell>
+    </row>
+	  </tabular>
+	</sidebyside>
+
+
+	<p>Here are the addition and multiplication tables for <m>\mathbb{Z}_6</m>.</p>
+	
+	<sidebyside>
+		  <tabular halign="center">
+    <row bottom="medium">
+      <cell right="medium">
+        <m>+_{6}</m>
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        1
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        5
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        0
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        1
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        5
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        1
+      </cell>
+      <cell>
+        1
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        5
+      </cell>
+      <cell>
+        0
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        2
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        5
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        1
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        3
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        5
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        1
+      </cell>
+      <cell>
+        2
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        4
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        5
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        1
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        3
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        5
+      </cell>
+      <cell>
+        5
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        1
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+    </row>
+		  </tabular>
+		  
+		  
+		  <tabular halign="center">
+    <row bottom="medium">
+      <cell right="medium">
+        <m>\cdot_6</m>
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        1
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        5
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        0
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        0
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        1
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        1
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        5
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        2
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        4
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        3
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        3
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        4
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        2
+      </cell>
+    </row>
+    <row>
+      <cell right="medium">
+        5
+      </cell>
+      <cell>
+        0
+      </cell>
+      <cell>
+        5
+      </cell>
+      <cell>
+        4
+      </cell>
+      <cell>
+        3
+      </cell>
+      <cell>
+        2
+      </cell>
+      <cell>
+        1
+      </cell>
+    </row>
+		  </tabular>
+	</sidebyside>
+	
+	<p> Match up the elements of <m>\mathbb{Z}_{2} \oplus \mathbb{Z}_{3}</m> with the elements of <m>\mathbb{Z}_{6} </m>.</p>
+
+     <p>Hint: Match up identities, units, and zero divisors, and use
+     <m>(1,1)+(1,1)=(0,2)</m> and <m>1+1 = 2</m>.</p>
+
+     
+     <sidebyside>
+  		<p><m>(0,0) \to</m> <fillin /></p>
+		<p><m>(0,1) \to</m> <fillin /></p>
+		<p><m>(0,2) \to</m> <fillin /></p>
+		<p><m>(1,0) \to</m> <fillin /></p>
+		<p><m>(1,1) \to</m> <fillin /></p>
+		<p><m>(1,2) \to</m> <fillin /></p>
+     </sidebyside>
+
+	<p>Write new copies of both <m>\Z_{2}\oplus \Z_{3}</m> tables, but replace each element with your matched up element of <m>\Z_{6}</m>.</p>
+	
+	
+    </page>
+
+
+	<page>
+	
+	<paragraphs>
+		<title>Isomorphism definition</title>
+    <p>
+    What we want is for the addition and multiplication tables to <q>match up</q>
+    (up to a reordering).
+    Of course, writing this all down and redrawing addition and multiplication
+    tables would be tedious, and impossible for infinite groups.
+    So, consider that in our <m>\mathbb{Z}_{2}\oplus\mathbb{Z}_{3}</m> addition
+    table we had:
+    <md>
+        (1,2) + (0,1) = (1,0)
+    </md>
+    and we said
+    <md>
+        (1,2)\to [5], \,\,\,(0,1)\to [4], \,\,\, \text{ and }\, \,\, (1,0)\to [3].
+    </md>
+    So the header column of this entry gets replaced with <m>[5]</m>, the header
+    row with <m>[4]</m> and the entry with <m>[3]</m>.
+    For this to match the <m>\mathbb{Z}_{6}</m> addition table, we need
+    <md>
+        [5]+[4] = [3],
+    </md>
+    which it does!
+    Calling our map or function <m>\phi</m> and writing
+    <m>\phi((1,2))= [5], \phi((0,1))= [4],</m> and <m>\phi((1,0))= [3]</m>, what
+    we need is
+    <md>
+        \phi((1,2)) + \phi((0,1))=[5]+[4] =[3]= \phi((1,0))=\phi((1,2)+(0,1))
+    </md>
+    We call this idea, that <m>\phi(a)+\phi(b) = \phi(a+b)</m>,
+    <em>preserving addition</em>.
+</p>
+
+<definition>
+    <statement>
+        <p>
+            Let <m>R</m> and <m>S</m> be rings.
+            An <term>isomorphism</term> is a bijective function
+            <m>\phi: R \to S</m> such that for all <m>x,y\in R</m>,
+            <md>
+                    <mrow>\phi(x+y)=\phi(x) + \phi(y) \text{ and }</mrow>
+                    <mrow>\phi(xy) = \phi(x)\phi(y)</mrow>.
+            </md>
+            If there exists an isomorphism from <m>R</m> to <m>S</m>, then
+            <m>R</m> is said to be <term>isomorphic</term> to <m>S</m>, denoted <m>R \cong M</m>.
+        </p>
+    </statement>
+</definition>
+    </paragraphs>
+    
+    <paragraphs>
+    	<title>Proving isomorphism</title>
+	
+		<theorem>
+    <statement>
+        <p>
+            Let
+            <m>\mathcal{M}= \left\{\begin{bmatrix}a &amp;-b \\ b &amp;a\end{bmatrix} : a,b\in\mathbb{R}\right\}</m>.
+            Then <m>\mathcal{M}</m> is a ring and
+            <m>\mathcal{M}\cong \mathbb{C}</m>.
+        </p>
+    </statement>
+</theorem>
+
+<exercise workspace="1in">
+<p>
+    We'll do the isomorphism part first.
+    Come up with a reasonable function <m>\phi</m> that maps elements of
+    <m>\mathcal{M}</m> to elements of <m>\mathbb{C}</m>.
+</p>
+</exercise>
+
+<exercise workspace="1in">
+<p>
+    Show <m>\phi</m> is an injection by showing that for two matrices <m>X</m>
+    and <m>Y</m> in <m>\mathcal{M}</m>, if <m>\phi(X) =\phi(Y)</m> then
+    <m>X = Y</m>.
+</p>
+</exercise>
+</paragraphs>
+</page>
+
+<page>
+<exercise workspace="1.5in">
+<p>
+    Show <m>\phi</m> is a surjection by showing that for an arbitrary
+    <m>x+yi\in \mathbb{C}</m>, there exists an element of <m>\mathcal{M}</m>
+    that maps to it.
+</p>
+</exercise>
+
+<exercise workspace="1.5in">
+<p>
+    Show <m>\phi</m> preserves addition, that is, show for all
+    <m>X,Y\in \mathcal{M}</m>, <m>\phi(X+Y) = \phi(X)+\phi(Y)</m>.
+</p>
+</exercise>
+
+<exercise workspace="1.5in">
+<p>
+    Show <m>\phi</m> preserves multiplication, that is, show
+    <m>\phi(XY) = \phi(X)\phi(Y)</m>.
+</p>
+</exercise>
+
+<exercise workspace="1.5in">
+<p>
+    This means <m>M \cong \mathbb{C}</m>.
+    <em>If time:</em> Since <m>\mathbb{C}</m> is a field, this will actually
+    imply that <m>M</m> Is a field.
+    So every nonzero element of <m>M</m> is a unit.
+    Can you find the inverse for an arbitrary matrix?
+</p>
+</exercise>
+
+	</page>
+	
+<page>
+<paragraphs>
+	<title>Invariants</title>
+	
+	 <definition>
+     	<statement>
+		<p>An <term>invariant of ring isomorphism</term> is a property <m>P</m> such that
+     if <m>R</m> satisfies <m>P</m> and <m>R\cong S</m> then <m>S</m> satisfies
+     <m>P</m>.</p>
+     	</statement>
+	</definition>
+
+ <p>
+     Let's prove that having a multiplicative identity is an invariant of rings. That is:
+ </p>
+
+ <theorem>
+     <statement>
+         <p>
+             If <m>R</m> and <m>S</m> are rings, if <m>R</m> has a multiplicative
+             identity and <m>R\cong S</m>, then <m>S</m> has a multiplicative
+             identity.
+         </p>
+     </statement>
+ </theorem>
+
+<exercise workspace="1in">
+ <p>
+     We'll do a direct proof.
+     What should you assume?
+ </p>
+</exercise>
+
+<exercise workspace="1in">
+ <p>
+     One thing you are assuming is that <m>R</m> has a multiplicative identity.
+     Write what you can conclude using the definition of multiplicative identity.
+ </p>
+ </exercise>
+
+<exercise workspace="1in">
+ <p>
+     One thing you are assuming is that <m>R\cong S</m>.
+     Write what you can conclude using the definition of isomorphism.
+ </p>
+ </exercise>
+
+<exercise workspace="1in">
+ <p>
+     How can you rewrite <m>\phi(1_{R} \cdot x)</m> and <m>\phi(x\cdot 1_{R}</m>
+     ) using the definition of isomorphism?
+ </p>
+</exercise>
+
+<exercise workspace="1in">
+ <p>
+     How can you rewrite <m>\phi(1_{R}\cdot x)</m> and <m>\phi(x\cdot 1_{R})</m>
+     using <m>1_{R}\cdot x = x = x\cdot 1_{R}</m>?
+ </p>
+ </exercise>
+
+<exercise workspace="1in">
+ <p>
+     Let <m>y\in S</m>.
+     Use that <m>\phi</m> is a surjection and your work above to show that for
+     all <m>y\in S</m>, <m>\phi(1_{R})\cdot y = y = y\cdot \phi(1_{R})</m>.
+ </p>
+</exercise>
+
+</paragraphs>
+</page>
+
+
+<page>
+
+<exercise workspace="3in">
+ <p>
+     Which of the following do you think are invariants of ring isomorphism?
+     <ul>
+         <li>
+             <p>
+                 Number of elements
+             </p>
+         </li>
+
+         <li>
+             <p>
+                 Commutativity
+             </p>
+         </li>
+
+         <li>
+             <p>
+                 The existence of an identity
+             </p>
+         </li>
+
+         <li>
+             <p>
+                 The existence or number of zero divisors
+             </p>
+         </li>
+
+         <li>
+             <p>
+                 The existence or number of units (in a ring with identity)
+             </p>
+         </li>
+
+         <li>
+             <p>
+                 Being a field
+             </p>
+         </li>
+
+         <li>
+             <p>
+                 Being an integral domain
+             </p>
+         </li>
+     </ul>
+ </p>
+</exercise>
+
+<exercise workspace="3in">
+ <p>
+     Spoiler alert: they are all invariants!
+ </p>
+ <p>
+     Show that commutativity is an invariant and use it to conclude that
+     <m>\mathcal{M}_{2\times 2}(\mathbb{Z})</m> is not isomorphic to
+     <m>\mathbb{Z}\oplus \mathbb{Z}\oplus \mathbb{Z}\oplus \mathbb{Z}</m>.
+ </p>
+ </exercise>
+
+</page>
+
+<page>
+<paragraphs>
+	<title>Disproving isomorphism</title>
+	
+	<p>
+    Turns out rings can have lots of things in common, e.g., both being fields,
+    and yet not be isomorphic.
+    For example, <m>\mathbb{R}</m> and <m>\mathbb{C}</m> are both infinitely large fields, but
+    they are not isomorphic.
+</p>
+
+
+<p>
+    Suppose that <m>\phi: \mathbb{C}\to \mathbb{R}</m> is an isomorphism.
+</p>
+
+<exercise workspace="1.5in">
+<p>
+    Show that <m>\phi(0_{\mathbb{C}}) =0_{\mathbb{R}}</m>.
+    (Hint: it suffices to show that <m>x + \phi(0_{\mathbb{C}}) = x</m> for all
+    <m>x\in \mathbb{R}</m>.
+    You may need to use that fact that <m>\phi</m> is surjective.)
+</p>
+</exercise>
+
+<exercise workspace="1.5in">
+<p>
+    Using a similar argument as above, show that
+    <m>\phi(1_{\mathbb{C}}) = 1_{\mathbb{R}}</m>.
+</p>
+</exercise>
+
+<exercise workspace="1.5in">
+<p>
+    Use the definition of isomorphism and your answers to the previous parts to
+    argue that <m>\phi(i)</m> is an element of <m>\mathbb{R}</m> and
+    <m>\phi(i)^{2} = -1</m>.
+    (Hint: Apply <m>\phi</m> to both sides of the equation <m>i^{2}+1=0</m>.)
+</p>
+</exercise>
+
+<exercise workspace="1.5in">
+<p>
+    Explain why the result you proved in the previous part is a contradiction.
+    Deduce that <m>\mathbb{C}</m> cannot be isomorphic to <m>\mathbb{R}</m>.
+</p>
+</exercise>
+
+</paragraphs>
+</page>
+
+
+
+
+<page>
+<paragraphs>
+<title>Review questions</title>
+Make sure you can answer the following questions:
+
+<ul>
+	<li><p>What is the definition of ring isomorphism? </p></li>
+	<li><p>How do you prove two rings are isomorphic?</p></li>
+	<li><p>What are some examples of invariants?</p></li>
+	<li><p>Can you use an invariant to prove two rings are isomorphic? Can you use an invariant to prove two rings are not isomorphic?</p></li>
+</ul>
+                
+<p>The rest of this page is for you to summarize important ideas from the module.</p>
+
+</paragraphs>
+
+</page>
+
+
+<page>
+
+<paragraphs>
+    <title>Weekly Practice 9</title>
+
+		<exercise number="1">
+		<title>The number of zero divisors in a ring is an invariant</title>
+		<introduction><p>
+    Prove that the number of zero divisors in a ring is an invariant under
+    isomorphism by filling in the blanks below.
+		</p>		
+		</introduction>
+		
+		<task>
+		<p>We will use a lemma, which we will assume without proof.</p>
+		<lemma>
+    <statement>
+        <p>
+            Let <m>R</m> and <m>S</m> be isomorphic rings.
+            Let <m>0_{R}</m> be the additive identity of <m>R</m> and
+            <m>0_{S}</m> be the additive identity of <m>S</m>.
+            For any isomorphism <m>\phi: R\to S</m>, <m>\phi(0_{R}) = 0_{S}</m>.
+        </p>
+    </statement>
+</lemma>
+
+<theorem>
+    <statement>
+        <p>
+            Let <m>R</m> and <m>S</m> be isomorphic rings and let <m>R_{0}</m>
+            and <m>S_{0}</m> be the subset of zero divisors of <m>R</m> and
+            <m>S</m>, respectively.
+            Then <m>|R_{0}| = |S_{0}|</m> and hence, the number of zero divisors
+            is an invariant of ring isomorphism.
+        </p>
+    </statement>
+</theorem>
+
+<proof>
+    <p>
+        Let <m>R</m> and <m>S</m> be isomorphic rings.
+        Thus, there exists an isomorphism <m>\phi: R\to S</m>.
+        This means <m>\phi</m> <fillin fill="Lots of stuff" />
+    </p>
+
+    <p>
+        We will show that if <m>x\in R_{0}</m> then <m>\phi(x)\in S_{0}</m>.
+        That is, we will show that if <m>x\in R</m> is a zero divisor in
+        <m>R</m> then <m>\phi(x)</m> is <fillin fill="a zero divisor in S" />.
+        Since <m>x</m> is a zero divisor in <m>R</m>, <m>x\neq 0_{R}</m> and
+        there exists a <m>y\in R</m> such that <fillin /> and <m>xy = 0_{R}</m> or
+        <m>yx=0_{R}</m>.
+        Without loss of generality, suppose <m>xy = 0_{R}</m>.
+        Then
+    </p>
+    <md>
+        \underline{\hspace{0.5in}}= \phi(0_{R}) = \phi(xy) = \underline{\hspace{.5in}}.
+    </md>
+
+    <p>
+        By the lemma <m>\phi(x) \neq</m> <fillin /> and <m>\phi(y) \neq</m> <fillin />.
+        Thus <m>\phi(x)</m> is a <fillin />.
+        Since <m>\phi</m> is a bijection, <m>|R_{0}|= |S_{0}|</m>.
+    </p>
+</proof>
+		</task>
+		
+		<task>
+		<p>
+    Use this to prove that <m>\mathbb{Z}_{4}</m> is not isomorphic to
+    <m>\mathbb{Z}_{2} \oplus \mathbb{Z}_{2}</m>.
+		</p>
+		</task>
+    	</exercise>
+	</paragraphs>
+	</page>
+	
+	<page>
+	
+		<exercise number="2">
+		<title>A matrix isomorphism</title>
+		<introduction><p>
+    Let
+    <m>M = \left\{ \begin{bmatrix}x &amp;0\\ -x &amp;0\end{bmatrix}: x\in\mathbb{R}\right\}</m>.
+    Let <m>\phi: M \to \mathbb{R}</m> be defined by
+    <md>
+        \phi\left( \begin{bmatrix}x &amp;0\\ -x &amp;0\end{bmatrix} \right) = x.
+    </md>
+    This problem will show <m>\phi</m> is an isomorphism and thus <m>M</m> and
+    <m>\mathbb{R}</m> are isomorphic.
+</p></introduction>
+        	<task><p>
+    Show <m>\phi</m> is an injection by showing for <m>A,B\in M</m> if
+    <m>\phi(A) = \phi(B)</m> then <m>A = B</m>.
+    Then show <m>\phi</m> is a surjection by showing for an arbitrary
+    <m>a\in \mathbb{R}</m> there exists <m>A\in M</m> such that
+    <m>\phi(A) = a</m>.
+</p></task>
+            <task><p>
+    Show <m>\phi</m> preserves addition by showing for all <m>A,B \in M</m>,
+    <m>\phi(A+B) = \phi(A) + \phi(B)</m>.
+</p></task>
+
+			<task><p>
+    Show <m>\phi</m> preserves multiplication by showing for all
+    <m>A,B\in M</m>, <m>\phi(A\cdot B) = \phi(A)\cdot \phi(B)</m>.
+</p></task>
+			
+			<task><p>
+    The above problems show that <m>\phi</m> is an isomorphism and hence
+    <m>M</m> and <m>\mathbb{R}</m> are isomorphic.
+    Since being a field is an invariant and <m>\mathbb{R}</m> is a field, we can
+    conclude <m>M</m> is a field.
+    Thus, every nonzero element of <m>M</m> is a unit.
+    What is the identity of <m>M</m>?
+    Find the multiplicative inverse of
+    <m>A = \begin{bmatrix}a &amp;0 \\ -a &amp;0\end{bmatrix}</m>.
+</p></task>
+		</exercise>
+		
+		<exercise number="3">
+		<title>Homomorphisms: Kind of like isomorphisms, but not</title>
+		<introduction><p>
+    Let <m>R</m> and <m>S</m> be rings.
+    A function <m>\phi: R\to S</m> is a <term>homomorphism</term> of rings if
+    <m>\phi(a+b) =\phi(a)+\phi(b)</m> and <m>\phi(ab)=\phi(a)\phi(b)</m> for all
+    <m>a,b\in \mathbb{R}</m>. (Notice how this is very similar to the definition of <em>isomorphism</em>, but something important is missing -- which requirement of an isomorphism is <em>not</em> required here?)
+</p></introduction>
+		
+			<task><p>
+    Define <m>\phi: \mathbb{Z}\to \mathbb{Z}_{5}</m> by
+    <m>\phi(k) = [k]_{5}</m>.
+    Show that <m>\phi</m> is a homomorphism.
+</p></task>
+
+			<task><p>
+    The <term>kernel</term> of a homomorphism <m>\phi</m> is the set
+    <m>\text{Ker}(\phi) = \{ r\in R: \phi(r) = 0_{S}\}</m>.
+    Find <m>\text{Ker}(\phi)</m> for the <m>\phi</m> in part (a).
+</p></task>
+			
+			<task><p>
+    Prove the kernel you found in part b is an ideal of <m>\mathbb{Z}</m>.
+    (It turns out the kernel of a ring homomorphism is always an ideal.)
+</p></task>
+		</exercise>
+	
+ </page>
+ 
+ </worksheet>
+ 
+
+
+
+<!-- </chapter> -->
