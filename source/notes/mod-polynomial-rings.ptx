@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<worksheet xml:id="ws-polynomial-rings-activity">
+
+	<title>Module 11: Polynomial Rings &amp; Divisibility</title>
+	<introduction><p><alert>The X-Factor</alert></p></introduction>
+	
+	<page>
+
+	<paragraphs>
+		<title>Are polynomials just like integers?</title>
+		
+    <p>
+       There's a bunch of things we could do in the integers that it turns out we can also do with polynomials. Here's a table to compare/contrast. (Note here that <m>R</m> is a commutative ring.)
+    </p>
+    
+    <p><image source="images/Polynomials-Properties.png" width="95%" /></p>
+    </paragraphs>
+    </page>
+
+
+	<page>
+	
+	<paragraphs>
+		<title>Divides</title>
+    
+    	<exercise workspace="0.5in">
+			<p>Using your knowledge of divides in the integers, state a definition of divides in the polynomial ring <m>R[x]</m> where <m>R</m> is a commutative ring.</p>
+		</exercise>
+		
+		<exercise workspace="1.5in" xml:id="poly-divides-ex-1">
+			<p>
+			Does <m>a(x)=x^2+2</m> divide <m>b(x)=x^5+7x^3+x^2+10x+2</m> in <m>\mathbb{R}[x]</m>? Use polynomial long division to determine.
+			</p>
+		</exercise>
+    
+    	<exercise workspace="1.5in" xml:id="poly-divides-ex-2">
+			<p>
+			Does <m>a(x)=x+2</m> divide <m>b(x)=3x^4 -5x^2 +3</m> in <m>\mathbb{R}[x]</m>? Use polynomial long division to determine.
+			</p>
+		</exercise>
+		
+		<exercise workspace="1in">
+			<p>
+			(If time:) Prove or disprove:
+			</p> 
+			<p>For a field <m>F</m> and <m>f(x),g(x)\in F[x]</m>, if <m>f(x)</m> divides <m>g(x)</m> and <m>c\in F</m>, <m>c\neq 0</m>, then <m>cf(x)</m> divides <m>g(x)</m>.
+			</p>
+		</exercise>
+    </paragraphs>
+
+	</page>
+	
+	<page>
+	<paragraphs>
+		<title>The Division Algorithm in <m>F[x]</m></title>
+		
+		<exercise workspace="0.5in">
+		<p>
+    We restrict talking about the division algorithm to <m>F[x]</m> where
+    <m>F</m> is a field.
+    When <m>F</m> is a field, <m>F[x]</m> is an integral domain.
+    Why is <m>F[x]</m> never a field?
+		</p>
+		</exercise>
+		
+		<exercise workspace="0.5in">
+		<p>
+    Why is <m>\mathbb{Z}_{4}[x]</m> not an integral domain?
+		</p>
+		</exercise>
+		
+		<exercise workspace="0.5in">
+		<p>
+    Why does <m>F[x]</m> for a field <m>F</m> not have zero divisors?
+    (Hint: Consider the degree of the product of two polynomials.)
+		</p>
+		</exercise>
+		
+		<exercise workspace="0.5in">
+		<p>
+    Use <xref ref="poly-divides-ex-1" /> and <xref ref="poly-divides-ex-2" /> from the previous page to write statements that <q>look like</q>
+    the division algorithm for integers (e.g., <m>b=aq+r</m>, where
+    <m>a = a(x)</m> and <m>b=b(x)</m>, what are <m>q(x)</m> and <m>r(x)</m>?).
+		</p>
+		</exercise>
+		
+		<exercise workspace="0.5in">
+		<p>
+    In the division algorithm we had a restriction on the remainder <m>r</m>:
+    <m>0\le r &lt; a</m>.
+    Based on your answer to the previous question, what would be a reasonable
+    restriction on the remainder in the division algorithm in polynomials?
+		</p>
+		</exercise>
+		
+		<exercise workspace="0.5in">
+		<p>
+    The Division Algorithm for polynomials says: Let <m>F</m> be a field and let
+    <m>f(x)</m> and <m>g(x)</m> be polynomials in <m>F[x]</m> with
+    <m>g(x)\neq 0</m>.
+    Then there exist unique polynomials <m>q(x)</m> and <m>r(x)</m> in
+    <m>F[x]</m> such that
+    <md>
+        f(x)=g(x)q(x)+r(x)
+    </md>
+    where <m>r(x)=0</m> or <m>\deg(r(x)) &lt; \deg(g(x))</m>.
+		</p>
+
+		<p>
+    What are the similarities and differences with the division algorithm for
+    integers?
+		</p>
+		</exercise>
+		
+	</paragraphs>
+	</page>
+	
+	<page>
+	<paragraphs>
+	<title>Greatest Common Divisor</title>
+	
+	<exercise workspace="1in">
+	<p>
+    Suppose in <m>\mathbb{R}[x]</m> we have <m>f(x)=2x^{2}+x-6</m> and
+    <m>g(x)=2x^{2}-7x+6</m>.
+    Note that we have the following
+    <ul>
+        <li>
+            <p>
+                <m>f(x)=(x+2)(2x-3)</m> and <m>g(x)=(x-2)(2x-3)</m>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>f(x)=(2x+4)(x-\frac{3}{2})</m> and
+                <m>g(x) = (2x-4)(x-\frac{3}{2})</m>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>f(x) = \left(\frac{1}{2}x+1)(4x-6)\right)</m> and
+                <m>g(x)=\left(\frac{1}{2}x-1\right)(4x-6)</m>
+            </p>
+        </li>
+    </ul>
+	</p>
+
+	<p>
+    Based on this, what are some common divisors of <m>f(x)</m> and <m>g(x)</m>?
+	</p>
+	</exercise>
+	
+	<exercise workspace="1in">
+	<p>
+    If we want the greatest common divisor to be unique, which common divisor
+    should we pick?
+	</p>
+	</exercise>
+	
+	<exercise workspace="1in">
+	<p>
+    Here's a definition:</p>
+    <definition>
+    	<statement>Let <m>F</m> be a field and let <m>f(x), g(x)\in F[x]</m>
+    that are not both zero.
+    The <term>greatest common divisor</term> of <m>f(x)</m> and <m>g(x)</m> is
+    the polynomial <m>d(x)\in F[x]</m> that satisfies the following three
+    conditions:
+    <ul>
+        <li>
+            <p>
+                <m>d(x)</m> divides <m>f(x)</m> and <m>d(x)</m> divides
+                <m>g(x)</m>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                If <m>h(x)\in F[x]</m> and <m>h(x)</m> divides both <m>f(x)</m>
+                and <m>g(x)</m> then <m>h(x)</m> divides <m>d(x)</m>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <m>d(x)</m> is a monic polynomial (i.e., the leading coefficient
+                is <m>1_{F}</m> )
+            </p>
+        </li>
+    </ul>
+    	</statement>
+	</definition>
+    <p>What are the similarities and differences between this definition and the
+    integer definition?
+	</p>
+	</exercise>
+	
+	</paragraphs>
+	</page>
+
+	<page>
+	<paragraphs>
+	<title>Relatively Prime and Euclidean Algorithm</title>
+	
+	<exercise workspace="1in">
+	 <p>
+     Let <m>F</m> be a field.
+     Fill in the definition: Two polynomials <m>f(x)</m> and <m>g(x)</m> in
+     <m>F[x]</m> are <term>relatively prime</term> provided that...
+	 </p>
+	</exercise>
+	
+	 <exercise workspace="6in">
+	 <p>
+     Just like in the integers, one can repeatedly apply the division algorithm
+     to find the greatest common divisor of two polynomials.
+     Apply the Euclidean algorithm to determien <m>\gcd(f(x), g(x))</m> for
+     <m>f(x)=3x^{5}+7x^{4}+11x^{3}+15x^{2}+10x+2</m> and
+     <m>g(x) = 3x^{2}+7x+2</m>.
+	 </p>
+	</exercise>
+	</paragraphs>
+	</page>
+	
+
+<page xml:id="sec-polynomial-rings-review">
+
+<paragraphs>
+<title>Review questions</title>
+Make sure you can answer the following questions:
+
+<ul>
+    <li>
+        <p>
+            What does it mean for a polynomial to divide another polynomial?
+        </p>
+    </li>
+
+    <li>
+        <p>
+            If <m>F</m> is a field, what's the strongest thing you can say about
+            <m>F[x]</m>?
+            If <m>R</m> is a commutative ring, what's the strongest thing you
+            can say about <m>R[x]</m>?
+        </p>
+    </li>
+
+    <li>
+        <p>
+            What does the division algorithm say for <m>F[x]</m> where <m>F</m>
+            is a field?
+            What are the similarities/differences with the integer division
+            algorithm?
+        </p>
+    </li>
+
+    <li>
+        <p>
+            What is the definition for greatest common divisor of <m>f(x)</m>
+            and <m>g(x)</m> in <m>F[x]</m>?
+            What are the similarities/differences with the integers?
+        </p>
+    </li>
+
+    <li>
+        <p>
+            What does it mean for two polynomials to be relatively prime?
+            How can you apply the Euclidean algorithm in <m>F[x]</m>?
+        </p>
+    </li>
+</ul>
+                
+<p>The rest of this page is for you to summarize important ideas from the module.</p>
+
+</paragraphs>
+
+</page>
+
+
+<page>
+
+<paragraphs>
+    <title>Weekly Practice 11</title>
+
+		<exercise number="1">
+		<statement><p>Fill in the table on p. 1 of this module with careful definitions of each.
+		</p></statement>
+    	</exercise>
+	
+	
+		<exercise number="2">
+		<title>Find a polynomial GCD</title>
+		<statement><p>
+    In <m>\mathbb{Z}_{3}[x]</m>, let <m>f(x)=x^{4}+[2]x^{3}+x+[2]</m> and
+    <m>g(x)=[2]x^{2}+[1]</m>.
+    Find <m>\gcd(f(x),g(x))</m> using the Euclidean algorithm.
+		</p></statement>
+		</exercise>
+		
+		<exercise number="3">
+		<title>Factoring polynomials</title>
+		<introduction><p>
+    In this module we've explored how polynomials are like integers.
+    We've explored factoring polynomials a bit (and you likely explored it a lot
+    in high school).
+    Let's explore some more.
+		</p></introduction>
+        	<task><p>
+    Let <m>f(x)=x^{2}-3x-2</m> be in <m>\mathbb{R}[x]</m>.
+    Notice that <m>f(5)=8</m>.
+    What is the remainder when <m>f(x)</m> is divided by <m>x-5</m>?
+			</p></task>
+            <task><p>
+    Let <m>g(x) = x^{2}-3x-10</m> be in <m>\mathbb{R}[x]</m>.
+    Determine <m>g(5)</m> and determine the remainder when <m>g(x)</m> is
+    divided by <m>x-5</m>.
+			</p></task>
+			<task><p>
+    Let <m>h(x)=x^{2}-3x-10</m> be in <m>\mathbb{Q}[x]</m>.
+    Determine <m>h(-2)</m> and determine the remainder when <m>h(x)</m> is
+    divided by <m>x-(-2)</m>.
+			</p></task>
+		</exercise>
+	
+	</paragraphs>
+	
+ </page>
+ 
+ </worksheet>
+
+<!-- </chapter> -->
