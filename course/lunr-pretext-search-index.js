@@ -2080,6 +2080,177 @@ var ptx_lunr_docs = [
   "body": " Reducible and irreducible polynomials  Take the following theorem without proof (for now): Let be a field. If and the degree of is or , then is reducible over if and only if has a zero in .  Explain why , , and are fields.  Determine if the these polynomials are reducible or irreducible, by finding zeros and applying the theorem.     over      over      over     (Side quest - you don't have to do this one!) Can you find polynomials and such that for the fields for which is reducible?  "
 },
 {
+  "id": "ws-polynomial-rings-activity",
+  "level": "1",
+  "url": "ws-polynomial-rings-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Module 11: Polynomial Rings &amp; Divisibility",
+  "body": " Module 11: Polynomial Rings & Divisibility  The X-Factor    Are polynomials just like integers?  There's a bunch of things we could do in the integers that it turns out we can also do with polynomials. Here's a table to compare\/contrast. (Note here that is a commutative ring.)       Divides   Using your knowledge of divides in the integers, state a definition of divides in the polynomial ring where is a commutative ring.    Does divide in ? Use polynomial long division to determine.    Does divide in ? Use polynomial long division to determine.    (If time:) Prove or disprove:  For a field and , if divides and , , then divides .       The Division Algorithm in   We restrict talking about the division algorithm to where is a field. When is a field, is an integral domain. Why is never a field?    Why is not an integral domain?    Why does for a field not have zero divisors? (Hint: Consider the degree of the product of two polynomials.)    Use and from the previous page to write statements that look like the division algorithm for integers (e.g., , where and , what are and ?).    In the division algorithm we had a restriction on the remainder : . Based on your answer to the previous question, what would be a reasonable restriction on the remainder in the division algorithm in polynomials?    The Division Algorithm for polynomials says: Let be a field and let and be polynomials in with . Then there exist unique polynomials and in such that where or .  What are the similarities and differences with the division algorithm for integers?       Greatest Common Divisor   Suppose in we have and . Note that we have the following    and      and      and      Based on this, what are some common divisors of and ?    If we want the greatest common divisor to be unique, which common divisor should we pick?    Here's a definition:   Let be a field and let that are not both zero. The greatest common divisor of and is the polynomial that satisfies the following three conditions:    divides and divides     If and divides both and then divides      is a monic polynomial (i.e., the leading coefficient is )      What are the similarities and differences between this definition and the integer definition?       Relatively Prime and Euclidean Algorithm   Let be a field. Fill in the definition: Two polynomials and in are relatively prime provided that...    Just like in the integers, one can repeatedly apply the division algorithm to find the greatest common divisor of two polynomials. Apply the Euclidean algorithm to determien for and .       Review questions Make sure you can answer the following questions:   What does it mean for a polynomial to divide another polynomial?    If is a field, what's the strongest thing you can say about ? If is a commutative ring, what's the strongest thing you can say about ?    What does the division algorithm say for where is a field? What are the similarities\/differences with the integer division algorithm?    What is the definition for greatest common divisor of and in ? What are the similarities\/differences with the integers?    What does it mean for two polynomials to be relatively prime? How can you apply the Euclidean algorithm in ?    The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 11   Fill in the table on p. 1 of this module with careful definitions of each.    Find a polynomial GCD  In , let and . Find using the Euclidean algorithm.    Factoring polynomials  In this module we've explored how polynomials are like integers. We've explored factoring polynomials a bit (and you likely explored it a lot in high school). Let's explore some more.  Let be in . Notice that . What is the remainder when is divided by ?  Let be in . Determine and determine the remainder when is divided by .  Let be in . Determine and determine the remainder when is divided by .     "
+},
+{
+  "id": "ws-polynomial-rings-activity-4-1-2",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-4-1-2",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " Using your knowledge of divides in the integers, state a definition of divides in the polynomial ring where is a commutative ring.  "
+},
+{
+  "id": "poly-divides-ex-1",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#poly-divides-ex-1",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": " Does divide in ? Use polynomial long division to determine.  "
+},
+{
+  "id": "poly-divides-ex-2",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#poly-divides-ex-2",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": " Does divide in ? Use polynomial long division to determine.  "
+},
+{
+  "id": "ws-polynomial-rings-activity-4-1-5",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-4-1-5",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": " (If time:) Prove or disprove:  For a field and , if divides and , , then divides .  "
+},
+{
+  "id": "ws-polynomial-rings-activity-5-1-2",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-5-1-2",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": " We restrict talking about the division algorithm to where is a field. When is a field, is an integral domain. Why is never a field?  "
+},
+{
+  "id": "ws-polynomial-rings-activity-5-1-3",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-5-1-3",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": " Why is not an integral domain?  "
+},
+{
+  "id": "ws-polynomial-rings-activity-5-1-4",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-5-1-4",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": " Why does for a field not have zero divisors? (Hint: Consider the degree of the product of two polynomials.)  "
+},
+{
+  "id": "ws-polynomial-rings-activity-5-1-5",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-5-1-5",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": " Use and from the previous page to write statements that look like the division algorithm for integers (e.g., , where and , what are and ?).  "
+},
+{
+  "id": "ws-polynomial-rings-activity-5-1-6",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-5-1-6",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": " In the division algorithm we had a restriction on the remainder : . Based on your answer to the previous question, what would be a reasonable restriction on the remainder in the division algorithm in polynomials?  "
+},
+{
+  "id": "ws-polynomial-rings-activity-5-1-7",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-5-1-7",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": " The Division Algorithm for polynomials says: Let be a field and let and be polynomials in with . Then there exist unique polynomials and in such that where or .  What are the similarities and differences with the division algorithm for integers?  "
+},
+{
+  "id": "ws-polynomial-rings-activity-6-1-2",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-6-1-2",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": " Suppose in we have and . Note that we have the following    and      and      and      Based on this, what are some common divisors of and ?  "
+},
+{
+  "id": "ws-polynomial-rings-activity-6-1-3",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-6-1-3",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": " If we want the greatest common divisor to be unique, which common divisor should we pick?  "
+},
+{
+  "id": "ws-polynomial-rings-activity-6-1-4",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-6-1-4",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": " Here's a definition:   Let be a field and let that are not both zero. The greatest common divisor of and is the polynomial that satisfies the following three conditions:    divides and divides     If and divides both and then divides      is a monic polynomial (i.e., the leading coefficient is )      What are the similarities and differences between this definition and the integer definition?  "
+},
+{
+  "id": "ws-polynomial-rings-activity-7-1-2",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-7-1-2",
+  "type": "Exercise",
+  "number": "14",
+  "title": "",
+  "body": " Let be a field. Fill in the definition: Two polynomials and in are relatively prime provided that...  "
+},
+{
+  "id": "ws-polynomial-rings-activity-7-1-3",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-7-1-3",
+  "type": "Exercise",
+  "number": "15",
+  "title": "",
+  "body": " Just like in the integers, one can repeatedly apply the division algorithm to find the greatest common divisor of two polynomials. Apply the Euclidean algorithm to determien for and .  "
+},
+{
+  "id": "ws-polynomial-rings-activity-9-1-2",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-9-1-2",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": " Fill in the table on p. 1 of this module with careful definitions of each.  "
+},
+{
+  "id": "ws-polynomial-rings-activity-9-1-3",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-9-1-3",
+  "type": "Exercise",
+  "number": "2",
+  "title": "Find a polynomial GCD.",
+  "body": " Find a polynomial GCD  In , let and . Find using the Euclidean algorithm.  "
+},
+{
+  "id": "ws-polynomial-rings-activity-9-1-4",
+  "level": "2",
+  "url": "ws-polynomial-rings-activity.html#ws-polynomial-rings-activity-9-1-4",
+  "type": "Exercise",
+  "number": "3",
+  "title": "Factoring polynomials.",
+  "body": " Factoring polynomials  In this module we've explored how polynomials are like integers. We've explored factoring polynomials a bit (and you likely explored it a lot in high school). Let's explore some more.  Let be in . Notice that . What is the remainder when is divided by ?  Let be in . Determine and determine the remainder when is divided by .  Let be in . Determine and determine the remainder when is divided by .  "
+},
+{
   "id": "portfolios-2",
   "level": "1",
   "url": "portfolios-2.html",
