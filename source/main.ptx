@@ -15,8 +15,9 @@
     <chapter xml:id="course-notes">
       <title>Module notes</title>
 
-      <!-- Remove the example and replace with your own activities -->
     	 <xi:include href="./notes/mod-fields.ptx" />
+ 
+ 		<!--
    		 <xi:include href="./notes/mod-divisibility.ptx" />
     	 <xi:include href="./notes/mod-equivalence-zn.ptx" />
    		 <xi:include href="./notes/mod-gcds-euclid.ptx" />
@@ -27,19 +28,24 @@
 		 <xi:include href="./notes/mod-isomorphism.ptx" />
 		 <xi:include href="./notes/mod-prime-factorization.ptx" />
 		 <xi:include href="./notes/mod-polynomial-rings.ptx" />
-
-      <!-- Add more xi:include files here to include them in the main course -->
+		-->
+		
     </chapter>
 
     <chapter xml:id="portfolios">
       <title>Portfolio problems</title>
       
+      <introduction>
+      	Portfolio problems will be posted here. Check back!
+      </introduction>
+      
+	<!-- 
       <xi:include href="./portfolios/sec-portfolio-problems-1.ptx" />
       <xi:include href="./portfolios/sec-portfolio-problems-2.ptx" />
       <xi:include href="./portfolios/sec-portfolio-problems-3.ptx" />
       <xi:include href="./portfolios/sec-portfolio-problems-4.ptx" />
-      <!-- Include handouts -->
-      <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
+    -->
+
     </chapter>
 
     <chapter xml:id="homework">
