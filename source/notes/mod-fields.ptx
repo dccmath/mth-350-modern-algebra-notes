@@ -99,25 +99,22 @@
     </paragraphs>
     </page>
 
-<!-- Division? -->
-<!--    <title>Binary Operations</title> -->
 
 	<page>
-	
 	<paragraphs>
 		<title>Binary Operations</title>
     <p>
-        Our English word algebra comes from the Arabic word al-jabr, which means
+        Our English word <q>algebra</q> comes from the Arabic word al-jabr, meaning
         <q>the reunion of broken parts</q>.
-        It is not surprising, then, that we will be considering ways of
-        combining two elements of a set into one; to do this, we turn to a
-        particular type of function, known as a binary operation.
+        It is not surprising, then, that we will consider ways of
+        combining two elements of a set into one. To do this, we turn to a
+        particular type of function known as a binary operation.
         Let <m>X</m> be a nonempty set.
         <ul>
             <li>
                 <p>
                     A function <m>\star: X\times X \to Y</m> is called a
-                    <alert>binary operation on <m>X</m> </alert>.
+                    <term>binary operation on <m>X</m> </term>.
                     That is, the function <m>\star</m> takes two numbers in the
                     set <m>X</m>, and outputs another number, potentially in a
                     different set <m>Y</m>.
@@ -129,16 +126,15 @@
             <li>
                 <p>
                     If <m>\star</m> is a binary operation on <m>X</m> such that
-                    <m>\star:X\times X \to X</m> we say that <m>X</m> is closed
-                    under the operation <m>\star</m>.
+                    <m>\star:X\times X \to X</m>, then <m>X</m> is <term>closed
+                    under <m>\star</m></term>.
                 </p>
             </li>
         </ul>
     </p>
 
-    <example>
-        <title>Ordered pairs</title>
-        <p>Say <m>X = \mathbb{Z}</m>.
+    <!-- <example> -->
+        <p><em>Example: Ordered pairs.</em> Say <m>X = \mathbb{Z}</m>.
         Let <m>\cdot</m> be the binary operation multiplication.
         Then, with the function notation, we could write <m>\cdot(2,3) = 6</m>,
         though we usually write <m>2\cdot 3=6</m>.
@@ -149,7 +145,7 @@
         However, <m>\mathbb{Z}</m> is not closed under the binary operation
         <m>\div</m> because, for example,
         <m>\div(2,3)= 2\div 3 = \frac{2}{3}\not\in\mathbb{Z}</m>.</p>
-    </example>
+    <!-- </example> -->
     
     </paragraphs>
 
@@ -157,10 +153,9 @@
 	<paragraphs>
     <title>Fields</title>
 
-
     <p>
         A <term>field</term> is a set <m>F</m> together with two binary
-        operations, called addition ( <m>+</m> ) and multiplication (<m>\cdot</m> ), denoted as the triple <m>(F, +,\cdot)</m>, such that all
+        operations, called addition ( <m>+</m> ) and multiplication ( <m>\cdot</m> ), denoted as the triple <m>(F, +,\cdot)</m>, such that all
         of the following axioms hold:
     </p>
 
@@ -170,8 +165,8 @@
                 <p>
                     The set <m>F</m> is
                     <alert>closed under addition and multiplication</alert>,
-                    meaning that for all <m>x,y\in F, x+y \in F</m> and
-                    <m>x\cdot y \in F</m>.
+                    meaning that for all <m>x,y\in F</m>, <md>x+y \in F \text{ and }
+                    x\cdot y \in F</md>.
                 </p>
             </li>
 
@@ -179,40 +174,40 @@
                 <p>
                     <alert>Addition and multiplication are associative</alert>,
                     meaning that for all <m>x,y,z\in F</m>,
-                    <m>(x+y)+z = x+(y+z)</m>, and
-                    <m>(x\cdot y)\cdot z = x\cdot(y\cdot z)</m>.
+                    <md>(x+y)+z = x+(y+z), \text{ and }
+                    (x\cdot y)\cdot z = x\cdot(y\cdot z)</md>.
                 </p>
             </li>
 
             <li>
                 <p>
                     <alert>Addition and multiplication are commutative</alert>,
-                    that is, for all <m>x,y\in F</m>, <m>x+y = y+x</m> and
-                    <m>x\cdot y = y\cdot x</m>.
+                    that is, for all <m>x,y\in F</m>, <md>x+y = y+x \text{ and }
+                    \cdot y = y\cdot x</md>. 
                 </p>
             </li>
 
             <li>
                 <p>
-                    <alert>The set <m>F</m> contains an additive identity</alert>.
+                    The set <m>F</m> <alert>contains an additive identity</alert>.
                     That is, there exists an element <m>0_{F} \in F</m> such
-                    that <m>a+0_{F} = a</m>.
+                    that <md>\text{ for all } a \in F, \text{ } a+0_{F} = a</md>.
                 </p>
             </li>
 
             <li>
                 <p>
-                    <alert>The set <m>F</m> contains a multiplicative identity</alert>.
-                    That is, there exists an element <m>1_{F} \in F</m> such
-                    that for all <m>a\in F</m>, <m>1_{F} \cdot a = a</m>.
+                    The set <m>F</m> <alert>contains a multiplicative identity</alert>.
+                    That is, there exists an element <m>1_{F} \in F</m> such that
+                    <md>\text{for all } a\in F,\text{ } 1_{F} \cdot a = a</md>.
                 </p>
             </li>
 
             <li>
                 <p>
-                    <alert>Every element of <m>F</m> has an additive inverse within <m>F</m> </alert>,
-                    meaning that for every <m>x\in F</m>, there exists a
-                    <m>y\in F</m> such that <m>x+y = 0_{F}</m>.
+                    <alert>Every element of <m>F</m> has an additive inverse in <m>F</m> </alert>,
+                    meaning that for every <m>x\in F</m>, <md>\text{there exists a }
+                    y\in F \text{ such that } x+y = 0_{F}</md>.
                 </p>
             </li>
 
@@ -220,7 +215,7 @@
                 <p>
                     <alert>Every nonzero (i.e., not <m>0_{F}</m>) element of <m>F</m> has a multiplicative inverse within <m>F</m> </alert>,
                     meaning that for every <m>x\in F</m>, there exists a
-                    <m>y\in F</m> such that <m>x\cdot y =1_{F}</m>.
+                    <m>y\in F</m> such that <md>x\cdot y =1_{F}</md>.
                 </p>
             </li>
 
@@ -228,7 +223,7 @@
                 <p>
                     <alert>Multiplication distributes over addition</alert>,
                     meaning that, for all <m>x,y,z \in F</m>,
-                    <m>x\cdot(y+z) = x\cdot y + x\cdot z</m>.
+                    <md>x\cdot(y+z) = x\cdot y + x\cdot z</md>.
                 </p>
             </li>
         </ol>
@@ -335,13 +330,14 @@
 	<title>Summarize</title>
     
     <exercise>
-    	<statement>Fill in the table below to indicate which
+    	<statement><p>Fill in the table below to indicate which
         properties hold in which number systems.
         You can use Y/N for yes/no or checkmarks and X's, or colors, or whatever
-        works best for you.
-
-  <table>
-  <tabular halign="center" top="medium">
+        works best for you.</p>
+	</statement>
+ </exercise>
+ 
+  <tabular halign="center">
     <row bottom="medium">
       <cell halign="left" left="medium" right="medium">
       </cell>
@@ -361,7 +357,7 @@
         <m>\mathbb{R}</m>
       </cell>
       <cell right="medium">
-        <m>\mathbb{R}\setminus \mathbb{Q}</m>
+        <m>\mathbb{R}\setminus\mathbb{Q}</m>
       </cell>
       <cell right="medium">
         <m>\mathbb{C}</m>
@@ -677,10 +673,7 @@
       </cell>
     </row>
   </tabular>
-</table>
-
-	</statement>
- </exercise>
+  
  </paragraphs>
 </page>
 
@@ -721,7 +714,7 @@
 		<title>A field of ordered pairs?</title>
 		<statement><p>Consider the set <m>\mathbb{Z}\times \mathbb{Z}</m> (the set
                     of all ordered pairs of integers).
-                    For <m>(a,b), (c,d)</m>, we define addition as
+                    For elements <m>(a,b), (c,d) \in \mathbb{Z} \times \mathbb{Z}</m>, we define addition as
                     <m>(a,b)+(c,d) = (a+c, b+d)</m> and we define multiplication
                     as <m>(a,b)\cdot(c,d) = (ac,bd)</m>.
                     Which of the field properties hold for
@@ -768,8 +761,9 @@
                                 <!--<fn><p>Actually any ring, but you don't know what that is yet :)</p></fn>-->
                                 that for any <m>a\in F</m>,
                                 <m>0_{F} \cdot a = 0_{F}</m>, where <m>0_{F}</m>
-                                is the additive identity.
-                                <!--<fn><p>This may at first seem silly (even elementary schoolers sort of know this!), but actually, it's not that obvious. To see why this is not obvious - try thinking a little more abstractly - why should the additive identity of a field, multiplied by anything, give back the additive identity? The <em>only</em> thing that we know about the additive identity is that when you add it to anything doesn't change it. There's no reason it should have any reasonable interaction with multiplication.</p></fn>-->
+                                is the additive identity. (Actually, this works in any ring, but you don't know what a ring is yet!)
+                                
+                                <hint><p>This may at first seem silly (even elementary schoolers sort of know this!), but actually, it's not that obvious. To see why this is not obvious - try thinking a little more abstractly - why should the additive identity of a field, multiplied by anything, give back the additive identity? The <em>only</em> thing that we know about the additive identity is that when you <em>add</em> it to anything doesn't change it. There's no reason it should have any reasonable interaction with multiplication.</p></hint>
                                 </p>
                                 
                                 <p>Prove that for any field <m>F</m> and any
