@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<worksheet xml:id="ws-characteristic-activity">
+
+	<title>Bonus module: Characteristic of a ring <m>R</m></title>
+	<introduction><p><alert>Multiplication (by Integers) is Repeated Addition</alert></p></introduction>
+	
+	<page>
+		
+<p>
+  Throughout the course, students have sometimes written things like <q><m>2[5]_{6}</m></q>, where we are multiplying the integer <m>2</m> by the
+  element <m>[5]_{6}</m> in <m>\mathbb{Z}_{6}</m>.
+  In this section, we will talk about how integer multiplication (and
+  exponentiation) work, and how this leads to the idea of the characteristic of
+  a ring.
+</p>
+
+<definition>
+  <statement>
+    <p>
+      Let <m>R</m> be a ring and let <m>x\in R</m>.
+      For every <m>n\in\mathbb{N}</m> we define
+      <ul>
+        <li>
+          <p>
+            <m>nx = \underbrace{x+x +\cdots + x}_{n \text{ terms }}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>x^{n} = \underbrace{x\cdot x \cdots x}_{n \text{ factors}}</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </statement>
+</definition>
+
+<exercise>
+<introduction>
+<p>
+  What should we do about <m>0</m> and negative integers???
+</p>
+<p>
+Let's make some conjectures! For all <m>x\in R</m> and <m>n\in \mathbb{N}</m>,
+</p>
+</introduction>
+
+<task>
+      <p>
+        <m>0x = </m> <fillin characters="8" />
+      </p>
+</task>
+
+<task>
+      <p>
+        <m>(-n)x = </m> <fillin characters="8" />
+      </p>
+</task>
+
+<task>
+      <p>
+        <m>x^{0} = </m> <fillin characters="8" />
+      </p>
+</task>
+
+<task>
+      <p>
+        <m>x^{-n}= </m> <fillin characters="8" />
+      </p>
+</task>
+</exercise>
+
+<p>
+  Compute the following based on the definitions and your conjectures:
+</p>
+
+<exercise>
+<p>
+  In <m>\mathbb{Z}_{6}</m>:
+</p>
+<sidebyside>
+<p>
+  <task workspace="0.5cm"><m>3[5]</m></task>
+  
+  <task workspace="0.5cm"><m>0[4]</m></task>
+  
+  <task workspace="0.5cm"><m>(-4)[2]</m></task>
+  
+  <task workspace="0.5cm"><m>[3]^{4}</m></task>
+</p>
+<p>  
+  <task workspace="0.75cm"><m>[2]^{0}</m></task>
+  
+  <task workspace="0.75cm"><m>[3]^{-5}</m></task>
+  
+  <task workspace="0.75cm"><m>[5]^{-3}</m></task>
+</p>
+</sidebyside>
+</exercise>
+
+</page>
+
+<page>
+<exercise workspace="0.5in">
+<p>
+  In <m>\mathcal{M}_{2\times 2}(\mathbb{R})</m>
+</p>
+
+<sidebyside>
+<p>
+	<task workspace="0.25cm">
+  <m>0 \begin{bmatrix}1 &amp;\pi \\ -\pi &amp; 3\end{bmatrix}</m>
+	</task>
+
+	<task workspace="0.25cm">
+  <m>3 \begin{bmatrix}e^{2}&amp;e^{3} \\ e^{3}&amp;e^{4}\end{bmatrix}</m>
+	</task>
+
+	<task workspace="0.25cm">
+  <m>-4 \begin{bmatrix}1 &amp;\pi \\ -\pi &amp; 3\end{bmatrix}</m>
+	</task>
+
+	<task workspace="0.25cm">
+  <m>\begin{bmatrix}\pi &amp;0 \\ 0 &amp; \pi\end{bmatrix}^{4}</m>
+	</task>
+</p>
+
+<p>
+  <task workspace="0.5cm">
+  <m>\begin{bmatrix}e^{2}&amp;e^{3} \\ e^{3}&amp;e^{4}\end{bmatrix}^{0}</m>
+	</task>
+	
+	<task workspace="0.5cm">
+  <m>\begin{bmatrix}e^{2}&amp;e^{3} \\ e^{3}&amp;e^{4}\end{bmatrix}^{-3}</m>
+	</task>
+	
+	<task workspace="0.5cm">
+  <m>\begin{bmatrix}\pi &amp;0 \\ 0 &amp; \pi\end{bmatrix}^{-5}</m>
+  	</task>
+</p>
+</sidebyside>
+</exercise>
+
+<exercise workspace="0.5in">
+<p>
+  In <m>\mathcal{P}_{3}</m>.
+  Recall the elements are all subsets of <m>\{1,2,3\}</m> and
+  <m>A+B = A\Delta B</m> and <m>AB = A\cap B</m>.
+</p>
+
+<sidebyside>
+<p>
+  <task workspace="0.25cm"><m>0\{ 1,2\}</m></task>
+  
+  <task workspace="0.25cm"><m>3\{2\}</m></task>
+  
+  <task workspace="0.25cm"><m>(-4)\{2,3\}</m></task>
+  
+  <task workspace="0.25cm"><m>\{3\}^{4}</m></task>
+</p>
+<p>
+  <task workspace="0.5cm"><m>\{1,3\}^{0}</m></task>
+  
+  <task workspace="0.5cm"><m>\{1,2,3\}^{-3}</m></task>
+  
+  <task workspace="0.5cm"><m>\{1\}^{-5}</m></task>
+</p>
+</sidebyside>
+</exercise>
+
+<definition>
+  <statement>
+    <p>
+      For all <m>x\in R</m> and <m>n\in \mathbb{N}</m>,
+      <ul>
+        <li>
+          <p>
+            <m>0x = \underline{\hspace{.5in}}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(-n)x = \underline{\hspace{.5in}}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>x^{0} = \underline{\hspace{.5in}}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>x^{-n}= \underline{\hspace{.5in}}</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+  </statement>
+</definition>
+</page>
+
+<page>
+
+<paragraphs>
+<title>
+  The Characteristic of a Ring
+</title>
+
+<p>
+  The characteristic of a ring allows us to make some interesting observations,
+  like <q>the Freshman's dream.</q>
+</p>
+
+<p>
+  Before we define characteristic, let's consider some questions.
+</p>
+
+<exercise workspace="1in">
+<p>
+  For which positive integers <m>k</m> does <m>k[3] = [0]</m> in
+  <m>\mathbb{Z}_{12}</m>?
+</p>
+</exercise>
+
+<exercise workspace="1in">
+<p>
+  For which positive integers <m>k</m> does <m>k[4] = [0]</m> in
+  <m>\mathbb{Z}_{12}</m>?
+</p>
+</exercise>
+
+<exercise workspace="1in">
+<p>
+  For which positive integers <m>k</m> does <m>k[5] = [0]</m> in
+  <m>\mathbb{Z}_{12}</m>?
+</p>
+</exercise>
+
+<exercise workspace="1in">
+<p>
+  Are there positive integers <m>k</m> such that <m>k[x] = [0]</m> in
+  <m>\mathbb{Z}_{12}</m> for <em>all</em> <m>[x]\in\mathbb{Z}_{12}</m>?
+</p>
+</exercise>
+
+<exercise workspace="1in">
+<p>
+  Are there positive integers <m>k</m> such that <m>kx = 0</m> for all
+  <m>x\in \mathbb{Z}</m>?
+</p>
+</exercise>
+
+<definition>
+  <statement>
+    <p>
+      Let <m>R</m> be a ring.
+      The <term>characteristic</term> of <m>R</m>, denoted <m>char(R)</m> is
+      the smallest positive integer <m>k</m> such that
+      <md>
+        kx = 0_{R} \text{ for all $x\in R$}.
+      </md>
+      If no such integer exists, then <m>R</m> is said to be
+      <term>characteristic zero</term>.
+    </p>
+  </statement>
+</definition>
+</paragraphs>
+</page>
+
+<page>
+
+<exercise workspace="2in">
+<p>
+  A classmate of yours claims that <m>char(\mathcal{P}_{n}) = 2</m> and offers
+  the following argument:
+</p>
+
+<p>
+  Let <m>S\in\mathcal{P}_{n}</m>.
+  Then
+  <md>
+    2S = S + S = S\Delta S = \emptyset = 0_{\mathcal{P}_n}.
+  </md>
+  Thus, <m>char(\mathcal{P}_{n}) = 2</m>.
+</p>
+
+<p>
+  Is the classmate's claim correct?
+  Is their argument correct?
+</p>
+</exercise>
+
+<theorem>
+  <statement>
+    <p>
+      For every integer <m>n\ge 2</m>, <m>char(\mathbb{Z}_{n}) = n</m>.
+    </p>
+  </statement>
+</theorem>
+
+<proof>
+  <p>
+    Let <m>n\ge 2</m>.
+    Note that <m>n</m> is a positive integer, so it is a possible characteristic
+    of a ring.
+    Note that for all <m>[x]\in\mathbb{Z}_{n}</m>,
+    <md>
+      n[x] = [nx] = [n][x] = [0][x] = [0].
+    </md>
+    Let <m>k</m> be any positive integer with <m>k&lt;n</m>.
+    It follows that <m>n\nmid k</m> and so
+    <md>
+      k[1] = [k] \neq [0].
+    </md>
+    Therefore <m>char(\mathbb{Z}_{n}) = n</m>.
+  </p>
+</proof>
+
+
+<paragraphs>
+<title>
+  Fun facts
+</title>
+
+<p>
+  <ul>
+    <li>
+      <p>
+        In general, it is not true that <m>(x+y)^{2} = x^{2}+y^{2}</m>.
+        We'd say a high school freshman is <q>dreaming</q> if they think that's
+        true.
+        It is however true, for <m>x,y \in \mathbb{Z}_{2}</m>, and for any ring
+        of characteristic <m>p</m> where <m>p</m> is a prime,
+        <md>
+          (x+y)^{p} = x^{p} + y^{p}.
+        </md>
+        You can actually use the <q>Freshman's Dream</q> to test if a large number is
+        prime!
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The characteristic of a field is always <m>0</m> or a <m>p</m> for a
+        prime <m>p</m>.
+      </p>
+    </li>
+
+    <li>
+      <p>
+        If <m>R</m> and <m>S</m> are rings and there exists a ring homomorphism
+        <m>\phi: R \to S</m>, then the characteristic of <m>S</m> divides the
+        characteristic of <m>R</m>.
+      </p>
+    </li>
+  </ul>
+</p>
+
+    </paragraphs>
+    </page>
+ 
+ </worksheet>
+
+<!-- </chapter> -->

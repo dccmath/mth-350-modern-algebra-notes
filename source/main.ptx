@@ -16,9 +16,7 @@
       <title>Module notes</title>
 
     	 <xi:include href="./notes/mod-fields.ptx" />
-	    <!--
    		 <xi:include href="./notes/mod-divisibility.ptx" />
-
     	 <xi:include href="./notes/mod-equivalence-zn.ptx" />
    		 <xi:include href="./notes/mod-gcds-euclid.ptx" />
    		 <xi:include href="./notes/mod-units-zero-divisors-integral-domains.ptx" />
@@ -29,8 +27,7 @@
 		 <xi:include href="./notes/mod-prime-factorization.ptx" />
 		 <xi:include href="./notes/mod-polynomial-rings.ptx" />
 		 <xi:include href="./notes/mod-irreducible-polynomials.ptx" />
-		-->
-		
+		 <xi:include href="./notes/mod-characteristic.ptx" />
     </chapter>
 
     <chapter xml:id="portfolios">
