@@ -28,6 +28,7 @@
 		 <xi:include href="./notes/mod-isomorphism.ptx" />
 		 <xi:include href="./notes/mod-prime-factorization.ptx" />
 		 <xi:include href="./notes/mod-polynomial-rings.ptx" />
+		 <xi:include href="./notes/mod-irreducible-polynomials.ptx" />
 		-->
 		
     </chapter>
@@ -36,7 +37,7 @@
       <title>Portfolio problems</title>
       
       <introduction>
-      	Portfolio problems will be posted here. Check back!
+      	<p>Portfolio problems will be posted here. Check back!</p>
       </introduction>
       
 	<!-- 

@@ -21,18 +21,18 @@
             <li>
                 <p>
                     The set of <term>natural numbers</term> is
-                    <md>
+                    <m>
                         \mathbb{N}= \{1,2,3,\dots\}.
-                    </md>
+                    </m>
                 </p>
             </li>
 
             <li>
                 <p>
                     The set of <term>whole numbers</term> is
-                    <md>
+                    <m>
                         \mathbb{W}= \{0,1,2,3,\dots\}.
-                    </md>
+                    </m>
                 </p>
             </li>
 
@@ -49,9 +49,9 @@
             <li>
                 <p>
                     The set of <term>rational numbers</term> is
-                    <md>
+                    <m>
                         \mathbb{Q}= \left\{\frac{a}{b}: a,b \in \mathbb{Z}, b\neq 0\right\}.
-                    </md>
+                    </m>
                 </p>
             </li>
 
@@ -78,9 +78,9 @@
             <li>
                 <p>
                     The set of <term>complex numbers</term> is
-                    <md>
+                    <m>
                         \mathbb{C}= \{a+bi: a,b\in\mathbb{R}\}.
-                    </md>
+                    </m>
                 </p>
             </li>
 
@@ -96,11 +96,10 @@
             </li>
         </ol>
     </p>
+    
+    <p> </p>
     </paragraphs>
-    </page>
 
-
-	<page>
 	<paragraphs>
 		<title>Binary Operations</title>
     <p>
@@ -133,23 +132,27 @@
         </ul>
     </p>
 
-    <!-- <example> -->
-        <p><em>Example: Ordered pairs.</em> Say <m>X = \mathbb{Z}</m>.
+    <example>
+    	<title>Ordered pairs</title>
+        <p>Say <m>X = \mathbb{Z}</m>.
         Let <m>\cdot</m> be the binary operation multiplication.
         Then, with the function notation, we could write <m>\cdot(2,3) = 6</m>,
-        though we usually write <m>2\cdot 3=6</m>.
-        Since, whenever <m>x,y \in \mathbb{Z}</m> we have
+        though we usually write <m>2\cdot 3=6</m>.</p>
+        
+        <p>Since, whenever <m>x,y \in \mathbb{Z}</m> we have
         <m>x\cdot y \in \mathbb{Z}</m>, we can say
         <m>\cdot: X\times X \to X</m>.
-        Thus, <m>\mathbb{Z}</m> is closed under the operation <m>\cdot</m>.
-        However, <m>\mathbb{Z}</m> is not closed under the binary operation
+        Thus, <m>\mathbb{Z}</m> is closed under the operation <m>\cdot</m>.</p>
+        
+        <p>However, <m>\mathbb{Z}</m> is not closed under the binary operation
         <m>\div</m> because, for example,
         <m>\div(2,3)= 2\div 3 = \frac{2}{3}\not\in\mathbb{Z}</m>.</p>
-    <!-- </example> -->
+    </example>
     
     </paragraphs>
-
+	</page>
 	
+	<page>
 	<paragraphs>
     <title>Fields</title>
 
@@ -261,7 +264,7 @@
         school (in addition, you <q>add like terms</q>, in multiplication you need
         to use the distributive property).</p>
 
-    <exercise workspace="4in">
+    <exercise workspace="2in">
     	<statement>
         <p>Which of the properties of a field do polynomials have?</p>
         </statement>
@@ -271,7 +274,7 @@
 	<paragraphs>
     <title>Other Operations</title>
 
-    <exercise workspace="4in">
+    <exercise workspace="2in">
         <statement>Consider <m>(\mathbb{R}, -,\div)</m>.
         That is, the real numbers, but in the field axioms, replace addition
         with subtraction, and multiplication with division.
@@ -338,6 +341,19 @@
  </exercise>
  
   <tabular halign="center">
+  	<col width="28%" />
+	<col />
+	<col />
+	<col />
+	<col />
+	<col />
+	<col />
+	<col />
+	<col />
+	<col />
+	<col />
+	<col />
+	
     <row bottom="medium">
       <cell halign="left" left="medium" right="medium">
       </cell>
@@ -647,7 +663,7 @@
     </row>
     <row bottom="medium">
       <cell halign="left" left="medium" right="medium">
-        Multiplication distributes over addition
+        <p>Multiplication distributes over addition</p>
       </cell>
       <cell right="medium">
       </cell>
@@ -762,8 +778,6 @@
                                 that for any <m>a\in F</m>,
                                 <m>0_{F} \cdot a = 0_{F}</m>, where <m>0_{F}</m>
                                 is the additive identity. (Actually, this works in any ring, but you don't know what a ring is yet!)
-                                
-                                <hint><p>This may at first seem silly (even elementary schoolers sort of know this!), but actually, it's not that obvious. To see why this is not obvious - try thinking a little more abstractly - why should the additive identity of a field, multiplied by anything, give back the additive identity? The <em>only</em> thing that we know about the additive identity is that when you <em>add</em> it to anything doesn't change it. There's no reason it should have any reasonable interaction with multiplication.</p></hint>
                                 </p>
                                 
                                 <p>Prove that for any field <m>F</m> and any
@@ -774,6 +788,8 @@
 
                             <hint><p>Consider <m>(0_{F} + 0_{F}) a</m> in two different ways. See me if/when you get stuck!</p>
                             </hint>
+                            
+                            <hint><p>This may at first seem silly (even elementary schoolers sort of know this!), but actually, it's not that obvious. To see why this is not obvious - try thinking a little more abstractly - why should the additive identity of a field, multiplied by anything, give back the additive identity? The <em>only</em> thing that we know about the additive identity is that when you <em>add</em> it to anything, it doesn't change it. There's no reason it should have any reasonable interaction with multiplication.</p></hint>
 			</task>
 		
 		</exercise>
