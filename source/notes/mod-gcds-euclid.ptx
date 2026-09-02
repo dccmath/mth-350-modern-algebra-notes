@@ -439,7 +439,7 @@
                 then <m>\gcd(a,b)=1</m>.</p></task>
             <task><p>If <m>ax+by \neq 1</m> for some integers <m>x</m> and <m>y</m>,
                 then <m>\gcd(a,b)\neq 1</m>.</p></task>
-            <task><p>If <m>x+by=d</m> for some integers <m>x</m> and <m>y</m>, then
+            <task><p>If <m>ax+by=d</m> for some integers <m>x</m> and <m>y</m>, then
                 <m>\gcd(a,b) = d</m>.</p></task>
 		</exercise>
 		
