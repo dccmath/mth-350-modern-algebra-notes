@@ -186,7 +186,7 @@
                 <p>
                     <alert>Addition and multiplication are commutative</alert>,
                     that is, for all <m>x,y\in F</m>, <md>x+y = y+x \text{ and }
-                    \cdot y = y\cdot x</md>. 
+                    x \cdot y = y\cdot x</md>. 
                 </p>
             </li>
 

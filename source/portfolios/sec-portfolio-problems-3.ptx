@@ -47,7 +47,7 @@
 	
 	<project>
 		<title>Every field is an integral domain</title>
-		<p>Prove that every field is an integral domain by proving this lemma: In a ring <m>R</m>, if <m>a \in R</m> is a unit then <m>a</m> is not a zero divisor. Use ring axioms.</p>
+		<p>Prove that every field is an integral domain by proving this lemma: In a ring with identity <m>R</m>, if <m>a \in R</m> is a unit then <m>a</m> is not a zero divisor. Use ring axioms. (There's a fill-in-the-blank proof in your book: Theorem 4.21, p. 63, in Investigation 4. As always, expand and explain!) Then explain exactly how this lemma shows that every field is an integral domain.</p>
 	</project>
 	</section>
 

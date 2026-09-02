@@ -13,7 +13,7 @@
 
  	 <p>
  	   We'll assume the following about the integers as <em>axioms</em>.
-  	  We don't prove axioms, we use them as building blocks to prove them.
+  	  We don't prove axioms, we use them as building blocks to prove other things.
   	  They give us a floor to stand on.
   	  Otherwise it's turtles all the way down.
   	</p>
@@ -115,8 +115,8 @@
 			<title>The Division Algorithm</title>
 			<statement>
 				<p>Let <m>a</m> and <m>b</m> be integers with <m>a&gt;0</m>.
-				Then there exist unique integers <m>q</m> and <m>r</m> such that</p>
-					<md>b = aq + r \text{ and } 0\leq r &lt;a</md>
+				Then there exist unique integers <m>q</m> and <m>r</m> such that
+					<md>b = aq + r \text{ and } 0\leq r &lt;a</md>.</p>
  				<p>
    					 We call <m>q</m> the <term>quotient</term> and <m>r</m> the <term>remainder</term>.
   				</p>
@@ -165,7 +165,7 @@
           <md>
             S = \{ x\in \mathbb{Z}: x\ge 0 \text{ and }x=b-am \text{ for some }m\in\mathbb{Z}\} .
           </md>
-          Find some elements of <m>S</m> and what appears to be the least
+          Find some elements of <m>S</m>. What appears to be the least
           element of <m>S</m>?
         </p>
 		</statement>
@@ -222,8 +222,8 @@
           Since <m>r\in S</m>, we know there is an integer <m>q</m> such that
           <m>r = b-aq</m>.
           Thus <m>b = aq + r</m>.
-          That's good news!
-          We also need that <m>0\le r &lt; a</m>.
+          That's good news!</p>
+          <p>We also need that <m>0\le r &lt; a</m>.
           Why do we know <m>0\le r</m>?
         </p>
 	   </statement>
@@ -268,8 +268,8 @@
       <p>
         Let <m>n</m> be a natural number, and let <m>a</m> and <m>b</m> be
         integers.
-        Then <m>a</m> <term>is congruent to <m>b</m> modulo <m>n</m></term>
-        denoted <m>a\equiv b \pmod{n}</m> provided that <m>n</m> divides
+        Then <m>a</m> <term>is congruent to <m>b</m> modulo <m>n</m></term>,
+        denoted <m>a\equiv b \pmod{n}</m>, provided that <m>n</m> divides
         <m>a-b</m>.
       </p>
     </statement>
@@ -290,7 +290,7 @@
       <p>
         Characterize all the integers <m>m</m> such that
         <m>m\equiv 1 \pmod{3}</m>.
-        What are all the integers <m>m</m> such that <m>m\equiv 4 \pmod{3}</m>?
+        Then, what are all the integers <m>m</m> such that <m>m\equiv 4 \pmod{3}</m>?
       </p>
     </statement>
     </exercise>
@@ -298,7 +298,7 @@
    <exercise workspace="2in">
   <statement>
       <p>
-        Prove that, for all <m>a,b,c,d\in\mathbb{Z}</m> and
+        Prove: for all <m>a,b,c,d\in\mathbb{Z}</m> and
         <m>n\in \mathbb{N}</m>, if <m>a\equiv b \pmod{n}</m> and
         <m>c\equiv d \pmod{n}</m> then <m>(a+c) \equiv (b+d) \pmod{n}</m>.
       </p>
@@ -308,7 +308,7 @@
     <exercise workspace="2in">
   <statement>
       <p>
-        Prove that for all <m>a,b,c,d\in\mathbb{Z}</m> and
+        Prove: for all <m>a,b,c,d\in\mathbb{Z}</m> and
         <m>n\in\mathbb{N}</m>, if <m>a\equiv b \pmod{n}</m> and
         <m>c\equiv d \pmod{n}</m> then <m>ac \equiv bd \pmod{n}</m>.
       </p>
@@ -330,8 +330,8 @@
         <p>
           Consider the set <m>A = \{0,1,2,3,\dots, 7\}</m> and define addition
           by <m>x\oplus_{8} y = (x+y) \pmod{8}</m> and multiplication by
-          <m>x\otimes_{8} y = xy \pmod{8}</m>.
-          Find the multiplicative and additive identities of
+          <m>x\otimes_{8} y = xy \pmod{8}</m>. (Here, <q><m>\pmod{8}</m></q> at the end means <em>the remainder</em>, aka <em>the residue</em>, of this number.)</p>
+          <p>Find the multiplicative and additive identities of
           <m>(A, \oplus, \otimes)</m> (if they exist), and find the additive and
           multiplicative inverses of each element (if they exist).
           Will this be a field?
@@ -395,7 +395,7 @@
 	<li><p>
         What is the definition of <q><m>a</m> divides <m>b</m></q>?
         Does <m>0 \mid x</m> where <m>x\in \mathbb{Z}</m>?
-        Does <m>x\mid 0</m> where <m>x\in \mathbb{Z}</m>.
+        Does <m>x\mid 0</m> where <m>x\in \mathbb{Z}</m>?
       </p></li>
                 
 <li><p>
@@ -450,7 +450,7 @@
           </theorem>
 		</introduction>
         	<task><p>Do a couple examples of the theorem (in both directions!) below
-                to gain a better understanding of what the theorem says.</p></task>
+                to gain a better understanding of what the theorem says. Show these examples and briefly explain how they illustrate the theorem.</p></task>
             <task><p>Prove (at least) one direction of the theorem.</p></task>
 		</exercise>
 		
@@ -471,7 +471,7 @@
           <m>x\otimes_{4} y = xy \pmod{4}</m>.
 		</p></introduction>
 			<task><p>
-                Show that in <m>(A,\oplus_{4}, \otimes_{4})</m> the equation
+                Show that in <m>(A,\oplus_{4}, \otimes_{4})</m>, the equation
                 <m>2\otimes_{4} x \oplus_{4} 1 = 0</m> has no solutions.
               </p></task>
 			
