@@ -465,7 +465,7 @@
                 <p>Apply the Lemma (here <m>\sim</m> is congruence modulo <m>n</m>
                 ), and then work with what you get to show that there's a linear
                 combination of <m>a</m> and <m>b</m> equal to <m>1</m>.
-                Then conclude that <m>\gcd(a,b)=1</m>.
+                Then conclude that <m>\gcd(a,n)=1</m>.
 			</p></task>
 		</exercise>
 		
@@ -591,10 +591,11 @@
           and the entries already completed.
           (Hints: Some important ring axioms are addition being commutative, and
           the distributive property.
-          Recall Weekly Practice from Module 1 #3.
-          Also, you can use Proof Portfolio Problem 6a, which is true in rings
+          Also recall Weekly Practice from Module 1 #3, which is true in rings as well.)
+          <!-- Also, you can use Proof Portfolio Problem 6a, which is true in rings
           (not just fields).
-          Note 5b is <em>not</em> true for all rings.)</p>
+          Note 5b is <em>not</em> true for all rings.) -->
+          </p>
           <!-- Double-check that I mean PP6a here. It originally said 5a -->
 		</statement>
 		

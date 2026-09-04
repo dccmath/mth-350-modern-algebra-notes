@@ -37,8 +37,9 @@
       	<p>Portfolio problems will be posted here. Check back!</p>
       </introduction>
       
-	<!-- 
+
       <xi:include href="./portfolios/sec-portfolio-problems-1.ptx" />
+   	<!-- 
       <xi:include href="./portfolios/sec-portfolio-problems-2.ptx" />
       <xi:include href="./portfolios/sec-portfolio-problems-3.ptx" />
       <xi:include href="./portfolios/sec-portfolio-problems-4.ptx" />
