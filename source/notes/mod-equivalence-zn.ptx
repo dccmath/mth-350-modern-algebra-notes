@@ -88,7 +88,7 @@
     </row>
     <row bottom="medium">
       <cell halign="left" left="medium" right="medium">
-        1.
+        (a)
       </cell>
       <cell right="medium">
       </cell>
@@ -99,7 +99,7 @@
     </row>
     <row bottom="medium">
       <cell halign="left" left="medium" right="medium">
-        2.
+        (b)
       </cell>
       <cell right="medium">
       </cell>
@@ -110,7 +110,7 @@
     </row>
     <row bottom="medium">
       <cell halign="left" left="medium" right="medium">
-        3.
+        (c)
       </cell>
       <cell right="medium">
       </cell>
@@ -121,7 +121,7 @@
     </row>
     <row bottom="medium">
       <cell halign="left" left="medium" right="medium">
-        4.
+        (d)
       </cell>
       <cell right="medium">
       </cell>
@@ -132,7 +132,7 @@
     </row>
     <row bottom="medium">
       <cell halign="left" left="medium" right="medium">
-        5.
+        (e)
       </cell>
       <cell right="medium">
       </cell>
@@ -185,7 +185,7 @@
       <task workspace="1in">
         <p>
           A student claims <m>\mathbb{Z}</m> is an equivalence class for the
-          equivalence relation given in (e).
+          equivalence relation given in (e)
           on the previous page.
           Are they correct?
           Can you find (another) equivalence class for that relation?
@@ -312,9 +312,8 @@
         </p>
 
         <p>
-          Caption this picture.
-          In particular, can you see see parts a,b, and c of the theorem in the
-          picture?
+          How can you see see parts 1, 2, and 3 of the theorem in the
+          picture? What relation is this picture showing and what are its equivalence classes?
         </p>
 
         <sidebyside widths="40% 60%"><image source="images/Equivalence-Z3.png" />
@@ -2101,7 +2100,7 @@
 		<exercise number="2">
 		<title>When is <m>\mathbb{Z}_n</m> a field?</title>
 		<statement><p>
-			Based on your work for this module, make a conjecture for when <m>\mathbb{Z}_n</m> is a field. State your conjecture as <q><m>\mathbb{Z}_n</m> is a field if and only if <m>n</m>...</q>. Then, build addition and multiplication tables for two more values of <m>n</m> to test out your conjecture.
+			Based on your work for this module, make a conjecture for when <m>\mathbb{Z}_n</m> is a field. State your conjecture as <q><m>\mathbb{Z}_n</m> is a field if and only if <m>n</m>...</q>. Then, build addition and multiplication tables for two more values of <m>n</m> to test out your conjecture. (Note that you are <em>not</em> asked to prove your conjecture here; we will do that later!)
 		</p></statement>
 		</exercise>
 		
@@ -2109,9 +2108,9 @@
 		<title>Multiplicative cancellation</title>
 		<introduction><p>One of the things our high school teachers told us about is <q>multiplicative cancellation</q> (although they probably didn't use those words). As an example, if we have <m>6x = 5x^2</m> we could <q>cancel</q> the <m>x</m>'s so that we have <m>6 = 5x</m>. But in high school we were almost always working in <m>\mathbb{R}</m>. This question asks about multiplicative cancellation in <m>\mathbb{Z}_n</m>.</p></introduction>
 		<task><p>The statement at the start isn't quite precise enough. There's one <m>x</m> value for which multiplicative cancellation doesn't work. What is it, and why doesn't it work?</p></task>
-		<task><p>Consider <m>n = 12</m>. For <m>[a],[b],[c]\in\mathbb{Z}_{12}</m> with <m>[c] \neq [0]</m>, if <m>[a][c] = [b][c]</m> does <m>[a]=[b]</m>? (Hint: Look at your multiplication table for <m>\mathbb{Z}_{12}</m>!)</p></task>
-		<task><p>Consider <m>n = 11</m>.  For <m>[a],[b],[c]\in\mathbb{Z}_{11}</m> with <m>[c] \neq [0]</m>, if <m>[a][c] = [b][c]</m> does <m>[a]=[b]</m>?</p></task>
-		<task><p>You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12?</p></task>
+		<task><p>Consider <m>n = 12</m>. For <m>[a],[b],[c]\in\mathbb{Z}_{12}</m> with <m>[c] \neq [0]</m>, if <m>[a][c] = [b][c]</m> does <m>[a]=[b]</m>? Explain. (Hint: Look at your multiplication table for <m>\mathbb{Z}_{12}</m>!)</p></task>
+		<task><p>Consider <m>n = 11</m>.  For <m>[a],[b],[c]\in\mathbb{Z}_{11}</m> with <m>[c] \neq [0]</m>, if <m>[a][c] = [b][c]</m> does <m>[a]=[b]</m>? Explain.</p></task>
+		<task><p>You should have gotten two different answers for (a) and (b). What's different about 11 vs. 12 that might matter here?</p></task>
 		<task><p>What if I told you <m>\mathbb{Z}_{11}</m> is a field? What axioms might you use to prove part (c) is true?</p></task>
 		</exercise>
 	
