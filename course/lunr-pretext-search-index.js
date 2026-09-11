@@ -2681,6 +2681,114 @@ var ptx_lunr_docs = [
   "number": "3",
   "title": "Practice with division.",
   "body": " Practice with division  Let , , and be integers. What conclusions, if any, can be drawn from the following situations? (You can say no conclusions for at most one, for two others make a clear and strong statement and prove it.)  and .  and .  and .  "
+},
+{
+  "id": "portfolios-4",
+  "level": "1",
+  "url": "portfolios-4.html",
+  "type": "Section",
+  "number": "",
+  "title": "Portfolio Problems 4, 5, and 6",
+  "body": " Portfolio Problems 4, 5, and 6   Read the guidelines in the Syllabus and review the MTH 210 writing guidelines before starting.  The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately. In particular, remember the golden rule:  Every sentence that you submit must be one that you have generated yourself and that you fully understand.  Other reminders:  You can submit 3 drafts per week, including revisions of a previous problem.  You'll put all your final drafts of your problems in a portfolio template . You can start using that now for drafts. Start early and ask for help when you need it!      Proving the division algorithm  (Related to Module 2) Prove the following: Let and be integers with . Then there exist unique integers and such that:   Note: There's a complete proof of this starting on p. 14 in your textbook (this is the very end of Section 1). You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of ? in it. Your proof here should add detailed explanation for every ? , plus anywhere else that you had to stop and think! If you aren't sure why there is a ? , that's an indication that you should think more and\/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.    Well-defined operations   (Related to Module 3) In class we mentioned that adding and multiplying elements of means we are adding\/multiplying infinite sets. This may seem very natural and may not concern you at all, but it will all be total nonsense if addition and multiplication in isn’t well-defined . This problem is to show you what can happen if an operation is not well-defined, and also prove that the addition and multiplication we’ve defined is well-defined.   Let be the operation on defined as Note that parity refers to whether an integer is even or odd. Thus, two integers have the same parity if they are both even or both odd. Likewise they have opposite parity if one is even and one is odd.  Use the above definition to compute , , , and .   What is the relationship between , , and in ? What is the relationship between , , and in ?   Let denote a binary operation on a set . Then is said to be well-defined provided that whenever and in we have . Is well-defined? Explain very clearly and refer to your work in the previous part.   Prove that addition and multiplication in , as defined in class, are well-defined. There’s a proof of addition on page 32 of your book (just after Definition 2.16). Use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!     Greatest common divisors   (Related to Module 4)   Let and be integers, not both 0. Prove that if there exist such that , then .   Prove that for all nonzero integers , , and , if and only if and . (You’ll need to apply Bezout’s identity).    "
+},
+{
+  "id": "portfolios-4-3",
+  "level": "2",
+  "url": "portfolios-4.html#portfolios-4-3",
+  "type": "Portfolio Problem",
+  "number": "4",
+  "title": "Proving the division algorithm.",
+  "body": " Proving the division algorithm  (Related to Module 2) Prove the following: Let and be integers with . Then there exist unique integers and such that:   Note: There's a complete proof of this starting on p. 14 in your textbook (this is the very end of Section 1). You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of ? in it. Your proof here should add detailed explanation for every ? , plus anywhere else that you had to stop and think! If you aren't sure why there is a ? , that's an indication that you should think more and\/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.  "
+},
+{
+  "id": "portfolios-4-4",
+  "level": "2",
+  "url": "portfolios-4.html#portfolios-4-4",
+  "type": "Portfolio Problem",
+  "number": "5",
+  "title": "Well-defined operations.",
+  "body": " Well-defined operations   (Related to Module 3) In class we mentioned that adding and multiplying elements of means we are adding\/multiplying infinite sets. This may seem very natural and may not concern you at all, but it will all be total nonsense if addition and multiplication in isn’t well-defined . This problem is to show you what can happen if an operation is not well-defined, and also prove that the addition and multiplication we’ve defined is well-defined.   Let be the operation on defined as Note that parity refers to whether an integer is even or odd. Thus, two integers have the same parity if they are both even or both odd. Likewise they have opposite parity if one is even and one is odd.  Use the above definition to compute , , , and .   What is the relationship between , , and in ? What is the relationship between , , and in ?   Let denote a binary operation on a set . Then is said to be well-defined provided that whenever and in we have . Is well-defined? Explain very clearly and refer to your work in the previous part.   Prove that addition and multiplication in , as defined in class, are well-defined. There’s a proof of addition on page 32 of your book (just after Definition 2.16). Use that as an outline, but fill in more detail where there are question marks (and anywhere else you had to stop and think)!   "
+},
+{
+  "id": "portfolios-4-5",
+  "level": "2",
+  "url": "portfolios-4.html#portfolios-4-5",
+  "type": "Portfolio Problem",
+  "number": "6",
+  "title": "Greatest common divisors.",
+  "body": " Greatest common divisors   (Related to Module 4)   Let and be integers, not both 0. Prove that if there exist such that , then .   Prove that for all nonzero integers , , and , if and only if and . (You’ll need to apply Bezout’s identity).   "
+},
+{
+  "id": "portfolios-5",
+  "level": "1",
+  "url": "portfolios-5.html",
+  "type": "Section",
+  "number": "",
+  "title": "Portfolio Problems 7, 8, and 9",
+  "body": " Portfolio Problems 7, 8, and 9   Read the guidelines in the Syllabus and review the MTH 210 writing guidelines before starting.  The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately. In particular, remember the golden rule:  Every sentence that you submit must be one that you have generated yourself and that you fully understand.  Other reminders:  You can submit 3 drafts per week, including revisions of a previous problem.  You'll put all your final drafts of your problems in a portfolio template . You can start using that now for drafts. Start early and ask for help when you need it!      Units, zero divisors, and gcds  Let with . Let and let . Prove:  is a unit if and only if .  with is a zero divisor if and only if .    The power set ring  Let . This problem is about the power set of with addition and multiplication as defined in Definition 3.6 of your text or the first page of the Module 7 worksheet.  Prove that is the additive identity of .  Prove that every element of has an additive inverse.  Prove that is the multiplicative identity in .  Make a conjecture of the form is a unit if and only if is... and describe how you came up with this conjecture.  Prove the statement you made in the previous problem.    Every field is an integral domain  Prove that every field is an integral domain by proving this lemma: In a ring with identity , if is a unit then is not a zero divisor. Use ring axioms. (There's a fill-in-the-blank proof in your book: Theorem 4.21, p. 63, in Investigation 4. As always, expand and explain!) Then explain exactly how this lemma shows that every field is an integral domain.   "
+},
+{
+  "id": "portfolios-5-3",
+  "level": "2",
+  "url": "portfolios-5.html#portfolios-5-3",
+  "type": "Portfolio Problem",
+  "number": "7",
+  "title": "Units, zero divisors, and gcds.",
+  "body": " Units, zero divisors, and gcds  Let with . Let and let . Prove:  is a unit if and only if .  with is a zero divisor if and only if .  "
+},
+{
+  "id": "portfolios-5-4",
+  "level": "2",
+  "url": "portfolios-5.html#portfolios-5-4",
+  "type": "Portfolio Problem",
+  "number": "8",
+  "title": "The power set ring.",
+  "body": " The power set ring  Let . This problem is about the power set of with addition and multiplication as defined in Definition 3.6 of your text or the first page of the Module 7 worksheet.  Prove that is the additive identity of .  Prove that every element of has an additive inverse.  Prove that is the multiplicative identity in .  Make a conjecture of the form is a unit if and only if is... and describe how you came up with this conjecture.  Prove the statement you made in the previous problem.  "
+},
+{
+  "id": "portfolios-5-5",
+  "level": "2",
+  "url": "portfolios-5.html#portfolios-5-5",
+  "type": "Portfolio Problem",
+  "number": "9",
+  "title": "Every field is an integral domain.",
+  "body": " Every field is an integral domain  Prove that every field is an integral domain by proving this lemma: In a ring with identity , if is a unit then is not a zero divisor. Use ring axioms. (There's a fill-in-the-blank proof in your book: Theorem 4.21, p. 63, in Investigation 4. As always, expand and explain!) Then explain exactly how this lemma shows that every field is an integral domain.  "
+},
+{
+  "id": "portfolios-6",
+  "level": "1",
+  "url": "portfolios-6.html",
+  "type": "Section",
+  "number": "",
+  "title": "Portfolio Problems 10, 11, and 12",
+  "body": " Portfolio Problems 10, 11, and 12   This is the last problem set! Remember that you need to complete 10 out of 12 problems for your portfolio.  Read the guidelines in the Syllabus and review the MTH 210 writing guidelines before starting.  The only resources allowed are your notes, your textbook, your instructor, and your classmates. You are allowed to collaborate on these problem sets, please see the academic honesty document for how to collaborate appropriately. In particular, remember the golden rule:  Every sentence that you submit must be one that you have generated yourself and that you fully understand.  Final reminders:  You can submit 3 drafts per week, including revisions of a previous problem. Don't stop now!  Make sure to assemble all of your portfolio solutions in the portfolio template . Start early and ask for help when you need it!      Centralizers   We won’t explicitly cover this definition in class, this problem can be done any time! Please ask me if you need help (instead of asking AI!) -- I will happily give hints.  Let be a ring and let . The centralizer of is defined to be the set of all such that . We write for the centralizer of .   Find two elements of the centralizer of in .  Prove that is a subring of . (Use the subring test from Module 8!)  Is the centralizer of necessarily commutative?    Invariants  (Can be done after Module 9.) Recall that an invariant of a ring isomorphism is a property that is shared by rings that are isomorphic. That is, if is isomorphic to and satisfies some property (like having identity), then must have the same property.  Prove the following: Let and be rings, and let be an isomorphism. If has identity, say , then also has identity. Specifically, is an identity for . (Note, this proof is on page 109 in Activity 7.14, as usual you must fill in the missing details and expand on the ? s.)  Use part (a) to show that is not isomorphic to .  Prove that if and are isomorphic rings and is commutative then is commutative.  Use part (c) to show that and are not isomorphic.    Characteristic  Let be a ring. For any integer and any we define The characteristic of , denoted char( ), is the smallest positive integer such that for all . If no such integer exists, then is said to have characteristic zero . Find the characteristic of . Prove your answer. (You might take inspiration from the proof of Theorem 5.12 on p. 79 of your textbook.)  "
+},
+{
+  "id": "portfolios-6-3",
+  "level": "2",
+  "url": "portfolios-6.html#portfolios-6-3",
+  "type": "Portfolio Problem",
+  "number": "10",
+  "title": "Centralizers.",
+  "body": " Centralizers   We won’t explicitly cover this definition in class, this problem can be done any time! Please ask me if you need help (instead of asking AI!) -- I will happily give hints.  Let be a ring and let . The centralizer of is defined to be the set of all such that . We write for the centralizer of .   Find two elements of the centralizer of in .  Prove that is a subring of . (Use the subring test from Module 8!)  Is the centralizer of necessarily commutative?  "
+},
+{
+  "id": "portfolios-6-4",
+  "level": "2",
+  "url": "portfolios-6.html#portfolios-6-4",
+  "type": "Portfolio Problem",
+  "number": "11",
+  "title": "Invariants.",
+  "body": " Invariants  (Can be done after Module 9.) Recall that an invariant of a ring isomorphism is a property that is shared by rings that are isomorphic. That is, if is isomorphic to and satisfies some property (like having identity), then must have the same property.  Prove the following: Let and be rings, and let be an isomorphism. If has identity, say , then also has identity. Specifically, is an identity for . (Note, this proof is on page 109 in Activity 7.14, as usual you must fill in the missing details and expand on the ? s.)  Use part (a) to show that is not isomorphic to .  Prove that if and are isomorphic rings and is commutative then is commutative.  Use part (c) to show that and are not isomorphic.  "
+},
+{
+  "id": "portfolios-6-5",
+  "level": "2",
+  "url": "portfolios-6.html#portfolios-6-5",
+  "type": "Portfolio Problem",
+  "number": "12",
+  "title": "Characteristic.",
+  "body": " Characteristic  Let be a ring. For any integer and any we define The characteristic of , denoted char( ), is the smallest positive integer such that for all . If no such integer exists, then is said to have characteristic zero . Find the characteristic of . Prove your answer. (You might take inspiration from the proof of Theorem 5.12 on p. 79 of your textbook.) "
 }
 ]
 
