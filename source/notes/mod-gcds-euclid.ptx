@@ -33,7 +33,7 @@
 
   		<p>
    		 Find <m>\gcd(27182, 3141)</m> using the Euclidean algorithm.
-    		If you'd like another example see page 26 of your text.
+    		If you'd like another example see pages 11-12 of your text (near the end of the section <q>Factoring, Prime Numbers, and Greatest Common Divisors</q>)
   		</p>
     </paragraphs>
     </page>
@@ -162,7 +162,7 @@
 	<page>
 	
    
-   <exercise workspace="3in">
+   <exercise workspace="3.5in">
               <p>
                 Using the Euclidean algorithm you can always find
                 <m>\gcd(a,b)</m>.
@@ -177,7 +177,7 @@
               </p>
             </exercise>
 
-            <exercise workspace="3in">
+            <exercise workspace="2in">
               <p>
                 <em>If time:</em> Are these linear combinations unique?
                 E.g., can you find more than one linear combination of <m>3</m>
@@ -185,7 +185,7 @@
               </p>
             </exercise>
 
-            <exercise workspace="3in">
+            <exercise workspace="3.5in">
               <p>
                 <em>If time:</em> Use your work finding <m>\gcd(27182,3141)</m>
                 to write <m>1</m> as a linear combination of <m>27182</m> and
@@ -279,11 +279,11 @@
           Does it follow that <m>\gcd(a,b)=1</m>?
           If so, explain.
           If not, what can you say about <m>\gcd(a,b)</m>?
-          Note: For two integers <m>a</m> and <m>b</m>, not both <m>0</m>, we
-          say <m>a</m> and <m>b</m> are <em>relatively prime</em> provided that
-          <m>\gcd(a,b) = 1</m>.
         </p>
-      </exercise>  
+      </exercise>
+      <p>Note: For <m>a, b \in \mathbb{Z}</m>, not both <m>0</m>, we
+          say <m>a</m> and <m>b</m> are <em>relatively prime</em> provided that
+          <m>\gcd(a,b) = 1</m>.</p>
     </paragraphs>
 	</page>
 	
@@ -302,8 +302,7 @@
          <task workspace="1.5in">
               <p>
                 In <m>\mathbb{Z}_{10}</m>, find <m>([7]_{10})^{-1}</m>.
-                That is, find the multiplicative inverse of <m>[7]</m> in
-                <m>\mathbb{Z}_{10}</m>.
+                That is, find the multiplicative inverse of <m>[7]_{10}</m>.
               </p>
             </task>
 
