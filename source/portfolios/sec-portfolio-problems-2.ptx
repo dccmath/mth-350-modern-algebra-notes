@@ -32,7 +32,12 @@
 			Let <m>a</m> and <m>b</m> be integers with <m>a > 0</m>. Then there exist unique integers <m>q</m>
 and <m>r</m> such that:</p>
 			<md>b = aq + r \text{ and } 0 \leq r \lt a.</md>
-			<p><alert>Note:</alert> There's a <q>complete</q> proof of this starting on p. 14 in your textbook (this is the very end of Section 1). You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of <q>?</q> in it. Your proof here should add detailed explanation for every <q>?</q>, plus anywhere else that you had to stop and think! If you aren't sure why there is a <q>?</q>, that's an indication that you should think more and/or come to an office hour with questions. Also take a look at what we did in Module 2 in class.</p>
+			<p><alert>Notes:</alert></p>
+			<ul>
+				<li><p>There's a <q>complete</q> proof of this starting on p. 14 in your textbook (this is the very end of Section 1). You can (and should!) base your Portfolio Proof off of the one in your textbook. However, the textbook proof has a lot of <q>?</q> in it. Your proof here should add detailed explanation for every <q>?</q>, plus anywhere else that you had to stop and think! If you aren't sure why there is a <q>?</q>, that's an indication that you should think more and/or come to an office hour with questions.</p></li>
+				<li><p>Also take a look at what we did in Module 2 in class.</p></li>
+				<li><p>Your proof should prove both the <q>exists</q> and <q>unique</q> parts. We didn't cover uniqueness in class, but it is in the book's proof.</p></li>
+			</ul>
 		</project>
 
 		<project>
