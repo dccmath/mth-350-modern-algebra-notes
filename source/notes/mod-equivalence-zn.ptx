@@ -2089,7 +2089,7 @@
 
 		<exercise number="1">
 		<title>Fractions and relations</title>
-		<introduction><p>We can define a relation on <m>\mathbb{Q}=\left\{\frac{a}{b}: a,b\in \mathbb{R}, b\neq 0\right\}</m> such that <m>\frac{a}{b} \sim \frac{c}{d}</m> if and only if <m>ad=bc</m>. 
+		<introduction><p>We can define a relation on <m>\mathbb{Q}=\left\{\frac{a}{b}: a,b\in \mathbb{Z}, b\neq 0\right\}</m> such that <m>\frac{a}{b} \sim \frac{c}{d}</m> if and only if <m>ad=bc</m>. 
 
 		</p></introduction>
 		<task><p>Give 3 examples of pairs that are related.</p></task>
