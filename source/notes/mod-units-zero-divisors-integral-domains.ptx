@@ -208,7 +208,7 @@
           In last week's module you found <m>\gcd(27182,3141)=1</m> and
           <m>27182(-445)+3141(3851)=1</m>.
           Reduce both sides modulo <m>27182</m> to find the multiplicative
-          inverse of <m>3141</m> in <m>Z_{27182}</m>.
+          inverse of <m>3141</m> in <m>\mathbb{Z}_{27182}</m>.
         </p>
 	 </exercise>
 
@@ -314,7 +314,7 @@
 		<exercise workspace="1.5in">
 			<p>
           Be careful - not everything has to be a unit or a zero divisor (or
-          <m>0_{R}</m> ).
+          <m>0_{R}</m>).
           What are the units in <m>\mathbb{Z}</m>?
           What are the zero divisors in <m>\mathbb{Z}</m>?
           Are there elements that are neither units nor zero divisors?
@@ -367,7 +367,7 @@
 <ol>
 	<li><p>What's a ring? A commutative ring? A ring with identity?  A multiplicative inverse? A zero divisor? A unit? An integral domain? A field? Make sure you can give examples and nonexamples of each and varying combinations.</p></li>
 
-	<li><p>How can you tell if $[a]$ in $\mathbb{Z}_n$ is a zero divisor or a unit? How can you use an algorithm to find the multiplicative inverse of $[a]$ in $\mathbb{Z}_n$?  Is everything in a ring a zero divisor, a unit, or zero?</p></li>
+	<li><p>How can you tell if <m>[a]</m> in <m>\mathbb{Z}_n</m> is a zero divisor or a unit? How can you use an algorithm to find the multiplicative inverse of <m>[a]</m> in <m>\mathbb{Z}_n</m>?  Is everything in a ring a zero divisor, a unit, or zero?</p></li>
 
 	<li><p>What's a polynomial ring? Are polynomial rings always commutative? Do they always have identity? Are they always integral domains?
 </p></li>
@@ -395,29 +395,27 @@
           Not all of these are true!</p>
           </introduction>
           
-          <task>
+          <sidebyside widths="48% 48%">
+          	<p>
               <p>
-                If <m>[a]</m> is a zero divisor, then <m>[a]</m> is not a unit.
+                (a) If <m>[a]</m> is a zero divisor, then <m>[a]</m> is not a unit.
               </p>
-            </task>
 
-            <task>
               <p>
-                If <m>[a]</m> is not a unit, then <m>[a]</m> is a zero divisor.
+                (b) If <m>[a]</m> is not a unit, then <m>[a]</m> is a zero divisor.
               </p>
-            </task>
+            </p>
 
-            <task>
+			<p>
               <p>
-                If <m>[a]</m> is a unit then <m>[a]</m> is not a zero divisor.
+                (c) If <m>[a]</m> is a unit then <m>[a]</m> is not a zero divisor.
               </p>
-            </task>
 
-            <task>
               <p>
-                If <m>[a]</m> is not a zero divisor, then <m>[a]</m> is a unit.
+                (d) If <m>[a]</m> is not a zero divisor, then <m>[a]</m> is a unit.
               </p>
-            </task>
+             </p>
+            </sidebyside>
  		</exercise>
 	
 		<exercise number="2">
@@ -446,9 +444,8 @@
                 congruence classes.</p>
                 
                 <p>
-                First, recall this Lemma from Module 3:
-                <xref ref="lem-equivclasses" />
-                </p>
+                First, review <xref ref="lem-equivclasses" /> from Module 3.
+
                 <!--
                 <lemma>
                   <statement>
@@ -461,8 +458,7 @@
                   </statement>
                 </lemma>
                 -->
-                
-                <p>Apply the Lemma (here <m>\sim</m> is congruence modulo <m>n</m>
+                Apply the Lemma (here <m>\sim</m> is congruence modulo <m>n</m>
                 ), and then work with what you get to show that there's a linear
                 combination of <m>a</m> and <m>b</m> equal to <m>1</m>.
                 Then conclude that <m>\gcd(a,n)=1</m>.
