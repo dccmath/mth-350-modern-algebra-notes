@@ -45,7 +45,7 @@
 	<p>
     Here's a list of theorems.
     If we can prove these using ring axioms, we know they are true about all
-    rings including - square matrices <m>\mathcal{M}_{n\times n}</m>, integers
+    rings, including: square matrices <m>\mathcal{M}_{n\times n}</m>, integers
     <m>\mathbb{Z}</m>, even integers <m>\mathbb{E}</m>, the rational numbers
     <m>\mathbb{Q}</m>, polynomials <m>R[x]</m> for a commutative ring <m>R</m>,
     the real numbers <m>\mathbb{R}</m>, the complex numbers <m>\mathbb{C}</m>,
@@ -220,7 +220,7 @@
 </exercise>
 
 <exercise workspace="2in">
-<p> In Problem 5 of the proof portfolio, you'll prove
+<p> In the proof portfolio, you'll prove
   additive and multiplicative cancellation holds in fields.
   For additive cancellation, you only need the ring axioms.
   Let's prove multiplicative cancellation holds in more than just fields.
@@ -284,9 +284,9 @@
           B := \{a,aa_{1},aa_{2},\dots, aa_{n}\}.
         </md>
         Explain why all elements of <m>B</m> are unique.
-        (Go by contradiction - suppose for some <m>i,j</m>,
+        (Go by contradiction: suppose for some <m>i,j</m>,
         <m>aa_{i} = aa_{j}</m>.
-        Then what?
+        Then what?)
       </p>
      </exercise>
 
