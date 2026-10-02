@@ -49,6 +49,7 @@
 		<title>Divides</title>
 
   <definition>
+  	<title>Divides</title>
     <statement>
       <p>
         An integer <m>a</m> <term>divides</term> an integer <m>b</m>, denoted
@@ -264,6 +265,7 @@
 		  <title>Congruence</title>
 
   <definition>
+  	<title>Congruence</title>
     <statement>
       <p>
         Let <m>n</m> be a natural number, and let <m>a</m> and <m>b</m> be

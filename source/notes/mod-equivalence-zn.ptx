@@ -12,6 +12,7 @@
 		<title>Equivalence Relations</title>
 		
 		<definition>
+		<title>Equivalence relation</title>
 		<statement><p>Let <m>S</m> be a set and let <m>\sim</m> be a binary relation on <m>S</m>.  Then <m>\sim</m> is called an <term>equivalence relation</term> on <m>S</m> provided that <m>\sim</m> satisfies all of the following properties:
 		<ol>
 			<li><p><em>Reflexive:</em> For all <m>a \in S</m>, <m>a \sim a</m>.</p></li>
@@ -155,6 +156,7 @@
 		<title>Equivalence Classes</title>
 		
 	<definition>
+	<title>Equivalence class</title>
     <statement>
       <p>
         Let <m>\sim</m> be an equivalence relation on a nonempty set <m>S</m>,
@@ -336,6 +338,7 @@
     modulo <m>n</m>.
     This allows us to define the number system <m>\mathbb{Z}_{n}</m>:</p>
     <definition>
+    <title><m>\mathbb{Z}_{n}</m></title>
     <statement><p>For every integer <m>n\ge 2</m>, the
     	<term>integers modulo <m>n</m></term> denoted
     <m>\mathbb{Z}_{n}</m>, is the set of the distinct congruence classes of

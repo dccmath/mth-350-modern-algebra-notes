@@ -12,6 +12,7 @@
 		<title>Power Sets</title>
 		
 		<definition>
+			<title>Power set</title>
 			<statement><p>
 			 Let <m>S</m> be a set.
   The <term>power set</term> of <m>S</m> denoted <m>\mathcal{P}(S)</m> is the
@@ -21,6 +22,7 @@
 		</definition>
 
 		<definition>
+			<title>Symmetric difference</title>
 			<statement><p>
 				For any sets <m>A</m> and <m>B</m>, the <term>symmetric difference</term> of
   <m>A</m> and <m>B</m>, denoted <m>A \triangle B</m> is the set of all elements
@@ -34,6 +36,7 @@
 		</definition>
 		
 		<definition>
+			<title>The number system <m>\mathcal{P}_{n}</m></title>
 			<statement><p>
 				  For any natural number <m>n</m>, the number system <m>\mathcal{P}_{n}</m> is
   <m>(\mathcal{P}(\{1,2,\dots, n\}), \triangle, \cap)</m>.
@@ -81,6 +84,7 @@
 		<title>Polynomials</title>
 		
 		<definition>
+			<title>Polynomial in <m>x</m> over <m>R</m></title>
 			<statement>
 			<p>
   Let <m>R</m> be a commutative ring.
@@ -100,6 +104,7 @@
 		</definition>
 		
 		<definition>
+			<title>Adding polynomials</title>
 			<statement>
 			<p>
   <term>Adding Polynomials</term>: The <term>sum of polynomials</term> <m>p(x)</m> and <m>q(x)</m> is defined to be
@@ -111,6 +116,7 @@
 		</definition>
 		
 		<definition>
+			<title>Multiplying polynomials</title>
 			<statement>
 			<p>
   <term>Multiplying Polynomials</term>: The

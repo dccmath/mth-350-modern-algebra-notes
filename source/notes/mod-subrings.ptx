@@ -140,6 +140,7 @@
 		<title>Subrings</title>
     
     	<definition>
+		<title>Subring</title>
 			<p>
     Let <m>R</m> be a ring, and let <m>S</m> be a subset of <m>R</m>.
     Then <m>S</m> is said to be a <term>subring</term> of <m>R</m> provided
@@ -265,11 +266,14 @@
 		<p>An ideal is a special kind of subring.</p>
 		
 		<definition>
+			<title>Ideal</title>
+			<statement>
 			<p>
     An <term>ideal</term> <m>I</m> in a ring <m>R</m> is a subring of <m>R</m>
     such that <m>rx\in I</m> and <m>xr\in I</m> for all <m>r\in R</m> and
     <m>x\in I</m>.
 			</p>
+			</statement>
 		</definition>
 		
 		<p>
@@ -413,6 +417,8 @@ and
 		<title>Direct Sums</title>
 		
 		<definition>
+			<title>Cartesian product</title>
+			<statement>
 			 <p>Let <m>R</m>
  and
  <m>
@@ -459,6 +465,7 @@ and
      (r_{1}, s_{1}) + (r_{2},s_{2}) = (r_{1} + r_{2}, s_{1} + s_{2}) \text{ and }(r_{1},s_{1})(r_{2},s_{2}) = (r_{1}r_{2},s_{1}s_{2}).
  </md>
  			</p>
+			</statement>
 		</definition>
 		
 		<exercise>

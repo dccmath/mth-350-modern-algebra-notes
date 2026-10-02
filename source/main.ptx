@@ -44,6 +44,22 @@
       <xi:include href="./portfolios/sec-portfolio-problems-4.ptx" />
 
     </chapter>
+    
+    <chapter xml:id="lists">
+    	<title>Reference</title>
+	
+		<appendix xml:id="appendix-list-results">
+  			<title>List of Results</title>
+
+ 			 <list-of elements="theorem lemma" divisions="worksheet"/>
+		</appendix>
+
+		<appendix xml:id="appendix-list-defs">
+ 			 <title>List of Definitions</title>
+
+ 			 <list-of elements="definition" divisions="worksheet"/>
+		</appendix>
+    </chapter>
 
   
 

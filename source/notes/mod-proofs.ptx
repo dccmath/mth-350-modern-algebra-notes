@@ -16,6 +16,7 @@
     </p>
     
     		<definition>
+			<title>Ring</title>
 			<p>A <term>ring</term> is a set <m>R</m> together with two binary operations, called addition (<m>+</m>) and multiplication (<m>\cdot</m>), such that all of the following axioms hold:</p>
 			
 			<ul>

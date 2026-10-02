@@ -740,6 +740,7 @@
 </p>
 
 <definition>
+	<title>Isomorphism</title>
     <statement>
         <p>
             Let <m>R</m> and <m>S</m> be rings.
@@ -828,6 +829,7 @@
 	<title>Invariants</title>
 	
 	 <definition>
+	 <title>Invariant</title>
      	<statement>
 		<p>An <term>invariant of ring isomorphism</term> is a property <m>P</m> such that
      if <m>R</m> satisfies <m>P</m> and <m>R\cong S</m> then <m>S</m> satisfies

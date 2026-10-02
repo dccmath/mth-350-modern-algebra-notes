@@ -17,6 +17,7 @@
 </p>
 
 <definition>
+  <title>Addition and multiplication in rings</title>
   <statement>
     <p>
       Let <m>R</m> be a ring and let <m>x\in R</m>.
@@ -172,6 +173,7 @@ Let's make some conjectures! For all <m>x\in R</m> and <m>n\in \mathbb{N}</m>,
 </exercise>
 
 <definition>
+	<title>Operations in a ring</title>
   <statement>
     <p>
       For all <m>x\in R</m> and <m>n\in \mathbb{N}</m>,
@@ -257,6 +259,7 @@ Let's make some conjectures! For all <m>x\in R</m> and <m>n\in \mathbb{N}</m>,
 </exercise>
 
 <definition>
+  <title>Characteristic</title>
   <statement>
     <p>
       Let <m>R</m> be a ring.

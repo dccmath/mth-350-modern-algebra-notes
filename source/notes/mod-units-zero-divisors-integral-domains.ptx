@@ -12,6 +12,7 @@
 		<title>Definitions</title>
 		
 		<definition>
+			<title>Ring</title>
 			<p>A <term>ring</term> is a set <m>R</m> together with two binary operations, called addition (<m>+</m>) and multiplication (<m>\cdot</m>), such that all of the following axioms hold:</p>
 			
 			<ul>
@@ -325,6 +326,7 @@
 			<title>Polynomials</title>
 	
 			<definition>
+				<title>Polynomial over a ring</title>
 				<p>Let <m>R</m> be a commutative ring.
     A <term>polynomial in <m>x</m> over <m>R</m> </term> is an expression of the form
     <md>

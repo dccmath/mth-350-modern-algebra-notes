@@ -165,6 +165,7 @@
 	<p>
     Here's a definition:</p>
     <definition>
+    	<title>Greatest common divisor (for polynomials)</title>
     	<statement>Let <m>F</m> be a field and let <m>f(x), g(x)\in F[x]</m>
     that are not both zero.
     The <term>greatest common divisor</term> of <m>f(x)</m> and <m>g(x)</m> is

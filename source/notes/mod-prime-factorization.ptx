@@ -9,6 +9,7 @@
 
 
 	<definition>
+		<title>Prime, composite</title>
 		<statement>
 			<p>A <term>prime number</term> is an integer <m>p > 1</m> whose only positive divisors are 1 and <m>p</m>. A positive integer that is greater than 1 and not prime is said to be <term>composite</term>.</p>
 		</statement>
@@ -328,6 +329,7 @@
     But prime and irreducible are not the same in general. To illustrate this point, let's think about irreducible polynomials.</p>
 
 <definition>
+	<title>Irreducible polynomial</title>
     <statement>
         <p>
            
