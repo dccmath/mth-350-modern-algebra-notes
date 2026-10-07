@@ -15,8 +15,6 @@
        Here's a reminder of the ring axioms which we will use in this module!
     </p>
     
-    		<definition>
-			<title>Ring</title>
 			<p>A <term>ring</term> is a set <m>R</m> together with two binary operations, called addition (<m>+</m>) and multiplication (<m>\cdot</m>), such that all of the following axioms hold:</p>
 			
 			<ul>
@@ -34,8 +32,6 @@
 				
 				<li><p><em>Multiplication distributes over addition,</em> meaning that for all <m>x, y, z \in R</m>, <m>x \cdot (y+z) = x \cdot y + x \cdot z</m> and <m>(x+y) \cdot z = x \cdot z + y \cdot z</m>.</p></li>
 			</ul>
-			
-		</definition>
 
     </paragraphs>
     </page>
@@ -210,13 +206,12 @@
       the additive identity of <m>R</m>.
       Then <m>0x=0=x0</m> for all <m>x\in R</m>.
     </p>
+   </statement>
+ </theorem>
 <p>
   Prove it!
   Hint: Consider <m>(0+0)x</m> in two different ways.
 </p>
-
-  </statement>
-</theorem>
 
 </exercise>
 
@@ -376,7 +371,7 @@ Make sure you can answer the following questions:
 
   <li>
     <p>
-      How do we prove <m>0\times x = 0</m> for any ring <m>R</m> and
+      How do we prove <m>0x = 0</m> for any ring <m>R</m> and
       <m>x\in R</m>?
     </p>
   </li>
@@ -398,7 +393,7 @@ Make sure you can answer the following questions:
 		<exercise number="1">
 		<title>Matrix problems</title>
 		<statement><p>
-  Prove <m>\mathcal{M}_{2\times 2}(\mathbb{R})</m> (two by two matrices with
+  Show that <m>\mathcal{M}_{2\times 2}(\mathbb{R})</m> (two by two matrices with
   entries from the real numbers) has a zero divisor.
   What reason besides having zero divisors is
   <m>\mathcal{M}_{2\times 2}(\mathbb{R})</m> not an integral domain?
