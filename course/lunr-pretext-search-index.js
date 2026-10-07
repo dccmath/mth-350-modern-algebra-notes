@@ -961,23 +961,23 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Module 6: What Properties Hold When?",
-  "body": " Module 6: What Properties Hold When?  Proofs    Rings  Here's a reminder of the ring axioms which we will use in this module!   Ring  A ring is a set together with two binary operations, called addition ( ) and multiplication ( ), such that all of the following axioms hold:   The set is closed under addition and multiplication, meaning that for all , and .  Addition is associative, meaning that for all , .  Addition is commutative, meaning that for all , .  The set contains an additive identity, also called a zero element , meaning that there exists some element such that for all .  Every element of has an additive inverse within , meaning that for every , there exists such that .  Multiplication is associative, meaning that for all , .  Multiplication distributes over addition, meaning that for all , and .       Here's a list of theorems. If we can prove these using ring axioms, we know they are true about all rings, including: square matrices , integers , even integers , the rational numbers , polynomials for a commutative ring , the real numbers , the complex numbers , and anything else we can show is a ring.    (Additive Cancellation) Let be a ring. For all , if then .      (Multiplication by ) Let be a ring and let be the additive identity of . Then for all .      (Uniqueness) Let be a ring.   (Additive identities) Suppose that both and are zero elements for . Then .    (Additive inverses) Let . Suppose that both and are additive inverses for . Then .    (Multiplicative identities) Suppose that both and are both identities for . Then     (Multiplicative inverses) Let . Suppose that both and are multiplicative inverses for . Then .         (Fields are integral domains.) Let be a ring with identity and let be a unit. Then is not a zero divisor.      (Finite integral domains are fields.) Let be a finite integral domain. Let with . Then is a unit.    In the following theorem note that the symbol means the additive inverse of . We define subtraction in terms of addition, e.g., .    (The negatives.) Let be a ring, and let . Then                  (Generalized Distributive Law) Let be a ring, let , and let . Then                   Let's prove some theorems!   In Weekly Practice 1 you proved in any field and any , . You actually only needed the ring axioms. Let's recall that proof.      (Multiplication by ) Let be a ring and let be the additive identity of . Then for all .  Prove it! Hint: Consider in two different ways.      In the proof portfolio, you'll prove additive and multiplicative cancellation holds in fields. For additive cancellation, you only need the ring axioms. Let's prove multiplicative cancellation holds in more than just fields.    (Multiplicative Cancellation) Let be a ring and let be a nonzero element of that is not a zero divisor. For , if , then . Similarly if then .    Prove it! Hint: Starting with , add to both sides.      We established in the preview activity for this module that every field is an integral domain. It turns out every finite integral domain is a field.    (Finite integral domains are fields.) Let be a finite integral domain. Let with . Then is a unit.    Prove it! Okay, this one has a trick, so let's walk through some parts.   Since is an integral domain, has identity. Consider the set : Let with . Multiply each element of by to get Explain why all elements of are unique. (Go by contradiction: suppose for some , . Then what?)    Why does this imply that has an inverse?    Give an example of an infinite integral domain that is not a field.    For which is an integral domain? For which is a field?   You may read as negative . When talking about rings, the symbol means the additive inverse of . But the theorem labeled the negatives tells us that works like the negative we are familiar with.    Let be a ring and let . Then .     Prove it! You want to show the additive inverse of is . So we want to show . What ring axioms can you use to show this is true?      Review questions Make sure you can answer the following questions:   When does additive cancellation hold? When does multiplicative cancellation hold?    How do we usually prove uniqueness?    What is the relationship between fields and integral domains?    What do we say instead of negative when reading ? How do we prove things about negatives ?    How do we prove for any ring and ?    The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 6   Matrix problems  Prove (two by two matrices with entries from the real numbers) has a zero divisor. What reason besides having zero divisors is not an integral domain?    A negative result   We showed (or assume we showed) that for a ring and , we have . Consider the following proof that .   Proof: From we obtain , since in any ring the inverse of the inverse of an element is the original element.  Fill in the details. Then use the result to prove that if in is a unit, then is also a unit.     Yay, induction!  Prove the generalized distributive law by induction. Let be a ring, let , and let . Then .     "
+  "body": " Module 6: What Properties Hold When?  Proofs    Rings  Here's a reminder of the ring axioms which we will use in this module!  A ring is a set together with two binary operations, called addition ( ) and multiplication ( ), such that all of the following axioms hold:   The set is closed under addition and multiplication, meaning that for all , and .  Addition is associative, meaning that for all , .  Addition is commutative, meaning that for all , .  The set contains an additive identity, also called a zero element , meaning that there exists some element such that for all .  Every element of has an additive inverse within , meaning that for every , there exists such that .  Multiplication is associative, meaning that for all , .  Multiplication distributes over addition, meaning that for all , and .      Here's a list of theorems. If we can prove these using ring axioms, we know they are true about all rings, including: square matrices , integers , even integers , the rational numbers , polynomials for a commutative ring , the real numbers , the complex numbers , and anything else we can show is a ring.    (Additive Cancellation) Let be a ring. For all , if then .      (Multiplication by ) Let be a ring and let be the additive identity of . Then for all .      (Uniqueness) Let be a ring.   (Additive identities) Suppose that both and are zero elements for . Then .    (Additive inverses) Let . Suppose that both and are additive inverses for . Then .    (Multiplicative identities) Suppose that both and are both identities for . Then     (Multiplicative inverses) Let . Suppose that both and are multiplicative inverses for . Then .         (Fields are integral domains.) Let be a ring with identity and let be a unit. Then is not a zero divisor.      (Finite integral domains are fields.) Let be a finite integral domain. Let with . Then is a unit.    In the following theorem note that the symbol means the additive inverse of . We define subtraction in terms of addition, e.g., .    (The negatives.) Let be a ring, and let . Then                  (Generalized Distributive Law) Let be a ring, let , and let . Then                   Let's prove some theorems!   In Weekly Practice 1 you proved in any field and any , . You actually only needed the ring axioms. Let's recall that proof.      (Multiplication by ) Let be a ring and let be the additive identity of . Then for all .    Prove it! Hint: Consider in two different ways.    In the proof portfolio, you'll prove additive and multiplicative cancellation holds in fields. For additive cancellation, you only need the ring axioms. Let's prove multiplicative cancellation holds in more than just fields.    (Multiplicative Cancellation) Let be a ring and let be a nonzero element of that is not a zero divisor. For , if , then . Similarly if then .    Prove it! Hint: Starting with , add to both sides.      We established in the preview activity for this module that every field is an integral domain. It turns out every finite integral domain is a field.    (Finite integral domains are fields.) Let be a finite integral domain. Let with . Then is a unit.    Prove it! Okay, this one has a trick, so let's walk through some parts.   Since is an integral domain, has identity. Consider the set : Let with . Multiply each element of by to get Explain why all elements of are unique. (Go by contradiction: suppose for some , . Then what?)    Why does this imply that has an inverse?    Give an example of an infinite integral domain that is not a field.    For which is an integral domain? For which is a field?   You may read as negative . When talking about rings, the symbol means the additive inverse of . But the theorem labeled the negatives tells us that works like the negative we are familiar with.    Let be a ring and let . Then .     Prove it! You want to show the additive inverse of is . So we want to show . What ring axioms can you use to show this is true?      Review questions Make sure you can answer the following questions:   When does additive cancellation hold? When does multiplicative cancellation hold?    How do we usually prove uniqueness?    What is the relationship between fields and integral domains?    What do we say instead of negative when reading ? How do we prove things about negatives ?    How do we prove for any ring and ?    The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 6   Matrix problems  Show that (two by two matrices with entries from the real numbers) has a zero divisor. What reason besides having zero divisors is not an integral domain?    A negative result   We showed (or assume we showed) that for a ring and , we have . Consider the following proof that .   Proof: From we obtain , since in any ring the inverse of the inverse of an element is the original element.  Fill in the details. Then use the result to prove that if in is a unit, then is also a unit.     Yay, induction!  Prove the generalized distributive law by induction. Let be a ring, let , and let . Then .     "
 },
 {
   "id": "ws-proofs-activity-3-1-3",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-3-1-3",
-  "type": "Definition",
-  "number": "23",
-  "title": "Ring.",
-  "body": " Ring  A ring is a set together with two binary operations, called addition ( ) and multiplication ( ), such that all of the following axioms hold:   The set is closed under addition and multiplication, meaning that for all , and .  Addition is associative, meaning that for all , .  Addition is commutative, meaning that for all , .  The set contains an additive identity, also called a zero element , meaning that there exists some element such that for all .  Every element of has an additive inverse within , meaning that for every , there exists such that .  Multiplication is associative, meaning that for all , .  Multiplication distributes over addition, meaning that for all , and .   "
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ring "
 },
 {
   "id": "ws-proofs-activity-4-2",
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-2",
   "type": "Theorem",
-  "number": "24",
+  "number": "23",
   "title": "",
   "body": "  (Additive Cancellation) Let be a ring. For all , if then .   "
 },
@@ -986,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#proofs-thm-mult-0",
   "type": "Theorem",
-  "number": "25",
+  "number": "24",
   "title": "",
   "body": "  (Multiplication by ) Let be a ring and let be the additive identity of . Then for all .   "
 },
@@ -995,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-4",
   "type": "Theorem",
-  "number": "26",
+  "number": "25",
   "title": "",
   "body": "  (Uniqueness) Let be a ring.   (Additive identities) Suppose that both and are zero elements for . Then .    (Additive inverses) Let . Suppose that both and are additive inverses for . Then .    (Multiplicative identities) Suppose that both and are both identities for . Then     (Multiplicative inverses) Let . Suppose that both and are multiplicative inverses for . Then .      "
 },
@@ -1004,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-5",
   "type": "Theorem",
-  "number": "27",
+  "number": "26",
   "title": "",
   "body": "  (Fields are integral domains.) Let be a ring with identity and let be a unit. Then is not a zero divisor.   "
 },
@@ -1013,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-6",
   "type": "Theorem",
-  "number": "28",
+  "number": "27",
   "title": "",
   "body": "  (Finite integral domains are fields.) Let be a finite integral domain. Let with . Then is a unit.   "
 },
@@ -1022,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-8",
   "type": "Theorem",
-  "number": "29",
+  "number": "28",
   "title": "",
   "body": "  (The negatives.) Let be a ring, and let . Then               "
 },
@@ -1031,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-4-9",
   "type": "Theorem",
-  "number": "30",
+  "number": "29",
   "title": "",
   "body": "  (Generalized Distributive Law) Let be a ring, let , and let . Then               "
 },
@@ -1042,7 +1042,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1",
   "title": "",
-  "body": " In Weekly Practice 1 you proved in any field and any , . You actually only needed the ring axioms. Let's recall that proof.      (Multiplication by ) Let be a ring and let be the additive identity of . Then for all .  Prove it! Hint: Consider in two different ways.    "
+  "body": " In Weekly Practice 1 you proved in any field and any , . You actually only needed the ring axioms. Let's recall that proof.      (Multiplication by ) Let be a ring and let be the additive identity of . Then for all .    Prove it! Hint: Consider in two different ways.  "
 },
 {
   "id": "ws-proofs-activity-5-1-3",
@@ -1058,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-6-2",
   "type": "Theorem",
-  "number": "33",
+  "number": "32",
   "title": "",
   "body": "  (Finite integral domains are fields.) Let be a finite integral domain. Let with . Then is a unit.   "
 },
@@ -1103,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-proofs-activity.html#ws-proofs-activity-6-9",
   "type": "Theorem",
-  "number": "34",
+  "number": "33",
   "title": "",
   "body": "  Let be a ring and let . Then .   "
 },
@@ -1123,7 +1123,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1",
   "title": "Matrix problems.",
-  "body": " Matrix problems  Prove (two by two matrices with entries from the real numbers) has a zero divisor. What reason besides having zero divisors is not an integral domain?  "
+  "body": " Matrix problems  Show that (two by two matrices with entries from the real numbers) has a zero divisor. What reason besides having zero divisors is not an integral domain?  "
 },
 {
   "id": "ws-proofs-activity-8-1-3",
@@ -1157,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-3-1-2",
   "type": "Definition",
-  "number": "35",
+  "number": "34",
   "title": "Power set.",
   "body": " Power set  Let be a set. The power set of denoted is the collection of all subsets of . That is .  "
 },
@@ -1166,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-3-1-3",
   "type": "Definition",
-  "number": "36",
+  "number": "35",
   "title": "Symmetric difference.",
   "body": " Symmetric difference  For any sets and , the symmetric difference of and , denoted is the set of all elements that belong to either or , but not both. That is,   "
 },
@@ -1175,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-3-1-4",
   "type": "Definition",
-  "number": "37",
+  "number": "36",
   "title": "The number system <span class=\"process-math\">\\(\\mathcal{P}_{n}\\)<\/span>.",
   "body": " The number system  For any natural number , the number system is . That is, the elements are the sets that are subsets of , and for we define and .  "
 },
@@ -1238,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-5-1-2",
   "type": "Definition",
-  "number": "38",
+  "number": "37",
   "title": "Polynomial in <span class=\"process-math\">\\(x\\)<\/span> over <span class=\"process-math\">\\(R\\)<\/span>.",
   "body": " Polynomial in over   Let be a commutative ring. A polynomial in over  is an expression of the form where is a nonnegative integer and are elements of . The polynomial ring over  is the set of all polynomials over the ring , and is denoted . (Note this language implies the polynomials form a ring. We'll take this as true, and just verify a couple of properties. The proof is mostly tedious and not insightful.   "
 },
@@ -1247,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-5-1-3",
   "type": "Definition",
-  "number": "39",
+  "number": "38",
   "title": "Adding polynomials.",
   "body": " Adding polynomials    Adding Polynomials : The sum of polynomials  and is defined to be    "
 },
@@ -1256,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-5-1-4",
   "type": "Definition",
-  "number": "40",
+  "number": "39",
   "title": "Multiplying polynomials.",
   "body": " Multiplying polynomials    Multiplying Polynomials : The product of polynomials  (of degree ) and (of degree ) is defined to be where for each with ,    "
 },
@@ -1427,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-2",
   "type": "Definition",
-  "number": "41",
+  "number": "40",
   "title": "Subring.",
   "body": " Subring  Let be a ring, and let be a subset of . Then is said to be a subring of provided that itself is a ring with the operations of addition and multiplication defined the same as in .  "
 },
@@ -1436,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-4",
   "type": "Theorem",
-  "number": "42",
+  "number": "41",
   "title": "",
   "body": " Let be a ring and let be a subset of . Then is a subring of if    is closed under addition     is closed under multiplication     contains      is closed under additive inverses     "
 },
@@ -1445,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-6",
   "type": "Theorem",
-  "number": "43",
+  "number": "42",
   "title": "The Subring Test.",
   "body": " The Subring Test  Let be a ring and let be a subset of . Then is a subring of if and only if    is nonempty     is closed under subtraction     is closed under multiplication     "
 },
@@ -1499,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-6-1-3",
   "type": "Definition",
-  "number": "44",
+  "number": "43",
   "title": "Ideal.",
   "body": " Ideal   An ideal  in a ring is a subring of such that and for all and .   "
 },
@@ -1544,7 +1544,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-8-1-2",
   "type": "Definition",
-  "number": "45",
+  "number": "44",
   "title": "Cartesian product.",
   "body": " Cartesian product   Let and be rings. The Cartesian product of and is the set The direct sum of and , denoted is the set with addition and multiplication defined componentwise - that is,    "
 },
@@ -1598,7 +1598,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-4-1-3",
   "type": "Definition",
-  "number": "46",
+  "number": "45",
   "title": "Isomorphism.",
   "body": " Isomorphism   Let and be rings. An isomorphism is a bijective function such that for all , If there exists an isomorphism from to , then is said to be isomorphic to , denoted .   "
 },
@@ -1607,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-4-2-2",
   "type": "Theorem",
-  "number": "47",
+  "number": "46",
   "title": "",
   "body": "  Let . Then is a ring and .   "
 },
@@ -1670,7 +1670,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-2",
   "type": "Definition",
-  "number": "48",
+  "number": "47",
   "title": "Invariant.",
   "body": " Invariant   An invariant of ring isomorphism is a property such that if satisfies and then satisfies .   "
 },
@@ -1679,7 +1679,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-4",
   "type": "Theorem",
-  "number": "49",
+  "number": "48",
   "title": "",
   "body": "  If and are rings, if has a multiplicative identity and , then has a multiplicative identity.   "
 },
@@ -1832,7 +1832,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-3",
   "type": "Definition",
-  "number": "52",
+  "number": "51",
   "title": "Prime, composite.",
   "body": " Prime, composite   A prime number is an integer whose only positive divisors are 1 and . A positive integer that is greater than 1 and not prime is said to be composite .   "
 },
@@ -1841,7 +1841,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-2",
   "type": "Theorem",
-  "number": "53",
+  "number": "52",
   "title": "",
   "body": "  Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.   "
 },
@@ -1877,7 +1877,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-3",
   "type": "Lemma",
-  "number": "54",
+  "number": "53",
   "title": "Euclid’s Lemma.",
   "body": " Euclid's Lemma   Let and be integers, and let be a prime. If then or .   "
 },
@@ -1913,7 +1913,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-3",
   "type": "Theorem",
-  "number": "56",
+  "number": "55",
   "title": "Fundamental Theorem of Arithmetic.",
   "body": " Fundamental Theorem of Arithmetic   Every integer greater than is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.   "
 },
@@ -1922,7 +1922,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-5",
   "type": "Lemma",
-  "number": "57",
+  "number": "56",
   "title": "Euclid’s Lemma - Strong Form.",
   "body": " Euclid's Lemma - Strong Form   Let be integers and let be a prime. If , then for some with .   "
 },
@@ -2039,7 +2039,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-4",
   "type": "Definition",
-  "number": "58",
+  "number": "57",
   "title": "Irreducible polynomial.",
   "body": " Irreducible polynomial   For an integral domain , a polynomial from that is neither the zero polynomial nor a unit in is said to be irreducible over if whenever is expressed as a product with and from , then or is a unit in . A nonzero, nonunit element of that is not irreducible over is called reducible .   "
 },
@@ -2300,7 +2300,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-4-2",
   "type": "Theorem",
-  "number": "60",
+  "number": "59",
   "title": "The Remainder Theorem.",
   "body": " The Remainder Theorem   Let be a field, let , and let . The remainder wehn is divided by is equal to . That is, there exists a unique polynomial such that    "
 },
@@ -2309,7 +2309,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-4-3-3",
   "type": "Theorem",
-  "number": "61",
+  "number": "60",
   "title": "The Factor Theorem.",
   "body": " The Factor Theorem   Let be a field, let and let . Then is a root of the polynomial if and only if is a factor of .   "
 },
@@ -2381,7 +2381,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-5-1-9",
   "type": "Theorem",
-  "number": "62",
+  "number": "61",
   "title": "",
   "body": "  A nonzero polynomial of degree over a field has at most roots in the field.   "
 },
@@ -2390,7 +2390,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-6-1-2",
   "type": "Theorem",
-  "number": "63",
+  "number": "62",
   "title": "The Fundamental Theorem of Algebra.",
   "body": " The Fundamental Theorem of Algebra   Every polynomial of degree or greater in has a root in .   "
 },
@@ -2444,7 +2444,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-7-2",
   "type": "Theorem",
-  "number": "64",
+  "number": "63",
   "title": "The Rational Root Theorem.",
   "body": " The Rational Root Theorem   Let with . If is a root of with then and .   "
 },
@@ -2453,7 +2453,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-7-4",
   "type": "Theorem",
-  "number": "65",
+  "number": "64",
   "title": "Eisenstein’s Criterion.",
   "body": " Eisenstein's Criterion   Let have degree . If there is a prime so that for , but , and , then is irreducible in .   "
 },
@@ -2516,7 +2516,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-characteristic-activity.html#ws-characteristic-activity-3-2",
   "type": "Definition",
-  "number": "66",
+  "number": "65",
   "title": "Addition and multiplication in rings.",
   "body": " Addition and multiplication in rings   Let be a ring and let . For every we define               "
 },
@@ -2561,7 +2561,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-characteristic-activity.html#ws-characteristic-activity-4-3",
   "type": "Definition",
-  "number": "67",
+  "number": "66",
   "title": "Operations in a ring.",
   "body": " Operations in a ring   For all and ,                         "
 },
@@ -2615,7 +2615,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-characteristic-activity.html#ws-characteristic-activity-5-1-9",
   "type": "Definition",
-  "number": "68",
+  "number": "67",
   "title": "Characteristic.",
   "body": " Characteristic   Let be a ring. The characteristic of , denoted is the smallest positive integer such that If no such integer exists, then is said to be characteristic zero .   "
 },
@@ -2633,7 +2633,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-characteristic-activity.html#ws-characteristic-activity-6-2",
   "type": "Theorem",
-  "number": "69",
+  "number": "68",
   "title": "",
   "body": "  For every integer , .   "
 },
