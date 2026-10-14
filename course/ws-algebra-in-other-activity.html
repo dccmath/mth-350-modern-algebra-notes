@@ -58,15 +58,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.4';
+eBookConfig.runestone_version = '8.3.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.7e4cb14f24eb489b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.54371ed119fe41be.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.40d828091d93b733.css">
+<script src="_static/prefix-runtime.3adcbea95009347b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.7a45395f326e122c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -257,7 +257,14 @@ A \triangle B = \{x: x\in A\cup B \text{ and }x\not\in A\cap B\}.
 <article class="definition definition-like" id="ws-algebra-in-other-activity-3-1-4"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The number system <span class="process-math">\(\mathcal{P}_{n}\)</span>.</span>
 </h3>
-<div class="para" id="ws-algebra-in-other-activity-3-1-4-2-1">For any natural number <span class="process-math">\(n\text{,}\)</span> the number system <span class="process-math">\(\mathcal{P}_{n}\)</span> is <span class="process-math">\((\mathcal{P}(\{1,2,\dots, n\}), \triangle, \cap)\text{.}\)</span> That is, the elements are the sets that are subsets of <span class="process-math">\(\{1,2,\dots, n\}\text{,}\)</span> and for <span class="process-math">\(A,B\in \mathcal{P}_{n}\)</span> we define <span class="process-math">\(A+B = A\triangle B\)</span> and <span class="process-math">\(A\cdot B = A \cap B\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-3-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="ws-algebra-in-other-activity-3-1-4-2-1">
+<div class="para">For any natural number <span class="process-math">\(n\text{,}\)</span> the number system <span class="process-math">\(\mathcal{P}_{n}\)</span> is <span class="process-math">\((\mathcal{P}(\{1,2,\dots, n\}), \triangle, \cap)\text{.}\)</span> That is, the elements are the sets that are subsets of <span class="process-math">\(\{1,2,\dots, n\}\text{,}\)</span> and for <span class="process-math">\(A,B\in \mathcal{P}_{n}\)</span> we define</div>
+<div class="displaymath process-math" id="ws-algebra-in-other-activity-3-1-4-2-1-6">
+\begin{equation*}
+A+B = A\triangle B \text{ and } A\cdot B = A \cap B\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-3-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Definition 36: The number system \mathcal{P}_{n}"><a tabindex="-1" href="#ws-algebra-in-other-activity-3-1-4" title="Copy heading and permalink for Definition 36: The number system \mathcal{P}_{n}" aria-label="Copy heading and permalink for Definition 36: The number system \mathcal{P}_{n}">🔗</a></div>
 </article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Power Sets"><a tabindex="-1" href="#ws-algebra-in-other-activity-3-1" title="Copy heading and permalink for Paragraphs: Power Sets" aria-label="Copy heading and permalink for Paragraphs: Power Sets">🔗</a></div>
@@ -311,7 +318,7 @@ A \triangle B = \{x: x\in A\cup B \text{ and }x\not\in A\cap B\}.
 a_{n}x^{n} + a_{n-1}x^{n-1}+ \cdots a_{2}x^{2} + a_{1}x^{1} + a_{0}x^{0},
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(n\)</span> is a nonnegative integer and <span class="process-math">\(a_{n},a_{n-1},\dots,a_{2},a_{1},a_{0}\)</span> are elements of <span class="process-math">\(R\text{.}\)</span> The <em class="emphasis">polynomial ring over <span class="process-math">\(R\)</span></em> is the set of all polynomials over the ring <span class="process-math">\(R\text{,}\)</span> and is denoted <span class="process-math">\(R[x]\text{.}\)</span> (Note this language implies the polynomials form a ring. We’ll take this as true, and just verify a couple of properties. The proof is mostly tedious and not insightful.</div>
+<div class="para">where <span class="process-math">\(n\)</span> is a nonnegative integer and <span class="process-math">\(a_{n},a_{n-1},\dots,a_{2},a_{1},a_{0}\)</span> are elements of <span class="process-math">\(R\text{.}\)</span> The <em class="emphasis">polynomial ring over <span class="process-math">\(R\)</span></em> is the set of all polynomials over the ring <span class="process-math">\(R\text{,}\)</span> and is denoted <span class="process-math">\(R[x]\text{.}\)</span> (Note this language implies the polynomials form a ring. We’ll take this as true, and just verify a couple of properties. The proof is mostly tedious and not insightful.)</div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-5-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Definition 37: Polynomial in x over R"><a tabindex="-1" href="#ws-algebra-in-other-activity-5-1-2" title="Copy heading and permalink for Definition 37: Polynomial in x over R" aria-label="Copy heading and permalink for Definition 37: Polynomial in x over R">🔗</a></div>
@@ -320,9 +327,8 @@ a_{n}x^{n} + a_{n-1}x^{n-1}+ \cdots a_{2}x^{2} + a_{1}x^{1} + a_{0}x^{0},
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">38</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Adding polynomials.</span>
 </h3>
 <div class="para logical" id="ws-algebra-in-other-activity-5-1-3-2-1">
-<div class="para">
-<dfn class="terminology">Adding Polynomials</dfn>: The <dfn class="terminology">sum of polynomials</dfn> <span class="process-math">\(p(x)\)</span> and <span class="process-math">\(q(x)\)</span> is defined to be</div>
-<div class="displaymath process-math" id="ws-algebra-in-other-activity-5-1-3-2-1-5">
+<div class="para">The <dfn class="terminology">sum of polynomials</dfn> <span class="process-math">\(p(x)\)</span> and <span class="process-math">\(q(x)\)</span> is defined to be</div>
+<div class="displaymath process-math" id="ws-algebra-in-other-activity-5-1-3-2-1-4">
 \begin{equation*}
 p(x) + q(x) = (a_{n}+b_{n})x^{n} + (a_{n-1}+b_{n-1})x^{n-1}+ \cdots + (a_{1}+b_{1}) x + (a_{0}+b_{0}).
 \end{equation*}
@@ -335,16 +341,15 @@ p(x) + q(x) = (a_{n}+b_{n})x^{n} + (a_{n-1}+b_{n-1})x^{n-1}+ \cdots + (a_{1}+b_{
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">39</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiplying polynomials.</span>
 </h3>
 <div class="para logical" id="ws-algebra-in-other-activity-5-1-4-2-1">
-<div class="para">
-<dfn class="terminology">Multiplying Polynomials</dfn>: The <dfn class="terminology">product of polynomials</dfn> <span class="process-math">\(p(x)\)</span> (of degree <span class="process-math">\(m\)</span>) and <span class="process-math">\(q(x)\)</span> (of degree <span class="process-math">\(n\)</span>) is defined to be</div>
-<div class="displaymath process-math" id="ws-algebra-in-other-activity-5-1-4-2-1-7">
+<div class="para">The <dfn class="terminology">product of polynomials</dfn> <span class="process-math">\(p(x)\)</span> (of degree <span class="process-math">\(m\)</span>) and <span class="process-math">\(q(x)\)</span> (of degree <span class="process-math">\(n\)</span>) is defined to be</div>
+<div class="displaymath process-math" id="ws-algebra-in-other-activity-5-1-4-2-1-6">
 \begin{equation*}
 p(x)q(x) = c_{m+n}x^{m+n}+ c_{m+n-1}x^{m+n-1}+ \cdots + c_{2}x^{2} + c_{1}x + c_{0}.
 \end{equation*}
 </div>
 <div class="para">where for each <span class="process-math">\(k\)</span> with <span class="process-math">\(0\le k \le m+n\text{,}\)</span>
 </div>
-<div class="displaymath process-math" id="ws-algebra-in-other-activity-5-1-4-2-1-10">
+<div class="displaymath process-math" id="ws-algebra-in-other-activity-5-1-4-2-1-9">
 \begin{equation*}
 c_{k} = a_{k}b_{0} + a_{k-1}b_{1} + a_{k-2}b_{2} + \cdots + a_{2}b_{k-2}+ a_{1}b_{k-1}+a_{0}b_{k}.
 \end{equation*}
@@ -409,127 +414,140 @@ c_{k} = a_{k}b_{0} + a_{k-1}b_{1} + a_{k-2}b_{2} + \cdots + a_{2}b_{k-2}+ a_{1}b
 <div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-alegbra-in-other-review-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="para" id="sec-alegbra-in-other-review-1-3">The rest of this page is for you to summarize important ideas from the module.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-alegbra-in-other-review-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="sec-alegbra-in-other-review-1-3"><h3 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="sec-alegbra-in-other-review-1-3-1">Use this space to summarize important ideas from the module.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-alegbra-in-other-review-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Review questions"><a tabindex="-1" href="#sec-alegbra-in-other-review-1" title="Copy heading and permalink for Paragraphs: Review questions" aria-label="Copy heading and permalink for Paragraphs: Review questions">🔗</a></div>
-</section></section><section class="onepage" id="ws-algebra-in-other-activity-8">
-<section class="paragraphs" id="ws-algebra-in-other-activity-8-1"><h2 class="heading"><span class="title">Weekly Practice 7.</span></h2>
-<article class="exercise exercise-like" id="ws-algebra-in-other-activity-8-1-2"><h3 class="heading">
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 13"><a tabindex="-1" href="#sec-alegbra-in-other-review-1-3" title="Copy heading and permalink for Exercise 13" aria-label="Copy heading and permalink for Exercise 13">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Review questions"><a tabindex="-1" href="#sec-alegbra-in-other-review-1" title="Copy heading and permalink for Paragraphs: Review questions" aria-label="Copy heading and permalink for Paragraphs: Review questions">🔗</a></div>
+</section>
+<section class="paragraphs" id="sec-alegbra-in-other-review-2"><h2 class="heading"><span class="title">Weekly Practice 7.</span></h2>
+<article class="exercise exercise-like" id="sec-alegbra-in-other-review-2-2"><h3 class="heading">
 <span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Positive reals.</span>
 </h3>
-<div class="introduction" id="ws-algebra-in-other-activity-8-1-2-2">
-<div class="para logical" id="ws-algebra-in-other-activity-8-1-2-2-1">
+<div class="introduction" id="sec-alegbra-in-other-review-2-2-2">
+<div class="para logical" id="sec-alegbra-in-other-review-2-2-2-1">
 <div class="para">Let <span class="process-math">\(\mathbb{R}^{+}\)</span> denote the set of all positive real numbers. (Note <span class="process-math">\(0\)</span> is not positive!) For all <span class="process-math">\(x,y\in \mathbb{R}^{+}\)</span> define</div>
-<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-2-2-1-4">
+<div class="displaymath process-math" id="sec-alegbra-in-other-review-2-2-2-1-4">
 \begin{equation*}
 x\oplus y = xy \text{ and }x\otimes y = x^{\log(y)}.
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-8-1-2-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ws-algebra-in-other-activity-8-1-2-3-1">With these properties, does <span class="process-math">\(\mathbb{R}^{+}\)</span> have an additive identity? If so, what is it?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-alegbra-in-other-review-2-2-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-alegbra-in-other-review-2-2-3-1">With these properties, does <span class="process-math">\(\mathbb{R}^{+}\)</span> have an additive identity? If so, what is it?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-3" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-3" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-8-1-2-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ws-algebra-in-other-activity-8-1-2-4-1">With these properties, does <span class="process-math">\(\mathbb{R}^{+}\)</span> have a multiplicative identity? If so, what is it?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-alegbra-in-other-review-2-2-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-alegbra-in-other-review-2-2-4-1">With these properties, does <span class="process-math">\(\mathbb{R}^{+}\)</span> have a multiplicative identity? If so, what is it?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-4" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-4" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-8-1-2-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="ws-algebra-in-other-activity-8-1-2-5-1">Is <span class="process-math">\(\mathbb{R}^{+}\)</span> a ring with these operations? Explain each axiom.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-alegbra-in-other-review-2-2-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-alegbra-in-other-review-2-2-5-1">Is <span class="process-math">\(\mathbb{R}^{+}\)</span> a ring with these operations? Explain each axiom.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-5" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-5" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-8-1-2-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="ws-algebra-in-other-activity-8-1-2-6-1">Does <span class="process-math">\(\mathbb{R}^{+}\)</span> have zero divisors using these operations?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-alegbra-in-other-review-2-2-6"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="sec-alegbra-in-other-review-2-2-6-1">Does <span class="process-math">\(\mathbb{R}^{+}\)</span> have zero divisors using these operations?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.d"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-6" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.d"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-6" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-8-1-2-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="ws-algebra-in-other-activity-8-1-2-7-1">Is <span class="process-math">\(\mathbb{R}^{+}\)</span> an integral domain using these operations?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sec-alegbra-in-other-review-2-2-7"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="sec-alegbra-in-other-review-2-2-7-1">Is <span class="process-math">\(\mathbb{R}^{+}\)</span> an integral domain using these operations?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 1.e"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-7" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 1: Positive reals"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2" title="Copy heading and permalink for Exercise 1: Positive reals" aria-label="Copy heading and permalink for Exercise 1: Positive reals">🔗</a></div>
-</article>
-<article class="exercise exercise-like" id="ws-algebra-in-other-activity-8-1-3"><h3 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.e"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2-7" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 1: Positive reals"><a tabindex="-1" href="#sec-alegbra-in-other-review-2-2" title="Copy heading and permalink for Exercise 1: Positive reals" aria-label="Copy heading and permalink for Exercise 1: Positive reals">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Weekly Practice 7"><a tabindex="-1" href="#sec-alegbra-in-other-review-2" title="Copy heading and permalink for Paragraphs: Weekly Practice 7" aria-label="Copy heading and permalink for Paragraphs: Weekly Practice 7">🔗</a></div>
+</section></section><section class="onepage" id="ws-algebra-in-other-activity-8">
+<article class="exercise exercise-like" id="ws-algebra-in-other-activity-8-1"><h2 class="heading">
 <span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Complex numbers.</span>
+</h2>
+<div class="introduction" id="ws-algebra-in-other-activity-8-1-2">
+<div class="para" id="ws-algebra-in-other-activity-8-1-2-1">First, a definition:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="ws-algebra-in-other-activity-8-1-2-2"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="introduction" id="ws-algebra-in-other-activity-8-1-3-2">
-<div class="para logical" id="ws-algebra-in-other-activity-8-1-3-2-1">
+<div class="para logical" id="ws-algebra-in-other-activity-8-1-2-2-1">
 <div class="para">A <dfn class="terminology">complex number</dfn> is any number of the form <span class="process-math">\(a+bi\)</span> where <span class="process-math">\(a,b\in \mathbb{R}\)</span> and <span class="process-math">\(i\)</span> is an imaginary number with the property that <span class="process-math">\(i^{2} = -1\text{.}\)</span> For a complex number <span class="process-math">\(x=a+bi\text{,}\)</span> the real number is called the <dfn class="terminology">real part</dfn> of <span class="process-math">\(x\)</span> and <span class="process-math">\(b\)</span> is called the <dfn class="terminology">imaginary part</dfn> of <span class="process-math">\(x\text{.}\)</span> So</div>
-<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-3-2-1-12">
+<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-2-2-1-12">
 \begin{equation*}
 \mathbb{C}= \{a+bi: a\in \mathbb{R}, b\in\mathbb{R}, \text{ and }i^{2} = -1\}.
 \end{equation*}
 </div>
 <div class="para">Furthermore, addition and multiplication within <span class="process-math">\(\mathbb{C}\)</span> are defined by</div>
-<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-3-2-1-14">
+<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-2-2-1-14">
 \begin{equation*}
 (a+bi) + (c+di) = (a+c) + (b+d)i
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-3-2-1-15">
+<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-2-2-1-15">
 \begin{equation*}
 (a+bi)(c+di) = (ac - bd) + (ad+bc)i.
 \end{equation*}
 </div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 40"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-2" title="Copy heading and permalink for Definition 40" aria-label="Copy heading and permalink for Definition 40">🔗</a></div>
+</article>
+<div class="para logical" id="ws-algebra-in-other-activity-8-1-2-3">
 <div class="para">The complex numbers turn out to be a field. Let’s show every nonzero element has a multiplicative inverse. That is, we want to show, for <span class="process-math">\(x=a+bi\)</span> where <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are not both <span class="process-math">\(0\text{,}\)</span> there exists <span class="process-math">\(y=c+di\)</span> such that</div>
-<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-3-2-1-21">
+<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-2-3-6">
 \begin{equation*}
 1 + 0i = xy = (a+bi)\cdot (c+di) = (ac-bd) +(ad+bc)i.
 \end{equation*}
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ws-algebra-in-other-activity-8-1-3-2-2">So we want <span class="process-math">\(ac-bd = 1\)</span> and <span class="process-math">\(ad+bc = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-algebra-in-other-activity-8-1-2-4">So we want <span class="process-math">\(ac-bd = 1\)</span> and <span class="process-math">\(ad+bc = 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-8-1-3-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ws-algebra-in-other-activity-8-1-3-3-1">Solve the system of equations<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="ws-algebra-in-other-activity-8-1-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="ws-algebra-in-other-activity-8-1-3-1">Solve the system of equations<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-3-3-2">
+<div class="displaymath process-math" id="ws-algebra-in-other-activity-8-1-3-2">
 \begin{align*}
 ac-bd&amp;= 1\\
 ad+bc&amp;= 0
 \end{align*}
 </div>
-<div class="para" id="ws-algebra-in-other-activity-8-1-3-3-3">for <span class="process-math">\(c\)</span> and <span class="process-math">\(d\text{,}\)</span> getting expressions that only depend on <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> (You can do so using substitution. One way is to solve for <span class="process-math">\(d\)</span> in the second equation, plug your answer into the first equation, and then solve for <span class="process-math">\(c\text{.}\)</span> Then use what you know for <span class="process-math">\(c\)</span> to find <span class="process-math">\(d\text{.}\)</span>)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ws-algebra-in-other-activity-8-1-3-3">for <span class="process-math">\(c\)</span> and <span class="process-math">\(d\text{,}\)</span> getting expressions that only depend on <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> (You can do so using substitution. One way is to solve for <span class="process-math">\(d\)</span> in the second equation, plug your answer into the first equation, and then solve for <span class="process-math">\(c\text{.}\)</span> Then use what you know for <span class="process-math">\(c\)</span> to find <span class="process-math">\(d\text{.}\)</span>)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3-3" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.a"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-8-1-3-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ws-algebra-in-other-activity-8-1-3-4-1">Verify that your answer in (a) gives the multiplicative inverse for <span class="process-math">\(a+bi\text{.}\)</span> That is, <span class="process-math">\((a+bi)(c+di) = 1 + 0i\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="ws-algebra-in-other-activity-8-1-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="ws-algebra-in-other-activity-8-1-4-1">Verify that your answer in (a) gives the multiplicative inverse for <span class="process-math">\(a+bi\text{.}\)</span> That is, <span class="process-math">\((a+bi)(c+di) = 1 + 0i\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3-4" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 2: Complex numbers"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-3" title="Copy heading and permalink for Exercise 2: Complex numbers" aria-label="Copy heading and permalink for Exercise 2: Complex numbers">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Weekly Practice 7"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1" title="Copy heading and permalink for Paragraphs: Weekly Practice 7" aria-label="Copy heading and permalink for Paragraphs: Weekly Practice 7">🔗</a></div>
-</section></section><section class="onepage" id="ws-algebra-in-other-activity-9">
-<article class="exercise exercise-like" id="ws-algebra-in-other-activity-9-1"><h2 class="heading">
+<div class="autopermalink" aria-hidden="true" data-description="Task 2.b"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1-4" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 2: Complex numbers"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-1" title="Copy heading and permalink for Exercise 2: Complex numbers" aria-label="Copy heading and permalink for Exercise 2: Complex numbers">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws-algebra-in-other-activity-8-2"><h2 class="heading">
 <span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Examples or not?</span>
 </h2>
-<div class="introduction" id="ws-algebra-in-other-activity-9-1-2">
-<div class="para" id="ws-algebra-in-other-activity-9-1-2-1">Give an example of each of the following or explain why no such example exists.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-9-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="introduction" id="ws-algebra-in-other-activity-8-2-2">
+<div class="para" id="ws-algebra-in-other-activity-8-2-2-1">Give an example of each of the following or explain why no such example exists.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-9-1-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<div class="para" id="ws-algebra-in-other-activity-9-1-3-1">Two polynomials of degree <span class="process-math">\(1\)</span> in <span class="process-math">\(\mathbb{Z}_{4}[x]\)</span> whose product is a polynomial of degree <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-9-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="ws-algebra-in-other-activity-8-2-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="ws-algebra-in-other-activity-8-2-3-1">Two polynomials of degree <span class="process-math">\(1\)</span> in <span class="process-math">\(\mathbb{Z}_{4}[x]\)</span> whose product is a polynomial of degree <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#ws-algebra-in-other-activity-9-1-3" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.a"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-2-3" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-9-1-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<div class="para" id="ws-algebra-in-other-activity-9-1-4-1">Two polynomials of degree <span class="process-math">\(3\)</span> in <span class="process-math">\(\mathbb{R}[x]\)</span> whose sum is a polynomial of degree <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-9-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="ws-algebra-in-other-activity-8-2-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="ws-algebra-in-other-activity-8-2-4-1">Two polynomials of degree <span class="process-math">\(3\)</span> in <span class="process-math">\(\mathbb{R}[x]\)</span> whose sum is a polynomial of degree <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#ws-algebra-in-other-activity-9-1-4" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.b"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-2-4" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ws-algebra-in-other-activity-9-1-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
-<div class="para" id="ws-algebra-in-other-activity-9-1-5-1">Two polynomials of degree <span class="process-math">\(2\)</span> in <span class="process-math">\(\mathbb{Z}_{4}[x]\)</span> whose product is a polynomial of degree <span class="process-math">\(5\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-9-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="ws-algebra-in-other-activity-8-2-5"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<div class="para" id="ws-algebra-in-other-activity-8-2-5-1">Two polynomials of degree <span class="process-math">\(2\)</span> in <span class="process-math">\(\mathbb{Z}_{4}[x]\)</span> whose product is a polynomial of degree <span class="process-math">\(5\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#ws-algebra-in-other-activity-9-1-5" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 3: Examples or not?"><a tabindex="-1" href="#ws-algebra-in-other-activity-9-1" title="Copy heading and permalink for Exercise 3: Examples or not?" aria-label="Copy heading and permalink for Exercise 3: Examples or not?">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 3.c"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-2-5" title="Copy heading and permalink for Task 3.c" aria-label="Copy heading and permalink for Task 3.c">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 3: Examples or not?"><a tabindex="-1" href="#ws-algebra-in-other-activity-8-2" title="Copy heading and permalink for Exercise 3: Examples or not?" aria-label="Copy heading and permalink for Exercise 3: Examples or not?">🔗</a></div>
 </article></section><div class="autopermalink" aria-hidden="true" data-description="Worksheet: Module 7: Algebra in Other Number Systems"><a tabindex="-1" href="#ws-algebra-in-other-activity" title="Copy heading and permalink for Worksheet: Module 7: Algebra in Other Number Systems" aria-label="Copy heading and permalink for Worksheet: Module 7: Algebra in Other Number Systems">🔗</a></div>
 </section>
 </div>

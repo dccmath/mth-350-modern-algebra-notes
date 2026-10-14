@@ -1150,7 +1150,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Module 7: Algebra in Other Number Systems",
-  "body": " Module 7: Algebra in Other Number Systems  Into the Wild    Power Sets   Power set  Let be a set. The power set of denoted is the collection of all subsets of . That is .    Symmetric difference  For any sets and , the symmetric difference of and , denoted is the set of all elements that belong to either or , but not both. That is,     The number system  For any natural number , the number system is . That is, the elements are the sets that are subsets of , and for we define and .     Working with   Write the addition and multiplication tables for .    Is there an additive identity in ? What about a multiplicative identity in ? Do these generalize to ?       Does every element of have an additive inverse? What elements of do you think have an additive inverse?    Is every nonzero element of a unit? What elements of do you think are units?    Does have zero divisors? Do you think has zero divisors?    Do you think is a ring? A commutative ring? A ring with identity? An integral domain? A field?      Polynomials   Polynomial in over   Let be a commutative ring. A polynomial in over  is an expression of the form where is a nonnegative integer and are elements of . The polynomial ring over  is the set of all polynomials over the ring , and is denoted . (Note this language implies the polynomials form a ring. We'll take this as true, and just verify a couple of properties. The proof is mostly tedious and not insightful.     Adding polynomials    Adding Polynomials : The sum of polynomials  and is defined to be      Multiplying polynomials    Multiplying Polynomials : The product of polynomials  (of degree ) and (of degree ) is defined to be where for each with ,      Add and multiply and using the definitions above. Does this agree with what you think the sum and product should be?     If time: Let . Find and . What property of rings does this illustrate?       Is a commutative ring with identity? Is a commutative ring with identity? Is always, sometimes or never a commutative ring? A ring with identity?    Let and be polynomials in . Find . Is always, sometimes, or never an integral domain?    At some point you (maybe) learned that the if has degree and has degree then the degree of is . There, you were thinking about . Do the degrees work out this way in for any commutative ring ? If not always, when will it work? To explain, determine what the leading coefficient of is for arbitrary polynomials and .    If has an identity, the multiplicative identity of is . What elements of will have multiplicative inverses?      Review questions Make sure you can answer the following questions:  What axioms hold in a ring?  What is and is it a ring, an integral domain, a field?  What is for a commutative ring and is it a ring, an integral domain, a field?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 7   Positive reals  Let denote the set of all positive real numbers. (Note is not positive!) For all define   With these properties, does have an additive identity? If so, what is it?  With these properties, does have a multiplicative identity? If so, what is it?  Is a ring with these operations? Explain each axiom.  Does have zero divisors using these operations?  Is an integral domain using these operations?    Complex numbers  A complex number is any number of the form where and is an imaginary number with the property that . For a complex number , the real number is called the real part of and is called the imaginary part of . So Furthermore, addition and multiplication within are defined by and The complex numbers turn out to be a field. Let's show every nonzero element has a multiplicative inverse. That is, we want to show, for where and are not both , there exists such that   So we want and .   Solve the system of equations   for and , getting expressions that only depend on and . (You can do so using substitution. One way is to solve for in the second equation, plug your answer into the first equation, and then solve for . Then use what you know for to find .)   Verify that your answer in (a) gives the multiplicative inverse for . That is, .       Examples or not?  Give an example of each of the following or explain why no such example exists.  Two polynomials of degree in whose product is a polynomial of degree .  Two polynomials of degree in whose sum is a polynomial of degree .  Two polynomials of degree in whose product is a polynomial of degree .    "
+  "body": " Module 7: Algebra in Other Number Systems  Into the Wild    Power Sets   Power set  Let be a set. The power set of denoted is the collection of all subsets of . That is .    Symmetric difference  For any sets and , the symmetric difference of and , denoted is the set of all elements that belong to either or , but not both. That is,     The number system  For any natural number , the number system is . That is, the elements are the sets that are subsets of , and for we define .     Working with   Write the addition and multiplication tables for .    Is there an additive identity in ? What about a multiplicative identity in ? Do these generalize to ?       Does every element of have an additive inverse? What elements of do you think have an additive inverse?    Is every nonzero element of a unit? What elements of do you think are units?    Does have zero divisors? Do you think has zero divisors?    Do you think is a ring? A commutative ring? A ring with identity? An integral domain? A field?      Polynomials   Polynomial in over   Let be a commutative ring. A polynomial in over  is an expression of the form where is a nonnegative integer and are elements of . The polynomial ring over  is the set of all polynomials over the ring , and is denoted . (Note this language implies the polynomials form a ring. We'll take this as true, and just verify a couple of properties. The proof is mostly tedious and not insightful.)     Adding polynomials   The sum of polynomials  and is defined to be      Multiplying polynomials   The product of polynomials  (of degree ) and (of degree ) is defined to be where for each with ,      Add and multiply and using the definitions above. Does this agree with what you think the sum and product should be?     If time: Let . Find and . What property of rings does this illustrate?       Is a commutative ring with identity? Is a commutative ring with identity? Is always, sometimes or never a commutative ring? A ring with identity?    Let and be polynomials in . Find . Is always, sometimes, or never an integral domain?    At some point you (maybe) learned that the if has degree and has degree then the degree of is . There, you were thinking about . Do the degrees work out this way in for any commutative ring ? If not always, when will it work? To explain, determine what the leading coefficient of is for arbitrary polynomials and .    If has an identity, the multiplicative identity of is . What elements of will have multiplicative inverses?      Review questions Make sure you can answer the following questions:  What axioms hold in a ring?  What is and is it a ring, an integral domain, a field?  What is for a commutative ring and is it a ring, an integral domain, a field?   Use this space to summarize important ideas from the module.    Weekly Practice 7   Positive reals  Let denote the set of all positive real numbers. (Note is not positive!) For all define   With these properties, does have an additive identity? If so, what is it?  With these properties, does have a multiplicative identity? If so, what is it?  Is a ring with these operations? Explain each axiom.  Does have zero divisors using these operations?  Is an integral domain using these operations?       Complex numbers  First, a definition:   A complex number is any number of the form where and is an imaginary number with the property that . For a complex number , the real number is called the real part of and is called the imaginary part of . So Furthermore, addition and multiplication within are defined by and    The complex numbers turn out to be a field. Let's show every nonzero element has a multiplicative inverse. That is, we want to show, for where and are not both , there exists such that   So we want and .   Solve the system of equations   for and , getting expressions that only depend on and . (You can do so using substitution. One way is to solve for in the second equation, plug your answer into the first equation, and then solve for . Then use what you know for to find .)   Verify that your answer in (a) gives the multiplicative inverse for . That is, .    Examples or not?  Give an example of each of the following or explain why no such example exists.  Two polynomials of degree in whose product is a polynomial of degree .  Two polynomials of degree in whose sum is a polynomial of degree .  Two polynomials of degree in whose product is a polynomial of degree .    "
 },
 {
   "id": "ws-algebra-in-other-activity-3-1-2",
@@ -1177,7 +1177,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "36",
   "title": "The number system <span class=\"process-math\">\\(\\mathcal{P}_{n}\\)<\/span>.",
-  "body": " The number system  For any natural number , the number system is . That is, the elements are the sets that are subsets of , and for we define and .  "
+  "body": " The number system  For any natural number , the number system is . That is, the elements are the sets that are subsets of , and for we define .  "
 },
 {
   "id": "ws-algebra-in-other-activity-3-2-2",
@@ -1240,7 +1240,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "37",
   "title": "Polynomial in <span class=\"process-math\">\\(x\\)<\/span> over <span class=\"process-math\">\\(R\\)<\/span>.",
-  "body": " Polynomial in over   Let be a commutative ring. A polynomial in over  is an expression of the form where is a nonnegative integer and are elements of . The polynomial ring over  is the set of all polynomials over the ring , and is denoted . (Note this language implies the polynomials form a ring. We'll take this as true, and just verify a couple of properties. The proof is mostly tedious and not insightful.   "
+  "body": " Polynomial in over   Let be a commutative ring. A polynomial in over  is an expression of the form where is a nonnegative integer and are elements of . The polynomial ring over  is the set of all polynomials over the ring , and is denoted . (Note this language implies the polynomials form a ring. We'll take this as true, and just verify a couple of properties. The proof is mostly tedious and not insightful.)   "
 },
 {
   "id": "ws-algebra-in-other-activity-5-1-3",
@@ -1249,7 +1249,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "38",
   "title": "Adding polynomials.",
-  "body": " Adding polynomials    Adding Polynomials : The sum of polynomials  and is defined to be    "
+  "body": " Adding polynomials   The sum of polynomials  and is defined to be    "
 },
 {
   "id": "ws-algebra-in-other-activity-5-1-4",
@@ -1258,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "39",
   "title": "Multiplying polynomials.",
-  "body": " Multiplying polynomials    Multiplying Polynomials : The product of polynomials  (of degree ) and (of degree ) is defined to be where for each with ,    "
+  "body": " Multiplying polynomials   The product of polynomials  (of degree ) and (of degree ) is defined to be where for each with ,    "
 },
 {
   "id": "ws-algebra-in-other-activity-5-1-5",
@@ -1315,27 +1315,36 @@ var ptx_lunr_docs = [
   "body": " If has an identity, the multiplicative identity of is . What elements of will have multiplicative inverses?  "
 },
 {
-  "id": "ws-algebra-in-other-activity-8-1-2",
+  "id": "sec-alegbra-in-other-review-1-3",
   "level": "2",
-  "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-8-1-2",
+  "url": "ws-algebra-in-other-activity.html#sec-alegbra-in-other-review-1-3",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": "Use this space to summarize important ideas from the module. "
+},
+{
+  "id": "sec-alegbra-in-other-review-2-2",
+  "level": "2",
+  "url": "ws-algebra-in-other-activity.html#sec-alegbra-in-other-review-2-2",
   "type": "Exercise",
   "number": "1",
   "title": "Positive reals.",
   "body": " Positive reals  Let denote the set of all positive real numbers. (Note is not positive!) For all define   With these properties, does have an additive identity? If so, what is it?  With these properties, does have a multiplicative identity? If so, what is it?  Is a ring with these operations? Explain each axiom.  Does have zero divisors using these operations?  Is an integral domain using these operations?  "
 },
 {
-  "id": "ws-algebra-in-other-activity-8-1-3",
+  "id": "ws-algebra-in-other-activity-8-1",
   "level": "2",
-  "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-8-1-3",
+  "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-8-1",
   "type": "Exercise",
   "number": "2",
   "title": "Complex numbers.",
-  "body": " Complex numbers  A complex number is any number of the form where and is an imaginary number with the property that . For a complex number , the real number is called the real part of and is called the imaginary part of . So Furthermore, addition and multiplication within are defined by and The complex numbers turn out to be a field. Let's show every nonzero element has a multiplicative inverse. That is, we want to show, for where and are not both , there exists such that   So we want and .   Solve the system of equations   for and , getting expressions that only depend on and . (You can do so using substitution. One way is to solve for in the second equation, plug your answer into the first equation, and then solve for . Then use what you know for to find .)   Verify that your answer in (a) gives the multiplicative inverse for . That is, .  "
+  "body": " Complex numbers  First, a definition:   A complex number is any number of the form where and is an imaginary number with the property that . For a complex number , the real number is called the real part of and is called the imaginary part of . So Furthermore, addition and multiplication within are defined by and    The complex numbers turn out to be a field. Let's show every nonzero element has a multiplicative inverse. That is, we want to show, for where and are not both , there exists such that   So we want and .   Solve the system of equations   for and , getting expressions that only depend on and . (You can do so using substitution. One way is to solve for in the second equation, plug your answer into the first equation, and then solve for . Then use what you know for to find .)   Verify that your answer in (a) gives the multiplicative inverse for . That is, .  "
 },
 {
-  "id": "ws-algebra-in-other-activity-9-1",
+  "id": "ws-algebra-in-other-activity-8-2",
   "level": "2",
-  "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-9-1",
+  "url": "ws-algebra-in-other-activity.html#ws-algebra-in-other-activity-8-2",
   "type": "Exercise",
   "number": "3",
   "title": "Examples or not?",
@@ -1427,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-2",
   "type": "Definition",
-  "number": "40",
+  "number": "41",
   "title": "Subring.",
   "body": " Subring  Let be a ring, and let be a subset of . Then is said to be a subring of provided that itself is a ring with the operations of addition and multiplication defined the same as in .  "
 },
@@ -1436,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-4",
   "type": "Theorem",
-  "number": "41",
+  "number": "42",
   "title": "",
   "body": " Let be a ring and let be a subset of . Then is a subring of if    is closed under addition     is closed under multiplication     contains      is closed under additive inverses     "
 },
@@ -1445,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-4-1-6",
   "type": "Theorem",
-  "number": "42",
+  "number": "43",
   "title": "The Subring Test.",
   "body": " The Subring Test  Let be a ring and let be a subset of . Then is a subring of if and only if    is nonempty     is closed under subtraction     is closed under multiplication     "
 },
@@ -1499,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-6-1-3",
   "type": "Definition",
-  "number": "43",
+  "number": "44",
   "title": "Ideal.",
   "body": " Ideal   An ideal  in a ring is a subring of such that and for all and .   "
 },
@@ -1544,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-subrings-activity.html#ws-subrings-activity-8-1-2",
   "type": "Definition",
-  "number": "44",
+  "number": "45",
   "title": "Cartesian product.",
   "body": " Cartesian product   Let and be rings. The Cartesian product of and is the set The direct sum of and , denoted is the set with addition and multiplication defined componentwise - that is,    "
 },
@@ -1598,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-4-1-3",
   "type": "Definition",
-  "number": "45",
+  "number": "46",
   "title": "Isomorphism.",
   "body": " Isomorphism   Let and be rings. An isomorphism is a bijective function such that for all , If there exists an isomorphism from to , then is said to be isomorphic to , denoted .   "
 },
@@ -1607,7 +1616,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-4-2-2",
   "type": "Theorem",
-  "number": "46",
+  "number": "47",
   "title": "",
   "body": "  Let . Then is a ring and .   "
 },
@@ -1670,7 +1679,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-2",
   "type": "Definition",
-  "number": "47",
+  "number": "48",
   "title": "Invariant.",
   "body": " Invariant   An invariant of ring isomorphism is a property such that if satisfies and then satisfies .   "
 },
@@ -1679,7 +1688,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-iso-activity.html#ws-iso-activity-6-1-4",
   "type": "Theorem",
-  "number": "48",
+  "number": "49",
   "title": "",
   "body": "  If and are rings, if has a multiplicative identity and , then has a multiplicative identity.   "
 },
@@ -1832,7 +1841,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-3",
   "type": "Definition",
-  "number": "51",
+  "number": "52",
   "title": "Prime, composite.",
   "body": " Prime, composite   A prime number is an integer whose only positive divisors are 1 and . A positive integer that is greater than 1 and not prime is said to be composite .   "
 },
@@ -1841,7 +1850,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-2",
   "type": "Theorem",
-  "number": "52",
+  "number": "53",
   "title": "",
   "body": "  Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.   "
 },
@@ -1877,7 +1886,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-3",
   "type": "Lemma",
-  "number": "53",
+  "number": "54",
   "title": "Euclid’s Lemma.",
   "body": " Euclid's Lemma   Let and be integers, and let be a prime. If then or .   "
 },
@@ -1913,7 +1922,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-3",
   "type": "Theorem",
-  "number": "55",
+  "number": "56",
   "title": "Fundamental Theorem of Arithmetic.",
   "body": " Fundamental Theorem of Arithmetic   Every integer greater than is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.   "
 },
@@ -1922,7 +1931,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-5",
   "type": "Lemma",
-  "number": "56",
+  "number": "57",
   "title": "Euclid’s Lemma - Strong Form.",
   "body": " Euclid's Lemma - Strong Form   Let be integers and let be a prime. If , then for some with .   "
 },
@@ -2039,7 +2048,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-4",
   "type": "Definition",
-  "number": "57",
+  "number": "58",
   "title": "Irreducible polynomial.",
   "body": " Irreducible polynomial   For an integral domain , a polynomial from that is neither the zero polynomial nor a unit in is said to be irreducible over if whenever is expressed as a product with and from , then or is a unit in . A nonzero, nonunit element of that is not irreducible over is called reducible .   "
 },
@@ -2300,7 +2309,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-4-2",
   "type": "Theorem",
-  "number": "59",
+  "number": "60",
   "title": "The Remainder Theorem.",
   "body": " The Remainder Theorem   Let be a field, let , and let . The remainder wehn is divided by is equal to . That is, there exists a unique polynomial such that    "
 },
@@ -2309,7 +2318,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-4-3-3",
   "type": "Theorem",
-  "number": "60",
+  "number": "61",
   "title": "The Factor Theorem.",
   "body": " The Factor Theorem   Let be a field, let and let . Then is a root of the polynomial if and only if is a factor of .   "
 },
@@ -2381,7 +2390,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-5-1-9",
   "type": "Theorem",
-  "number": "61",
+  "number": "62",
   "title": "",
   "body": "  A nonzero polynomial of degree over a field has at most roots in the field.   "
 },
@@ -2390,7 +2399,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-6-1-2",
   "type": "Theorem",
-  "number": "62",
+  "number": "63",
   "title": "The Fundamental Theorem of Algebra.",
   "body": " The Fundamental Theorem of Algebra   Every polynomial of degree or greater in has a root in .   "
 },
@@ -2444,7 +2453,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-7-2",
   "type": "Theorem",
-  "number": "63",
+  "number": "64",
   "title": "The Rational Root Theorem.",
   "body": " The Rational Root Theorem   Let with . If is a root of with then and .   "
 },
@@ -2453,7 +2462,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-irreducible-polynomials-activity.html#ws-irreducible-polynomials-activity-7-4",
   "type": "Theorem",
-  "number": "64",
+  "number": "65",
   "title": "Eisenstein’s Criterion.",
   "body": " Eisenstein's Criterion   Let have degree . If there is a prime so that for , but , and , then is irreducible in .   "
 },
@@ -2516,7 +2525,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-characteristic-activity.html#ws-characteristic-activity-3-2",
   "type": "Definition",
-  "number": "65",
+  "number": "66",
   "title": "Addition and multiplication in rings.",
   "body": " Addition and multiplication in rings   Let be a ring and let . For every we define               "
 },
@@ -2561,7 +2570,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-characteristic-activity.html#ws-characteristic-activity-4-3",
   "type": "Definition",
-  "number": "66",
+  "number": "67",
   "title": "Operations in a ring.",
   "body": " Operations in a ring   For all and ,                         "
 },
@@ -2615,7 +2624,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-characteristic-activity.html#ws-characteristic-activity-5-1-9",
   "type": "Definition",
-  "number": "67",
+  "number": "68",
   "title": "Characteristic.",
   "body": " Characteristic   Let be a ring. The characteristic of , denoted is the smallest positive integer such that If no such integer exists, then is said to be characteristic zero .   "
 },
@@ -2633,7 +2642,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-characteristic-activity.html#ws-characteristic-activity-6-2",
   "type": "Theorem",
-  "number": "68",
+  "number": "69",
   "title": "",
   "body": "  For every integer , .   "
 },
