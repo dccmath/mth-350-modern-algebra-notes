@@ -42,7 +42,7 @@
   <m>(\mathcal{P}(\{1,2,\dots, n\}), \triangle, \cap)</m>.
   That is, the elements are the sets that are subsets of
   <m>\{1,2,\dots, n\}</m>, and for <m>A,B\in \mathcal{P}_{n}</m> we define
-  <m>A+B = A\triangle B</m> and <m>A\cdot B = A \cap B</m>.
+  <md>A+B = A\triangle B \text{ and } A\cdot B = A \cap B</md>.
 			</p></statement>
 		</definition>
     </paragraphs>
@@ -98,7 +98,7 @@
   the ring <m>R</m>, and is denoted <m>R[x]</m>.
   (Note this language implies the polynomials form a ring.
   We'll take this as true, and just verify a couple of properties.
-  The proof is mostly tedious and not insightful.
+  The proof is mostly tedious and not insightful.)
 </p>
 			</statement>
 		</definition>
@@ -107,7 +107,7 @@
 			<title>Adding polynomials</title>
 			<statement>
 			<p>
-  <term>Adding Polynomials</term>: The <term>sum of polynomials</term> <m>p(x)</m> and <m>q(x)</m> is defined to be
+The <term>sum of polynomials</term> <m>p(x)</m> and <m>q(x)</m> is defined to be
   <md>
     p(x) + q(x) = (a_{n}+b_{n})x^{n} + (a_{n-1}+b_{n-1})x^{n-1}+ \cdots + (a_{1}+b_{1}) x + (a_{0}+b_{0}).
   </md>
@@ -119,8 +119,7 @@
 			<title>Multiplying polynomials</title>
 			<statement>
 			<p>
-  <term>Multiplying Polynomials</term>: The
-  <term>product of polynomials</term> <m>p(x)</m> (of degree <m>m</m>) and
+ The <term>product of polynomials</term> <m>p(x)</m> (of degree <m>m</m>) and
   <m>q(x)</m> (of degree <m>n</m>) is defined to be
   <md>
     p(x)q(x) = c_{m+n}x^{m+n}+ c_{m+n-1}x^{m+n-1}+ \cdots + c_{2}x^{2} + c_{1}x + c_{0}.
@@ -206,14 +205,9 @@ Make sure you can answer the following questions:
 	<li><p>What is <m>R[x]</m> for a commutative ring <m>R</m> and is it a ring, an integral domain, a field?</p></li>
 </ul>
                 
-<p>The rest of this page is for you to summarize important ideas from the module.</p>
+<exercise  workspace="1in"><p>Use this space to summarize important ideas from the module.</p></exercise>
 
 </paragraphs>
-
-</page>
-
-
-<page>
 
 <paragraphs>
     <title>Weekly Practice 7</title>
@@ -240,10 +234,16 @@ Make sure you can answer the following questions:
 		<task><p>Is <m>\mathbb{R}^{+}</m> an integral domain using these operations?</p></task>
     	</exercise>
 	
-
+	</paragraphs>
+	</page>
+	
+	<page>
 		<exercise number="2">
 		<title>Complex numbers</title>
-		<introduction><p>A <term>complex number</term> is any number of the form <m>a+bi</m> where
+		<introduction><p>First, a definition:</p>
+		
+		<definition>
+		<p>A <term>complex number</term> is any number of the form <m>a+bi</m> where
     <m>a,b\in \mathbb{R}</m> and <m>i</m> is an imaginary number with the
     property that <m>i^{2} = -1</m>.
     For a complex number <m>x=a+bi</m>, the real number is called the
@@ -262,6 +262,10 @@ Make sure you can answer the following questions:
     <md>
         (a+bi)(c+di) = (ac - bd) + (ad+bc)i.
     </md>
+    </p>
+    </definition>
+    
+    <p>
     The complex numbers turn out to be a field.
     Let's show every nonzero element has a multiplicative inverse.
     That is, we want to show, for <m>x=a+bi</m> where <m>a</m> and <m>b</m> are
@@ -276,7 +280,7 @@ Make sure you can answer the following questions:
 	</p>
 		</introduction>
 
-        	<task><p>
+    <task><p>
     Solve the system of equations
 </p>
 <md>
@@ -296,11 +300,7 @@ Make sure you can answer the following questions:
     answer in (a) gives the multiplicative inverse for <m>a+bi</m>.
     That is, <m>(a+bi)(c+di) = 1 + 0i</m>.</p></task>
 		</exercise>
-		
-	</paragraphs>
-</page>
 
-<page>
 
 		<exercise number="3">
 		<title>Examples or not?</title>
@@ -314,8 +314,7 @@ Make sure you can answer the following questions:
 		<task><p>Two polynomials of degree <m>2</m> in <m>\mathbb{Z}_{4}[x]</m> whose product
     is a polynomial of degree <m>5</m>.</p></task>
 		</exercise>
-	
-	
+
  </page>
  
  </worksheet>
