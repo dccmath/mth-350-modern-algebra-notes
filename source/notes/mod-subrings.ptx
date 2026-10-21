@@ -295,13 +295,13 @@
 			
 			<task workspace="0.5in">
 				<p>
-   					 <m>\mathbb{Z}</m>
+    				 <m>\mathbb{E}</m>
 				</p>
 			</task>
 			
 			<task workspace="0.5in">
 				<p>
-    				 <m>\mathbb{E}</m>
+   					 <m>\mathbb{Z}</m>
 				</p>
 			</task>
 			
