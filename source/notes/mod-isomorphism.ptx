@@ -1061,6 +1061,7 @@ Make sure you can answer the following questions:
     </statement>
 </lemma>
 
+<p>Now fill in the blanks in the proof below.</p>
 <theorem>
     <statement>
         <p>
@@ -1077,13 +1078,13 @@ Make sure you can answer the following questions:
     <p>
         Let <m>R</m> and <m>S</m> be isomorphic rings.
         Thus, there exists an isomorphism <m>\phi: R\to S</m>.
-        This means <m>\phi</m> <fillin fill="Lots of stuff" />
+        This means <m>\phi</m> is a <fillin fill="Lots of stuff" />.
     </p>
 
     <p>
         We will show that if <m>x\in R_{0}</m> then <m>\phi(x)\in S_{0}</m>.
         That is, we will show that if <m>x\in R</m> is a zero divisor in
-        <m>R</m> then <m>\phi(x)</m> is <fillin fill="a zero divisor in S" />.
+        <m>R</m> then <m>\phi(x)</m> is a <fillin fill="a zero divisor in S" />.
         Since <m>x</m> is a zero divisor in <m>R</m>, <m>x\neq 0_{R}</m> and
         there exists a <m>y\in R</m> such that <fillin /> and <m>xy = 0_{R}</m> or
         <m>yx=0_{R}</m>.
@@ -1149,7 +1150,7 @@ Make sure you can answer the following questions:
     Since being a field is an invariant and <m>\mathbb{R}</m> is a field, we can
     conclude <m>M</m> is a field.
     Thus, every nonzero element of <m>M</m> is a unit.
-    What is the identity of <m>M</m>?
+    What is the multiplicative identity of <m>M</m>?
     Find the multiplicative inverse of
     <m>A = \begin{bmatrix}a &amp;0 \\ -a &amp;0\end{bmatrix}</m>.
 </p></task>
