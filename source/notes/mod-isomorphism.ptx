@@ -9,7 +9,7 @@
 	<page>
 
 	<paragraphs>
-		<title>Isomorphisms</title>
+		<title>Isomorphism</title>
 		
     <p>
        We conjectured in a weekly practice problem that <m>\mathbb{Z}_6</m> was essentially the same as <m>\mathbb{Z}_2 \oplus \mathbb{Z}_3</m>.
@@ -698,7 +698,7 @@
 		<p><m>(1,2) \to</m> <fillin /></p>
      </sidebyside>
 
-	<p>Write new copies of both <m>\Z_{2}\oplus \Z_{3}</m> tables, but replace each element with your matched up element of <m>\Z_{6}</m>.</p>
+	<p>Write new copies of both <m>\Z_{2}\oplus \Z_{3}</m> tables (or annotate the ones above), but replace each element with your matched up element of <m>\Z_{6}</m>.</p>
 	
 	
     </page>
@@ -707,12 +707,12 @@
 	<page>
 	
 	<paragraphs>
-		<title>Isomorphism definition</title>
+		<title>Defining isomorphism</title>
     <p>
     What we want is for the addition and multiplication tables to <q>match up</q>
     (up to a reordering).
     Of course, writing this all down and redrawing addition and multiplication
-    tables would be tedious, and impossible for infinite groups.
+    tables would be tedious, and impossible for infinite rings.
     So, consider that in our <m>\mathbb{Z}_{2}\oplus\mathbb{Z}_{3}</m> addition
     table we had:
     <md>
@@ -900,7 +900,7 @@
 
 <page>
 
-<exercise workspace="3in">
+<exercise workspace="0.5in">
  <p>
      Which of the following do you think are invariants of ring isomorphism?
      <ul>
@@ -963,11 +963,12 @@
 </page>
 
 <page>
+
 <paragraphs>
 	<title>Disproving isomorphism</title>
 	
 	<p>
-    Turns out rings can have lots of things in common, e.g., both being fields,
+    It turns out that rings can have lots of things in common, e.g., both being fields,
     and yet not be isomorphic.
     For example, <m>\mathbb{R}</m> and <m>\mathbb{C}</m> are both infinitely large fields, but
     they are not isomorphic.
@@ -975,7 +976,7 @@
 
 
 <p>
-    Suppose that <m>\phi: \mathbb{C}\to \mathbb{R}</m> is an isomorphism.
+    We will show that <m>\mathbb{C} \not\cong \mathbb{R}</m> by contradiction. So, suppose that <m>\phi: \mathbb{C}\to \mathbb{R}</m> is an isomorphism.
 </p>
 
 <exercise workspace="1.5in">
@@ -1028,14 +1029,8 @@ Make sure you can answer the following questions:
 	<li><p>Can you use an invariant to prove two rings are isomorphic? Can you use an invariant to prove two rings are not isomorphic?</p></li>
 </ul>
                 
-<p>The rest of this page is for you to summarize important ideas from the module.</p>
 
 </paragraphs>
-
-</page>
-
-
-<page>
 
 <paragraphs>
     <title>Weekly Practice 9</title>
