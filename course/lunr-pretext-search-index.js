@@ -1834,102 +1834,93 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Module 10: Prime Factorization &amp; Division Reprise",
-  "body": " Module 10: Prime Factorization & Division Reprise  Atoms   Prime, composite   A prime number is an integer whose only positive divisors are 1 and . A positive integer that is greater than 1 and not prime is said to be composite .     The Fundamental Theorem of Arithmetic    Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.     Example: We'll do a proof by (strong) induction. Let the statement be that is either prime or a product of primes. Say that we are doing the inductive step and need to show that :   Let's prove it! We'll start with the proof of existence. Let and let the statement be that is either prime or a product of primes.   Prove the base case. (What is there to do, even??)    For the inductive step, assume that for some integer , are all true. That is, suppose that for every integer with , is either prime or a product of primes. (This is our inductive hypothesis .)  For the first case, suppose is prime. Explain why is true in this case.   For the second case, suppose is not prime. Explain why it is possible to find integers and such that and .    What does the induction hypothesis allow you to conclude about the integers and from part (b)?    Explain how your answers to parts (b) and (c) prove that is a product of primes. Deduce that is true.    There is a fill-in-the-blank proof near the end of Investigation 1 (p. 14-15) in your textbook.     Euclid's Lemma  To prove the uniqueness part of the Fundamental Theorem of Arithmetic we will need to establish a result called Euclid's Lemma.   Euclid's Lemma   Let and be integers, and let be a prime. If then or .     Pick a non-prime number and show that Euclid's Lemma is not true for . (Show the negation of the conditional statement is true for some choice of integers and .)    Explain why the following is a more general result. That is, why does Euclid's Lemma follow as a corollary from this theorem?    Let and be integers. If and then .      let's prove the theorem, and then get Euclid's Lemma as a corollary.   Use Bezout's identity to translate the assumption into an equation involving a linear combination.    Multiply both sides of your equation from part (a) by an appropriate quantity in order to obtain an equation of the form     How can you use part (b) to conclude ?        Uniqueness proof  Now we're ready to prove the uniqueness part of the Fundamental Theorem of Arithmetic. Recall:   Fundamental Theorem of Arithmetic   Every integer greater than is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.    We'll use the strong form of Euclid's Lemma:   Euclid's Lemma - Strong Form   Let be integers and let be a prime. If , then for some with .     Let be an integer. As usual with uniqueness proofs, we will assume there are two possibilities for the prime factorization. Use 's and 's to describe how is prime factored in two ways.    Explain why Euclid's Lemma - Strong Form implies that for some . Deduce that for some .    Explain how your answer to would allow you to cancel a factor from each side of the equation from . (Does multiplicative cancellation hold in the integers? Why?)    Suppose in , you assumed was the least integer that could be prime factored in ways. Why now do you have a contradiction?       Primes in  Recall that , the set of even integers, is a commutative ring without identity. We have the following definitions:   For , we say that   -divides  provided that there exists such that .    A prime number in  is a positive integer that cannot be written as a product of two other integers in . That is is prime provided that there do not exist even integers and such that .     Let's see if the Fundamental Theorem of Arithmetic holds in .   Give two examples and a non-example of pairs of integers and such that  -divides . (Try to find an example where in the integers, but in .    What are the first 10 prime numbers in ?    Find a way to write as a product of primes in     Can you find another way to write 60 as a product of primes in ?    Is the Fundamental Theorem of Arithmetic true for ? Explain.    Is Euclid's Lemma true for ? Explain.       Irreducible Polynomials  In the integers, we have that Euclid's Lemma holds for prime integers. It turns out there's a difference between being prime and Euclid's Lemma holding in general rings. We have the following definitions, for an integral domain :   Suppose is nonzero and is not a unit. Then is called irreducible in if whenever , with , at least one of or must be a unit in . Otherwise is said to be reducible .    The nonzero element is called prime if it is not a unit and whenever for any , then either or .     It turns out that prime elements are always irreducible, and in something called a principal ideal domain a nonzero element is prime if and only if it is irreducible. But prime and irreducible are not the same in general. To illustrate this point, let's think about irreducible polynomials.   Irreducible polynomial   For an integral domain , a polynomial from that is neither the zero polynomial nor a unit in is said to be irreducible over if whenever is expressed as a product with and from , then or is a unit in . A nonzero, nonunit element of that is not irreducible over is called reducible .    The following are examples of reducible and irreducible polynomials.   Consider . Is reducible or irreducible over ? ? ? ? (Hint: What are the units in these integral domains? What are the roots of the polynomial?)    Consider . Show is reducible over . (Hint: Find roots.) Is reducible over ?       Review questions Make sure you can answer the following questions:  How do we define a prime integer?  What does the Fundamental Theorem of Arithmetic say?  How do we prove the existence part of the Fundamental Theorem of Arithmetic? How do we prove the uniqueness part of the Fundamental Theorem of Arithmetic?  What does Euclid's Lemma say? What is an example of Euclid's Lemma not working for non-prime integers? How can we generalize Euclid's Lemma to non primes? To more integers?  What is the difference between being prime and irreducible?   The rest of this page is for you to summarize important ideas from the module.      Weekly Practice 10   Non-unique factorization  Find an element of other than that has more than one prime factorization in .     An irrational property  Recall that an irrational number is one that cannot be written as a ratio for integers and and . Use Euclid's Lemma to prove that for all positive integers and , if is not an integer then is irrational.     Reducible and irreducible polynomials  Take the following theorem without proof (for now): Let be a field. If and the degree of is or , then is reducible over if and only if has a zero in .  Explain why , , and are fields.  Determine if the these polynomials are reducible or irreducible, by finding zeros and applying the theorem.     over      over      over     (Side quest - you don't have to do this one!) Can you find polynomials and such that for the fields for which is reducible?     "
+  "body": " Module 10: Prime Factorization & Division Reprise  Atoms    Prime, composite   A prime number is an integer whose only positive divisors are 1 and . A positive integer that is greater than 1 and not prime is said to be composite .     The Fundamental Theorem of Arithmetic    Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.    Example: We'll do a proof by (strong) induction. Let the statement be that is either prime or a product of primes. Say that we are doing the inductive step and need to show that :  Let's prove it! We'll start with the proof of existence. Let and let the statement be that is either prime or a product of primes.   Prove the base case. (What is there to do, even??)    For the inductive step, assume that for some integer , are all true. That is, suppose that for every integer with , is either prime or a product of primes. (This is our inductive hypothesis .)  For the first case, suppose is prime. Explain why is true in this case.   For the second case, suppose is not prime. Explain why it is possible to find integers and such that and .    What does the induction hypothesis allow you to conclude about the integers and from part (b)?    Explain how your answers to parts (b) and (c) prove that is a product of primes. Deduce that is true.    There is a fill-in-the-blank proof near the end of Investigation 1 (p. 14-15) in your textbook.      Euclid's Lemma  To prove the uniqueness part of the Fundamental Theorem of Arithmetic we will need to establish a result called Euclid's Lemma.   Euclid's Lemma   Let and be integers, and let be a prime. If then or .     Pick a non-prime number and show that Euclid's Lemma is not true for . (Show the negation of the conditional statement is true for some choice of integers and .)    Explain why the following is a more general result. That is, why does Euclid's Lemma follow as a corollary from this theorem?    Let and be integers. If and then .      Let's prove the theorem, and then get Euclid's Lemma as a corollary.   Use Bezout's identity to translate the assumption into an equation involving a linear combination.    Multiply both sides of your equation from part (a) by an appropriate quantity in order to obtain an equation of the form     How can you use part (b) to conclude ?        Uniqueness proof  Now we're ready to prove the uniqueness part of the Fundamental Theorem of Arithmetic. Recall:   Fundamental Theorem of Arithmetic   Every integer greater than is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.    We'll use the strong form of Euclid's Lemma:   Euclid's Lemma - Strong Form   Let be integers and let be a prime. If , then for some with .     Let be an integer. As usual with uniqueness proofs, we will assume there are two possibilities for the prime factorization. Use 's and 's to describe how is prime factored in two ways.    Explain why Euclid's Lemma - Strong Form implies that for some . Deduce that for some .    Explain how your answer to would allow you to cancel a factor from each side of the equation from . (Does multiplicative cancellation hold in the integers? Why?)    Suppose in , you assumed was the least integer that could be prime factored in ways. Why now do you have a contradiction?       Primes in  Recall that , the set of even integers, is a commutative ring without identity. We have the following definitions:   For , we say that   -divides  provided that there exists such that .    A prime number in  is a positive integer that cannot be written as a product of two other integers in . That is is prime provided that there do not exist even integers and such that .     Let's see if the Fundamental Theorem of Arithmetic holds in .   Give two examples and a non-example of pairs of integers and such that  -divides . (Try to find an example where in the integers, but in .)    What are the first 10 prime numbers in ?    Find a way to write as a product of primes in     Can you find another way to write 60 as a product of primes in ?    Is the Fundamental Theorem of Arithmetic true for ? Explain.    Is Euclid's Lemma true for ? Explain.       Irreducible Polynomials  In the integers, we have that Euclid's Lemma holds for prime integers. It turns out there's a difference between being prime and Euclid's Lemma holding in general rings. We have the following definitions, for an integral domain :   Suppose is nonzero and is not a unit. Then is called irreducible in if whenever , with , at least one of or must be a unit in . Otherwise is said to be reducible .    The nonzero element is called prime if it is not a unit and whenever for any , then either or .     It turns out that prime elements are always irreducible, and in something called a principal ideal domain a nonzero element is prime if and only if it is irreducible. But prime and irreducible are not the same in general. To illustrate this point, let's think about irreducible polynomials.   Irreducible polynomial   For an integral domain , a polynomial from that is neither the zero polynomial nor a unit in is said to be irreducible over if whenever is expressed as a product with and from , then or is a unit in . A nonzero, nonunit element of that is not irreducible over is called reducible .    The following are examples of reducible and irreducible polynomials.   Consider . Is reducible or irreducible over ? ? ? ? (Hint: What are the units in these integral domains? What are the roots of the polynomial?)    Consider . Show is reducible over . (Hint: Find roots.) Is reducible over ?       Review questions Make sure you can answer the following questions:  How do we define a prime integer?  What does the Fundamental Theorem of Arithmetic say?  How do we prove the existence part of the Fundamental Theorem of Arithmetic? How do we prove the uniqueness part of the Fundamental Theorem of Arithmetic?  What does Euclid's Lemma say? What is an example of Euclid's Lemma not working for non-prime integers? How can we generalize Euclid's Lemma to non primes? To more integers?  What is the difference between being prime and irreducible?      Weekly Practice 10   Non-unique factorization  Find an element of other than that has more than one prime factorization in .     An irrational property  Recall that an irrational number is one that cannot be written as a ratio for integers and and . Use Euclid's Lemma to prove that for all positive integers and , if is not an integer then is irrational.     Reducible and irreducible polynomials  Take the following theorem without proof (for now): Let be a field. If and the degree of is or , then is reducible over if and only if has a zero in .  Explain why , , and are fields.  Determine if the these polynomials are reducible or irreducible, by finding zeros and applying the theorem.     over      over      over     (Side quest - you don't have to do this one!) Can you find polynomials and such that for the fields for which is reducible?     "
 },
 {
-  "id": "ws-prime-factorization-activity-3",
+  "id": "ws-prime-factorization-activity-3-1",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-3",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-3-1",
   "type": "Definition",
   "number": "52",
   "title": "Prime, composite.",
   "body": " Prime, composite   A prime number is an integer whose only positive divisors are 1 and . A positive integer that is greater than 1 and not prime is said to be composite .   "
 },
 {
-  "id": "ws-prime-factorization-activity-4-2",
+  "id": "ws-prime-factorization-activity-3-2-2",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-3-2-2",
   "type": "Theorem",
   "number": "53",
   "title": "",
   "body": "  Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.   "
 },
 {
-  "id": "ws-prime-factorization-activity-4-3",
+  "id": "ws-prime-factorization-activity-3-2-5",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-3",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-3-2-5",
   "type": "Exercise",
   "number": "1",
-  "title": "",
-  "body": " Example: We'll do a proof by (strong) induction. Let the statement be that is either prime or a product of primes. Say that we are doing the inductive step and need to show that :  "
-},
-{
-  "id": "ws-prime-factorization-activity-4-5",
-  "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-5",
-  "type": "Exercise",
-  "number": "2",
   "title": "",
   "body": " Prove the base case. (What is there to do, even??)  "
 },
 {
-  "id": "ws-prime-factorization-activity-4-6",
+  "id": "ws-prime-factorization-activity-3-2-6",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-6",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-3-2-6",
   "type": "Exercise",
-  "number": "3",
+  "number": "2",
   "title": "",
   "body": " For the inductive step, assume that for some integer , are all true. That is, suppose that for every integer with , is either prime or a product of primes. (This is our inductive hypothesis .)  For the first case, suppose is prime. Explain why is true in this case.   For the second case, suppose is not prime. Explain why it is possible to find integers and such that and .    What does the induction hypothesis allow you to conclude about the integers and from part (b)?    Explain how your answers to parts (b) and (c) prove that is a product of primes. Deduce that is true.   "
 },
 {
-  "id": "ws-prime-factorization-activity-5-1-3",
+  "id": "ws-prime-factorization-activity-4-1-3",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-3",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-1-3",
   "type": "Lemma",
   "number": "54",
   "title": "Euclid’s Lemma.",
   "body": " Euclid's Lemma   Let and be integers, and let be a prime. If then or .   "
 },
 {
-  "id": "ws-prime-factorization-activity-5-1-4",
+  "id": "ws-prime-factorization-activity-4-1-4",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-4",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-1-4",
   "type": "Exercise",
-  "number": "4",
+  "number": "3",
   "title": "",
   "body": " Pick a non-prime number and show that Euclid's Lemma is not true for . (Show the negation of the conditional statement is true for some choice of integers and .)  "
 },
 {
-  "id": "ws-prime-factorization-activity-5-1-5",
+  "id": "ws-prime-factorization-activity-4-1-5",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-5",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-1-5",
   "type": "Exercise",
-  "number": "5",
+  "number": "4",
   "title": "",
   "body": " Explain why the following is a more general result. That is, why does Euclid's Lemma follow as a corollary from this theorem?    Let and be integers. If and then .    "
 },
 {
-  "id": "ws-prime-factorization-activity-5-1-6",
+  "id": "ws-prime-factorization-activity-4-1-6",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-6",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-4-1-6",
   "type": "Exercise",
-  "number": "6",
+  "number": "5",
   "title": "",
-  "body": " let's prove the theorem, and then get Euclid's Lemma as a corollary.   Use Bezout's identity to translate the assumption into an equation involving a linear combination.    Multiply both sides of your equation from part (a) by an appropriate quantity in order to obtain an equation of the form     How can you use part (b) to conclude ?   "
+  "body": " Let's prove the theorem, and then get Euclid's Lemma as a corollary.   Use Bezout's identity to translate the assumption into an equation involving a linear combination.    Multiply both sides of your equation from part (a) by an appropriate quantity in order to obtain an equation of the form     How can you use part (b) to conclude ?   "
 },
 {
-  "id": "ws-prime-factorization-activity-6-1-3",
+  "id": "ws-prime-factorization-activity-5-1-3",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-3",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-3",
   "type": "Theorem",
   "number": "56",
   "title": "Fundamental Theorem of Arithmetic.",
   "body": " Fundamental Theorem of Arithmetic   Every integer greater than is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.   "
 },
 {
-  "id": "ws-prime-factorization-activity-6-1-5",
+  "id": "ws-prime-factorization-activity-5-1-5",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-5",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-5",
   "type": "Lemma",
   "number": "57",
   "title": "Euclid’s Lemma - Strong Form.",
@@ -1940,7 +1931,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#e-lem-start",
   "type": "Exercise",
-  "number": "7",
+  "number": "6",
   "title": "",
   "body": " Let be an integer. As usual with uniqueness proofs, we will assume there are two possibilities for the prime factorization. Use 's and 's to describe how is prime factored in two ways.  "
 },
@@ -1949,27 +1940,90 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-prime-factorization-activity.html#e-lem-pt2",
   "type": "Exercise",
-  "number": "8",
+  "number": "7",
   "title": "",
   "body": " Explain why Euclid's Lemma - Strong Form implies that for some . Deduce that for some .  "
+},
+{
+  "id": "ws-prime-factorization-activity-5-1-8",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": " Explain how your answer to would allow you to cancel a factor from each side of the equation from . (Does multiplicative cancellation hold in the integers? Why?)  "
+},
+{
+  "id": "ws-prime-factorization-activity-5-1-9",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-5-1-9",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": " Suppose in , you assumed was the least integer that could be prime factored in ways. Why now do you have a contradiction?  "
+},
+{
+  "id": "ws-prime-factorization-activity-6-1-2",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "  -divides  prime number in  "
+},
+{
+  "id": "ws-prime-factorization-activity-6-1-4",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-4",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": " Give two examples and a non-example of pairs of integers and such that  -divides . (Try to find an example where in the integers, but in .)  "
+},
+{
+  "id": "ws-prime-factorization-activity-6-1-5",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-5",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": " What are the first 10 prime numbers in ?  "
+},
+{
+  "id": "ws-prime-factorization-activity-6-1-6",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-6",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": " Find a way to write as a product of primes in   "
+},
+{
+  "id": "ws-prime-factorization-activity-6-1-7",
+  "level": "2",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-7",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": " Can you find another way to write 60 as a product of primes in ?  "
 },
 {
   "id": "ws-prime-factorization-activity-6-1-8",
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-8",
   "type": "Exercise",
-  "number": "9",
+  "number": "14",
   "title": "",
-  "body": " Explain how your answer to would allow you to cancel a factor from each side of the equation from . (Does multiplicative cancellation hold in the integers? Why?)  "
+  "body": " Is the Fundamental Theorem of Arithmetic true for ? Explain.  "
 },
 {
   "id": "ws-prime-factorization-activity-6-1-9",
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-6-1-9",
   "type": "Exercise",
-  "number": "10",
+  "number": "15",
   "title": "",
-  "body": " Suppose in , you assumed was the least integer that could be prime factored in ways. Why now do you have a contradiction?  "
+  "body": " Is Euclid's Lemma true for ? Explain.  "
 },
 {
   "id": "ws-prime-factorization-activity-7-1-2",
@@ -1978,120 +2032,57 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "  -divides  prime number in  "
+  "body": "irreducible reducible prime "
 },
 {
   "id": "ws-prime-factorization-activity-7-1-4",
   "level": "2",
   "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-4",
-  "type": "Exercise",
-  "number": "11",
-  "title": "",
-  "body": " Give two examples and a non-example of pairs of integers and such that  -divides . (Try to find an example where in the integers, but in .  "
-},
-{
-  "id": "ws-prime-factorization-activity-7-1-5",
-  "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-5",
-  "type": "Exercise",
-  "number": "12",
-  "title": "",
-  "body": " What are the first 10 prime numbers in ?  "
-},
-{
-  "id": "ws-prime-factorization-activity-7-1-6",
-  "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-6",
-  "type": "Exercise",
-  "number": "13",
-  "title": "",
-  "body": " Find a way to write as a product of primes in   "
-},
-{
-  "id": "ws-prime-factorization-activity-7-1-7",
-  "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-7",
-  "type": "Exercise",
-  "number": "14",
-  "title": "",
-  "body": " Can you find another way to write 60 as a product of primes in ?  "
-},
-{
-  "id": "ws-prime-factorization-activity-7-1-8",
-  "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-8",
-  "type": "Exercise",
-  "number": "15",
-  "title": "",
-  "body": " Is the Fundamental Theorem of Arithmetic true for ? Explain.  "
-},
-{
-  "id": "ws-prime-factorization-activity-7-1-9",
-  "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-9",
-  "type": "Exercise",
-  "number": "16",
-  "title": "",
-  "body": " Is Euclid's Lemma true for ? Explain.  "
-},
-{
-  "id": "ws-prime-factorization-activity-8-1-2",
-  "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "irreducible reducible prime "
-},
-{
-  "id": "ws-prime-factorization-activity-8-1-4",
-  "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-4",
   "type": "Definition",
   "number": "58",
   "title": "Irreducible polynomial.",
   "body": " Irreducible polynomial   For an integral domain , a polynomial from that is neither the zero polynomial nor a unit in is said to be irreducible over if whenever is expressed as a product with and from , then or is a unit in . A nonzero, nonunit element of that is not irreducible over is called reducible .   "
 },
 {
-  "id": "ws-prime-factorization-activity-8-1-6",
+  "id": "ws-prime-factorization-activity-7-1-6",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-6",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-6",
   "type": "Exercise",
-  "number": "17",
+  "number": "16",
   "title": "",
   "body": " Consider . Is reducible or irreducible over ? ? ? ? (Hint: What are the units in these integral domains? What are the roots of the polynomial?)  "
 },
 {
-  "id": "ws-prime-factorization-activity-8-1-7",
+  "id": "ws-prime-factorization-activity-7-1-7",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-8-1-7",
+  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-7-1-7",
   "type": "Exercise",
-  "number": "18",
+  "number": "17",
   "title": "",
   "body": " Consider . Show is reducible over . (Hint: Find roots.) Is reducible over ?  "
 },
 {
-  "id": "ws-prime-factorization-activity-10-1-2",
+  "id": "sec-prime-factorization-review-2-2",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-10-1-2",
+  "url": "ws-prime-factorization-activity.html#sec-prime-factorization-review-2-2",
   "type": "Exercise",
   "number": "1",
   "title": "Non-unique factorization.",
   "body": " Non-unique factorization  Find an element of other than that has more than one prime factorization in .   "
 },
 {
-  "id": "ws-prime-factorization-activity-10-1-3",
+  "id": "sec-prime-factorization-review-2-3",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-10-1-3",
+  "url": "ws-prime-factorization-activity.html#sec-prime-factorization-review-2-3",
   "type": "Exercise",
   "number": "2",
   "title": "An irrational property.",
   "body": " An irrational property  Recall that an irrational number is one that cannot be written as a ratio for integers and and . Use Euclid's Lemma to prove that for all positive integers and , if is not an integer then is irrational.   "
 },
 {
-  "id": "ws-prime-factorization-activity-10-1-4",
+  "id": "sec-prime-factorization-review-2-4",
   "level": "2",
-  "url": "ws-prime-factorization-activity.html#ws-prime-factorization-activity-10-1-4",
+  "url": "ws-prime-factorization-activity.html#sec-prime-factorization-review-2-4",
   "type": "Exercise",
   "number": "3",
   "title": "Reducible and irreducible polynomials.",
