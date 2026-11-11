@@ -6,7 +6,7 @@
 	<title>Module 10: Prime Factorization &amp; Division Reprise</title>
 	<introduction><p><alert>Atoms</alert></p></introduction>
 	
-
+	<page>
 
 	<definition>
 		<title>Prime, composite</title>
@@ -23,9 +23,7 @@
 			<p>Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.</p>
 		</statement>
 	</theorem>
-    <exercise workspace="1.5in">
-    	<p><em>Example:</em> We'll do a proof by (strong) induction. Let the statement <m>P(n)</m> be that <m>n</m> is either prime or a product of primes. Say that we are doing the inductive step and need to show that <m>P(6359) \to P(6360)</m>:</p>
-    </exercise>
+    	<p><em>Example:</em> We'll do a proof by (strong) induction. Let the statement <m>P(n)</m> be that <m>n</m> is either prime or a product of primes. Say that we are doing the inductive step and need to show that <m>P(6359) \to P(6360)</m>.</p>
     
     <p>Let's prove it! We'll start with the proof of existence. Let <m>n \geq 2</m> and let the statement <m>P(n)</m> be that <m>n</m> is either prime or a product of primes.</p>
     
@@ -41,12 +39,12 @@
   <m>k</m> is either prime or a product of primes.
   (This is our <em>inductive hypothesis</em>.)
 		</p></introduction>
-		<task workspace="1in"><p>
+		<task workspace="0.5in"><p>
   For the first case, suppose <m>n+1</m> is prime.
   Explain why <m>P(n+1)</m> is true in this case.
 		</p></task>
 		
-		<task workspace="2.1in">
+		<task workspace="1in">
 		<p>
   For the second case, suppose <m>n+1</m> is not prime.
   Explain why it is possible to find integers <m>x</m> and <m>y</m> such that
@@ -54,14 +52,14 @@
 		</p>
 		</task>
 		
-		<task workspace="2.1in">
+		<task workspace="1in">
 		<p>
   What does the induction hypothesis allow you to conclude about the integers
   <m>x</m> and <m>y</m> from part (b)?
 		</p>
 		</task>
 		
-		<task workspace="2.2in">
+		<task workspace="1in">
 		<p>
   Explain how your answers to parts (b) and (c) prove that <m>n+1</m> is a
   product of primes.
@@ -72,6 +70,8 @@
     
     <p>There is a fill-in-the-blank proof near the end of Investigation 1 (p. 14-15) in your textbook.</p>
     </paragraphs>
+ 
+ </page>
  
  <page>
 	<paragraphs>
@@ -116,7 +116,7 @@
 		</exercise>
 		
 		<exercise>
-			<introduction><p>let's prove the theorem, and then get Euclid's Lemma as a corollary.</p></introduction>
+			<introduction><p>Let's prove the theorem, and then get Euclid's Lemma as a corollary.</p></introduction>
 			
 			<task workspace="0.25in">
 			<p>
@@ -255,7 +255,7 @@
     Give two examples and a non-example of pairs of integers <m>a</m> and
     <m>b</m> such that <m>a</m> <m>\mathbb{E}</m>-divides <m>b</m>.
     (Try to find an example where <m>a\mid b</m> in the integers, but
-    <m>a\nmid b</m> in <m>\mathbb{E}</m>.
+    <m>a\nmid b</m> in <m>\mathbb{E}</m>.)
 </p>
 	</exercise>
 
@@ -387,14 +387,10 @@ Make sure you can answer the following questions:
 	<li><p>What is the difference between being prime and irreducible?</p></li>
 </ul>
                 
-<p>The rest of this page is for you to summarize important ideas from the module.</p>
+<!-- <p>Here's some space to summarize important ideas from the module.</p> -->
 
 </paragraphs>
 
-</page>
-
-
-<page>
 
 <paragraphs>
     <title>Weekly Practice 10</title>
