@@ -55,6 +55,12 @@
 	<page>
 	<paragraphs>
 		<title>The Division Algorithm in <m>F[x]</m></title>
+
+		<exercise workspace="0.5in">
+		<p>
+    Why is <m>\mathbb{Z}_{4}[x]</m> not an integral domain?
+		</p>
+		</exercise>
 		
 		<exercise workspace="0.5in">
 		<p>
@@ -62,12 +68,6 @@
     <m>F</m> is a field.
     When <m>F</m> is a field, <m>F[x]</m> is an integral domain.
     Why is <m>F[x]</m> never a field?
-		</p>
-		</exercise>
-		
-		<exercise workspace="0.5in">
-		<p>
-    Why is <m>\mathbb{Z}_{4}[x]</m> not an integral domain?
 		</p>
 		</exercise>
 		
