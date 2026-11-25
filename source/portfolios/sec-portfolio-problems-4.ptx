@@ -35,7 +35,7 @@
 			<em>We won’t explicitly cover this definition in class, this problem can be done any time! Please ask me if you need help (instead of asking AI!) -- I will happily give hints.</em></p>
 			<p>Let <m>R</m> be a ring and let <m>r \in R</m>. The <term>centralizer</term> of <m>r</m> is defined to be the set of all <m>x \in R</m> such that <m>xr = rx</m>. We write <m>C(r)</m> for the centralizer of <m>r \in R</m>.</p>
 		</introduction>
-		<task><p>Find two elements of the centralizer of <m>\begin{bmatrix}1 &amp; 2 \\ 3 &amp; 4\end{bmatrix}</m> in <m>\mathcal{M}_{2 \times 2}</m>.</p></task>
+		<task><p>Find two elements of the centralizer of <m>\begin{bmatrix}1 &amp; 2 \\ 3 &amp; 4\end{bmatrix}</m> in <m>\mathcal{M}_{2 \times 2}(\mathbb{R})</m>.</p></task>
 		<task><p>Prove that <m>C(r)</m> is a subring of <m>R</m>. (Use the subring test from Module 8!)</p></task>
 		<task><p>Is the centralizer of <m>r</m> necessarily commutative?</p></task>
 	</project>
