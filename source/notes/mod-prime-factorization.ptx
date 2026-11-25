@@ -23,7 +23,7 @@
 			<p>Every integer greater than 1 is either prime or a product of primes. Furthermore, this factorization is unique up to the order of the factors.</p>
 		</statement>
 	</theorem>
-    	<p><em>Example:</em> We'll do a proof by (strong) induction. Let the statement <m>P(n)</m> be that <m>n</m> is either prime or a product of primes. Say that we are doing the inductive step and need to show that <m>P(6359) \to P(6360)</m>.</p>
+    	<p><em>Example:</em> We'll do a proof by (strong) induction. Let the statement <m>P(n)</m> be that <m>n</m> is either prime or a product of primes. Say that we are doing the inductive step and need to show that <m>P(6360)</m> is true.</p>
     
     <p>Let's prove it! We'll start with the proof of existence. Let <m>n \geq 2</m> and let the statement <m>P(n)</m> be that <m>n</m> is either prime or a product of primes.</p>
     
@@ -171,7 +171,7 @@
         <p>
             Let <m>a_{1},a_{2},\dots, a_{n}</m> be integers and let <m>p</m> be
             a prime.
-            If <m>p\mid a_{1}a_{2}\dots_{a}n</m>, then <m>p\mid a_{i}</m> for
+            If <m>p\mid a_{1}a_{2}\dots a_{n}</m>, then <m>p\mid a_{i}</m> for
             some <m>i</m> with <m>1\le i \le n</m>.
         </p>
     </statement>
